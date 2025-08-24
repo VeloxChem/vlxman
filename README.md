@@ -4,15 +4,13 @@ https://kthpanor.github.io/vlxman/docs/intro.html
 # Some commands
 
 ```
-$ pip install -U jupyter-book
+$ conda install jupyter-book -c conda-forge
 $ git clone https://github.com/kthpanor/vlxman.git
 $ cd vlxman
 $ vi docs/dft.md
 $ jupyter-book build .
 $ open _build/html/index.html
 ```
-
-**Note**: We need version 0.11 (or higher) to compile our book which is not yet available with `conda install` so therefore do `pip install` as suggested above.
 
 # Publish the html-version
 
