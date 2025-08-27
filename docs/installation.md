@@ -70,25 +70,24 @@ $ git clone https://github.com/VeloxChem/VeloxChem.git
 ### Build prerequisites
 
 - [CMake](https://cmake.org/)
-- C++ compiler fully compliant with the C++20 standard
-- Linear algebra libraries implementing the BLAS and LAPACK interfaces (e.g. OpenBLAS)
-- MPI library (e.g. MPICH)
+- C++ compiler supporting the C++20 standard and OpenMP
+- [Eigen](https://gitlab.com/libeigen/eigen)
+- [Libxc](https://libxc.gitlab.io/)
 - [Python](https://www.python.org/) (>=3.9) that includes the interpreter, the development header files, and the development libraries
 - [MPI4Py](https://mpi4py.readthedocs.io/en/stable/)
-- [Scikit-build](https://scikit-build.readthedocs.io/en/latest/)
-- [Libxc](https://libxc.gitlab.io/)
-- [Eigen](https://gitlab.com/libeigen/eigen)
+- [pybind11](https://pybind11.readthedocs.io/en/stable/)
+- [scikit-build](https://scikit-build.readthedocs.io/en/latest/)
 
 Optional, add-on dependencies:
 
-- [dftd4-python](https://github.com/dftd4/dftd4)
+- [dftd4-python](https://dftd4.readthedocs.io/en/latest/)
 
 See {ref}`external-dependencies` for instructions on how to get these add-ons.
 
 To avoid clashes between dependencies, we recommend to always use a [virtual enviroment](https://docs.python.org/3/tutorial/venv.html).
 
 (with-conda)=
-### Installing on Unix-like systems using conda
+### Installing on Unix-like systems with dependencies from conda-forge
 
 [Conda](https://docs.conda.io/en/latest/) and the software packaged on the [conda-forge](https://conda-forge.org/) channel provide build isolation and greatly simplify the installation of VeloxChem.
 
@@ -101,24 +100,19 @@ To avoid clashes between dependencies, we recommend to always use a [virtual env
 - Create and activate the conda environment:
 
   ```
-  $ conda env create -f <environment_file>
+  $ conda env create -f vlx_env.yml
   $ conda activate vlxenv
   ```
 
-  This will create and activate a conda environment named `vlxenv`. In this environment all the build dependencies will be installed from the conda-forge channel, including the C++ compiler, MPI, [NumPy](https://numpy.org), [MPI4Py](https://mpi4py.readthedocs.io/en/stable/), etc. We provide two options for the `<environment_file>` that specifies different linear algebra backend for your conda environment:
+  This will create and activate a conda environment named `vlxenv`. In this environment all the build dependencies will be installed from the conda-forge channel, including the C++ compiler, MPI, [NumPy](https://numpy.org), [MPI4Py](https://mpi4py.readthedocs.io/en/stable/), etc.
 
-  - `mkl_env.yml` which installs the Intel Math Kernel Library,
-  - `openblas_env.yml` which installs the OpenBLAS library.
-
-  Note that the MPICH library will be installed by the .yml file. If you prefer another MPI library such as Open MPI, you can edit the .yml file and replace mpich by openmpi. Read more about the .yml file in [this page](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually).
+  Note that the MPICH library will be installed by the `vlx_env.yml` file. If you prefer another MPI library such as Open MPI, you can edit the .yml file and replace mpich by openmpi. Read more about the .yml file in [this page](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually).
 
 - Set scikit-build and cmake options:
 
   ```
-  $ export SKBUILD_CONFIGURE_OPTIONS="-DVLX_LA_VENDOR=<math_library> -DCMAKE_CXX_COMPILER=mpicxx"
+  $ export SKBUILD_CONFIGURE_OPTIONS="-DCMAKE_CXX_COMPILER=mpicxx"
   ```
-
-  where ``<math_library>`` can be ``MKL`` or ``OpenBLAS``.
 
   If you are installing VeloxChem on macOS you may also need to set the
   `CMAKE_ARGS` environment variable. See [Known issues](known-issues-macos) for
@@ -163,41 +157,26 @@ To avoid clashes between dependencies, we recommend to always use a [virtual env
   $ python3 -m pip install h5py pytest psutil geometric cmake pybind11-global scikit-build ninja rdkit
   ```
 
-- Clone [Eigen](https://gitlab.com/libeigen/eigen) and set environment variable `EIGEN_INCLUDE_DIR`
+- Clone [Eigen](https://gitlab.com/libeigen/eigen).
 
-  ```
-  $ git clone -b 3.4.0 https://gitlab.com/libeigen/eigen.git
-  $ export EIGEN_INCLUDE_DIR=/path/to/your/eigen
-  ```
+- Install Libxc according to [Libxc documentation](https://libxc.gitlab.io/).
 
-- Install [Libxc](https://libxc.gitlab.io/)
-
-  ```
-  $ cd libxc-7.0.0
-  $ mkdir build && cd build
-  $ cmake -DDISABLE_KXC=OFF -DDISABLE_LXC=OFF -DCMAKE_C_COMPILER=gcc-12 -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX:PATH=/path/to/your/libxc ..
-  $ make && make test
-  $ make install
-  $ cd ../..
-  ```
-
-  Make sure to replace `gcc-12` with the C compiler you are using. Please also
-  note that compiling Libxc with `-DDISABLE_KXC=OFF -DDISABLE_LXC=OFF` takes a
-  long time. If you do not need the third- and fourth-order derivatives you can
-  remove them to speed up the compilation. 
+  If you need to run nonlinear response or TDDFT gradient using VeloxChem, add
+  cmake options `-DDISABLE_KXC=OFF -DDISABLE_LXC=OFF` when installing Libxc.
 
 - Compile VeloxChem
 
   ```
   $ cd VeloxChem
-  $ export SKBUILD_CONFIGURE_OPTIONS="-DVLX_LA_VENDOR=Cray -DCMAKE_CXX_COMPILER=CC"
+  $ export EIGEN_INCLUDE_DIR=/path/to/your/eigen
+  $ export SKBUILD_CONFIGURE_OPTIONS="-DCMAKE_CXX_COMPILER=CC"
   $ export CMAKE_PREFIX_PATH=/path/to/your/libxc:$CMAKE_PREFIX_PATH
   $ export LD_LIBRARY_PATH=/path/to/your/libxc/lib:$LD_LIBRARY_PATH
   $ python3 -m pip install --no-build-isolation -v .
   ```
 
-  If you are installing VeloxChem on a HPC cluster, please make sure to run the
-  above compilations on an interactive node.
+  If you are installing VeloxChem on an HPC cluster, please make sure to run the
+  above compilations on an interactive compute node.
 
 - CrayBLAS environment variables
 
@@ -220,21 +199,10 @@ To avoid clashes between dependencies, we recommend to always use a [virtual env
   $ sudo apt install libopenblas-openmp-dev liblapacke-dev libeigen3-dev mpich
   ```
 
-- Install [Libxc](https://libxc.gitlab.io/)
+- Install Libxc according to [Libxc documentation](https://libxc.gitlab.io/).
 
-  ```
-  $ cd libxc-7.0.0
-  $ mkdir build && cd build
-  $ cmake -DDISABLE_KXC=OFF -DDISABLE_LXC=OFF -DCMAKE_C_COMPILER=gcc-12 -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX:PATH=/path/to/your/libxc ..
-  $ make && make test
-  $ make install
-  $ cd ../..
-  ```
-
-  Make sure to replace `gcc-12` with the C compiler you are using. Please also
-  note that compiling Libxc with `-DDISABLE_KXC=OFF -DDISABLE_LXC=OFF` takes a
-  long time. If you do not need the third- and fourth-order derivatives you can
-  remove them to speed up the compilation. 
+  If you need to run nonlinear response or TDDFT gradient using VeloxChem, add
+  cmake options `-DDISABLE_KXC=OFF -DDISABLE_LXC=OFF` when installing Libxc.
 
 - Create and activate a [virtual enviroment](https://docs.python.org/3/tutorial/venv.html)
 
@@ -242,15 +210,14 @@ To avoid clashes between dependencies, we recommend to always use a [virtual env
   $ python3 -m venv vlxenv
   $ source vlxenv/bin/activate
   $ python3 -m pip install --upgrade pip setuptools wheel
-  $ python3 -m pip install numpy mpi4py h5py
-  $ python3 -m pip install cmake pybind11-global scikit-build
+  $ python3 -m pip install numpy mpi4py h5py cmake pybind11-global scikit-build
   ```
 
 - Install VeloxChem:
 
   ```
   $ cd VeloxChem
-  $ export SKBUILD_CONFIGURE_OPTIONS="-DVLX_LA_VENDOR=OpenBLAS -DCMAKE_CXX_COMPILER=mpicxx"
+  $ export SKBUILD_CONFIGURE_OPTIONS="-DCMAKE_CXX_COMPILER=mpicxx"
   $ export CMAKE_PREFIX_PATH=/path/to/your/libxc:$CMAKE_PREFIX_PATH
   $ export LD_LIBRARY_PATH=/path/to/your/libxc/lib:$LD_LIBRARY_PATH
   $ python3 -m pip install --no-build-isolation -v .
@@ -258,11 +225,11 @@ To avoid clashes between dependencies, we recommend to always use a [virtual env
 
 ### Installing on PowerLinux
 
-- See installation instructions [using conda](with-conda)
+- See {ref}`with-conda`
 
 ### Installing on macOS
 
-- See installation instructions [using conda](with-conda)
+- See {ref}`with-conda`
 
 (known-issues-macos)=
 - Known issues
@@ -298,39 +265,28 @@ To avoid clashes between dependencies, we recommend to always use a [virtual env
   ```
 
 (external-dependencies)=
-## External dependencies
+### External dependencies
 
-If you wish to use functionality offered through interfaces with other software packages, you will first need to install them.  Currently, interface to add-on dependency [dftd4-python](https://github.com/dftd4/dftd4) is available.
+- [dftd4-python](https://dftd4.readthedocs.io/en/latest/)
 
-### The dftd4-python package for dispersion correction
+  It is recommended to install the dftd4-python package in a conda environment:
 
-It is recommended to install the dftd4-python package in a conda environment:
+  ```
+  $ conda install dftd4-python -c conda-forge
+  ```
 
-```
-$ conda install dftd4-python -c conda-forge
-```
+  Alternatively, you can compile it using ``meson``. If you want to use custom
+  math library, add `-Dlapack=custom` and `-Dcustom_libraries=...` to the
+  `meson setup` command.
 
-Alternatively, you can compile it using ``meson``:
-
-```
-$ python3 -m pip install meson ninja cffi
-$ cd dftd4-3.7.0/
-$ meson setup _build -Dpython=true -Dpython_version=$(which python3)
-$ meson test -C _build --print-errorlogs
-$ meson configure _build --prefix=/path/to/your/dftd4
-$ meson install -C _build
-```
-
-If you want to use custom math library, add `-Dlapack=custom` and
-`-Dcustom_libraries=...` to the `meson setup` command.
-
-After installation, add the dftd4 package to `PYTHONPATH` and `LD_LIBRARY_PATH`. Make sure to
-replace "python3.11" with the version of Python used in your virtual
-environment. For large molecules, it may also be necessary to set the `OMP_STACKSIZE`
-environment variable to an appropriate value.
-
-```
-$ export PYTHONPATH=$PYTHONPATH:/path/to/your/dftd4/lib/python3.11/site-packages
-$ export LD_LIBRARY_PATH=/path/to/your/dftd4/lib64:$LD_LIBRARY_PATH
-$ export OMP_STACKSIZE=16M
-```
+  ```
+  $ python3 -m pip install meson ninja cffi
+  $ cd dftd4-3.7.0/
+  $ meson setup _build -Dpython=true -Dpython_version=$(which python3)
+  $ meson test -C _build --print-errorlogs
+  $ meson configure _build --prefix=/path/to/your/dftd4
+  $ meson install -C _build
+  $ export PYTHONPATH=$PYTHONPATH:/path/to/your/dftd4/lib/python.../site-packages
+  $ export LD_LIBRARY_PATH=/path/to/your/dftd4/lib64:$LD_LIBRARY_PATH
+  $ export OMP_STACKSIZE=256M
+  ```
