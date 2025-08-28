@@ -25,6 +25,7 @@ dependencies:
   - ipywidgets
   - openmm
   - py3dmol
+  - pymbar
   - rdkit
   - veloxchem
 ```
