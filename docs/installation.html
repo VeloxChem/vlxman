@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -422,8 +422,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-precompiled-binaries-using-conda">Installing precompiled binaries using conda</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-from-source">Installing from source</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-precompiled-binaries-cpu-version-using-conda">Installing precompiled binaries (CPU version) using conda</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-the-cpu-version-from-source">Installing the CPU version from source</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#obtaining-the-source-code">Obtaining the source code</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build-prerequisites">Build prerequisites</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-unix-like-systems-with-dependencies-from-conda-forge">Installing on Unix-like systems with dependencies from conda-forge</a></li>
@@ -432,6 +432,13 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-powerlinux">Installing on PowerLinux</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-macos">Installing on macOS</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#external-dependencies">External dependencies</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-the-gpu-version-from-source">Installing the GPU version from source</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Obtaining the source code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Build prerequisites</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-for-nvidia-gpus">Installing for Nvidia GPUs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-for-amd-gpus">Installing for AMD GPUs</a></li>
 </ul>
 </li>
 </ul>
@@ -447,8 +454,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="installing-the-program">
 <h1>Installing the program<a class="headerlink" href="#installing-the-program" title="Link to this heading">#</a></h1>
-<section id="installing-precompiled-binaries-using-conda">
-<h2>Installing precompiled binaries using conda<a class="headerlink" href="#installing-precompiled-binaries-using-conda" title="Link to this heading">#</a></h2>
+<section id="installing-precompiled-binaries-cpu-version-using-conda">
+<h2>Installing precompiled binaries (CPU version) using conda<a class="headerlink" href="#installing-precompiled-binaries-cpu-version-using-conda" title="Link to this heading">#</a></h2>
 <p>Binaries are available for the three main operating systems:</p>
 <ul class="simple">
 <li><p>Windows</p></li>
@@ -488,11 +495,11 @@ document.write(`
 </div>
 <p>and start calculations. See the <a class="reference external" href="https://kthpanor.github.io/echem">eChem</a> book for a multitude of examples.</p>
 </section>
-<section id="installing-from-source">
-<h2>Installing from source<a class="headerlink" href="#installing-from-source" title="Link to this heading">#</a></h2>
+<section id="installing-the-cpu-version-from-source">
+<h2>Installing the CPU version from source<a class="headerlink" href="#installing-the-cpu-version-from-source" title="Link to this heading">#</a></h2>
 <section id="obtaining-the-source-code">
 <h3>Obtaining the source code<a class="headerlink" href="#obtaining-the-source-code" title="Link to this heading">#</a></h3>
-<p>The source code can be downloaded from the <a class="reference external" href="https://github.com/VeloxChem/VeloxChem">GitHub repository</a>:</p>
+<p>The source code of the CPU version can be downloaded from the <a class="reference external" href="https://github.com/VeloxChem/VeloxChem">GitHub repository</a>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/VeloxChem/VeloxChem.git
 </pre></div>
 </div>
@@ -505,6 +512,7 @@ document.write(`
 <li><p><a class="reference external" href="https://gitlab.com/libeigen/eigen">Eigen</a></p></li>
 <li><p><a class="reference external" href="https://libxc.gitlab.io/">Libxc</a></p></li>
 <li><p><a class="reference external" href="https://www.python.org/">Python</a> (&gt;=3.9) that includes the interpreter, the development header files, and the development libraries</p></li>
+<li><p><a class="reference external" href="https://numpy.org/">NumPy</a></p></li>
 <li><p><a class="reference external" href="https://mpi4py.readthedocs.io/en/stable/">MPI4Py</a></p></li>
 <li><p><a class="reference external" href="https://pybind11.readthedocs.io/en/stable/">pybind11</a></p></li>
 <li><p><a class="reference external" href="https://scikit-build.readthedocs.io/en/latest/">scikit-build</a></p></li>
@@ -590,7 +598,7 @@ $ export LD_LIBRARY_PATH=/path/to/your/libxc/lib:$LD_LIBRARY_PATH
 $ python3 -m pip install --no-build-isolation -v .
 </pre></div>
 </div>
-<p>If you are installing VeloxChem on an HPC cluster, please make sure to run the
+<p>If you are installing VeloxChem on an HPC cluster, make sure to run the
 above compilations on an interactive compute node.</p>
 </li>
 <li><p>CrayBLAS environment variables</p>
@@ -703,6 +711,126 @@ $ export OMP_STACKSIZE=256M
 </ul>
 </section>
 </section>
+<section id="installing-the-gpu-version-from-source">
+<h2>Installing the GPU version from source<a class="headerlink" href="#installing-the-gpu-version-from-source" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h3>Obtaining the source code<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>The source code of the GPU version can be downloaded from the <code class="docutils literal notranslate"><span class="pre">gpu</span></code> branch of the <a class="reference external" href="https://github.com/VeloxChem/VeloxChem">GitHub repository</a>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone -b gpu https://github.com/VeloxChem/VeloxChem.git
+$ cd VeloxChem
+$ export VLXHOME=$(pwd)
+</pre></div>
+</div>
+<p>Note: Not all features are available in the GPU version. At the moment SCF and linear response calculations can be done with the GPU version.</p>
+</section>
+<section id="id3">
+<h3>Build prerequisites<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>C++ compiler supporting the C++17 standard and OpenMP</p></li>
+<li><p><a class="reference external" href="https://libxc.gitlab.io/">Libxc</a></p></li>
+<li><p><a class="reference external" href="https://www.python.org/">Python</a> (&gt;=3.9) that includes the interpreter, the development header files, and the development libraries</p></li>
+<li><p><a class="reference external" href="https://numpy.org/">NumPy</a></p></li>
+<li><p><a class="reference external" href="https://mpi4py.readthedocs.io/en/stable/">MPI4Py</a></p></li>
+<li><p><a class="reference external" href="https://pybind11.readthedocs.io/en/stable/">pybind11</a></p></li>
+<li><p><a class="reference external" href="https://developer.nvidia.com/cuda-toolkit">CUDA</a> (&gt;=11.7) for Nvidia GPUs or <a class="reference external" href="https://www.amd.com/en/products/software/rocm.html">ROCm</a> (&gt;=5.7) for AMD GPUs</p></li>
+<li><p><a class="reference external" href="https://icl.utk.edu/magma/">MAGMA</a> (only needed when compiling for AMD GPUs)</p></li>
+</ul>
+</section>
+<section id="installing-for-nvidia-gpus">
+<h3>Installing for Nvidia GPUs<a class="headerlink" href="#installing-for-nvidia-gpus" title="Link to this heading">#</a></h3>
+<ul>
+<li><p>Create and activate a Python virtual environment.</p></li>
+<li><p>Install MPI4Py using the same compiler as for compiling VeloxChem.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ export CC=...
+$ export MPICC=...
+$ python3 -m pip install --no-deps --no-binary=mpi4py --no-cache-dir -v mpi4py
+</pre></div>
+</div>
+</li>
+<li><p>Install other Python packages</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python3 -m pip install h5py pybind11 pytest psutil
+</pre></div>
+</div>
+</li>
+<li><p>Install Libxc according to <a class="reference external" href="https://libxc.gitlab.io/">Libxc documentation</a>.</p></li>
+<li><p>Edit <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup</span></code> and update the following</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CUDA_LIB_DIR</span></code>: where <code class="docutils literal notranslate"><span class="pre">libcudart</span></code>, <code class="docutils literal notranslate"><span class="pre">libcublas</span></code> and <code class="docutils literal notranslate"><span class="pre">libcusolver</span></code> can be
+found. If these files are in different folders, you can manually add them in
+the <code class="docutils literal notranslate"><span class="pre">DEVICE_LIB</span></code> line.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">MPI_INC_DIR</span></code>: where the MPI header files can be found.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">LIBXC_HOME</span></code>: where Libxc is installed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CXX</span></code>: The MPI compiler wrapper for host C++ code.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DEVCC</span></code>: The CUDA compiler for device code. The compute capability is also specified in this line.</p></li>
+</ul>
+</li>
+<li><p>Compile VeloxChem and set environment variables. Set <code class="docutils literal notranslate"><span class="pre">OMP_NUM_THREADS</span></code> to the
+number of GPU devices per compute node. When running VeloxChem GPU version, use
+one MPI process per compute node.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cd $VLXHOME
+make -C src -j ...
+export PYTHONPATH=$VLXHOME/build/python:$PYTHONPATH
+export PATH=$VLXHOME/build/bin:$PATH
+export OMP_NUM_THREADS=...
+export OMP_PLACES=cores
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="installing-for-amd-gpus">
+<h3>Installing for AMD GPUs<a class="headerlink" href="#installing-for-amd-gpus" title="Link to this heading">#</a></h3>
+<ul>
+<li><p>OpenMP runtime consideration: If you use GNU compiler for host C++ code, make sure
+that it is only linked against LLVM OpenMP runtime library (<code class="docutils literal notranslate"><span class="pre">libomp</span></code>).</p></li>
+<li><p>Create and activate a Python virtual environment.</p></li>
+<li><p>Install MPI4Py using the same compiler as for compiling VeloxChem</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ export CC=...
+$ export MPICC=...
+$ python3 -m pip install --no-deps --no-binary=mpi4py --no-cache-dir -v mpi4py
+</pre></div>
+</div>
+<p>If you are using AMD GPUs on a Cray machine, our recommendation is to load
+the <code class="docutils literal notranslate"><span class="pre">PrgEnv-amd</span></code> module and set <code class="docutils literal notranslate"><span class="pre">MPICC</span></code> to e.g. <code class="docutils literal notranslate"><span class="pre">&quot;/opt/rocm/llvm/bin/clang</span> <span class="pre">$(cc</span> <span class="pre">--cray-print-opts=cflags)</span> <span class="pre">$(cc</span> <span class="pre">--cray-print-opts=libs)&quot;</span></code> when compiling
+<code class="docutils literal notranslate"><span class="pre">mpi4py</span></code>.</p>
+</li>
+<li><p>Make sure that NumPy uses <code class="docutils literal notranslate"><span class="pre">libomp</span></code>. You may need to compile NumPy from source
+using the same compiler as for compiling VeloxChem.</p></li>
+<li><p>Install other Python packages</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python3 -m pip install h5py pybind11 pytest psutil
+</pre></div>
+</div>
+</li>
+<li><p>Install Libxc according to <a class="reference external" href="https://libxc.gitlab.io/">Libxc documentation</a>.</p></li>
+<li><p>Install <a class="reference external" href="https://icl.utk.edu/magma/">MAGMA</a></p>
+<ul class="simple">
+<li><p>Use e.g. <code class="docutils literal notranslate"><span class="pre">make.inc-examples/make.inc.hip-gcc-openblas</span></code> as template for <code class="docutils literal notranslate"><span class="pre">make.inc</span></code></p></li>
+<li><p>Edit <code class="docutils literal notranslate"><span class="pre">OPENBLASDIR</span></code>, <code class="docutils literal notranslate"><span class="pre">HIPDIR</span></code>, <code class="docutils literal notranslate"><span class="pre">FORT</span></code> and <code class="docutils literal notranslate"><span class="pre">GPU_TARGET</span></code> in <code class="docutils literal notranslate"><span class="pre">make.inc</span></code></p></li>
+</ul>
+</li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">config/Makefile.setup.lumi</span></code> as template for <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup</span></code> and update the following in <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup</span></code></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">MAGMA_HOME</span></code>: where MAGMA is installed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">LIBXC_HOME</span></code>: where Libxc is installed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CXX</span></code>: The MPI compiler wrapper for host C++ code.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DEVCC</span></code>: The <code class="docutils literal notranslate"><span class="pre">hipcc</span></code> compiler for device code. The <code class="docutils literal notranslate"><span class="pre">--offload-arch</span></code> option is also specified in this line.</p></li>
+</ul>
+</li>
+<li><p>Compile VeloxChem and set environment variables. Set <code class="docutils literal notranslate"><span class="pre">OMP_NUM_THREADS</span></code> to the
+number of GPU devices per compute node. When running VeloxChem GPU version, use
+one MPI process per compute node.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd $VLXHOME
+$ make -C src -j ...
+$ export PYTHONPATH=$VLXHOME/build/python:$PYTHONPATH
+$ export PATH=$VLXHOME/build/bin:$PATH
+$ export OMP_NUM_THREADS=...
+$ export OMP_PLACES=cores
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -769,8 +897,8 @@ $ export OMP_STACKSIZE=256M
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-precompiled-binaries-using-conda">Installing precompiled binaries using conda</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-from-source">Installing from source</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-precompiled-binaries-cpu-version-using-conda">Installing precompiled binaries (CPU version) using conda</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-the-cpu-version-from-source">Installing the CPU version from source</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#obtaining-the-source-code">Obtaining the source code</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build-prerequisites">Build prerequisites</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-unix-like-systems-with-dependencies-from-conda-forge">Installing on Unix-like systems with dependencies from conda-forge</a></li>
@@ -779,6 +907,13 @@ $ export OMP_STACKSIZE=256M
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-powerlinux">Installing on PowerLinux</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-macos">Installing on macOS</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#external-dependencies">External dependencies</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-the-gpu-version-from-source">Installing the GPU version from source</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Obtaining the source code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Build prerequisites</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-for-nvidia-gpus">Installing for Nvidia GPUs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-for-amd-gpus">Installing for AMD GPUs</a></li>
 </ul>
 </li>
 </ul>
