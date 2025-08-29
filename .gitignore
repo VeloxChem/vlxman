@@ -1,4 +1,13 @@
 _build/
-docs/.ipynb_checkpoints/
-.ipynb_checkpoints/
-docs/*h5
+**/*h5
+**/*pot
+**/*log
+**/*pdb
+**/*top
+**/*xml
+**/*gro
+**/*itp
+**/*xyz
+**/.ipynb_checkpoints
+**/.DS_Store
+
