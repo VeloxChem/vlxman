@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -64,7 +64,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Optical activity and dichroism" href="opt_act.html" />
-    <link rel="prev" title="Environment" href="embedding.html" />
+    <link rel="prev" title="Potential energy surfaces" href="pes.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -156,8 +156,8 @@
       
     
     
-    <img src="../_static/vlx_logo.png" class="logo__image only-light" alt="VeloxChem program manual - Home"/>
-    <script>document.write(`<img src="../_static/vlx_logo.png" class="logo__image only-dark" alt="VeloxChem program manual - Home"/>`);</script>
+    <img src="../_static/vlx-logo-blacktext-halo.png" class="logo__image only-light" alt="VeloxChem program manual - Home"/>
+    <script>document.write(`<img src="../_static/vlx-logo-blacktext-halo.png" class="logo__image only-dark" alt="VeloxChem program manual - Home"/>`);</script>
   
   
 </a></div>
@@ -174,24 +174,17 @@
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Home
-                </a>
-            </li>
-        </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting started</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="limits.html">Pushing the limits</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installing the program</a></li>
-<li class="toctree-l1"><a class="reference internal" href="run_desktop.html">Running on a desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="run_desktop.html">Running on a laptop/desktop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="run_cluster.html">Running on a cluster</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keywords.html">Input file keywords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keywords.html">Input text file keywords</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Model chemistry</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="molecule.html">Molecule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="refstate.html">Reference states</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functionals.html">Exchange–correlation functionals</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basis_sets.html">Basis sets</a></li>
@@ -200,18 +193,32 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Properties</span></p>
 <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pes.html">Potential energy surfaces</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">UV/vis absorption/emission</a></li>
 <li class="toctree-l1"><a class="reference internal" href="opt_act.html">Optical activity and dichroism</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vib_spect.html">Vibrational spectroscopies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pes.html">Potential energy surfaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="magnetic.html">Magnetic resonances</a></li>
 <li class="toctree-l1"><a class="reference internal" href="linear-response.html">Linear response</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nlo.html">Multi-photon interactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xray.html">X-ray spectroscpies</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classical methods</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="mm.html">Molecular mechanics</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="md.html">Molecular dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conf_search.html">Conformational search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solvation.html">Solvation Builder</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="mof_builder.html">MOF Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loc_prop.html">Localized properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="im.html">Interpolation mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evb.html">Empirical valence bond</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Visualization</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="elec_dens.html">Electronic densities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vis.html">Jupyter notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viamd.html">VIAMD software</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced users</span></p>
 <ul class="nav bd-sidenav">
@@ -276,7 +283,7 @@
       
       
       
-      <li><a href="https://github.com/kthpanor/vlxman" target="_blank"
+      <li><a href="https://github.com/veloxchem/vlxman" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -293,7 +300,7 @@
       
       
       
-      <li><a href="https://github.com/kthpanor/vlxman/issues/new?title=Issue%20on%20page%20%2Fdocs/uv-vis.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/veloxchem/vlxman/issues/new?title=Issue%20on%20page%20%2Fdocs/uv-vis.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -431,12 +438,12 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="uv-vis-absorption-emission">
-<h1>UV/vis absorption/emission<a class="headerlink" href="#uv-vis-absorption-emission" title="Link to this heading">#</a></h1>
+<span id="sec-uv-vis"></span><h1>UV/vis absorption/emission<a class="headerlink" href="#uv-vis-absorption-emission" title="Link to this heading">#</a></h1>
 <section id="generalized-eigenvalue-equation">
 <h2>Generalized eigenvalue equation<a class="headerlink" href="#generalized-eigenvalue-equation" title="Link to this heading">#</a></h2>
-<p>The standard method to calculate UV/vis absorption and emission spectra is to solve the generalized eigenvalue equation <span id="id1">[<a class="reference internal" href="refs.html#id50" title="Patrick Norman, Kenneth Ruud, and Trond Saue. Principles and practices of molecular properties. John Wiley &amp; Sons, Ltd, Chichester, UK, 2018.">NRS18</a>]</span>.</p>
-<p>In the case of SCF theory, it is commonly referred to as the time-dependent density functional theory or Hartree–Fock (TDDFT or TDHF) approach. TDHF is also known as the Random Phase Approximation (RPA).</p>
-<p>If electron de-excitations are ignored in the formation of the electronic Hessian, then one arrives at the Tamm–<a class="reference external" href="https://en.wikipedia.org/wiki/Sidney_Dancoff">Dancoff</a> approximation and which can be invoked with a keyword in the input file.</p>
+<p>The standard method to calculate UV/vis absorption and emission spectra is to solve the generalized eigenvalue equation <span id="id1">[<a class="reference internal" href="refs.html#id56" title="Patrick Norman, Kenneth Ruud, and Trond Saue. Principles and practices of molecular properties. John Wiley &amp; Sons, Ltd, Chichester, UK, 2018.">NRS18</a>]</span>.</p>
+<p>In the case of SCF theory, it is commonly referred to as the time-dependent density functional theory or Hartree–Fock (TDDFT or TDHF) approach. TDHF is also known as the random phase approximation (RPA).</p>
+<p>If electron de-excitations are ignored in the formation of the electronic Hessian, then one arrives at the Tamm–Dancoff approximation and which can be invoked with a keyword in the input file.</p>
 <p>VeloxChem implements a reduced-space Davidson algorithm to solve the equation for the <em>N</em> lowest eigenvalues (bottom-up). Based on these eigenvalues, or transition frequencies, and the associated transition moments, the dimensionless <a class="reference external" href="https://en.wikipedia.org/wiki/Oscillator_strength#:~:text=In%20spectroscopy%2C%20oscillator%20strength%20is,of%20an%20atom%20or%20molecule.">oscillator strengths</a> are calculated according to</p>
 <div class="math notranslate nohighlight">
 \[
@@ -444,7 +451,7 @@ document.write(`
   \sum_{\alpha = x,y,z}
   |\langle 0 | \hat{\mu}_\alpha | n \rangle |^2
 \]</div>
-<p>With oscillator strengths and transition frequencies, the <a class="reference external" href="https://en.wikipedia.org/wiki/Absorption_cross_section">linear absorption cross section</a> can be determined from the expression <span id="id2">[<a class="reference internal" href="refs.html#id50" title="Patrick Norman, Kenneth Ruud, and Trond Saue. Principles and practices of molecular properties. John Wiley &amp; Sons, Ltd, Chichester, UK, 2018.">NRS18</a>]</span></p>
+<p>With oscillator strengths and transition frequencies, the <a class="reference external" href="https://en.wikipedia.org/wiki/Absorption_cross_section">linear absorption cross section</a> can be determined from the expression <span id="id2">[<a class="reference internal" href="refs.html#id56" title="Patrick Norman, Kenneth Ruud, and Trond Saue. Principles and practices of molecular properties. John Wiley &amp; Sons, Ltd, Chichester, UK, 2018.">NRS18</a>]</span></p>
 <div class="math notranslate nohighlight">
 \[
 \sigma(\omega) =
@@ -458,33 +465,59 @@ f_{n0}
 }
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(f\)</span> is the <a class="reference external" href="https://en.wikipedia.org/wiki/Cauchy_distribution">Cauchy distribution</a>.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>@jobs
-task: response
-@end
+<p><strong>Python script</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">veloxchem</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">vlx</span>
 
-@method settings
-xcfun: b3lyp
-basis: def2-svp
-@end
+<span class="n">xyz</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">...</span>
+<span class="s2">&quot;&quot;&quot;</span>
 
-@response
-property: absorption
-! tamm_dancoff: yes
-nstates: 3
-@end
+<span class="n">molecule</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">Molecule</span><span class="o">.</span><span class="n">read_xyz_string</span><span class="p">(</span><span class="n">xyz</span><span class="p">)</span>
+<span class="n">basis</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">MolecularBasis</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="s1">&#39;def2-svp&#39;</span><span class="p">)</span>
 
-@molecule
-charge: 0
-multiplicity: 1
-xyz:  
-...
-@end
+<span class="n">scf_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">ScfRestrictedDriver</span><span class="p">()</span>
+<span class="n">scf_drv</span><span class="o">.</span><span class="n">xcfun</span> <span class="o">=</span> <span class="s1">&#39;cam-b3lyp&#39;</span>
+<span class="n">scf_drv</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;mol-uv-vis&#39;</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">scf_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">)</span>
+
+<span class="n">rsp_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">lreigensolver</span><span class="o">.</span><span class="n">LinearResponseEigenSolver</span><span class="p">()</span>
+<span class="n">rsp_drv</span><span class="o">.</span><span class="n">nstates</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">rsp_drv</span><span class="o">.</span><span class="n">nto</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">rsp_results</span> <span class="o">=</span> <span class="n">rsp_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">,</span> <span class="n">results</span><span class="p">)</span>
+
 </pre></div>
 </div>
+<p>Download a <a class="reference download internal" download="" href="../_downloads/43306c2fc4ddde33a61370ad058311a6/tq-uv-vis.py"><code class="xref download docutils literal notranslate"><span class="pre">Python</span> <span class="pre">script</span></code></a> type of input file to calculate the absorption of the ten lowest singlet excited states of the thiophene-quinoxaline molecule at the CAM-B3LYP/def2-svp level of theory.</p>
+<p><strong>Text file</strong></p>
+<p>Please refer to the <a class="reference internal" href="keywords.html#sec-uv-vis-keywords"><span class="std std-ref">keyword list</span></a> for a complete set of options. Note that natural transition orbitals NTO can be saved using the <code class="docutils literal notranslate"><span class="pre">nto</span></code> keyword. By specifying the <code class="docutils literal notranslate"><span class="pre">absorption</span></code> property, both UV/vis and ECD spectra will be calculated.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@jobs</span>
+<span class="n">task</span><span class="p">:</span> <span class="n">response</span>
+<span class="nd">@end</span>
+
+<span class="nd">@method</span> <span class="n">settings</span>
+<span class="n">xcfun</span><span class="p">:</span> <span class="n">cam</span><span class="o">-</span><span class="n">b3lyp</span>
+<span class="n">basis</span><span class="p">:</span> <span class="n">def2</span><span class="o">-</span><span class="n">svp</span>
+<span class="nd">@end</span>
+
+<span class="nd">@response</span>
+<span class="nb">property</span><span class="p">:</span> <span class="n">absorption</span>
+<span class="n">nstates</span><span class="p">:</span> <span class="mi">10</span>
+<span class="n">nto</span><span class="p">:</span> <span class="n">yes</span>
+<span class="nd">@end</span>
+
+<span class="nd">@molecule</span>
+<span class="n">charge</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">multiplicity</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">xyz</span><span class="p">:</span>  
+<span class="o">...</span>
+<span class="nd">@end</span>
+</pre></div>
+</div>
+<p>Download a <a class="reference download internal" download="" href="../_downloads/75f0d61a020451d0ba3cd085de5eae1a/tq-uv-vis.inp"><code class="xref download docutils literal notranslate"><span class="pre">text</span> <span class="pre">file</span></code></a> type of input file to calculate the absorption of the ten lowest singlet excited states of the thiophene-quinoxaline molecule at the CAM-B3LYP/def2-svp level of theory.</p>
 </section>
 <section id="complex-polarization-propagator-approach">
 <h2>Complex polarization propagator approach<a class="headerlink" href="#complex-polarization-propagator-approach" title="Link to this heading">#</a></h2>
-<p>The linear absorption cross section can be determined directly from the imaginary part of the <a class="reference external" href="https://en.wikipedia.org/wiki/Polarizability">polarizability</a> <span id="id3">[<a class="reference internal" href="refs.html#id50" title="Patrick Norman, Kenneth Ruud, and Trond Saue. Principles and practices of molecular properties. John Wiley &amp; Sons, Ltd, Chichester, UK, 2018.">NRS18</a>]</span></p>
+<p>The linear absorption cross section can be determined directly from the imaginary part of the <a class="reference external" href="https://en.wikipedia.org/wiki/Polarizability">polarizability</a> <span id="id3">[<a class="reference internal" href="refs.html#id56" title="Patrick Norman, Kenneth Ruud, and Trond Saue. Principles and practices of molecular properties. John Wiley &amp; Sons, Ltd, Chichester, UK, 2018.">NRS18</a>]</span></p>
 <div class="math notranslate nohighlight">
 \[
 \sigma(\omega) =
@@ -515,6 +548,33 @@ xyz:
 <p>The polarizability is complex and calculated with a damping term, <span class="math notranslate nohighlight">\(\hbar \gamma\)</span>, associated with the inverse finite lifetime of the excited states. The default program setting for this parameter is 0.124 eV (or 0.004556 a.u.).</p>
 <p>The resulting values for <span class="math notranslate nohighlight">\(\sigma(\omega)\)</span> are presented in atomic units and can be converted to the SI unit of m<span class="math notranslate nohighlight">\(^2\)</span> by multiplying with a factor of <span class="math notranslate nohighlight">\(a_0^2\)</span>.</p>
 <p>The arbitrary frequency region is specified in the input file together with a requested frequency resolution.</p>
+<p><strong>Python script</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">veloxchem</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">vlx</span>
+
+<span class="n">xyz</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">...</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">molecule</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">Molecule</span><span class="o">.</span><span class="n">read_xyz_string</span><span class="p">(</span><span class="n">xyz</span><span class="p">)</span>
+<span class="n">basis</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">MolecularBasis</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="s1">&#39;def2-svp&#39;</span><span class="p">)</span>
+
+<span class="n">scf_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">ScfRestrictedDriver</span><span class="p">()</span>
+<span class="n">scf_drv</span><span class="o">.</span><span class="n">xcfun</span> <span class="o">=</span> <span class="s1">&#39;cam-b3lyp&#39;</span>
+<span class="n">scf_drv</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;mol-cpp&#39;</span>
+<span class="n">scf_results</span> <span class="o">=</span> <span class="n">scf_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">)</span>
+
+<span class="n">cpp_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">ComplexResponse</span><span class="p">()</span>
+<span class="n">cpp_drv</span><span class="o">.</span><span class="n">frequencies</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.0025</span><span class="p">)</span>
+<span class="n">cpp_drv</span><span class="o">.</span><span class="n">damping</span> <span class="o">=</span> <span class="mf">0.0045563</span>
+<span class="n">cpp_drv</span><span class="o">.</span><span class="n">cpp_flag</span> <span class="o">=</span> <span class="s2">&quot;absorption&quot;</span>
+<span class="n">cpp_drv</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;mol-cpp&#39;</span>
+
+<span class="n">cpp_results</span> <span class="o">=</span> <span class="n">cpp_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">,</span> <span class="n">scf_results</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Download a <a class="reference download internal" download="" href="../_downloads/9e57d62076ce72456695396a4ae7ade3/tq-cpp.py"><code class="xref download docutils literal notranslate"><span class="pre">Python</span> <span class="pre">script</span></code></a> type of input file to calculate the absorption spectrum with CPP of the thiophene-quinoxaline molecule at the CAM-B3LYP/def2-svp level of theory.</p>
+<p><strong>Text file</strong></p>
+<p>Please refer to the <a class="reference internal" href="keywords.html#sec-cpp-keywords"><span class="std std-ref">keyword list</span></a> for a complete set of options.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>@jobs
 task: response
 @end
@@ -527,7 +587,7 @@ basis: def2-svp
 @response
 property: absorption (cpp)
 ! frequency region (and resolution)
-frequencies: 0.0-0.15 (0.0025)
+frequencies: 0.10-0.25 (0.0025)
 damping: 0.0045563  ! this is the default value
 @end
 
@@ -539,6 +599,7 @@ xyz:
 @end 
 </pre></div>
 </div>
+<p>Download a <a class="reference download internal" download="" href="../_downloads/fd2c8d517c718be8a9c6a32ae2e3ed3c/tq-cpp.inp"><code class="xref download docutils literal notranslate"><span class="pre">text</span> <span class="pre">file]</span></code></a> type of input file to calculate the absorption spectrum with CPP of the thiophene-quinoxaline molecule at the CAM-B3LYP/def2-svp level of theory.</p>
 </section>
 </section>
 
@@ -573,12 +634,12 @@ xyz:
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="embedding.html"
+       href="pes.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Environment</p>
+        <p class="prev-next-title">Potential energy surfaces</p>
       </div>
     </a>
     <a class="right-next"
@@ -632,7 +693,7 @@ By The VeloxChem team
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>

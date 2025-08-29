@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -62,7 +62,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Source code structure" href="source_struct.html" />
-    <link rel="prev" title="Electronic densities" href="elec_dens.html" />
+    <link rel="prev" title="VIAMD software" href="viamd.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -154,8 +154,8 @@
       
     
     
-    <img src="../_static/vlx_logo.png" class="logo__image only-light" alt="VeloxChem program manual - Home"/>
-    <script>document.write(`<img src="../_static/vlx_logo.png" class="logo__image only-dark" alt="VeloxChem program manual - Home"/>`);</script>
+    <img src="../_static/vlx-logo-blacktext-halo.png" class="logo__image only-light" alt="VeloxChem program manual - Home"/>
+    <script>document.write(`<img src="../_static/vlx-logo-blacktext-halo.png" class="logo__image only-dark" alt="VeloxChem program manual - Home"/>`);</script>
   
   
 </a></div>
@@ -172,24 +172,17 @@
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Home
-                </a>
-            </li>
-        </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting started</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="limits.html">Pushing the limits</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installing the program</a></li>
-<li class="toctree-l1"><a class="reference internal" href="run_desktop.html">Running on a desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="run_desktop.html">Running on a laptop/desktop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="run_cluster.html">Running on a cluster</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keywords.html">Input file keywords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keywords.html">Input text file keywords</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Model chemistry</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="molecule.html">Molecule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="refstate.html">Reference states</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functionals.html">Exchange–correlation functionals</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basis_sets.html">Basis sets</a></li>
@@ -198,18 +191,32 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Properties</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pes.html">Potential energy surfaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="uv-vis.html">UV/vis absorption/emission</a></li>
 <li class="toctree-l1"><a class="reference internal" href="opt_act.html">Optical activity and dichroism</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vib_spect.html">Vibrational spectroscopies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pes.html">Potential energy surfaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="magnetic.html">Magnetic resonances</a></li>
 <li class="toctree-l1"><a class="reference internal" href="linear-response.html">Linear response</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nlo.html">Multi-photon interactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xray.html">X-ray spectroscpies</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classical methods</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="mm.html">Molecular mechanics</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="md.html">Molecular dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conf_search.html">Conformational search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solvation.html">Solvation Builder</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="mof_builder.html">MOF Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loc_prop.html">Localized properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="im.html">Interpolation mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evb.html">Empirical valence bond</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Visualization</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="elec_dens.html">Electronic densities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vis.html">Jupyter notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viamd.html">VIAMD software</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced users</span></p>
 <ul class="current nav bd-sidenav">
@@ -274,7 +281,7 @@
       
       
       
-      <li><a href="https://github.com/kthpanor/vlxman" target="_blank"
+      <li><a href="https://github.com/veloxchem/vlxman" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -291,7 +298,7 @@
       
       
       
-      <li><a href="https://github.com/kthpanor/vlxman/issues/new?title=Issue%20on%20page%20%2Fdocs/program_struct.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/veloxchem/vlxman/issues/new?title=Issue%20on%20page%20%2Fdocs/program_struct.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -543,6 +550,7 @@ PACKAGE CONTENTS
     mmforcefieldgenerator
     mmgradientdriver
     mofbuilder
+    mofmdprepare
     mofoptimizer
     mofpreparer
     mofutils
@@ -566,6 +574,7 @@ PACKAGE CONTENTS
     polarizabilitygradient
     polorbitalresponse
     profiler
+    pubchemfetcher
     pulsedrsp
     quadraticresponsedriver
     reactionmatcher
@@ -580,6 +589,7 @@ PACKAGE CONTENTS
     rsppolarizability
     rspproperty
     rspshg
+    rspthreepatransition
     rsptpa
     rsptpatransition
     sadguessdriver
@@ -592,6 +602,8 @@ PACKAGE CONTENTS
     scfunrestdriver
     seminario
     shgdriver
+    smddriver
+    smdsolventproperties
     solvationbuilder
     solvationfepdriver
     subcommunicators
@@ -604,15 +616,18 @@ PACKAGE CONTENTS
     tddftorbitalresponse
     tdhfhessiandriver
     threepatransitiondriver
+    tmparameters
     tpadriver
     tpafulldriver
     tpareddriver
     tpatransitiondriver
     trajectorydriver
+    tsguesser
     uffparameters
     veloxchemlib
     vibrationalanalysis
     visualizationdriver
+    waterparameters
     xtbdriver
     xtbgradientdriver
     xtbhessiandriver
@@ -782,13 +797,13 @@ FUNCTIONS
         Gets convertion factor for rotatory strength (a.u. -&gt; 10^-40 cgs).
 
 DATA
-    __deployed__ = {&#39;author&#39;: &#39;Xin Li&#39;, &#39;build&#39;: &#39;195&#39;, &#39;commit&#39;: &#39;645f537...
+    __deployed__ = {&#39;author&#39;: &#39;Xin Li&#39;, &#39;build&#39;: &#39;206&#39;, &#39;commit&#39;: &#39;c4f628a...
 
 VERSION
-    1.0rc3
+    1.0rc4
 
 FILE
-    /Users/lixin/miniforge3/envs/vlxman2/lib/python3.12/site-packages/veloxchem/__init__.py
+    /home/xinli/miniforge3/envs/vlxman/lib/python3.12/site-packages/veloxchem/__init__.py
 </pre></div>
 </div>
 </div>
@@ -828,6 +843,7 @@ FILE
  &#39;EvbDriver&#39;,
  &#39;EvbFepDriver&#39;,
  &#39;EvbForceFieldBuilder&#39;,
+ &#39;EvbForceGroup&#39;,
  &#39;EvbReporter&#39;,
  &#39;EvbSystemBuilder&#39;,
  &#39;ExcitedStateAnalysisDriver&#39;,
@@ -926,6 +942,7 @@ FILE
  &#39;TpaFullDriver&#39;,
  &#39;TpaReducedDriver&#39;,
  &#39;TpaTransitionDriver&#39;,
+ &#39;TransitionStateGuesser&#39;,
  &#39;TwoCenterElectronRepulsionDriver&#39;,
  &#39;TwoCenterElectronRepulsionGeom100Driver&#39;,
  &#39;VibrationalAnalysis&#39;,
@@ -1028,6 +1045,7 @@ FILE
  &#39;mmforcefieldgenerator&#39;,
  &#39;mmgradientdriver&#39;,
  &#39;mofbuilder&#39;,
+ &#39;mofmdprepare&#39;,
  &#39;mofoptimizer&#39;,
  &#39;mofpreparer&#39;,
  &#39;mofutils&#39;,
@@ -1056,9 +1074,12 @@ FILE
  &#39;polorbitalresponse&#39;,
  &#39;print_features&#39;,
  &#39;profiler&#39;,
+ &#39;pubchemfetcher&#39;,
  &#39;quadraticresponsedriver&#39;,
  &#39;reactionmatcher&#39;,
+ &#39;read_results&#39;,
  &#39;respchargesdriver&#39;,
+ &#39;rifockdriver&#39;,
  &#39;rotatory_strength_in_cgs&#39;,
  &#39;rspabsorption&#39;,
  &#39;rspc6&#39;,
@@ -1092,14 +1113,17 @@ FILE
  &#39;tddftorbitalresponse&#39;,
  &#39;tdhfhessiandriver&#39;,
  &#39;threepatransitiondriver&#39;,
+ &#39;tmparameters&#39;,
  &#39;tpadriver&#39;,
  &#39;tpafulldriver&#39;,
  &#39;tpareddriver&#39;,
  &#39;tpatransitiondriver&#39;,
+ &#39;tsguesser&#39;,
  &#39;uffparameters&#39;,
  &#39;veloxchemlib&#39;,
  &#39;vibrationalanalysis&#39;,
  &#39;visualizationdriver&#39;,
+ &#39;waterparameters&#39;,
  &#39;xtbdriver&#39;,
  &#39;xtbgradientdriver&#39;,
  &#39;xtbhessiandriver&#39;]
@@ -1220,6 +1244,7 @@ FILE
  &#39;print_keywords&#39;,
  &#39;rank&#39;,
  &#39;scf_energy&#39;,
+ &#39;scf_results&#39;,
  &#39;scf_tensors&#39;,
  &#39;scf_type&#39;,
  &#39;set_start_orbitals&#39;,
@@ -1264,12 +1289,12 @@ FILE
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="elec_dens.html"
+       href="viamd.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Electronic densities</p>
+        <p class="prev-next-title">VIAMD software</p>
       </div>
     </a>
     <a class="right-next"
@@ -1323,7 +1348,7 @@ By The VeloxChem team
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>

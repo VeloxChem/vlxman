@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -57,13 +57,11 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/embedding';</script>
     <link rel="icon" href="../_static/vlx_logo_mark.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="UV/vis absorption/emission" href="uv-vis.html" />
+    <link rel="next" title="Potential energy surfaces" href="pes.html" />
     <link rel="prev" title="Hamiltonian" href="hamiltonian.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -156,8 +154,8 @@
       
     
     
-    <img src="../_static/vlx_logo.png" class="logo__image only-light" alt="VeloxChem program manual - Home"/>
-    <script>document.write(`<img src="../_static/vlx_logo.png" class="logo__image only-dark" alt="VeloxChem program manual - Home"/>`);</script>
+    <img src="../_static/vlx-logo-blacktext-halo.png" class="logo__image only-light" alt="VeloxChem program manual - Home"/>
+    <script>document.write(`<img src="../_static/vlx-logo-blacktext-halo.png" class="logo__image only-dark" alt="VeloxChem program manual - Home"/>`);</script>
   
   
 </a></div>
@@ -174,24 +172,17 @@
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Home
-                </a>
-            </li>
-        </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting started</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="limits.html">Pushing the limits</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installing the program</a></li>
-<li class="toctree-l1"><a class="reference internal" href="run_desktop.html">Running on a desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="run_desktop.html">Running on a laptop/desktop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="run_cluster.html">Running on a cluster</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keywords.html">Input file keywords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keywords.html">Input text file keywords</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Model chemistry</span></p>
 <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="molecule.html">Molecule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="refstate.html">Reference states</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functionals.html">Exchange–correlation functionals</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basis_sets.html">Basis sets</a></li>
@@ -200,18 +191,32 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Properties</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pes.html">Potential energy surfaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="uv-vis.html">UV/vis absorption/emission</a></li>
 <li class="toctree-l1"><a class="reference internal" href="opt_act.html">Optical activity and dichroism</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vib_spect.html">Vibrational spectroscopies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pes.html">Potential energy surfaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="magnetic.html">Magnetic resonances</a></li>
 <li class="toctree-l1"><a class="reference internal" href="linear-response.html">Linear response</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nlo.html">Multi-photon interactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xray.html">X-ray spectroscpies</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classical methods</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="mm.html">Molecular mechanics</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="md.html">Molecular dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conf_search.html">Conformational search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solvation.html">Solvation Builder</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="mof_builder.html">MOF Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loc_prop.html">Localized properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="im.html">Interpolation mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evb.html">Empirical valence bond</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Visualization</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="elec_dens.html">Electronic densities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vis.html">Jupyter notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viamd.html">VIAMD software</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced users</span></p>
 <ul class="nav bd-sidenav">
@@ -276,7 +281,7 @@
       
       
       
-      <li><a href="https://github.com/kthpanor/vlxman" target="_blank"
+      <li><a href="https://github.com/veloxchem/vlxman" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -293,7 +298,7 @@
       
       
       
-      <li><a href="https://github.com/kthpanor/vlxman/issues/new?title=Issue%20on%20page%20%2Fdocs/embedding.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/veloxchem/vlxman/issues/new?title=Issue%20on%20page%20%2Fdocs/embedding.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -417,12 +422,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#localized-properties">Localized properties</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esp-charges">ESP charges</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resp-charges">RESP charges</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loprop-charges-and-polarizabilities">LoProp charges and polarizabilities</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cpcm">CPCM</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#polarizable-embedding">Polarizable embedding</a></li>
 </ul>
             </nav>
@@ -437,189 +437,54 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="environment">
 <h1>Environment<a class="headerlink" href="#environment" title="Link to this heading">#</a></h1>
-<section id="localized-properties">
-<h2>Localized properties<a class="headerlink" href="#localized-properties" title="Link to this heading">#</a></h2>
-<section id="esp-charges">
-<h3>ESP charges<a class="headerlink" href="#esp-charges" title="Link to this heading">#</a></h3>
-<p>Since there is no unique definition for partial charges and no corresponding physical observable, they can be assigned in several ways, such as being derived from the quantum mechanical electrostatic potential</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{equation*}
-V(\boldsymbol{r}) = 
-\sum_{I}
-\frac{Z_I e}{4\pi\varepsilon_0 |\boldsymbol{r}-\mathrm{\textbf{R}}_I|} - e
-\sum_{\mu,\nu}
-D_{\mu\nu}
-\int 
-\frac{
-\phi_\mu^*(\boldsymbol{r}')\phi_\nu(\boldsymbol{r}')
-}{
-4\pi\varepsilon_0
-|\boldsymbol{r}-\boldsymbol{r}'|
-}
-d^3\boldsymbol{r}'
-\end{equation*}\]</div>
-<p>that can be replaced with a potential caused by the partial charges:</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{equation*}
-\widetilde{V}(\boldsymbol{r}) = 
-\sum_{I}
-\frac{
-q_I
-}{
-4\pi\varepsilon_0
-|\boldsymbol{r}-\textbf{R}_I|
-}
-\end{equation*}\]</div>
-<p>The Merz–Kollman scheme minimizes the squared norm difference between these two quantities evaluated on a set of grid points in the solvent-accessible region of the molecule with respect to variations in the partial charges and a constraint of a conservation of the total molecular charge – the grid points are distributed on successive layers of scaled van der Waals surfaces. This measure is referred to as the figure-of-merit</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{equation*}
-\chi_{\mathrm{esp}}^2 = \sum_a \bigl(V(\boldsymbol{r}_a) - \widetilde{V}(\boldsymbol{r}_a)\bigl)^2
-\end{equation*}\]</div>
-<p>The resulting electrostatic potential (ESP) charges are obtained by solving the equation</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{equation*}
-\mathrm{\textbf{A}} \, \mathrm{\textbf{q}} = \mathrm{\textbf{b}}
-\end{equation*}\]</div>
-<p>where</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{equation*}
-A_{JI} =
-\frac{1}{4\pi\varepsilon_0}
-\sum_{a} \frac{1}{r_{aI}r_{aJ}}
-\end{equation*}\]</div>
-<p>and</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{equation*}
-b_J = \sum_{a} \frac{V_a}{r_{aJ}}
-\end{equation*}\]</div>
-<p>The ESP charges are detemined with VeloxChem with use of an input file as below</p>
+<section id="cpcm">
+<span id="sec-cpcm"></span><h2>CPCM<a class="headerlink" href="#cpcm" title="Link to this heading">#</a></h2>
+<p>The conductor-like polarizable continuum model (CPCM) is implemented in VeloxChem for implicit solvation <span id="id1">[<a class="reference internal" href="refs.html#id2" title="Jacopo Tomasi, Benedetta Mennucci, and Roberto Cammi. Quantum Mechanical Continuum Solvation Models. Chem. Rev., 105(8):2999–3094, August 2005. URL: https://pubs.acs.org/doi/10.1021/cr9904009 (visited on 2025-06-01), doi:10.1021/cr9904009.">TMC05</a>]</span>.</p>
+<p>A separation is made between equilibrium and non-equilibrium solvation. In the former case, the timescale is such that both nuclear and electronic relaxations take place in the environment, such as in molecular structure optimizations. In the latter case, only electrons are fully equilibrated with the time-dependent solute charge density, such as in UV/vis spectrum simulations.</p>
+<p><strong>Python script</strong></p>
+<p><em>Change to examples of structure optimization and UV/vis spectrum and show both types of solvation.</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">veloxchem</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">vlx</span>
+
+<span class="n">xyz_string</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">...</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">molecule</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">Molecule</span><span class="o">.</span><span class="n">read_xyz_string</span><span class="p">(</span><span class="n">xyz_string</span><span class="p">)</span>
+<span class="n">basis</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">MolecularBasis</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="s1">&#39;def2-svp&#39;</span><span class="p">)</span>
+
+<span class="n">scf_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">ScfRestrictedDriver</span><span class="p">()</span>
+<span class="n">scf_drv</span><span class="o">.</span><span class="n">solvation_model</span> <span class="o">=</span> <span class="s1">&#39;cpcm&#39;</span>
+<span class="n">scf_drv</span><span class="o">.</span><span class="n">cpcm_epsilon</span> <span class="o">=</span> <span class="mf">78.39</span>  <span class="c1"># water</span>
+<span class="n">scf_drv</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;mol-cpcm&#39;</span>
+
+<span class="n">scf_results</span> <span class="o">=</span> <span class="n">scf_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">mol</span><span class="p">,</span> <span class="n">basis</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Download a <a class="reference download internal" download="" href="../_downloads/99a8e94741e0402c80a36d3075eae412/ethanol-cpcm.py"><code class="xref download docutils literal notranslate"><span class="pre">Python</span> <span class="pre">script</span></code></a> type of input file to perform an SCF calculation for ethanol in a water environment.</p>
+<p><strong>Text file</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@jobs</span>
-<span class="n">task</span><span class="p">:</span> <span class="n">esp</span> <span class="n">charges</span>
+<span class="n">task</span><span class="p">:</span> <span class="n">scf</span>
 <span class="nd">@end</span>
 
 <span class="nd">@method</span> <span class="n">settings</span>
-<span class="n">basis</span><span class="p">:</span> <span class="mi">6</span><span class="o">-</span><span class="mi">31</span><span class="n">g</span>
-<span class="nd">@end</span>
-
-<span class="nd">@esp</span> <span class="n">charges</span>
-<span class="n">number</span> <span class="n">layers</span><span class="p">:</span> <span class="mi">5</span>
-<span class="n">density</span><span class="p">:</span> <span class="mf">10.0</span>
+<span class="n">basis</span><span class="p">:</span> <span class="n">def2</span><span class="o">-</span><span class="n">svp</span>
+<span class="n">xcfun</span><span class="p">:</span> <span class="n">b3lyp</span>
+<span class="n">solvation</span> <span class="n">model</span><span class="p">:</span> <span class="n">cpcm</span>
+<span class="n">cpcm</span> <span class="n">epsilon</span> <span class="p">:</span> <span class="mf">78.39</span>
 <span class="nd">@end</span>
 
 <span class="nd">@molecule</span>
 <span class="n">charge</span><span class="p">:</span> <span class="mi">0</span>
 <span class="n">multiplicity</span><span class="p">:</span> <span class="mi">1</span>
-<span class="n">xyz</span><span class="p">:</span>  
+<span class="n">xyz</span><span class="p">:</span>
 <span class="o">...</span>
 <span class="nd">@end</span>
 </pre></div>
 </div>
-<p>or in a Jupyter notebook according to</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">veloxchem</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">vlx</span>
-
-<span class="n">xyz_str</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">...</span>
-<span class="s2">&quot;&quot;&quot;</span>
-
-<span class="n">molecule</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">Molecule</span><span class="o">.</span><span class="n">read_xyz_string</span><span class="p">(</span><span class="n">xyz_str</span><span class="p">)</span>
-<span class="n">basis</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">MolecularBasis</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="s1">&#39;6-31g&#39;</span><span class="p">)</span>
-
-<span class="n">esp_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">RespChargesDriver</span><span class="p">()</span>
-<span class="n">esp_drv</span><span class="o">.</span><span class="n">update_settings</span><span class="p">({</span>
-    <span class="s1">&#39;number_layers&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
-    <span class="s1">&#39;density&#39;</span><span class="p">:</span> <span class="mf">10.0</span><span class="p">,</span>
-<span class="p">})</span>
-<span class="n">esp_charges</span> <span class="o">=</span> <span class="n">esp_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">,</span> <span class="s1">&#39;esp&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>In both cases, the user needs to specify the number of layers of the molecular surface as well as the surface grid point density in these layers (in units of Å<span class="math notranslate nohighlight">\(^{-2}\)</span>).</p>
-</section>
-<section id="resp-charges">
-<h3>RESP charges<a class="headerlink" href="#resp-charges" title="Link to this heading">#</a></h3>
-<p>The restrained electrostatic potential (RESP) charge model is an improvement to the Merz–Kollman scheme as the figure-of-merit is rather insensitive to variations in charges of atoms buried inside the molecule.</p>
-<figure class="align-center" id="chi-square">
-<a class="reference internal image-reference" href="../_images/chi_square.png"><img alt="../_images/chi_square.png" src="../_images/chi_square.png" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Dependence of figure-of-merit, <span class="math notranslate nohighlight">\(\chi^2_\mathrm{esp}\)</span>, with respect to variations in atomic charges. Four separate atoms are here considered.</span><a class="headerlink" href="#chi-square" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p>To avoid unphysically high magnitudes of the charges of interior atoms, a hyperbolic penalty function is added</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{equation*}
-\chi_{\mathrm{rstr}}^2 = \alpha \sum_I \bigl((q_I^2+\beta^2)^{1/2}-\beta\bigl)
-\end{equation*}\]</div>
-<p>so that the diagonal matrix elements become equal to</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{equation*}
-A_{JJ} = 
-\frac{1}{4\pi\varepsilon_0}
-\sum_{a} \frac{1}{r_{aJ}^2} + \alpha \, (q_J^2+\beta^2)^{-1/2}
-\end{equation*}\]</div>
-<p>with a dependency on the partial charge. Consequently, RESP charges are obtained by solving the matrix equation iteratively until the charges and Lagrange multipliers become self-consistent. In addition to that, the RESP charge model allows for the introduction of constraints on charges of equivalent atoms due to symmetry operations or bond rotations.</p>
-<p>The RESP cahrges are detemined with VeloxChem with use of an input file as below</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>@jobs
-task: resp charges
-@end
-
-@method settings
-basis: 6-31g*
-@end
-
-@resp charges
-equal charges: 2 = 3    ! with reference to the atom ordering below
-@end
-
-@molecule
-charge: 0
-multiplicity: 1
-xyz:  
-...
-@end 
-</pre></div>
-</div>
-<p>or in a Jupyter notebook according to</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">veloxchem</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">vlx</span>
-
-<span class="n">xyz_str</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">...</span>
-<span class="s2">&quot;&quot;&quot;</span>
-
-<span class="n">molecule</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">Molecule</span><span class="o">.</span><span class="n">read_xyz_string</span><span class="p">(</span><span class="n">xyz_str</span><span class="p">)</span>
-<span class="n">basis</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">MolecularBasis</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="s1">&#39;6-31g*&#39;</span><span class="p">)</span>
-
-<span class="n">resp_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">RespChargesDriver</span><span class="p">()</span>
-<span class="n">resp_drv</span><span class="o">.</span><span class="n">update_settings</span><span class="p">({</span>
-    <span class="s1">&#39;equal_charges&#39;</span><span class="p">:</span> <span class="s1">&#39;2 = 3&#39;</span>
-<span class="p">})</span>
-<span class="n">resp_charges</span> <span class="o">=</span> <span class="n">resp_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">,</span> <span class="s1">&#39;resp&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</section>
-<section id="loprop-charges-and-polarizabilities">
-<h3>LoProp charges and polarizabilities<a class="headerlink" href="#loprop-charges-and-polarizabilities" title="Link to this heading">#</a></h3>
-<p>The LoProp approach <span id="id1">[<a class="reference internal" href="refs.html#id2" title="Laura Gagliardi, Roland Lindh, and Gunnar Karlström. Local properties of quantum chemical systems: The LoProp approach. J. Chem. Phys., 121(10):4494–4500, 2004. doi:10.1063/1.1778131.">GLKarlstrom04</a>]</span> is implemented for the determination of localized (atomic) charges and polarizabilities that enter into polarizable embedding calculations of optical spectra.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>@jobs
-task: loprop
-@end
-
-@method settings
-xcfun: b3lyp
-basis: ANO-S-VDZP ! An ANO type of basis set should be used
-@end
-
-@molecule
-charge: 0
-multiplicity: 1
-xyz:
-...
-@end
-</pre></div>
-</div>
-</section>
+<p>Download a <a class="reference download internal" download="" href="../_downloads/990b75b18105493248d2273fb9e7434e/ethanol-cpcm.inp"><code class="xref download docutils literal notranslate"><span class="pre">text</span> <span class="pre">format</span></code></a> type of input file to perform an SCF calculation for ethanol in a water environment.</p>
 </section>
 <section id="polarizable-embedding">
-<h2>Polarizable embedding<a class="headerlink" href="#polarizable-embedding" title="Link to this heading">#</a></h2>
+<span id="sec-pe"></span><h2>Polarizable embedding<a class="headerlink" href="#polarizable-embedding" title="Link to this heading">#</a></h2>
 <p>An SCF calculation with a polarizable environment is performed in VeloxChem with an input file of the form</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@jobs</span>
 <span class="n">task</span><span class="p">:</span> <span class="n">scf</span>
@@ -638,7 +503,7 @@ xyz:
 <span class="nd">@end</span>
 </pre></div>
 </div>
-<p>together with a potential file <code class="docutils literal notranslate"><span class="pre">pe.pot</span></code> of the form</p>
+<p>together with a potential file <code class="docutils literal notranslate"><span class="pre">pe.pot</span></code> using, in this case, isotropic LoProp polarizabilities.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@environment</span>
 <span class="n">units</span><span class="p">:</span> <span class="n">angstrom</span>
 <span class="n">xyz</span><span class="p">:</span>
@@ -706,11 +571,11 @@ xyz:
       </div>
     </a>
     <a class="right-next"
-       href="uv-vis.html"
+       href="pes.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">UV/vis absorption/emission</p>
+        <p class="prev-next-title">Potential energy surfaces</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -730,12 +595,7 @@ xyz:
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#localized-properties">Localized properties</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esp-charges">ESP charges</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resp-charges">RESP charges</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loprop-charges-and-polarizabilities">LoProp charges and polarizabilities</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cpcm">CPCM</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#polarizable-embedding">Polarizable embedding</a></li>
 </ul>
   </nav></div>
@@ -761,7 +621,7 @@ By The VeloxChem team
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>

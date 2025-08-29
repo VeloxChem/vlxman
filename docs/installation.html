@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -61,7 +61,7 @@
     <link rel="icon" href="../_static/vlx_logo_mark.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Running on a desktop" href="run_desktop.html" />
+    <link rel="next" title="Running on a laptop/desktop" href="run_desktop.html" />
     <link rel="prev" title="Pushing the limits" href="limits.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -154,8 +154,8 @@
       
     
     
-    <img src="../_static/vlx_logo.png" class="logo__image only-light" alt="VeloxChem program manual - Home"/>
-    <script>document.write(`<img src="../_static/vlx_logo.png" class="logo__image only-dark" alt="VeloxChem program manual - Home"/>`);</script>
+    <img src="../_static/vlx-logo-blacktext-halo.png" class="logo__image only-light" alt="VeloxChem program manual - Home"/>
+    <script>document.write(`<img src="../_static/vlx-logo-blacktext-halo.png" class="logo__image only-dark" alt="VeloxChem program manual - Home"/>`);</script>
   
   
 </a></div>
@@ -172,24 +172,17 @@
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Home
-                </a>
-            </li>
-        </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting started</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="limits.html">Pushing the limits</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Installing the program</a></li>
-<li class="toctree-l1"><a class="reference internal" href="run_desktop.html">Running on a desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="run_desktop.html">Running on a laptop/desktop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="run_cluster.html">Running on a cluster</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keywords.html">Input file keywords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keywords.html">Input text file keywords</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Model chemistry</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="molecule.html">Molecule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="refstate.html">Reference states</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functionals.html">Exchange–correlation functionals</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basis_sets.html">Basis sets</a></li>
@@ -198,18 +191,32 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Properties</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pes.html">Potential energy surfaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="uv-vis.html">UV/vis absorption/emission</a></li>
 <li class="toctree-l1"><a class="reference internal" href="opt_act.html">Optical activity and dichroism</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vib_spect.html">Vibrational spectroscopies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pes.html">Potential energy surfaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="magnetic.html">Magnetic resonances</a></li>
 <li class="toctree-l1"><a class="reference internal" href="linear-response.html">Linear response</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nlo.html">Multi-photon interactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xray.html">X-ray spectroscpies</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classical methods</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="mm.html">Molecular mechanics</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="md.html">Molecular dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conf_search.html">Conformational search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solvation.html">Solvation Builder</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="mof_builder.html">MOF Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loc_prop.html">Localized properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="im.html">Interpolation mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evb.html">Empirical valence bond</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Visualization</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="elec_dens.html">Electronic densities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vis.html">Jupyter notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viamd.html">VIAMD software</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced users</span></p>
 <ul class="nav bd-sidenav">
@@ -274,7 +281,7 @@
       
       
       
-      <li><a href="https://github.com/kthpanor/vlxman" target="_blank"
+      <li><a href="https://github.com/veloxchem/vlxman" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -291,7 +298,7 @@
       
       
       
-      <li><a href="https://github.com/kthpanor/vlxman/issues/new?title=Issue%20on%20page%20%2Fdocs/installation.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/veloxchem/vlxman/issues/new?title=Issue%20on%20page%20%2Fdocs/installation.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -419,15 +426,12 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-from-source">Installing from source</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#obtaining-the-source-code">Obtaining the source code</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build-prerequisites">Build prerequisites</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-unix-like-systems-using-conda">Installing on Unix-like systems using conda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-unix-like-systems-with-dependencies-from-conda-forge">Installing on Unix-like systems with dependencies from conda-forge</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-cray-system">Installing on Cray system</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-ubuntu">Installing on Ubuntu</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-powerlinux">Installing on PowerLinux</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-macos">Installing on macOS</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#external-dependencies">External dependencies</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-dftd4-python-package-for-dispersion-correction">The dftd4-python package for dispersion correction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#external-dependencies">External dependencies</a></li>
 </ul>
 </li>
 </ul>
@@ -461,6 +465,10 @@ document.write(`
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda create -n vlxenv veloxchem matplotlib jupyterlab -c veloxchem -c conda-forge
 </pre></div>
 </div>
+<div class="tip admonition">
+<p class="admonition-title">Considerations for NumPy performance</p>
+<p>On Linux, we recommend installing <code class="docutils literal notranslate"><span class="pre">veloxchem</span></code> alongside <code class="docutils literal notranslate"><span class="pre">libopenblas</span></code> to ensure that <code class="docutils literal notranslate"><span class="pre">numpy</span></code> uses a high-performance backend for linear algebra operations.</p>
+</div>
 <p>You can list your conda environments</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda env list
 </pre></div>
@@ -493,24 +501,23 @@ document.write(`
 <h3>Build prerequisites<a class="headerlink" href="#build-prerequisites" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://cmake.org/">CMake</a></p></li>
-<li><p>C++ compiler fully compliant with the C++20 standard</p></li>
-<li><p>Linear algebra libraries implementing the BLAS and LAPACK interfaces (e.g. OpenBLAS)</p></li>
-<li><p>MPI library (e.g. MPICH)</p></li>
+<li><p>C++ compiler supporting the C++20 standard and OpenMP</p></li>
+<li><p><a class="reference external" href="https://gitlab.com/libeigen/eigen">Eigen</a></p></li>
+<li><p><a class="reference external" href="https://libxc.gitlab.io/">Libxc</a></p></li>
 <li><p><a class="reference external" href="https://www.python.org/">Python</a> (&gt;=3.9) that includes the interpreter, the development header files, and the development libraries</p></li>
 <li><p><a class="reference external" href="https://mpi4py.readthedocs.io/en/stable/">MPI4Py</a></p></li>
-<li><p><a class="reference external" href="https://scikit-build.readthedocs.io/en/latest/">Scikit-build</a></p></li>
-<li><p><a class="reference external" href="https://libxc.gitlab.io/">Libxc</a></p></li>
-<li><p><a class="reference external" href="https://gitlab.com/libeigen/eigen">Eigen</a></p></li>
+<li><p><a class="reference external" href="https://pybind11.readthedocs.io/en/stable/">pybind11</a></p></li>
+<li><p><a class="reference external" href="https://scikit-build.readthedocs.io/en/latest/">scikit-build</a></p></li>
 </ul>
 <p>Optional, add-on dependencies:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/dftd4/dftd4">dftd4-python</a></p></li>
+<li><p><a class="reference external" href="https://dftd4.readthedocs.io/en/latest/">dftd4-python</a></p></li>
 </ul>
 <p>See <a class="reference internal" href="#external-dependencies"><span class="std std-ref">External dependencies</span></a> for instructions on how to get these add-ons.</p>
 <p>To avoid clashes between dependencies, we recommend to always use a <a class="reference external" href="https://docs.python.org/3/tutorial/venv.html">virtual enviroment</a>.</p>
 </section>
-<section id="installing-on-unix-like-systems-using-conda">
-<span id="with-conda"></span><h3>Installing on Unix-like systems using conda<a class="headerlink" href="#installing-on-unix-like-systems-using-conda" title="Link to this heading">#</a></h3>
+<section id="installing-on-unix-like-systems-with-dependencies-from-conda-forge">
+<span id="with-conda"></span><h3>Installing on Unix-like systems with dependencies from conda-forge<a class="headerlink" href="#installing-on-unix-like-systems-with-dependencies-from-conda-forge" title="Link to this heading">#</a></h3>
 <p><a class="reference external" href="https://docs.conda.io/en/latest/">Conda</a> and the software packaged on the <a class="reference external" href="https://conda-forge.org/">conda-forge</a> channel provide build isolation and greatly simplify the installation of VeloxChem.</p>
 <ul>
 <li><p>Move to the folder containing the source code:</p>
@@ -519,22 +526,17 @@ document.write(`
 </div>
 </li>
 <li><p>Create and activate the conda environment:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda env create -f &lt;environment_file&gt;
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda env create -f vlx_env.yml
 $ conda activate vlxenv
 </pre></div>
 </div>
-<p>This will create and activate a conda environment named <code class="docutils literal notranslate"><span class="pre">vlxenv</span></code>. In this environment all the build dependencies will be installed from the conda-forge channel, including the C++ compiler, MPI, <a class="reference external" href="https://numpy.org">NumPy</a>, <a class="reference external" href="https://mpi4py.readthedocs.io/en/stable/">MPI4Py</a>, etc. We provide two options for the <code class="docutils literal notranslate"><span class="pre">&lt;environment_file&gt;</span></code> that specifies different linear algebra backend for your conda environment:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">mkl_env.yml</span></code> which installs the Intel Math Kernel Library,</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">openblas_env.yml</span></code> which installs the OpenBLAS library.</p></li>
-</ul>
-<p>Note that the MPICH library will be installed by the .yml file. If you prefer another MPI library such as Open MPI, you can edit the .yml file and replace mpich by openmpi. Read more about the .yml file in <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually">this page</a>.</p>
+<p>This will create and activate a conda environment named <code class="docutils literal notranslate"><span class="pre">vlxenv</span></code>. In this environment all the build dependencies will be installed from the conda-forge channel, including the C++ compiler, MPI, <a class="reference external" href="https://numpy.org">NumPy</a>, <a class="reference external" href="https://mpi4py.readthedocs.io/en/stable/">MPI4Py</a>, etc.</p>
+<p>Note that the MPICH library will be installed by the <code class="docutils literal notranslate"><span class="pre">vlx_env.yml</span></code> file. If you prefer another MPI library such as Open MPI, you can edit the .yml file and replace mpich by openmpi. Read more about the .yml file in <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually">this page</a>.</p>
 </li>
 <li><p>Set scikit-build and cmake options:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ export SKBUILD_CONFIGURE_OPTIONS=&quot;-DVLX_LA_VENDOR=&lt;math_library&gt; -DCMAKE_CXX_COMPILER=mpicxx&quot;
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ export SKBUILD_CONFIGURE_OPTIONS=&quot;-DCMAKE_CXX_COMPILER=mpicxx&quot;
 </pre></div>
 </div>
-<p>where <code class="docutils literal notranslate"><span class="pre">&lt;math_library&gt;</span></code> can be <code class="docutils literal notranslate"><span class="pre">MKL</span></code> or <code class="docutils literal notranslate"><span class="pre">OpenBLAS</span></code>.</p>
 <p>If you are installing VeloxChem on macOS you may also need to set the
 <code class="docutils literal notranslate"><span class="pre">CMAKE_ARGS</span></code> environment variable. See <a class="reference internal" href="#known-issues-macos"><span class="std std-ref">Known issues</span></a> for
 details.</p>
@@ -574,34 +576,22 @@ $ python3 -m pip install h5py pytest psutil geometric cmake pybind11-global scik
 </pre></div>
 </div>
 </li>
-<li><p>Clone <a class="reference external" href="https://gitlab.com/libeigen/eigen">Eigen</a> and set environment variable <code class="docutils literal notranslate"><span class="pre">EIGEN_INCLUDE_DIR</span></code></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone -b 3.4.0 https://gitlab.com/libeigen/eigen.git
-$ export EIGEN_INCLUDE_DIR=/path/to/your/eigen
-</pre></div>
-</div>
-</li>
-<li><p>Install <a class="reference external" href="https://libxc.gitlab.io/">Libxc</a></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd libxc-7.0.0
-$ mkdir build &amp;&amp; cd build
-$ cmake -DDISABLE_KXC=OFF -DDISABLE_LXC=OFF -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX:PATH=/path/to/your/libxc ..
-$ make &amp;&amp; make test
-$ make install
-$ cd ../..
-</pre></div>
-</div>
-<p>Note that compiling Libxc with <code class="docutils literal notranslate"><span class="pre">-DDISABLE_KXC=OFF</span> <span class="pre">-DDISABLE_LXC=OFF</span></code> takes a
-long time. If you do not need the third- and fourth-order derivatives you can
-remove them to speed up the compilation.</p>
+<li><p>Clone <a class="reference external" href="https://gitlab.com/libeigen/eigen">Eigen</a>.</p></li>
+<li><p>Install Libxc according to <a class="reference external" href="https://libxc.gitlab.io/">Libxc documentation</a>.</p>
+<p>If you need to run nonlinear response or TDDFT gradient using VeloxChem, add
+cmake options <code class="docutils literal notranslate"><span class="pre">-DDISABLE_KXC=OFF</span> <span class="pre">-DDISABLE_LXC=OFF</span></code> when installing Libxc.</p>
 </li>
 <li><p>Compile VeloxChem</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd VeloxChem
-$ export SKBUILD_CONFIGURE_OPTIONS=&quot;-DVLX_LA_VENDOR=Cray -DCMAKE_CXX_COMPILER=CC&quot;
+$ export EIGEN_INCLUDE_DIR=/path/to/your/eigen
+$ export SKBUILD_CONFIGURE_OPTIONS=&quot;-DCMAKE_CXX_COMPILER=CC&quot;
 $ export CMAKE_PREFIX_PATH=/path/to/your/libxc:$CMAKE_PREFIX_PATH
+$ export LD_LIBRARY_PATH=/path/to/your/libxc/lib:$LD_LIBRARY_PATH
 $ python3 -m pip install --no-build-isolation -v .
 </pre></div>
 </div>
-<p>If you are installing VeloxChem on a HPC cluster, please make sure to run the
-above compilations on an interactive node.</p>
+<p>If you are installing VeloxChem on an HPC cluster, please make sure to run the
+above compilations on an interactive compute node.</p>
 </li>
 <li><p>CrayBLAS environment variables</p>
 <p>When running VeloxChem on Cray systems, we recommend setting the following environment
@@ -624,32 +614,23 @@ $ sudo apt install libopenblas-openmp-dev liblapacke-dev libeigen3-dev mpich
 </pre></div>
 </div>
 </li>
-<li><p>Install <a class="reference external" href="https://libxc.gitlab.io/">Libxc</a></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd libxc-7.0.0
-$ mkdir build &amp;&amp; cd build
-$ cmake -DDISABLE_KXC=OFF -DDISABLE_LXC=OFF -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX:PATH=/path/to/your/libxc ..
-$ make &amp;&amp; make test
-$ make install
-$ cd ../..
-</pre></div>
-</div>
-<p>Note that compiling Libxc with <code class="docutils literal notranslate"><span class="pre">-DDISABLE_KXC=OFF</span> <span class="pre">-DDISABLE_LXC=OFF</span></code> takes a
-long time. If you do not need the third- and fourth-order derivatives you can
-remove them to speed up the compilation.</p>
+<li><p>Install Libxc according to <a class="reference external" href="https://libxc.gitlab.io/">Libxc documentation</a>.</p>
+<p>If you need to run nonlinear response or TDDFT gradient using VeloxChem, add
+cmake options <code class="docutils literal notranslate"><span class="pre">-DDISABLE_KXC=OFF</span> <span class="pre">-DDISABLE_LXC=OFF</span></code> when installing Libxc.</p>
 </li>
 <li><p>Create and activate a <a class="reference external" href="https://docs.python.org/3/tutorial/venv.html">virtual enviroment</a></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python3 -m venv vlxenv
 $ source vlxenv/bin/activate
 $ python3 -m pip install --upgrade pip setuptools wheel
-$ python3 -m pip install numpy mpi4py h5py
-$ python3 -m pip install cmake pybind11-global scikit-build
+$ python3 -m pip install numpy mpi4py h5py cmake pybind11-global scikit-build
 </pre></div>
 </div>
 </li>
 <li><p>Install VeloxChem:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd VeloxChem
-$ export SKBUILD_CONFIGURE_OPTIONS=&quot;-DVLX_LA_VENDOR=OpenBLAS -DCMAKE_CXX_COMPILER=mpicxx&quot;
+$ export SKBUILD_CONFIGURE_OPTIONS=&quot;-DCMAKE_CXX_COMPILER=mpicxx&quot;
 $ export CMAKE_PREFIX_PATH=/path/to/your/libxc:$CMAKE_PREFIX_PATH
+$ export LD_LIBRARY_PATH=/path/to/your/libxc/lib:$LD_LIBRARY_PATH
 $ python3 -m pip install --no-build-isolation -v .
 </pre></div>
 </div>
@@ -659,13 +640,13 @@ $ python3 -m pip install --no-build-isolation -v .
 <section id="installing-on-powerlinux">
 <h3>Installing on PowerLinux<a class="headerlink" href="#installing-on-powerlinux" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>See installation instructions <a class="reference internal" href="#with-conda"><span class="std std-ref">using conda</span></a></p></li>
+<li><p>See <a class="reference internal" href="#with-conda"><span class="std std-ref">Installing on Unix-like systems with dependencies from conda-forge</span></a></p></li>
 </ul>
 </section>
 <section id="installing-on-macos">
 <h3>Installing on macOS<a class="headerlink" href="#installing-on-macos" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>See installation instructions <a class="reference internal" href="#with-conda"><span class="std std-ref">using conda</span></a></p></li>
+<li><p>See <a class="reference internal" href="#with-conda"><span class="std std-ref">Installing on Unix-like systems with dependencies from conda-forge</span></a></p></li>
 </ul>
 <ul id="known-issues-macos">
 <li><p>Known issues</p>
@@ -696,33 +677,30 @@ $ python3 -m pip install --no-build-isolation .
 </li>
 </ul>
 </section>
-</section>
 <section id="external-dependencies">
-<span id="id1"></span><h2>External dependencies<a class="headerlink" href="#external-dependencies" title="Link to this heading">#</a></h2>
-<p>If you wish to use functionality offered through interfaces with other software packages, you will first need to install them.  Currently, interface to add-on dependency <a class="reference external" href="https://github.com/dftd4/dftd4">dftd4-python</a> is available.</p>
-<section id="the-dftd4-python-package-for-dispersion-correction">
-<h3>The dftd4-python package for dispersion correction<a class="headerlink" href="#the-dftd4-python-package-for-dispersion-correction" title="Link to this heading">#</a></h3>
+<span id="id1"></span><h3>External dependencies<a class="headerlink" href="#external-dependencies" title="Link to this heading">#</a></h3>
+<ul>
+<li><p><a class="reference external" href="https://dftd4.readthedocs.io/en/latest/">dftd4-python</a></p>
 <p>It is recommended to install the dftd4-python package in a conda environment:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda install dftd4-python -c conda-forge
 </pre></div>
 </div>
-<p>Alternatively, you can compile it using <code class="docutils literal notranslate"><span class="pre">meson</span></code>:</p>
+<p>Alternatively, you can compile it using <code class="docutils literal notranslate"><span class="pre">meson</span></code>. If you want to use custom
+math library, add <code class="docutils literal notranslate"><span class="pre">-Dlapack=custom</span></code> and <code class="docutils literal notranslate"><span class="pre">-Dcustom_libraries=...</span></code> to the
+<code class="docutils literal notranslate"><span class="pre">meson</span> <span class="pre">setup</span></code> command.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python3 -m pip install meson ninja cffi
 $ cd dftd4-3.7.0/
 $ meson setup _build -Dpython=true -Dpython_version=$(which python3)
 $ meson test -C _build --print-errorlogs
 $ meson configure _build --prefix=/path/to/your/dftd4
 $ meson install -C _build
+$ export PYTHONPATH=$PYTHONPATH:/path/to/your/dftd4/lib/python.../site-packages
+$ export LD_LIBRARY_PATH=/path/to/your/dftd4/lib64:$LD_LIBRARY_PATH
+$ export OMP_STACKSIZE=256M
 </pre></div>
 </div>
-<p>If you want to use custom math library, add <code class="docutils literal notranslate"><span class="pre">-Dlapack=custom</span></code> and
-<code class="docutils literal notranslate"><span class="pre">-Dcustom_libraries=...</span></code> to the <code class="docutils literal notranslate"><span class="pre">meson</span> <span class="pre">setup</span></code> command.</p>
-<p>After installation, add the dftd4 package to <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code>.  Make sure to
-replace “python3.11” with the version of Python used in your virtual
-environment.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ export PYTHONPATH=$PYTHONPATH:/path/to/your/dftd4/lib/python3.11/site-packages
-</pre></div>
-</div>
+</li>
+</ul>
 </section>
 </section>
 </section>
@@ -771,7 +749,7 @@ environment.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Running on a desktop</p>
+        <p class="prev-next-title">Running on a laptop/desktop</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -795,15 +773,12 @@ environment.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-from-source">Installing from source</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#obtaining-the-source-code">Obtaining the source code</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build-prerequisites">Build prerequisites</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-unix-like-systems-using-conda">Installing on Unix-like systems using conda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-unix-like-systems-with-dependencies-from-conda-forge">Installing on Unix-like systems with dependencies from conda-forge</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-cray-system">Installing on Cray system</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-ubuntu">Installing on Ubuntu</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-powerlinux">Installing on PowerLinux</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-on-macos">Installing on macOS</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#external-dependencies">External dependencies</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-dftd4-python-package-for-dispersion-correction">The dftd4-python package for dispersion correction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#external-dependencies">External dependencies</a></li>
 </ul>
 </li>
 </ul>
@@ -830,7 +805,7 @@ By The VeloxChem team
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>

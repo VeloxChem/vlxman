@@ -1,195 +1,48 @@
 # Environment
 
-## Localized properties
+(sec:cpcm)=
+## CPCM
 
-### ESP charges
+The conductor-like polarizable continuum model (CPCM) is implemented in VeloxChem for implicit solvation {cite}`Tomasi2005`.
 
-Since there is no unique definition for partial charges and no corresponding physical observable, they can be assigned in several ways, such as being derived from the quantum mechanical electrostatic potential
+A separation is made between equilibrium and non-equilibrium solvation. In the former case, the timescale is such that both nuclear and electronic relaxations take place in the environment, such as in molecular structure optimizations. In the latter case, only electrons are fully equilibrated with the time-dependent solute charge density, such as in UV/vis spectrum simulations. 
 
-\begin{equation*}
-V(\boldsymbol{r}) = 
-\sum_{I}
-\frac{Z_I e}{4\pi\varepsilon_0 |\boldsymbol{r}-\mathrm{\textbf{R}}_I|} - e
-\sum_{\mu,\nu}
-D_{\mu\nu}
-\int 
-\frac{
-\phi_\mu^*(\boldsymbol{r}')\phi_\nu(\boldsymbol{r}')
-}{
-4\pi\varepsilon_0
-|\boldsymbol{r}-\boldsymbol{r}'|
-}
-d^3\boldsymbol{r}'
-\end{equation*}
+**Python script**
 
-that can be replaced with a potential caused by the partial charges:
-
-\begin{equation*}
-\widetilde{V}(\boldsymbol{r}) = 
-\sum_{I}
-\frac{
-q_I
-}{
-4\pi\varepsilon_0
-|\boldsymbol{r}-\textbf{R}_I|
-}
-\end{equation*}
-
-The Merz–Kollman scheme minimizes the squared norm difference between these two quantities evaluated on a set of grid points in the solvent-accessible region of the molecule with respect to variations in the partial charges and a constraint of a conservation of the total molecular charge – the grid points are distributed on successive layers of scaled van der Waals surfaces. This measure is referred to as the figure-of-merit
-
-\begin{equation*}
-\chi_{\mathrm{esp}}^2 = \sum_a \bigl(V(\boldsymbol{r}_a) - \widetilde{V}(\boldsymbol{r}_a)\bigl)^2
-\end{equation*}
-
-The resulting electrostatic potential (ESP) charges are obtained by solving the equation
-
-\begin{equation*}
-\mathrm{\textbf{A}} \, \mathrm{\textbf{q}} = \mathrm{\textbf{b}}
-\end{equation*}
-
-where
-
-\begin{equation*}
-A_{JI} =
-\frac{1}{4\pi\varepsilon_0}
-\sum_{a} \frac{1}{r_{aI}r_{aJ}}
-\end{equation*}
-
-and
-
-\begin{equation*}
-b_J = \sum_{a} \frac{V_a}{r_{aJ}}
-\end{equation*}
-
-The ESP charges are detemined with VeloxChem with use of an input file as below
-
-```
-@jobs
-task: esp charges
-@end
-
-@method settings
-basis: 6-31g
-@end
-
-@esp charges
-number layers: 5
-density: 10.0
-@end
-
-@molecule
-charge: 0
-multiplicity: 1
-xyz:  
-...
-@end
-```
-
-or in a Jupyter notebook according to
+*Change to examples of structure optimization and UV/vis spectrum and show both types of solvation.*
 
 ```
 import veloxchem as vlx
 
-xyz_str = """
+xyz_string = """
 ...
 """
 
-molecule = vlx.Molecule.read_xyz_string(xyz_str)
-basis = vlx.MolecularBasis.read(molecule, '6-31g')
+molecule = vlx.Molecule.read_xyz_string(xyz_string)
+basis = vlx.MolecularBasis.read(molecule, 'def2-svp')
 
-esp_drv = vlx.RespChargesDriver()
-esp_drv.update_settings({
-    'number_layers': 5,
-    'density': 10.0,
-})
-esp_charges = esp_drv.compute(molecule, basis, 'esp')
+scf_drv = vlx.ScfRestrictedDriver()
+scf_drv.solvation_model = 'cpcm'
+scf_drv.cpcm_epsilon = 78.39  # water
+scf_drv.filename = 'mol-cpcm'
+
+scf_results = scf_drv.compute(mol, basis)
 ```
 
-In both cases, the user needs to specify the number of layers of the molecular surface as well as the surface grid point density in these layers (in units of Å$^{-2}$).
+Download a {download}`Python script <../input_files/ethanol-cpcm.py>` type of input file to perform an SCF calculation for ethanol in a water environment.
 
-### RESP charges
-
-The restrained electrostatic potential (RESP) charge model is an improvement to the Merz–Kollman scheme as the figure-of-merit is rather insensitive to variations in charges of atoms buried inside the molecule.
-
-```{figure} ../images/chi_square.png
----
-name: chi_square
-width: 600px
-align: center
----
-Dependence of figure-of-merit, $\chi^2_\mathrm{esp}$, with respect to variations in atomic charges. Four separate atoms are here considered.
-```
-
-To avoid unphysically high magnitudes of the charges of interior atoms, a hyperbolic penalty function is added
-
-\begin{equation*}
-\chi_{\mathrm{rstr}}^2 = \alpha \sum_I \bigl((q_I^2+\beta^2)^{1/2}-\beta\bigl)
-\end{equation*}
-
-so that the diagonal matrix elements become equal to
-
-\begin{equation*}
-A_{JJ} = 
-\frac{1}{4\pi\varepsilon_0}
-\sum_{a} \frac{1}{r_{aJ}^2} + \alpha \, (q_J^2+\beta^2)^{-1/2}
-\end{equation*}
-
-with a dependency on the partial charge. Consequently, RESP charges are obtained by solving the matrix equation iteratively until the charges and Lagrange multipliers become self-consistent. In addition to that, the RESP charge model allows for the introduction of constraints on charges of equivalent atoms due to symmetry operations or bond rotations.
-
-The RESP cahrges are detemined with VeloxChem with use of an input file as below
+**Text file**
 
 ```
 @jobs
-task: resp charges
+task: scf
 @end
 
 @method settings
-basis: 6-31g*
-@end
-
-@resp charges
-equal charges: 2 = 3    ! with reference to the atom ordering below
-@end
-
-@molecule
-charge: 0
-multiplicity: 1
-xyz:  
-...
-@end 
-```
-
-or in a Jupyter notebook according to
-
-```
-import veloxchem as vlx
-
-xyz_str = """
-...
-"""
-
-molecule = vlx.Molecule.read_xyz_string(xyz_str)
-basis = vlx.MolecularBasis.read(molecule, '6-31g*')
-
-resp_drv = vlx.RespChargesDriver()
-resp_drv.update_settings({
-    'equal_charges': '2 = 3'
-})
-resp_charges = resp_drv.compute(molecule, basis, 'resp')
-```
-
-### LoProp charges and polarizabilities
-
-The LoProp approach {cite}`Gagliardi2004` is implemented for the determination of localized (atomic) charges and polarizabilities that enter into polarizable embedding calculations of optical spectra.
-
-````
-@jobs
-task: loprop
-@end
-
-@method settings
+basis: def2-svp
 xcfun: b3lyp
-basis: ANO-S-VDZP ! An ANO type of basis set should be used
+solvation model: cpcm
+cpcm epsilon : 78.39
 @end
 
 @molecule
@@ -198,8 +51,11 @@ multiplicity: 1
 xyz:
 ...
 @end
-````
+```
 
+Download a {download}`text format <../input_files/ethanol-cpcm.inp>` type of input file to perform an SCF calculation for ethanol in a water environment.
+
+(sec:pe)=
 ## Polarizable embedding
 
 An SCF calculation with a polarizable environment is performed in VeloxChem with an input file of the form
@@ -222,7 +78,7 @@ xyz:
 @end
 ```
 
-together with a potential file `pe.pot` of the form
+together with a potential file `pe.pot` using, in this case, isotropic LoProp polarizabilities.
 
 ```
 @environment

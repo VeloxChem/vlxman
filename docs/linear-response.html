@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -156,8 +156,8 @@
       
     
     
-    <img src="../_static/vlx_logo.png" class="logo__image only-light" alt="VeloxChem program manual - Home"/>
-    <script>document.write(`<img src="../_static/vlx_logo.png" class="logo__image only-dark" alt="VeloxChem program manual - Home"/>`);</script>
+    <img src="../_static/vlx-logo-blacktext-halo.png" class="logo__image only-light" alt="VeloxChem program manual - Home"/>
+    <script>document.write(`<img src="../_static/vlx-logo-blacktext-halo.png" class="logo__image only-dark" alt="VeloxChem program manual - Home"/>`);</script>
   
   
 </a></div>
@@ -174,24 +174,17 @@
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Home
-                </a>
-            </li>
-        </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting started</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="limits.html">Pushing the limits</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installing the program</a></li>
-<li class="toctree-l1"><a class="reference internal" href="run_desktop.html">Running on a desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="run_desktop.html">Running on a laptop/desktop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="run_cluster.html">Running on a cluster</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keywords.html">Input file keywords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keywords.html">Input text file keywords</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Model chemistry</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="molecule.html">Molecule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="refstate.html">Reference states</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functionals.html">Exchange–correlation functionals</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basis_sets.html">Basis sets</a></li>
@@ -200,18 +193,32 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Properties</span></p>
 <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pes.html">Potential energy surfaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="uv-vis.html">UV/vis absorption/emission</a></li>
 <li class="toctree-l1"><a class="reference internal" href="opt_act.html">Optical activity and dichroism</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vib_spect.html">Vibrational spectroscopies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pes.html">Potential energy surfaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="magnetic.html">Magnetic resonances</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Linear response</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nlo.html">Multi-photon interactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xray.html">X-ray spectroscpies</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classical methods</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="mm.html">Molecular mechanics</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="md.html">Molecular dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conf_search.html">Conformational search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solvation.html">Solvation Builder</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="mof_builder.html">MOF Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loc_prop.html">Localized properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="im.html">Interpolation mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evb.html">Empirical valence bond</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Visualization</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="elec_dens.html">Electronic densities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vis.html">Jupyter notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viamd.html">VIAMD software</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced users</span></p>
 <ul class="nav bd-sidenav">
@@ -276,7 +283,7 @@
       
       
       
-      <li><a href="https://github.com/kthpanor/vlxman" target="_blank"
+      <li><a href="https://github.com/veloxchem/vlxman" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -293,7 +300,7 @@
       
       
       
-      <li><a href="https://github.com/kthpanor/vlxman/issues/new?title=Issue%20on%20page%20%2Fdocs/linear-response.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/veloxchem/vlxman/issues/new?title=Issue%20on%20page%20%2Fdocs/linear-response.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -435,8 +442,8 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="linear-response">
 <h1>Linear response<a class="headerlink" href="#linear-response" title="Link to this heading">#</a></h1>
 <section id="polarizability">
-<h2>Polarizability<a class="headerlink" href="#polarizability" title="Link to this heading">#</a></h2>
-<p>The linear electric-dipole polarizabilty is determined from the linear response function <span id="id1">[<a class="reference internal" href="refs.html#id50" title="Patrick Norman, Kenneth Ruud, and Trond Saue. Principles and practices of molecular properties. John Wiley &amp; Sons, Ltd, Chichester, UK, 2018.">NRS18</a>]</span></p>
+<span id="sec-alpha"></span><h2>Polarizability<a class="headerlink" href="#polarizability" title="Link to this heading">#</a></h2>
+<p>The linear electric-dipole polarizabilty is determined from the linear response function <span id="id1">[<a class="reference internal" href="refs.html#id56" title="Patrick Norman, Kenneth Ruud, and Trond Saue. Principles and practices of molecular properties. John Wiley &amp; Sons, Ltd, Chichester, UK, 2018.">NRS18</a>]</span></p>
 <div class="math notranslate nohighlight">
 \[
 \alpha_{\alpha\beta}(\omega) =
@@ -468,46 +475,57 @@ document.write(`
 </div>
 </section>
 <section id="general-linear-response-functions">
-<h2>General linear response functions<a class="headerlink" href="#general-linear-response-functions" title="Link to this heading">#</a></h2>
+<span id="sec-cpp-lrf"></span><h2>General linear response functions<a class="headerlink" href="#general-linear-response-functions" title="Link to this heading">#</a></h2>
 <p>A general linear response function</p>
 <div class="math notranslate nohighlight">
 \[
 \langle\langle \hat{\Omega}; \hat{V} 
 \rangle \rangle_\omega^\gamma
 \]</div>
-<p>can be requested, referring to the linear response of the molecular property associated with <span class="math notranslate nohighlight">\(\hat{\Omega}\)</span> due to the perturbation associated with <span class="math notranslate nohighlight">\(\hat{V}\)</span> and oscillating with the angular frequency <span class="math notranslate nohighlight">\(\omega\)</span>. The damping term <span class="math notranslate nohighlight">\(\gamma\)</span> is associated with the inverse lifetime and enters into the calculation only if a complex response function is requested by setting <code class="docutils literal notranslate"><span class="pre">complex</span></code> to <code class="docutils literal notranslate"><span class="pre">yes</span></code>.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@jobs</span>
-<span class="n">task</span><span class="p">:</span> <span class="n">response</span>
-<span class="nd">@end</span>
+<p>can be requested, referring to the linear response of the molecular property associated with <span class="math notranslate nohighlight">\(\hat{\Omega}\)</span> due to the perturbation associated with <span class="math notranslate nohighlight">\(\hat{V}\)</span> and oscillating with the angular frequency <span class="math notranslate nohighlight">\(\omega\)</span>. The damping term <span class="math notranslate nohighlight">\(\gamma\)</span> is associated with the inverse lifetime of the excited states.</p>
+<p><strong>Python script</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">veloxchem</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">vlx</span>
 
-<span class="nd">@method</span> <span class="n">settings</span>
-<span class="n">basis</span><span class="p">:</span> <span class="n">def2</span><span class="o">-</span><span class="n">svpd</span>
-<span class="n">xcfun</span><span class="p">:</span> <span class="n">b3lyp</span>
-<span class="nd">@end</span>
+<span class="n">molecule</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">Molecule</span><span class="o">.</span><span class="n">read_xyz_string</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;4</span>
+<span class="s2">Hydrogen peroxide</span>
+<span class="s2">O  -0.65564532 -0.06106286 -0.03621403</span>
+<span class="s2">O   0.65564532  0.06106286 -0.03621403</span>
+<span class="s2">H  -0.97628735  0.65082652  0.57474201</span>
+<span class="s2">H   0.97628735 -0.65082652  0.57474201</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
 
-<span class="nd">@response</span>
-<span class="nb">property</span><span class="p">:</span> <span class="n">custom</span>
-<span class="n">order</span><span class="p">:</span> <span class="n">linear</span>
-<span class="nb">complex</span><span class="p">:</span> <span class="n">no</span>
-<span class="n">a_operator</span><span class="p">:</span> <span class="n">electric</span> <span class="n">dipole</span>
-<span class="n">a_components</span><span class="p">:</span> <span class="n">xyz</span>
-<span class="n">b_operator</span><span class="p">:</span> <span class="n">electric</span> <span class="n">dipole</span>
-<span class="n">b_compontents</span><span class="p">:</span> <span class="n">xyz</span>
-<span class="n">frequencies</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0656</span>
-<span class="nd">@end</span>
+<span class="n">basis</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">MolecularBasis</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="s2">&quot;def2-svpd&quot;</span><span class="p">,</span> <span class="n">ostream</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 
-<span class="nd">@molecule</span>
-<span class="n">charge</span><span class="p">:</span> <span class="mi">0</span>
-<span class="n">multiplicity</span><span class="p">:</span> <span class="mi">1</span>
-<span class="n">xyz</span><span class="p">:</span>
-<span class="o">...</span>
-<span class="nd">@end</span>
+<span class="n">scf_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">ScfRestrictedDriver</span><span class="p">()</span>
 
+<span class="n">scf_drv</span><span class="o">.</span><span class="n">xcfun</span> <span class="o">=</span> <span class="s2">&quot;b3lyp&quot;</span>
+<span class="n">scf_results</span> <span class="o">=</span> <span class="n">scf_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">)</span>
+
+<span class="n">lrf</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">ComplexResponse</span><span class="p">()</span> 
+
+<span class="c1"># available operators</span>
+<span class="c1">#lrf.b_operator = &quot;electric dipole&quot;</span>
+<span class="c1">#lrf.b_operator = &quot;magnetic dipole&quot;</span>
+<span class="c1">#lrf.b_operator = &quot;linear momentum&quot;</span>
+<span class="c1">#lrf.b_operator = &quot;angular momentum&quot;</span>
+
+<span class="n">lrf</span><span class="o">.</span><span class="n">a_operator</span> <span class="o">=</span> <span class="s2">&quot;electric dipole&quot;</span>
+<span class="n">lrf</span><span class="o">.</span><span class="n">b_operator</span> <span class="o">=</span> <span class="s2">&quot;magnetic dipole&quot;</span>
+
+<span class="n">lrf</span><span class="o">.</span><span class="n">a_components</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;z&quot;</span><span class="p">]</span>
+<span class="n">lrf</span><span class="o">.</span><span class="n">b_components</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;z&quot;</span><span class="p">]</span>
+
+<span class="n">lrf_drv</span><span class="o">.</span><span class="n">damping</span> <span class="o">=</span> <span class="mf">0.004556</span>  <span class="c1"># 1000 cm-1</span>
+<span class="n">lrf</span><span class="o">.</span><span class="n">frequencies</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0656</span><span class="p">]</span>
+
+<span class="n">lrf_results</span> <span class="o">=</span> <span class="n">lrf</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">,</span> <span class="n">scf_results</span><span class="p">)</span>
 </pre></div>
 </div>
+<p><strong>Text file</strong></p>
+<p><em>add me</em></p>
 </section>
 <section id="c6-dispersion-coefficients">
-<h2>C6 dispersion coefficients<a class="headerlink" href="#c6-dispersion-coefficients" title="Link to this heading">#</a></h2>
+<span id="sec-c6"></span><h2>C6 dispersion coefficients<a class="headerlink" href="#c6-dispersion-coefficients" title="Link to this heading">#</a></h2>
 <p>The <span class="math notranslate nohighlight">\(C_6\)</span> dispersion coefficient relates to the electric-dipole polarizability according to</p>
 <div class="math notranslate nohighlight">
 \[
@@ -521,7 +539,7 @@ d\omega
 \[
     i\omega^I = i\omega_0 \frac{1-t}{1+t},\quad d\omega^I = \frac{-2\omega_0 dt}{(1+t)^2},
 \]</div>
-<p>where a transformation factor of <span class="math notranslate nohighlight">\(\omega_0 = 0.3\)</span> a.u. is used. The user may specify the number of frequency points used in the quadrature, or otherwise a default value is adopted. The polarizabilities are calculated from the complex polarization propagator (CPP), or complex linear response function <span id="id2">[<a class="reference internal" href="refs.html#id50" title="Patrick Norman, Kenneth Ruud, and Trond Saue. Principles and practices of molecular properties. John Wiley &amp; Sons, Ltd, Chichester, UK, 2018.">NRS18</a>]</span>.</p>
+<p>where a transformation factor of <span class="math notranslate nohighlight">\(\omega_0 = 0.3\)</span> a.u. is used. The user may specify the number of frequency points used in the quadrature, or otherwise a default value is adopted. The polarizabilities are calculated from the complex polarization propagator (CPP), or complex linear response function <span id="id2">[<a class="reference internal" href="refs.html#id56" title="Patrick Norman, Kenneth Ruud, and Trond Saue. Principles and practices of molecular properties. John Wiley &amp; Sons, Ltd, Chichester, UK, 2018.">NRS18</a>]</span>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@jobs</span>
 <span class="n">task</span><span class="p">:</span> <span class="n">response</span>
 <span class="nd">@end</span>
@@ -680,7 +698,7 @@ By The VeloxChem team
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>

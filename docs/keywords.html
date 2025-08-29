@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Input file keywords &#8212; VeloxChem program manual</title>
+    <title>Input text file keywords &#8212; VeloxChem program manual</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -61,7 +61,7 @@
     <link rel="icon" href="../_static/vlx_logo_mark.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Reference states" href="refstate.html" />
+    <link rel="next" title="Molecule" href="molecule.html" />
     <link rel="prev" title="Running on a cluster" href="run_cluster.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -154,8 +154,8 @@
       
     
     
-    <img src="../_static/vlx_logo.png" class="logo__image only-light" alt="VeloxChem program manual - Home"/>
-    <script>document.write(`<img src="../_static/vlx_logo.png" class="logo__image only-dark" alt="VeloxChem program manual - Home"/>`);</script>
+    <img src="../_static/vlx-logo-blacktext-halo.png" class="logo__image only-light" alt="VeloxChem program manual - Home"/>
+    <script>document.write(`<img src="../_static/vlx-logo-blacktext-halo.png" class="logo__image only-dark" alt="VeloxChem program manual - Home"/>`);</script>
   
   
 </a></div>
@@ -172,24 +172,17 @@
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Home
-                </a>
-            </li>
-        </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting started</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="limits.html">Pushing the limits</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installing the program</a></li>
-<li class="toctree-l1"><a class="reference internal" href="run_desktop.html">Running on a desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="run_desktop.html">Running on a laptop/desktop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="run_cluster.html">Running on a cluster</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Input file keywords</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Input text file keywords</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Model chemistry</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="molecule.html">Molecule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="refstate.html">Reference states</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functionals.html">Exchange–correlation functionals</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basis_sets.html">Basis sets</a></li>
@@ -198,18 +191,32 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Properties</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pes.html">Potential energy surfaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="uv-vis.html">UV/vis absorption/emission</a></li>
 <li class="toctree-l1"><a class="reference internal" href="opt_act.html">Optical activity and dichroism</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vib_spect.html">Vibrational spectroscopies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pes.html">Potential energy surfaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="magnetic.html">Magnetic resonances</a></li>
 <li class="toctree-l1"><a class="reference internal" href="linear-response.html">Linear response</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nlo.html">Multi-photon interactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xray.html">X-ray spectroscpies</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classical methods</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="mm.html">Molecular mechanics</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="md.html">Molecular dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conf_search.html">Conformational search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solvation.html">Solvation Builder</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="mof_builder.html">MOF Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loc_prop.html">Localized properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="im.html">Interpolation mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evb.html">Empirical valence bond</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Visualization</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="elec_dens.html">Electronic densities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vis.html">Jupyter notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viamd.html">VIAMD software</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced users</span></p>
 <ul class="nav bd-sidenav">
@@ -274,7 +281,7 @@
       
       
       
-      <li><a href="https://github.com/kthpanor/vlxman" target="_blank"
+      <li><a href="https://github.com/veloxchem/vlxman" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -291,7 +298,7 @@
       
       
       
-      <li><a href="https://github.com/kthpanor/vlxman/issues/new?title=Issue%20on%20page%20%2Fdocs/keywords.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/veloxchem/vlxman/issues/new?title=Issue%20on%20page%20%2Fdocs/keywords.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -405,7 +412,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Input file keywords</h1>
+    <h1>Input text file keywords</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -415,9 +422,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#molecule">Molecule</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scf-optimization">SCF optimization</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uv-vis-absorption-spectrum">UV/vis absorption spectrum</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-response-solver">Complex response solver</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optimization-driver">Optimization driver</a></li>
 </ul>
             </nav>
         </div>
@@ -429,22 +439,92 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="input-file-keywords">
-<h1>Input file keywords<a class="headerlink" href="#input-file-keywords" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="input-text-file-keywords">
+<span id="sec-text-file-keywords"></span><h1>Input text file keywords<a class="headerlink" href="#input-text-file-keywords" title="Link to this heading">#</a></h1>
 <p>Keywords for the various input sections in the program input file can be listed by means of the <code class="docutils literal notranslate"><span class="pre">print_keyword()</span></code> class method. Examples are given below.</p>
+<section id="tasks">
+<h2>Tasks<a class="headerlink" href="#tasks" title="Link to this heading">#</a></h2>
+<p>The different taks below are presented in the same order followed for the Properties description.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Task</p></th>
+<th class="head text-left"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><a class="reference internal" href="refstate.html#sec-rhf"><span class="std std-ref">scf</span></a></p></td>
+<td class="text-left"><p>Perform a Restricted closed-shell calculation (HF or DFT)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><a class="reference internal" href="refstate.html#sec-rohf"><span class="std std-ref">roscf</span></a></p></td>
+<td class="text-left"><p>Perform a Restricted open-shell calculation (HF or DFT)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><a class="reference internal" href="refstate.html#sec-uhf"><span class="std std-ref">uscf</span></a></p></td>
+<td class="text-left"><p>Perform a Unrestricted open-shell calculation (HF or DFT)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><a class="reference internal" href="refstate.html#sec-rmp2"><span class="std std-ref">mp2</span></a></p></td>
+<td class="text-left"><p>Perform a Restricted closed-shell MP2 calculation</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><a class="reference internal" href="refstate.html#sec-romp2"><span class="std std-ref">romp2</span></a></p></td>
+<td class="text-left"><p>Perform a Restricted open-shell MP2 calculation</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><a class="reference internal" href="refstate.html#sec-ump2"><span class="std std-ref">ump2</span></a></p></td>
+<td class="text-left"><p>Perform a Unrestricted open-shell MP2 calculation</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><a class="reference internal" href="loc_prop.html#sec-esp"><span class="std std-ref">esp charges</span></a></p></td>
+<td class="text-left"><p>Calculate the ESP charges</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><a class="reference internal" href="loc_prop.html#sec-resp"><span class="std std-ref">resp charges</span></a></p></td>
+<td class="text-left"><p>Calculate the RESP charges</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><a class="reference internal" href="loc_prop.html#sec-loprop"><span class="std std-ref">loprop</span></a></p></td>
+<td class="text-left"><p>Calculate the LoProp charges and polarizabilities</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><a class="reference internal" href="pes.html#sec-pes"><span class="std std-ref">optimize</span></a></p></td>
+<td class="text-left"><p>Optimize the geometry in the ground and excited state</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><a class="reference internal" href="uv-vis.html#sec-uv-vis"><span class="std std-ref">response</span></a></p></td>
+<td class="text-left"><p>Calculate response properies with TD-DFT and CPP, such as <a class="reference internal" href="uv-vis.html#sec-uv-vis"><span class="std std-ref">UV/vis</span></a> or <a class="reference internal" href="opt_act.html#sec-ecd"><span class="std std-ref">ECD</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><a class="reference internal" href="opt_act.html#sec-ecm"><span class="std std-ref">exciton</span></a></p></td>
+<td class="text-left"><p>Use the exciton coupling model to calculate absorption and circular dichroism</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><a class="reference internal" href="vib_spect.html#sec-vib-spect"><span class="std std-ref">vibrational</span></a></p></td>
+<td class="text-left"><p>Calculate IR, Raman and resonance Raman spectra</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="molecule">
+<span id="sec-molecule-keywords"></span><h2>Molecule<a class="headerlink" href="#molecule" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">veloxchem</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">vlx</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mol</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">Molecule</span><span class="p">()</span>
+<span class="n">mol</span><span class="o">.</span><span class="n">print_keywords</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                ==========================================================================================                
+                  @molecule                                                                                               
+                ------------------------------------------------------------------------------------------                
+                  charge        integer     net charge                                                                    
+                  multiplicity  integer     spin multiplicity                                                             
+                  units         string      unit of coordinates, default is Angstrom                                      
+                  xyz           multi-line  atom and Cartesian coordinates                                                
+                  xyzfile       string      XYZ file name (conflicts with units/xyz)                                      
+                ==========================================================================================                
 </pre></div>
 </div>
 </div>
 </div>
+</section>
 <section id="scf-optimization">
-<h2>SCF optimization<a class="headerlink" href="#scf-optimization" title="Link to this heading">#</a></h2>
+<span id="sec-scf-keywords"></span><h2>SCF optimization<a class="headerlink" href="#scf-optimization" title="Link to this heading">#</a></h2>
+<p>Here are printed the keywords for the <code class="docutils literal notranslate"><span class="pre">ScfRestrictedDriver()</span></code>, the same can be done for the <code class="docutils literal notranslate"><span class="pre">ScfRestrictedOpenDriver()</span></code> and <code class="docutils literal notranslate"><span class="pre">ScfUnrestrictedDriver()</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scf_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">ScfRestrictedDriver</span><span class="p">()</span>
-
 <span class="n">scf_drv</span><span class="o">.</span><span class="n">print_keywords</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -453,44 +533,46 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                ==========================================================================================                
                   @scf                                                                                                    
                 ------------------------------------------------------------------------------------------                
-                  acc_type                      string         type of SCF convergence accelerator                        
-                  max_iter                      integer        maximum number of SCF iterations                           
-                  max_err_vecs                  integer        maximum number of DIIS error vectors                       
-                  pfon                          boolean        use pFON to accelerate convergence                         
-                  pfon_temperature              float          pFON temperature                                           
-                  pfon_delta_temperature        float          pFON delta temperature                                     
-                  pfon_nocc                     integer        number of occupied orbitals used in pFON                   
-                  pfon_nvir                     integer        number of virtual orbitals used in pFON                    
-                  level_shifting                float          level shifting parameter                                   
-                  level_shifting_delta          float          level shifting delta                                       
-                  conv_thresh                   float          SCF convergence threshold                                  
-                  eri_thresh                    float          ERI screening threshold                                    
-                  restart                       boolean        restart from checkpoint file                               
-                  filename                      string         base name of output files                                  
-                  checkpoint_file               string         name of checkpoint file                                    
-                  timing                        boolean        print timing information                                   
-                  profiling                     boolean        print profiling information                                
-                  memory_profiling              boolean        print memory usage                                         
-                  memory_tracing                boolean        trace memory allocation                                    
-                  print_level                   integer        verbosity of output (1-3)                                  
-                  guess_unpaired_electrons      string         unpaired electrons for initila guess                       
-                  point_charges                 string         potential file for point charges                           
-                  qm_vdw_params                 string         vdw parameter file for QM atoms                            
+                  acc_type                  string      type of SCF convergence accelerator                               
+                  max_iter                  integer     maximum number of SCF iterations                                  
+                  max_err_vecs              integer     maximum number of DIIS error vectors                              
+                  pfon                      boolean     use pFON to accelerate convergence                                
+                  pfon_temperature          float       pFON temperature                                                  
+                  pfon_delta_temperature    float       pFON delta temperature                                            
+                  pfon_nocc                 integer     number of occupied orbitals used in pFON                          
+                  pfon_nvir                 integer     number of virtual orbitals used in pFON                           
+                  level_shifting            float       level shifting parameter                                          
+                  level_shifting_delta      float       level shifting delta                                              
+                  conv_thresh               float       SCF convergence threshold                                         
+                  eri_thresh                float       ERI screening threshold                                           
+                  ovl_thresh                float       AO linear dependency threshold                                    
+                  restart                   boolean     restart from checkpoint file                                      
+                  filename                  string      base name of output files                                         
+                  checkpoint_file           string      name of checkpoint file                                           
+                  timing                    boolean     print timing information                                          
+                  profiling                 boolean     print profiling information                                       
+                  memory_profiling          boolean     print memory usage                                                
+                  memory_tracing            boolean     trace memory allocation                                           
+                  print_level               integer     verbosity of output (1-3)                                         
+                  guess_unpaired_electrons  string      unpaired electrons for initila guess                              
+                  point_charges             string      potential file for point charges                                  
+                  qm_vdw_params             string      vdw parameter file for QM atoms                                   
                 ==========================================================================================                
                   @method settings                                                                                        
                 ------------------------------------------------------------------------------------------                
-                  ri_coulomb                    boolean        use RI-J approximation                                     
-                  ri_auxiliary_basis            string         RI-J auxiliary basis set                                   
-                  dispersion                    boolean        use D4 dispersion correction                               
-                  xcfun                         string         exchange-correlation functional                            
-                  grid_level                    integer        accuracy level of DFT grid (1-8)                           
-                  potfile                       string         potential file for polarizable embedding                   
-                  solvation_model               string         solvation model                                            
-                  cpcm_grid_per_sphere          integer        number of grid points per sphere (C-PCM)                   
-                  cpcm_epsilon                  float          dielectric constant of solvent (C-PCM)                     
-                  cpcm_x                        float          parameter for scaling function (C-PCM)                     
-                  cpcm_custom_vdw_radii         sequence       custom vdw radii for C-PCM                                 
-                  electric_field                sequence       static electric field                                      
+                  ri_coulomb                boolean     use RI-J approximation                                            
+                  ri_auxiliary_basis        string      RI-J auxiliary basis set                                          
+                  dispersion                boolean     use D4 dispersion correction                                      
+                  xcfun                     string      exchange-correlation functional                                   
+                  grid_level                integer     accuracy level of DFT grid (1-8)                                  
+                  potfile                   string      potential file for polarizable embedding                          
+                  solvation_model           string      solvation model                                                   
+                  cpcm_grid_per_sphere      sequence    number of C-PCM grid points per sphere                            
+                  cpcm_cg_thresh            float       threshold for solving C-PCM charges                               
+                  cpcm_epsilon              float       dielectric constant of solvent (C-PCM)                            
+                  cpcm_x                    float       parameter for scaling function (C-PCM)                            
+                  cpcm_custom_vdw_radii     sequence    custom vdw radii for C-PCM                                        
+                  electric_field            sequence    static electric field                                             
                 ==========================================================================================                
 </pre></div>
 </div>
@@ -498,7 +580,7 @@ document.write(`
 </div>
 </section>
 <section id="uv-vis-absorption-spectrum">
-<h2>UV/vis absorption spectrum<a class="headerlink" href="#uv-vis-absorption-spectrum" title="Link to this heading">#</a></h2>
+<span id="sec-uv-vis-keywords"></span><h2>UV/vis absorption spectrum<a class="headerlink" href="#uv-vis-absorption-spectrum" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">prop</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">Absorption</span><span class="p">()</span>
@@ -512,47 +594,55 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                ==========================================================================================                
                   @response                                                                                               
                 ------------------------------------------------------------------------------------------                
-                  eri_thresh                    float          ERI screening threshold                                    
-                  batch_size                    integer        batch size for Fock build                                  
-                  conv_thresh                   float          convergence threshold                                      
-                  max_iter                      integer        maximum number of iterations                               
-                  norm_thresh                   float          norm threshold for adding vector                           
-                  lindep_thresh                 float          threshold for linear dependence                            
-                  serial_ratio                  float          serial ratio as in Amdahl&#39;s law                            
-                  use_subcomms                  boolean        use subcommunicators for Fock build                        
-                  restart                       boolean        restart from checkpoint file                               
-                  filename                      string         base name of output files                                  
-                  checkpoint_file               string         name of checkpoint file                                    
-                  force_checkpoint              boolean        flag for writing checkpoint every iteration                
-                  save_solutions                boolean        save solutions to file                                     
-                  timing                        boolean        print timing information                                   
-                  profiling                     boolean        print profiling information                                
-                  memory_profiling              boolean        print memory usage                                         
-                  memory_tracing                boolean        trace memory allocation                                    
-                  print_level                   integer        verbosity of output (1-3)                                  
-                  nstates                       integer        number of excited states                                   
-                  core_excitation               boolean        compute core-excited states                                
-                  num_core_orbitals             integer        number of involved core-orbitals                           
-                  nto                           boolean        analyze natural transition orbitals                        
-                  nto_pairs                     integer        number of NTO pairs in NTO analysis                        
-                  nto_cubes                     boolean        write NTO cube files                                       
-                  detach_attach                 boolean        analyze detachment/attachment density                      
-                detach_attach_cubes           boolean        write detachment/attachment density cube files               
-                  esa                           boolean        compute excited state absorption                           
-                  esa_from_state                integer        the state to excite from (e.g. 1 for S1)                   
-                  cube_origin                   sequence       origin of cubic grid points                                
-                  cube_stepsize                 sequence       step size of cubic grid points                             
-                  cube_points                   sequence       number of cubic grid points                                
-                  tamm_dancoff                  boolean        use Tamm-Dancoff approximation                             
+                  eri_thresh             float       ERI screening threshold                                              
+                  batch_size             integer     batch size for Fock build                                            
+                  conv_thresh            float       convergence threshold                                                
+                  max_iter               integer     maximum number of iterations                                         
+                  norm_thresh            float       norm threshold for adding vector                                     
+                  lindep_thresh          float       threshold for linear dependence                                      
+                  serial_ratio           float       serial ratio as in Amdahl&#39;s law                                      
+                  use_subcomms           boolean     use subcommunicators for Fock build                                  
+                  restart                boolean     restart from checkpoint file                                         
+                  filename               string      base name of output files                                            
+                  checkpoint_file        string      name of checkpoint file                                              
+                  force_checkpoint       boolean     flag for writing checkpoint every iteration                          
+                  save_solutions         boolean     save solutions to file                                               
+                  timing                 boolean     print timing information                                             
+                  profiling              boolean     print profiling information                                          
+                  memory_profiling       boolean     print memory usage                                                   
+                  memory_tracing         boolean     trace memory allocation                                              
+                  print_level            integer     verbosity of output (1-3)                                            
+                  non_equilibrium_solv   boolean     toggle use of non-equilibrium solvation for response                 
+                  nstates                integer     number of excited states                                             
+                  core_excitation        boolean     compute core-excited states                                          
+                  num_core_orbitals      integer     number of involved core-orbitals                                     
+                  nto                    boolean     analyze natural transition orbitals                                  
+                  nto_pairs              integer     number of NTO pairs in NTO analysis                                  
+                  nto_cubes              boolean     write NTO cube files                                                 
+                  detach_attach          boolean     analyze detachment/attachment density                                
+                  detach_attach_cubes    boolean     write detachment/attachment density cube files                       
+                  esa                    boolean     compute excited state absorption                                     
+                  esa_from_state         integer     the state to excite from (e.g. 1 for S1)                             
+                  cube_origin            sequence    origin of cubic grid points                                          
+                  cube_stepsize          sequence    step size of cubic grid points                                       
+                  cube_points            sequence    number of cubic grid points                                          
+                  tamm_dancoff           boolean     use Tamm-Dancoff approximation                                       
                 ==========================================================================================                
                   @method settings                                                                                        
                 ------------------------------------------------------------------------------------------                
-                  ri_coulomb                    boolean        use RI-J approximation                                     
-                  ri_auxiliary_basis            string         RI-J auxiliary basis set                                   
-                  xcfun                         string         exchange-correlation functional                            
-                  grid_level                    integer        accuracy level of DFT grid                                 
-                  potfile                       string         potential file for polarizable embedding                   
-                  electric_field                sequence       static electric field                                      
+                  ri_coulomb             boolean     use RI-J approximation                                               
+                  ri_auxiliary_basis     string      RI-J auxiliary basis set                                             
+                  xcfun                  string      exchange-correlation functional                                      
+                  grid_level             integer     accuracy level of DFT grid                                           
+                  potfile                string      potential file for polarizable embedding                             
+                  electric_field         sequence    static electric field                                                
+                  solvation_model        string      solvation model                                                      
+                  cpcm_grid_per_sphere   sequence    number of C-PCM grid points per sphere                               
+                  cpcm_cg_thresh         float       threshold for solving C-PCM charges                                  
+                  cpcm_epsilon           float       dielectric constant of solvent (C-PCM)                               
+                  cpcm_optical_epsilon   float       optical dielectric constant of solvent (C-PCM)                       
+                  cpcm_x                 float       parameter for scaling function (C-PCM)                               
+                  cpcm_custom_vdw_radii  sequence    custom vdw radii for C-PCM                                           
                 ==========================================================================================                
 </pre></div>
 </div>
@@ -560,7 +650,7 @@ document.write(`
 </div>
 </section>
 <section id="complex-response-solver">
-<h2>Complex response solver<a class="headerlink" href="#complex-response-solver" title="Link to this heading">#</a></h2>
+<span id="sec-cpp-keywords"></span><h2>Complex response solver<a class="headerlink" href="#complex-response-solver" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cpp_solver</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">ComplexResponse</span><span class="p">()</span>
@@ -573,39 +663,83 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                ==========================================================================================                
                   @response                                                                                               
                 ------------------------------------------------------------------------------------------                
-                  eri_thresh                    float          ERI screening threshold                                    
-                  batch_size                    integer        batch size for Fock build                                  
-                  conv_thresh                   float          convergence threshold                                      
-                  max_iter                      integer        maximum number of iterations                               
-                  norm_thresh                   float          norm threshold for adding vector                           
-                  lindep_thresh                 float          threshold for linear dependence                            
-                  serial_ratio                  float          serial ratio as in Amdahl&#39;s law                            
-                  use_subcomms                  boolean        use subcommunicators for Fock build                        
-                  restart                       boolean        restart from checkpoint file                               
-                  filename                      string         base name of output files                                  
-                  checkpoint_file               string         name of checkpoint file                                    
-                  force_checkpoint              boolean        flag for writing checkpoint every iteration                
-                  save_solutions                boolean        save solutions to file                                     
-                  timing                        boolean        print timing information                                   
-                  profiling                     boolean        print profiling information                                
-                  memory_profiling              boolean        print memory usage                                         
-                  memory_tracing                boolean        trace memory allocation                                    
-                  print_level                   integer        verbosity of output (1-3)                                  
-                  a_operator                    string         A operator                                                 
-                  a_components                  string         Cartesian components of A operator                         
-                  b_operator                    string         B operator                                                 
-                  b_components                  string         Cartesian components of B operator                         
-                  frequencies                   sequence       frequencies                                                
-                  damping                       float          damping parameter                                          
+                  eri_thresh             float       ERI screening threshold                                              
+                  batch_size             integer     batch size for Fock build                                            
+                  conv_thresh            float       convergence threshold                                                
+                  max_iter               integer     maximum number of iterations                                         
+                  norm_thresh            float       norm threshold for adding vector                                     
+                  lindep_thresh          float       threshold for linear dependence                                      
+                  serial_ratio           float       serial ratio as in Amdahl&#39;s law                                      
+                  use_subcomms           boolean     use subcommunicators for Fock build                                  
+                  restart                boolean     restart from checkpoint file                                         
+                  filename               string      base name of output files                                            
+                  checkpoint_file        string      name of checkpoint file                                              
+                  force_checkpoint       boolean     flag for writing checkpoint every iteration                          
+                  save_solutions         boolean     save solutions to file                                               
+                  timing                 boolean     print timing information                                             
+                  profiling              boolean     print profiling information                                          
+                  memory_profiling       boolean     print memory usage                                                   
+                  memory_tracing         boolean     trace memory allocation                                              
+                  print_level            integer     verbosity of output (1-3)                                            
+                  non_equilibrium_solv   boolean     toggle use of non-equilibrium solvation for response                 
+                  a_operator             string      A operator                                                           
+                  a_components           string      Cartesian components of A operator                                   
+                  b_operator             string      B operator                                                           
+                  b_components           string      Cartesian components of B operator                                   
+                  frequencies            sequence    frequencies                                                          
+                  damping                float       damping parameter                                                    
                 ==========================================================================================                
                   @method settings                                                                                        
                 ------------------------------------------------------------------------------------------                
-                  ri_coulomb                    boolean        use RI-J approximation                                     
-                  ri_auxiliary_basis            string         RI-J auxiliary basis set                                   
-                  xcfun                         string         exchange-correlation functional                            
-                  grid_level                    integer        accuracy level of DFT grid                                 
-                  potfile                       string         potential file for polarizable embedding                   
-                  electric_field                sequence       static electric field                                      
+                  ri_coulomb             boolean     use RI-J approximation                                               
+                  ri_auxiliary_basis     string      RI-J auxiliary basis set                                             
+                  xcfun                  string      exchange-correlation functional                                      
+                  grid_level             integer     accuracy level of DFT grid                                           
+                  potfile                string      potential file for polarizable embedding                             
+                  electric_field         sequence    static electric field                                                
+                  solvation_model        string      solvation model                                                      
+                  cpcm_grid_per_sphere   sequence    number of C-PCM grid points per sphere                               
+                  cpcm_cg_thresh         float       threshold for solving C-PCM charges                                  
+                  cpcm_epsilon           float       dielectric constant of solvent (C-PCM)                               
+                  cpcm_optical_epsilon   float       optical dielectric constant of solvent (C-PCM)                       
+                  cpcm_x                 float       parameter for scaling function (C-PCM)                               
+                  cpcm_custom_vdw_radii  sequence    custom vdw radii for C-PCM                                           
+                ==========================================================================================                
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="optimization-driver">
+<span id="sec-opt-keywords"></span><h2>Optimization driver<a class="headerlink" href="#optimization-driver" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">opt_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">OptimizationDriver</span><span class="p">(</span><span class="n">scf_drv</span><span class="p">)</span>
+
+<span class="n">opt_drv</span><span class="o">.</span><span class="n">print_keywords</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                ==========================================================================================                
+                  @optimize                                                                                               
+                ------------------------------------------------------------------------------------------                
+                  coordsys        string      coordinate system                                                           
+                  constraints     multi-line  constraints                                                                 
+                  check_interval  integer     interval for checking coordinate system                                     
+                  trust           float       trust radius to begin with                                                  
+                  tmax            float       maximum value of trust radius                                               
+                  max_iter        integer     maximum number of optimization steps                                        
+                  transition      boolean     transition state search                                                     
+                  hessian         string      hessian flag                                                                
+                  ref_xyz         string      reference geometry                                                          
+                  keep_files      boolean     flag to keep output files                                                   
+                  conv_maxiter    boolean     consider converged if max_iter is reached                                   
+                  conv_energy     float                                                                                   
+                  conv_grms       float                                                                                   
+                  conv_gmax       float                                                                                   
+                  conv_drms       float                                                                                   
+                  conv_dmax       float                                                                                   
                 ==========================================================================================                
 </pre></div>
 </div>
@@ -654,11 +788,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="refstate.html"
+       href="molecule.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Reference states</p>
+        <p class="prev-next-title">Molecule</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -678,9 +812,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#molecule">Molecule</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scf-optimization">SCF optimization</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uv-vis-absorption-spectrum">UV/vis absorption spectrum</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-response-solver">Complex response solver</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optimization-driver">Optimization driver</a></li>
 </ul>
   </nav></div>
 
@@ -705,7 +842,7 @@ By The VeloxChem team
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>
