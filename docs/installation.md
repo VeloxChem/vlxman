@@ -1,6 +1,6 @@
 # Installing the program
 
-## Installing precompiled binaries using conda
+## Installing precompiled binaries (CPU version) using conda
 
 Binaries are available for the three main operating systems:
 
@@ -57,11 +57,11 @@ import veloxchem as vlx
 and start calculations. See the [eChem](https://kthpanor.github.io/echem) book for a multitude of examples.
 
 
-## Installing from source
+## Installing the CPU version from source
 
 ### Obtaining the source code
 
-The source code can be downloaded from the [GitHub repository](https://github.com/VeloxChem/VeloxChem):
+The source code of the CPU version can be downloaded from the [GitHub repository](https://github.com/VeloxChem/VeloxChem):
 
 ```
 $ git clone https://github.com/VeloxChem/VeloxChem.git
@@ -74,6 +74,7 @@ $ git clone https://github.com/VeloxChem/VeloxChem.git
 - [Eigen](https://gitlab.com/libeigen/eigen)
 - [Libxc](https://libxc.gitlab.io/)
 - [Python](https://www.python.org/) (>=3.9) that includes the interpreter, the development header files, and the development libraries
+- [NumPy](https://numpy.org/)
 - [MPI4Py](https://mpi4py.readthedocs.io/en/stable/)
 - [pybind11](https://pybind11.readthedocs.io/en/stable/)
 - [scikit-build](https://scikit-build.readthedocs.io/en/latest/)
@@ -175,7 +176,7 @@ To avoid clashes between dependencies, we recommend to always use a [virtual env
   $ python3 -m pip install --no-build-isolation -v .
   ```
 
-  If you are installing VeloxChem on an HPC cluster, please make sure to run the
+  If you are installing VeloxChem on an HPC cluster, make sure to run the
   above compilations on an interactive compute node.
 
 - CrayBLAS environment variables
@@ -289,4 +290,128 @@ To avoid clashes between dependencies, we recommend to always use a [virtual env
   $ export PYTHONPATH=$PYTHONPATH:/path/to/your/dftd4/lib/python.../site-packages
   $ export LD_LIBRARY_PATH=/path/to/your/dftd4/lib64:$LD_LIBRARY_PATH
   $ export OMP_STACKSIZE=256M
+  ```
+
+## Installing the GPU version from source
+
+### Obtaining the source code
+
+The source code of the GPU version can be downloaded from the `gpu` branch of the [GitHub repository](https://github.com/VeloxChem/VeloxChem).
+
+```
+$ git clone -b gpu https://github.com/VeloxChem/VeloxChem.git
+$ cd VeloxChem
+$ export VLXHOME=$(pwd)
+```
+
+Note: Not all features are available in the GPU version. At the moment SCF and linear response calculations can be done with the GPU version.
+
+### Build prerequisites
+
+- C++ compiler supporting the C++17 standard and OpenMP
+- [Libxc](https://libxc.gitlab.io/)
+- [Python](https://www.python.org/) (>=3.9) that includes the interpreter, the development header files, and the development libraries
+- [NumPy](https://numpy.org/)
+- [MPI4Py](https://mpi4py.readthedocs.io/en/stable/)
+- [pybind11](https://pybind11.readthedocs.io/en/stable/)
+- [CUDA](https://developer.nvidia.com/cuda-toolkit) (>=11.7) for Nvidia GPUs or [ROCm](https://www.amd.com/en/products/software/rocm.html) (>=5.7) for AMD GPUs
+- [MAGMA](https://icl.utk.edu/magma/) (only needed when compiling for AMD GPUs)
+
+### Installing for Nvidia GPUs
+
+- Create and activate a Python virtual environment.
+
+- Install MPI4Py using the same compiler as for compiling VeloxChem.
+
+  ```
+  $ export CC=...
+  $ export MPICC=...
+  $ python3 -m pip install --no-deps --no-binary=mpi4py --no-cache-dir -v mpi4py
+  ```
+
+- Install other Python packages
+
+  ```
+  $ python3 -m pip install h5py pybind11 pytest psutil
+  ```
+
+- Install Libxc according to [Libxc documentation](https://libxc.gitlab.io/).
+
+- Edit `src/Makefile.setup` and update the following
+
+  - `CUDA_LIB_DIR`: where `libcudart`, `libcublas` and `libcusolver` can be
+     found. If these files are in different folders, you can manually add them in
+     the `DEVICE_LIB` line.
+  - `MPI_INC_DIR`: where the MPI header files can be found.
+  - `LIBXC_HOME`: where Libxc is installed.
+  - `CXX`: The MPI compiler wrapper for host C++ code.
+  - `DEVCC`: The CUDA compiler for device code. The compute capability is also specified in this line.
+
+- Compile VeloxChem and set environment variables. Set `OMP_NUM_THREADS` to the
+  number of GPU devices per compute node. When running VeloxChem GPU version, use
+  one MPI process per compute node.
+
+  ```
+  cd $VLXHOME
+  make -C src -j ...
+  export PYTHONPATH=$VLXHOME/build/python:$PYTHONPATH
+  export PATH=$VLXHOME/build/bin:$PATH
+  export OMP_NUM_THREADS=...
+  export OMP_PLACES=cores
+  ```
+
+### Installing for AMD GPUs
+
+- OpenMP runtime consideration: If you use GNU compiler for host C++ code, make sure
+  that it is only linked against LLVM OpenMP runtime library (`libomp`).
+
+- Create and activate a Python virtual environment.
+
+- Install MPI4Py using the same compiler as for compiling VeloxChem
+
+  ```
+  $ export CC=...
+  $ export MPICC=...
+  $ python3 -m pip install --no-deps --no-binary=mpi4py --no-cache-dir -v mpi4py
+  ```
+
+  If you are using AMD GPUs on a Cray machine, our recommendation is to load
+  the `PrgEnv-amd` module and set `MPICC` to e.g. `"/opt/rocm/llvm/bin/clang
+  $(cc --cray-print-opts=cflags) $(cc --cray-print-opts=libs)"` when compiling
+  `mpi4py`.
+
+- Make sure that NumPy uses `libomp`. You may need to compile NumPy from source
+  using the same compiler as for compiling VeloxChem.
+
+- Install other Python packages
+
+  ```
+  $ python3 -m pip install h5py pybind11 pytest psutil
+  ```
+
+- Install Libxc according to [Libxc documentation](https://libxc.gitlab.io/).
+
+- Install [MAGMA](https://icl.utk.edu/magma/)
+
+  - Use e.g. `make.inc-examples/make.inc.hip-gcc-openblas` as template for `make.inc`
+  - Edit `OPENBLASDIR`, `HIPDIR`, `FORT` and `GPU_TARGET` in `make.inc`
+
+- Use `config/Makefile.setup.lumi` as template for `src/Makefile.setup` and update the following in `src/Makefile.setup`
+
+  - `MAGMA_HOME`: where MAGMA is installed.
+  - `LIBXC_HOME`: where Libxc is installed.
+  - `CXX`: The MPI compiler wrapper for host C++ code.
+  - `DEVCC`: The `hipcc` compiler for device code. The `--offload-arch` option is also specified in this line.
+
+- Compile VeloxChem and set environment variables. Set `OMP_NUM_THREADS` to the
+  number of GPU devices per compute node. When running VeloxChem GPU version, use
+  one MPI process per compute node.
+
+  ```
+  $ cd $VLXHOME
+  $ make -C src -j ...
+  $ export PYTHONPATH=$VLXHOME/build/python:$PYTHONPATH
+  $ export PATH=$VLXHOME/build/bin:$PATH
+  $ export OMP_NUM_THREADS=...
+  $ export OMP_PLACES=cores
   ```
