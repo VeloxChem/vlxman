@@ -58,7 +58,33 @@ Download a {download}`text format <../input_files/ethanol-cpcm.inp>` type of inp
 (sec:pe)=
 ## Polarizable embedding
 
-An SCF calculation with a polarizable environment is performed in VeloxChem with an input file of the form
+An explicit representation of the environment is available with the polarizable embedding (PE) model. Molecules in the environment are represented by site charges and polarizabilities. VeloxChem presently supports for the PE model in
+
+- SCF optimizations
+- linear response calculations
+
+The PE model is invoked in input files by giving the name of the associated potential file.
+
+**Python script**
+
+```
+import veloxchem as vlx
+
+xyz_string = """
+...
+"""
+
+molecule = vlx.Molecule.read_xyz_string(xyz_string)
+basis = vlx.MolecularBasis.read(molecule, 'def2-svp')
+
+scf_drv = vlx.ScfRestrictedDriver()
+
+scf_drv.potfile = "pe.pot"
+
+scf_results = scf_drv.compute(mol, basis)
+```
+
+**Text file**
 
 ```
 @jobs
@@ -78,7 +104,9 @@ xyz:
 @end
 ```
 
-together with a potential file `pe.pot` using, in this case, isotropic LoProp polarizabilities.
+**Potential file**
+
+The potential file named `pe.pot` in this example takes the following form. 
 
 ```
 @environment
@@ -104,3 +132,5 @@ H       2.30839051    0.00000000    0.00000000    2.30839051    0.00000000    2.
 H       2.30839051    0.00000000    0.00000000    2.30839051    0.00000000    2.30839051  water
 @end
 ```
+
+The polarizability components are listed in the order `xx`, `xy`, `xz`, `yy`. `yz`, `zz`.
