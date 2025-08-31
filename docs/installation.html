@@ -758,9 +758,8 @@ $ python3 -m pip install --no-deps --no-binary=mpi4py --no-cache-dir -v mpi4py
 <li><p><code class="docutils literal notranslate"><span class="pre">CUDA_LIB_DIR</span></code>: where <code class="docutils literal notranslate"><span class="pre">libcudart</span></code>, <code class="docutils literal notranslate"><span class="pre">libcublas</span></code> and <code class="docutils literal notranslate"><span class="pre">libcusolver</span></code> can be
 found. If these files are in different folders, you can manually add them in
 the <code class="docutils literal notranslate"><span class="pre">DEVICE_LIB</span></code> line.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">MPI_INC_DIR</span></code>: where the MPI header files can be found.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">LIBXC_HOME</span></code>: where Libxc is installed.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">CXX</span></code>: The MPI compiler wrapper for host C++ code.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CXX</span></code>: The compiler for host C++ code.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">DEVCC</span></code>: The CUDA compiler for device code. The compute capability is also specified in this line.</p></li>
 </ul>
 </li>
@@ -812,7 +811,7 @@ using the same compiler as for compiling VeloxChem.</p></li>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">MAGMA_HOME</span></code>: where MAGMA is installed.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">LIBXC_HOME</span></code>: where Libxc is installed.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">CXX</span></code>: The MPI compiler wrapper for host C++ code.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CXX</span></code>: The compiler for host C++ code.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">DEVCC</span></code>: The <code class="docutils literal notranslate"><span class="pre">hipcc</span></code> compiler for device code. The <code class="docutils literal notranslate"><span class="pre">--offload-arch</span></code> option is also specified in this line.</p></li>
 </ul>
 </li>

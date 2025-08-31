@@ -342,9 +342,8 @@ Note: Not all features are available in the GPU version. At the moment SCF and l
   - `CUDA_LIB_DIR`: where `libcudart`, `libcublas` and `libcusolver` can be
      found. If these files are in different folders, you can manually add them in
      the `DEVICE_LIB` line.
-  - `MPI_INC_DIR`: where the MPI header files can be found.
   - `LIBXC_HOME`: where Libxc is installed.
-  - `CXX`: The MPI compiler wrapper for host C++ code.
+  - `CXX`: The compiler for host C++ code.
   - `DEVCC`: The CUDA compiler for device code. The compute capability is also specified in this line.
 
 - Compile VeloxChem and set environment variables. Set `OMP_NUM_THREADS` to the
@@ -400,7 +399,7 @@ Note: Not all features are available in the GPU version. At the moment SCF and l
 
   - `MAGMA_HOME`: where MAGMA is installed.
   - `LIBXC_HOME`: where Libxc is installed.
-  - `CXX`: The MPI compiler wrapper for host C++ code.
+  - `CXX`: The compiler for host C++ code.
   - `DEVCC`: The `hipcc` compiler for device code. The `--offload-arch` option is also specified in this line.
 
 - Compile VeloxChem and set environment variables. Set `OMP_NUM_THREADS` to the
