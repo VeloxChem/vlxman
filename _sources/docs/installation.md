@@ -337,7 +337,7 @@ Note: Not all features are available in the GPU version. At the moment SCF and l
 
 - Install Libxc according to [Libxc documentation](https://libxc.gitlab.io/).
 
-- Edit `src/Makefile.setup` and update the following
+- Copy `src/Makefile.setup_cuda` to `src/Makefile.setup`, then edit `src/Makefile.setup` and update the following
 
   - `CUDA_LIB_DIR`: where `libcudart`, `libcublas` and `libcusolver` can be
      found. If these files are in different folders, you can manually add them in
@@ -377,7 +377,7 @@ Note: Not all features are available in the GPU version. At the moment SCF and l
   If you are using AMD GPUs on a Cray machine, our recommendation is to load
   the `PrgEnv-amd` module and set `MPICC` to e.g. `"/opt/rocm/llvm/bin/clang
   $(cc --cray-print-opts=cflags) $(cc --cray-print-opts=libs)"` when compiling
-  `mpi4py`.
+  MPI4Py.
 
 - Make sure that NumPy uses `libomp`. You may need to compile NumPy from source
   using the same compiler as for compiling VeloxChem.
@@ -393,9 +393,9 @@ Note: Not all features are available in the GPU version. At the moment SCF and l
 - Install [MAGMA](https://icl.utk.edu/magma/)
 
   - Use e.g. `make.inc-examples/make.inc.hip-gcc-openblas` as template for `make.inc`
-  - Edit `OPENBLASDIR`, `HIPDIR`, `FORT` and `GPU_TARGET` in `make.inc`
+  - Edit `make.inc` and update `OPENBLASDIR`, `ROCM_PATH`, `FORT`, `GPU_TARGET`
 
-- Use `config/Makefile.setup.lumi` as template for `src/Makefile.setup` and update the following in `src/Makefile.setup`
+- Copy `src/Makefile.setup_hip` to `src/Makefile.setup`, then edit `src/Makefile.setup` and update the following
 
   - `MAGMA_HOME`: where MAGMA is installed.
   - `LIBXC_HOME`: where Libxc is installed.

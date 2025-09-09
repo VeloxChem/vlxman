@@ -206,8 +206,7 @@
 
 <li class="toctree-l1"><a class="reference internal" href="md.html">Molecular dynamics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conf_search.html">Conformational search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="solvation.html">Solvation Builder</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="solvation.html">System solvation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mof_builder.html">MOF Builder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="loc_prop.html">Localized properties</a></li>
 <li class="toctree-l1"><a class="reference internal" href="im.html">Interpolation mechanics</a></li>
@@ -753,7 +752,7 @@ $ python3 -m pip install --no-deps --no-binary=mpi4py --no-cache-dir -v mpi4py
 </div>
 </li>
 <li><p>Install Libxc according to <a class="reference external" href="https://libxc.gitlab.io/">Libxc documentation</a>.</p></li>
-<li><p>Edit <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup</span></code> and update the following</p>
+<li><p>Copy <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup_cuda</span></code> to <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup</span></code>, then edit <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup</span></code> and update the following</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">CUDA_LIB_DIR</span></code>: where <code class="docutils literal notranslate"><span class="pre">libcudart</span></code>, <code class="docutils literal notranslate"><span class="pre">libcublas</span></code> and <code class="docutils literal notranslate"><span class="pre">libcusolver</span></code> can be
 found. If these files are in different folders, you can manually add them in
@@ -791,7 +790,7 @@ $ python3 -m pip install --no-deps --no-binary=mpi4py --no-cache-dir -v mpi4py
 </div>
 <p>If you are using AMD GPUs on a Cray machine, our recommendation is to load
 the <code class="docutils literal notranslate"><span class="pre">PrgEnv-amd</span></code> module and set <code class="docutils literal notranslate"><span class="pre">MPICC</span></code> to e.g. <code class="docutils literal notranslate"><span class="pre">&quot;/opt/rocm/llvm/bin/clang</span> <span class="pre">$(cc</span> <span class="pre">--cray-print-opts=cflags)</span> <span class="pre">$(cc</span> <span class="pre">--cray-print-opts=libs)&quot;</span></code> when compiling
-<code class="docutils literal notranslate"><span class="pre">mpi4py</span></code>.</p>
+MPI4Py.</p>
 </li>
 <li><p>Make sure that NumPy uses <code class="docutils literal notranslate"><span class="pre">libomp</span></code>. You may need to compile NumPy from source
 using the same compiler as for compiling VeloxChem.</p></li>
@@ -804,10 +803,10 @@ using the same compiler as for compiling VeloxChem.</p></li>
 <li><p>Install <a class="reference external" href="https://icl.utk.edu/magma/">MAGMA</a></p>
 <ul class="simple">
 <li><p>Use e.g. <code class="docutils literal notranslate"><span class="pre">make.inc-examples/make.inc.hip-gcc-openblas</span></code> as template for <code class="docutils literal notranslate"><span class="pre">make.inc</span></code></p></li>
-<li><p>Edit <code class="docutils literal notranslate"><span class="pre">OPENBLASDIR</span></code>, <code class="docutils literal notranslate"><span class="pre">HIPDIR</span></code>, <code class="docutils literal notranslate"><span class="pre">FORT</span></code> and <code class="docutils literal notranslate"><span class="pre">GPU_TARGET</span></code> in <code class="docutils literal notranslate"><span class="pre">make.inc</span></code></p></li>
+<li><p>Edit <code class="docutils literal notranslate"><span class="pre">make.inc</span></code> and update <code class="docutils literal notranslate"><span class="pre">OPENBLASDIR</span></code>, <code class="docutils literal notranslate"><span class="pre">ROCM_PATH</span></code>, <code class="docutils literal notranslate"><span class="pre">FORT</span></code>, <code class="docutils literal notranslate"><span class="pre">GPU_TARGET</span></code></p></li>
 </ul>
 </li>
-<li><p>Use <code class="docutils literal notranslate"><span class="pre">config/Makefile.setup.lumi</span></code> as template for <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup</span></code> and update the following in <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup</span></code></p>
+<li><p>Copy <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup_hip</span></code> to <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup</span></code>, then edit <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup</span></code> and update the following</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">MAGMA_HOME</span></code>: where MAGMA is installed.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">LIBXC_HOME</span></code>: where Libxc is installed.</p></li>
