@@ -309,15 +309,16 @@ Note: Not all features are available in the GPU version. At the moment SCF and l
 ### Build prerequisites
 
 - C++ compiler supporting the C++17 standard and OpenMP
+- [CUDA](https://developer.nvidia.com/cuda-toolkit) (>=11.7) for NVIDIA GPUs or [ROCm](https://www.amd.com/en/products/software/rocm.html) (>=5.7) for AMD GPUs
+- [MAGMA](https://icl.utk.edu/magma/) (only needed when compiling for AMD GPUs)
 - [Libxc](https://libxc.gitlab.io/)
 - [Python](https://www.python.org/) (>=3.9) that includes the interpreter, the development header files, and the development libraries
 - [NumPy](https://numpy.org/)
 - [MPI4Py](https://mpi4py.readthedocs.io/en/stable/)
 - [pybind11](https://pybind11.readthedocs.io/en/stable/)
-- [CUDA](https://developer.nvidia.com/cuda-toolkit) (>=11.7) for Nvidia GPUs or [ROCm](https://www.amd.com/en/products/software/rocm.html) (>=5.7) for AMD GPUs
-- [MAGMA](https://icl.utk.edu/magma/) (only needed when compiling for AMD GPUs)
+- Other Python packages: [h5py](https://www.h5py.org/), [psutil](https://github.com/giampaolo/psutil), [pytest](https://docs.pytest.org/en/latest/)
 
-### Installing for Nvidia GPUs
+### Installing for NVIDIA GPUs
 
 - Create and activate a Python virtual environment.
 
@@ -337,7 +338,14 @@ Note: Not all features are available in the GPU version. At the moment SCF and l
 
 - Install Libxc according to [Libxc documentation](https://libxc.gitlab.io/).
 
-- Copy `src/Makefile.setup_cuda` to `src/Makefile.setup`, then edit `src/Makefile.setup` and update the following
+- Copy VeloxChem setup file for CUDA
+
+  ```
+  $ cd $VLXHOME
+  $ cp src/Makefile.setup_cuda src/Makefile.setup
+  ```
+
+- Edit `src/Makefile.setup` and update the following
 
   - `CUDA_LIB_DIR`: where `libcudart`, `libcublas` and `libcusolver` can be
      found. If these files are in different folders, you can manually add them in
@@ -395,7 +403,14 @@ Note: Not all features are available in the GPU version. At the moment SCF and l
   - Use e.g. `make.inc-examples/make.inc.hip-gcc-openblas` as template for `make.inc`
   - Edit `make.inc` and update `OPENBLASDIR`, `ROCM_PATH`, `FORT`, `GPU_TARGET`
 
-- Copy `src/Makefile.setup_hip` to `src/Makefile.setup`, then edit `src/Makefile.setup` and update the following
+- Copy VeloxChem setup file for HIP
+
+  ```
+  $ cd $VLXHOME
+  $ cp src/Makefile.setup_hip src/Makefile.setup
+  ```
+
+- Edit `src/Makefile.setup` and update the following
 
   - `MAGMA_HOME`: where MAGMA is installed.
   - `LIBXC_HOME`: where Libxc is installed.
