@@ -436,7 +436,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-the-gpu-version-from-source">Installing the GPU version from source</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Obtaining the source code</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Build prerequisites</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-for-nvidia-gpus">Installing for Nvidia GPUs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-for-nvidia-gpus">Installing for NVIDIA GPUs</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-for-amd-gpus">Installing for AMD GPUs</a></li>
 </ul>
 </li>
@@ -726,17 +726,18 @@ $ export VLXHOME=$(pwd)
 <h3>Build prerequisites<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>C++ compiler supporting the C++17 standard and OpenMP</p></li>
+<li><p><a class="reference external" href="https://developer.nvidia.com/cuda-toolkit">CUDA</a> (&gt;=11.7) for NVIDIA GPUs or <a class="reference external" href="https://www.amd.com/en/products/software/rocm.html">ROCm</a> (&gt;=5.7) for AMD GPUs</p></li>
+<li><p><a class="reference external" href="https://icl.utk.edu/magma/">MAGMA</a> (only needed when compiling for AMD GPUs)</p></li>
 <li><p><a class="reference external" href="https://libxc.gitlab.io/">Libxc</a></p></li>
 <li><p><a class="reference external" href="https://www.python.org/">Python</a> (&gt;=3.9) that includes the interpreter, the development header files, and the development libraries</p></li>
 <li><p><a class="reference external" href="https://numpy.org/">NumPy</a></p></li>
 <li><p><a class="reference external" href="https://mpi4py.readthedocs.io/en/stable/">MPI4Py</a></p></li>
 <li><p><a class="reference external" href="https://pybind11.readthedocs.io/en/stable/">pybind11</a></p></li>
-<li><p><a class="reference external" href="https://developer.nvidia.com/cuda-toolkit">CUDA</a> (&gt;=11.7) for Nvidia GPUs or <a class="reference external" href="https://www.amd.com/en/products/software/rocm.html">ROCm</a> (&gt;=5.7) for AMD GPUs</p></li>
-<li><p><a class="reference external" href="https://icl.utk.edu/magma/">MAGMA</a> (only needed when compiling for AMD GPUs)</p></li>
+<li><p>Other Python packages: <a class="reference external" href="https://www.h5py.org/">h5py</a>, <a class="reference external" href="https://github.com/giampaolo/psutil">psutil</a>, <a class="reference external" href="https://docs.pytest.org/en/latest/">pytest</a></p></li>
 </ul>
 </section>
 <section id="installing-for-nvidia-gpus">
-<h3>Installing for Nvidia GPUs<a class="headerlink" href="#installing-for-nvidia-gpus" title="Link to this heading">#</a></h3>
+<h3>Installing for NVIDIA GPUs<a class="headerlink" href="#installing-for-nvidia-gpus" title="Link to this heading">#</a></h3>
 <ul>
 <li><p>Create and activate a Python virtual environment.</p></li>
 <li><p>Install MPI4Py using the same compiler as for compiling VeloxChem.</p>
@@ -752,7 +753,13 @@ $ python3 -m pip install --no-deps --no-binary=mpi4py --no-cache-dir -v mpi4py
 </div>
 </li>
 <li><p>Install Libxc according to <a class="reference external" href="https://libxc.gitlab.io/">Libxc documentation</a>.</p></li>
-<li><p>Copy <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup_cuda</span></code> to <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup</span></code>, then edit <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup</span></code> and update the following</p>
+<li><p>Copy VeloxChem setup file for CUDA</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd $VLXHOME
+$ cp src/Makefile.setup_cuda src/Makefile.setup
+</pre></div>
+</div>
+</li>
+<li><p>Edit <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup</span></code> and update the following</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">CUDA_LIB_DIR</span></code>: where <code class="docutils literal notranslate"><span class="pre">libcudart</span></code>, <code class="docutils literal notranslate"><span class="pre">libcublas</span></code> and <code class="docutils literal notranslate"><span class="pre">libcusolver</span></code> can be
 found. If these files are in different folders, you can manually add them in
@@ -806,7 +813,13 @@ using the same compiler as for compiling VeloxChem.</p></li>
 <li><p>Edit <code class="docutils literal notranslate"><span class="pre">make.inc</span></code> and update <code class="docutils literal notranslate"><span class="pre">OPENBLASDIR</span></code>, <code class="docutils literal notranslate"><span class="pre">ROCM_PATH</span></code>, <code class="docutils literal notranslate"><span class="pre">FORT</span></code>, <code class="docutils literal notranslate"><span class="pre">GPU_TARGET</span></code></p></li>
 </ul>
 </li>
-<li><p>Copy <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup_hip</span></code> to <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup</span></code>, then edit <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup</span></code> and update the following</p>
+<li><p>Copy VeloxChem setup file for HIP</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd $VLXHOME
+$ cp src/Makefile.setup_hip src/Makefile.setup
+</pre></div>
+</div>
+</li>
+<li><p>Edit <code class="docutils literal notranslate"><span class="pre">src/Makefile.setup</span></code> and update the following</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">MAGMA_HOME</span></code>: where MAGMA is installed.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">LIBXC_HOME</span></code>: where Libxc is installed.</p></li>
@@ -910,7 +923,7 @@ $ export OMP_PLACES=cores
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-the-gpu-version-from-source">Installing the GPU version from source</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Obtaining the source code</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Build prerequisites</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-for-nvidia-gpus">Installing for Nvidia GPUs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-for-nvidia-gpus">Installing for NVIDIA GPUs</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-for-amd-gpus">Installing for AMD GPUs</a></li>
 </ul>
 </li>
