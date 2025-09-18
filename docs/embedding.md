@@ -26,7 +26,7 @@ scf_drv.solvation_model = 'cpcm'
 scf_drv.cpcm_epsilon = 78.39  # water
 scf_drv.filename = 'mol-cpcm'
 
-scf_results = scf_drv.compute(mol, basis)
+scf_results = scf_drv.compute(molecule, basis)
 ```
 
 Download a {download}`Python script <../input_files/ethanol-cpcm.py>` type of input file to perform an SCF calculation for ethanol in a water environment.
@@ -54,6 +54,55 @@ xyz:
 ```
 
 Download a {download}`text format <../input_files/ethanol-cpcm.inp>` type of input file to perform an SCF calculation for ethanol in a water environment.
+
+(sec:smd)=
+## SMD
+
+The Solvation Model based on Density (SMD) is implemented in VeloxChem for implicit solvation {cite}`Marenich2009`. In Veloxchem, the electrostatic contribution is computed using the CPCM model.
+
+**Python script**
+
+```
+import veloxchem as vlx
+
+xyz_string = """
+...
+"""
+
+molecule = vlx.Molecule.read_xyz_string(xyz_string)
+basis = vlx.MolecularBasis.read(molecule, 'def2-svp')
+
+scf_drv = vlx.ScfRestrictedDriver()
+scf_drv.solvation_model = 'smd'
+scf_drv.smd_solvent = 'water'
+scf_drv.filename = 'ethanol-smd'
+
+scf_results = scf_drv.compute(molecule, basis)
+```
+Download a {download}`Python script <../input_files/ethanol-smd.py>` type of input file to perform an SCF calculation for ethanol in a water environment.
+
+**Text file**
+
+```
+@jobs
+task: scf
+@end
+
+@method settings
+basis: def2-svp
+xcfun: b3lyp
+solvation model: smd
+smd solvent : water
+@end
+
+@molecule
+charge: 0
+multiplicity: 1
+xyz:
+...
+@end
+```
+Download a {download}`Python script <../input_files/ethanol-smd.inp>` type of input file to perform an SCF calculation for ethanol in a water environment.
 
 (sec:pe)=
 ## Polarizable embedding
