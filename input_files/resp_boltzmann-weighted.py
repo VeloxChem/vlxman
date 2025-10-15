@@ -22,17 +22,9 @@ conf = vlx.ConformerGenerator()
 conformers = conf.generate(molecule)
 
 # Now we will compute the Boltzmann-weighted RESP charges:
-empty_mol = vlx.Molecule()
-empty_bas = vlx.MolecularBasis()
-
-resp_settings = { 
-    'molecules': conformers['molecules'],
-    'filename': 'resp'
-}
-method_settings = {'basis': '6-31g*'}                                           
 
 resp_drv = vlx.RespChargesDriver()
-resp_drv.update_settings(resp_settings, method_settings)
-resp_charges = resp_drv.compute(empty_mol, empty_bas, 'resp')
+resp_drv.filename = 'resp'
+resp_charges = resp_drv.compute(conformers['molecules'])
 
 print("Boltzmann-weighted RESP charges =" , resp_charges)
