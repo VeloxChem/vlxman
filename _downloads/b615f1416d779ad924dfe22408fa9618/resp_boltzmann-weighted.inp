@@ -1,0 +1,16 @@
+@jobs
+task: resp charges
+@end
+
+@method settings
+basis: 6-31g*
+@end
+
+@resp charges
+xyz_file: all_three_conformers.xyz
+@end
+
+@molecule
+charge: 0
+multiplicity: 1
+@end

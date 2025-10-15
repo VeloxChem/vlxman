@@ -206,8 +206,7 @@
 
 <li class="toctree-l1"><a class="reference internal" href="md.html">Molecular dynamics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conf_search.html">Conformational search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="solvation.html">Solvation Builder</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="solvation.html">System solvation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mof_builder.html">MOF Builder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="loc_prop.html">Localized properties</a></li>
 <li class="toctree-l1"><a class="reference internal" href="im.html">Interpolation mechanics</a></li>
@@ -561,7 +560,8 @@ document.write(`
                   @method settings                                                                                        
                 ------------------------------------------------------------------------------------------                
                   ri_coulomb                boolean     use RI-J approximation                                            
-                  ri_auxiliary_basis        string      RI-J auxiliary basis set                                          
+                  ri_jk                     boolean     use RI-JK approximation                                           
+                  ri_auxiliary_basis        string      RI auxiliary basis set                                            
                   dispersion                boolean     use D4 dispersion correction                                      
                   xcfun                     string      exchange-correlation functional                                   
                   grid_level                integer     accuracy level of DFT grid (1-8)                                  
@@ -731,6 +731,7 @@ document.write(`
                   tmax            float       maximum value of trust radius                                               
                   max_iter        integer     maximum number of optimization steps                                        
                   transition      boolean     transition state search                                                     
+                  irc             boolean     flag for intrinsic reaction coordinate                                      
                   hessian         string      hessian flag                                                                
                   ref_xyz         string      reference geometry                                                          
                   keep_files      boolean     flag to keep output files                                                   

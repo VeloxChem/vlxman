@@ -17,4 +17,4 @@ resp_drv.update_settings({
 })
 
 resp_drv.filename = 'h2o-resp'
-resp_charges = resp_drv.compute(molecule, basis, 'resp')
+resp_charges = resp_drv.compute(molecule, basis)

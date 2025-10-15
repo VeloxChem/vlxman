@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -206,8 +206,7 @@
 
 <li class="toctree-l1"><a class="reference internal" href="md.html">Molecular dynamics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conf_search.html">Conformational search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="solvation.html">Solvation Builder</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="solvation.html">System solvation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mof_builder.html">MOF Builder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="loc_prop.html">Localized properties</a></li>
 <li class="toctree-l1"><a class="reference internal" href="im.html">Interpolation mechanics</a></li>
@@ -423,6 +422,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cpcm">CPCM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#smd">SMD</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#polarizable-embedding">Polarizable embedding</a></li>
 </ul>
             </nav>
@@ -457,7 +457,7 @@ document.write(`
 <span class="n">scf_drv</span><span class="o">.</span><span class="n">cpcm_epsilon</span> <span class="o">=</span> <span class="mf">78.39</span>  <span class="c1"># water</span>
 <span class="n">scf_drv</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;mol-cpcm&#39;</span>
 
-<span class="n">scf_results</span> <span class="o">=</span> <span class="n">scf_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">mol</span><span class="p">,</span> <span class="n">basis</span><span class="p">)</span>
+<span class="n">scf_results</span> <span class="o">=</span> <span class="n">scf_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Download a <a class="reference download internal" download="" href="../_downloads/99a8e94741e0402c80a36d3075eae412/ethanol-cpcm.py"><code class="xref download docutils literal notranslate"><span class="pre">Python</span> <span class="pre">script</span></code></a> type of input file to perform an SCF calculation for ethanol in a water environment.</p>
@@ -483,9 +483,76 @@ document.write(`
 </div>
 <p>Download a <a class="reference download internal" download="" href="../_downloads/990b75b18105493248d2273fb9e7434e/ethanol-cpcm.inp"><code class="xref download docutils literal notranslate"><span class="pre">text</span> <span class="pre">format</span></code></a> type of input file to perform an SCF calculation for ethanol in a water environment.</p>
 </section>
+<section id="smd">
+<span id="sec-smd"></span><h2>SMD<a class="headerlink" href="#smd" title="Link to this heading">#</a></h2>
+<p>The Solvation Model based on Density (SMD) is implemented in VeloxChem for implicit solvation <span id="id2">[<a class="reference internal" href="refs.html#id162" title="Aleksandr V. Marenich, Christopher J. Cramer, and Donald G. Truhlar. Universal solvation model based on solute electron density and on a continuum model of the solvent defined by the bulk dielectric constant and atomic surface tensions. J. Phys. Chem. B, 113(18):6378–6396, 2009. doi:10.1021/jp810292n.">MCT09</a>]</span>. In Veloxchem, the electrostatic contribution is computed using the CPCM model.</p>
+<p><strong>Python script</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">veloxchem</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">vlx</span>
+
+<span class="n">xyz_string</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">...</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">molecule</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">Molecule</span><span class="o">.</span><span class="n">read_xyz_string</span><span class="p">(</span><span class="n">xyz_string</span><span class="p">)</span>
+<span class="n">basis</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">MolecularBasis</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="s1">&#39;def2-svp&#39;</span><span class="p">)</span>
+
+<span class="n">scf_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">ScfRestrictedDriver</span><span class="p">()</span>
+<span class="n">scf_drv</span><span class="o">.</span><span class="n">solvation_model</span> <span class="o">=</span> <span class="s1">&#39;smd&#39;</span>
+<span class="n">scf_drv</span><span class="o">.</span><span class="n">smd_solvent</span> <span class="o">=</span> <span class="s1">&#39;water&#39;</span>
+<span class="n">scf_drv</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;mol-smd&#39;</span>
+
+<span class="n">scf_results</span> <span class="o">=</span> <span class="n">scf_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Download a <a class="reference download internal" download="" href="../_downloads/aaaa248d2c49e4c6a98c1e6c95c261c5/ethanol-smd.py"><code class="xref download docutils literal notranslate"><span class="pre">Python</span> <span class="pre">script</span></code></a> type of input file to perform an SCF calculation for ethanol in a water environment.</p>
+<p><strong>Text file</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@jobs</span>
+<span class="n">task</span><span class="p">:</span> <span class="n">scf</span>
+<span class="nd">@end</span>
+
+<span class="nd">@method</span> <span class="n">settings</span>
+<span class="n">basis</span><span class="p">:</span> <span class="n">def2</span><span class="o">-</span><span class="n">svp</span>
+<span class="n">xcfun</span><span class="p">:</span> <span class="n">b3lyp</span>
+<span class="n">solvation</span> <span class="n">model</span><span class="p">:</span> <span class="n">smd</span>
+<span class="n">smd</span> <span class="n">solvent</span> <span class="p">:</span> <span class="n">water</span>
+<span class="nd">@end</span>
+
+<span class="nd">@molecule</span>
+<span class="n">charge</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">multiplicity</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">xyz</span><span class="p">:</span>
+<span class="o">...</span>
+<span class="nd">@end</span>
+</pre></div>
+</div>
+<p>Download a <a class="reference download internal" download="" href="../_downloads/5f5d90142bf012a5d994f3489585149c/ethanol-smd.inp"><code class="xref download docutils literal notranslate"><span class="pre">Python</span> <span class="pre">script</span></code></a> type of input file to perform an SCF calculation for ethanol in a water environment.</p>
+</section>
 <section id="polarizable-embedding">
 <span id="sec-pe"></span><h2>Polarizable embedding<a class="headerlink" href="#polarizable-embedding" title="Link to this heading">#</a></h2>
-<p>An SCF calculation with a polarizable environment is performed in VeloxChem with an input file of the form</p>
+<p>An explicit representation of the environment is available with the polarizable embedding (PE) model. Molecules in the environment are represented by site charges and polarizabilities. VeloxChem presently supports for the PE model in</p>
+<ul class="simple">
+<li><p>SCF optimizations</p></li>
+<li><p>linear response calculations</p></li>
+</ul>
+<p>The PE model is invoked in input files by giving the name of the associated potential file.</p>
+<p><strong>Python script</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">veloxchem</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">vlx</span>
+
+<span class="n">xyz_string</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">...</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">molecule</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">Molecule</span><span class="o">.</span><span class="n">read_xyz_string</span><span class="p">(</span><span class="n">xyz_string</span><span class="p">)</span>
+<span class="n">basis</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">MolecularBasis</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="s1">&#39;def2-svp&#39;</span><span class="p">)</span>
+
+<span class="n">scf_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">ScfRestrictedDriver</span><span class="p">()</span>
+
+<span class="n">scf_drv</span><span class="o">.</span><span class="n">potfile</span> <span class="o">=</span> <span class="s2">&quot;pe.pot&quot;</span>
+
+<span class="n">scf_results</span> <span class="o">=</span> <span class="n">scf_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">mol</span><span class="p">,</span> <span class="n">basis</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Text file</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@jobs</span>
 <span class="n">task</span><span class="p">:</span> <span class="n">scf</span>
 <span class="nd">@end</span>
@@ -503,7 +570,8 @@ document.write(`
 <span class="nd">@end</span>
 </pre></div>
 </div>
-<p>together with a potential file <code class="docutils literal notranslate"><span class="pre">pe.pot</span></code> using, in this case, isotropic LoProp polarizabilities.</p>
+<p><strong>Potential file</strong></p>
+<p>The potential file named <code class="docutils literal notranslate"><span class="pre">pe.pot</span></code> in this example takes the following form.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@environment</span>
 <span class="n">units</span><span class="p">:</span> <span class="n">angstrom</span>
 <span class="n">xyz</span><span class="p">:</span>
@@ -528,6 +596,7 @@ document.write(`
 <span class="nd">@end</span>
 </pre></div>
 </div>
+<p>The polarizability components are listed in the order <code class="docutils literal notranslate"><span class="pre">xx</span></code>, <code class="docutils literal notranslate"><span class="pre">xy</span></code>, <code class="docutils literal notranslate"><span class="pre">xz</span></code>, <code class="docutils literal notranslate"><span class="pre">yy</span></code>. <code class="docutils literal notranslate"><span class="pre">yz</span></code>, <code class="docutils literal notranslate"><span class="pre">zz</span></code>.</p>
 </section>
 </section>
 
@@ -596,6 +665,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cpcm">CPCM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#smd">SMD</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#polarizable-embedding">Polarizable embedding</a></li>
 </ul>
   </nav></div>

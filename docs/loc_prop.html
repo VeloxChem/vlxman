@@ -208,8 +208,7 @@
 
 <li class="toctree-l1"><a class="reference internal" href="md.html">Molecular dynamics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conf_search.html">Conformational search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="solvation.html">Solvation Builder</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="solvation.html">System solvation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mof_builder.html">MOF Builder</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Localized properties</a></li>
 <li class="toctree-l1"><a class="reference internal" href="im.html">Interpolation mechanics</a></li>
@@ -425,7 +424,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esp-charges">ESP charges</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resp-charges">RESP charges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resp-charges">RESP charges</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boltzmann-weighted-resp-charges">Boltzmann-weighted RESP charges</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chelpg-charges">CHELPG charges</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#charge-comparison">Charge comparison</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loprop-charges-and-polarizabilities">LoProp charges and polarizabilities</a></li>
@@ -513,9 +515,9 @@ b_J = \sum_{a} \frac{V_a}{r_{aJ}}
 <span class="n">molecule</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">Molecule</span><span class="o">.</span><span class="n">read_xyz_string</span><span class="p">(</span><span class="n">xyz_str</span><span class="p">)</span>
 <span class="n">basis</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">MolecularBasis</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="s2">&quot;6-31G*&quot;</span><span class="p">)</span>
 
-<span class="n">esp_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">RespChargesDriver</span><span class="p">()</span>
+<span class="n">esp_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">EspChargesDriver</span><span class="p">()</span>
 <span class="n">esp_drv</span><span class="o">.</span><span class="n">equal_charges</span> <span class="o">=</span> <span class="s2">&quot;1=3, 1=4&quot;</span>
-<span class="n">esp_charges</span> <span class="o">=</span> <span class="n">esp_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">,</span> <span class="s2">&quot;esp&quot;</span><span class="p">)</span>
+<span class="n">esp_charges</span> <span class="o">=</span> <span class="n">esp_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -581,7 +583,7 @@ A_{JJ} =
 
 <span class="n">resp_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">RespChargesDriver</span><span class="p">()</span>
 <span class="n">resp_drv</span><span class="o">.</span><span class="n">equal_charges</span> <span class="o">=</span> <span class="s2">&quot;1=3, 1=4&quot;</span>
-<span class="n">resp_charges</span> <span class="o">=</span> <span class="n">resp_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">,</span> <span class="s2">&quot;resp&quot;</span><span class="p">)</span>
+<span class="n">resp_charges</span> <span class="o">=</span> <span class="n">resp_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -609,6 +611,38 @@ xyz:
 </pre></div>
 </div>
 <p>Download a <a class="reference download internal" download="" href="../_downloads/d9176bd0356f287b5281cf6ca093bf94/h2o-resp.inp"><code class="xref download docutils literal notranslate"><span class="pre">text</span> <span class="pre">file</span></code></a> type of input file to calculate the RESP charges for the water molecule at the HF/6-31G* level of theory.</p>
+<section id="boltzmann-weighted-resp-charges">
+<span id="subsec-bol-weighted-resp"></span><h3>Boltzmann-weighted RESP charges<a class="headerlink" href="#boltzmann-weighted-resp-charges" title="Link to this heading">#</a></h3>
+<p>It is also possible to calculate the Boltzmann-weighted RESP charges for a set of conformers.</p>
+<p><strong>Python script</strong></p>
+<p>Below, the argument <code class="docutils literal notranslate"><span class="pre">conformers</span></code> is a list of molecule objects for which the averaging is performed. By default, the calculation is performed at the Hartree–Fock level using the 6-31G* basis set.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">resp_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">RespChargesDriver</span><span class="p">()</span>
+
+<span class="n">resp_charges</span> <span class="o">=</span> <span class="n">resp_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">conformers</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Download a <a class="reference download internal" download="" href="../_downloads/7c7d48cd07cfc44b4604f8b95cbe8719/resp_boltzmann-weighted.py"><code class="xref download docutils literal notranslate"><span class="pre">Python</span> <span class="pre">script</span></code></a> type of input file to calculate the Boltzmann-weighted RESP charges for the three conformers of propanol at the HF/6-31G* level of theory.</p>
+<p><strong>Text file</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@jobs</span>
+<span class="n">task</span><span class="p">:</span> <span class="n">resp</span> <span class="n">charges</span>
+<span class="nd">@end</span>
+
+<span class="nd">@method</span> <span class="n">settings</span>
+<span class="n">basis</span><span class="p">:</span> <span class="mi">6</span><span class="o">-</span><span class="mi">31</span><span class="n">g</span><span class="o">*</span>
+<span class="nd">@end</span>
+
+<span class="nd">@resp</span> <span class="n">charges</span>
+<span class="n">xyz_file</span><span class="p">:</span> <span class="n">all_conformers</span><span class="o">.</span><span class="n">xyz</span>
+<span class="nd">@end</span>
+
+<span class="nd">@molecule</span>
+<span class="n">charge</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">multiplicity</span><span class="p">:</span> <span class="mi">1</span>
+<span class="nd">@end</span>
+</pre></div>
+</div>
+<p>Download a <a class="reference download internal" download="" href="../_downloads/b615f1416d779ad924dfe22408fa9618/resp_boltzmann-weighted.inp"><code class="xref download docutils literal notranslate"><span class="pre">text</span> <span class="pre">file</span></code></a> type of input file to calculate the Boltzmann-weighted RESP charges for the three conformers of propanol at the HF/6-31G* level of theory, and use the <a class="reference download internal" download="" href="../_downloads/a082568157fdd7a296d7fa6ef2c72f26/all_conformers.xyz"><code class="xref download docutils literal notranslate"><span class="pre">all_conformers.xyz</span></code></a> file.</p>
+</section>
 </section>
 <section id="chelpg-charges">
 <h2>CHELPG charges<a class="headerlink" href="#chelpg-charges" title="Link to this heading">#</a></h2>
@@ -632,13 +666,13 @@ xyz:
 <span class="n">molecule</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">Molecule</span><span class="o">.</span><span class="n">read_xyz_string</span><span class="p">(</span><span class="n">xyz_str</span><span class="p">)</span>
 <span class="n">basis</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">MolecularBasis</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="s2">&quot;6-31G*&quot;</span><span class="p">)</span>
 
-<span class="n">esp_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">RespChargesDriver</span><span class="p">()</span>
+<span class="n">esp_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">EspChargesDriver</span><span class="p">()</span>
 
 <span class="n">esp_drv</span><span class="o">.</span><span class="n">grid_type</span> <span class="o">=</span> <span class="s2">&quot;chelpg&quot;</span>
 
 <span class="n">esp_drv</span><span class="o">.</span><span class="n">equal_charges</span> <span class="o">=</span> <span class="s2">&quot;1=3, 1=4&quot;</span>
 
-<span class="n">chelpg_charges</span> <span class="o">=</span> <span class="n">esp_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">,</span> <span class="s2">&quot;esp&quot;</span><span class="p">)</span>
+<span class="n">chelpg_charges</span> <span class="o">=</span> <span class="n">esp_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -658,7 +692,7 @@ H           0.023220          0.033747          0.003200
 O          -0.594785         -0.639004         -0.611345
 H           0.376669          0.419154          0.376265
 --------------------------------------------------------
-Total:      0.000000         -0.000000          0.000000
+Total:      0.000000          0.000000         -0.000000
 </pre></div>
 </div>
 </div>
@@ -798,7 +832,10 @@ xyz:
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esp-charges">ESP charges</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resp-charges">RESP charges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resp-charges">RESP charges</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boltzmann-weighted-resp-charges">Boltzmann-weighted RESP charges</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chelpg-charges">CHELPG charges</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#charge-comparison">Charge comparison</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loprop-charges-and-polarizabilities">LoProp charges and polarizabilities</a></li>

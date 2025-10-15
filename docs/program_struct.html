@@ -206,8 +206,7 @@
 
 <li class="toctree-l1"><a class="reference internal" href="md.html">Molecular dynamics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conf_search.html">Conformational search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="solvation.html">Solvation Builder</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="solvation.html">System solvation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mof_builder.html">MOF Builder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="loc_prop.html">Localized properties</a></li>
 <li class="toctree-l1"><a class="reference internal" href="im.html">Interpolation mechanics</a></li>
@@ -496,6 +495,7 @@ PACKAGE CONTENTS
     __main__
     aodensitymatrix
     aoindices
+    atombdedriver
     atomtypeidentifier
     batchsize
     blockdavidson
@@ -510,16 +510,18 @@ PACKAGE CONTENTS
     cubicgrid
     cubicresponsedriver
     densityviewer
+    densityvieweralternative
     dftutils
     dispersionmodel
     distributedarray
+    doubleresbeta
     embedding
     environment
     errorhandler
+    espchargesdriver
     evbdataprocessing
     evbdriver
     evbfepdriver
-    evbffbuilder
     evbreporter
     evbsystembuilder
     excitedstateanalysisdriver
@@ -541,7 +543,9 @@ PACKAGE CONTENTS
     interpolationdriver
     linearsolver
     lreigensolver
+    lreigensolverunrest
     lrsolver
+    lrsolverunrest
     main
     matrices
     matrix
@@ -578,13 +582,16 @@ PACKAGE CONTENTS
     pulsedrsp
     quadraticresponsedriver
     reactionmatcher
+    reaffbuilder
     respchargesdriver
     rifockdriver
     rigradientdriver
+    rijkfockdriver
     rspabsorption
     rspc6
     rspcdspec
     rspcustomproperty
+    rspdoublerestrans
     rsplinabscross
     rsppolarizability
     rspproperty
@@ -612,6 +619,7 @@ PACKAGE CONTENTS
     symmetryoperations
     tdacppsolver
     tdaeigensolver
+    tdaeigensolverunrest
     tddftgradientdriver
     tddftorbitalresponse
     tdhfhessiandriver
@@ -797,7 +805,7 @@ FUNCTIONS
         Gets convertion factor for rotatory strength (a.u. -&gt; 10^-40 cgs).
 
 DATA
-    __deployed__ = {&#39;author&#39;: &#39;Xin Li&#39;, &#39;build&#39;: &#39;206&#39;, &#39;commit&#39;: &#39;c4f628a...
+    __commit__ = &#39;0efbe13141bb0f03d3f33c374052bccf1086c552&#39;
 
 VERSION
     1.0rc4
@@ -821,6 +829,7 @@ FILE
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;AODensityMatrix&#39;,
  &#39;Absorption&#39;,
  &#39;AtomBasis&#39;,
+ &#39;AtomBdeDriver&#39;,
  &#39;AtomTypeIdentifier&#39;,
  &#39;BasisFunction&#39;,
  &#39;BlockDavidsonSolver&#39;,
@@ -835,14 +844,15 @@ FILE
  &#39;CubicGrid&#39;,
  &#39;CubicResponseDriver&#39;,
  &#39;DensityViewer&#39;,
+ &#39;DensityViewerAlternative&#39;,
  &#39;DispersionModel&#39;,
  &#39;ElectricDipoleIntegralsDriver&#39;,
  &#39;ElectricDipoleMomentDriver&#39;,
  &#39;ElectricDipoleMomentGeom100Driver&#39;,
+ &#39;EspChargesDriver&#39;,
  &#39;EvbDataProcessing&#39;,
  &#39;EvbDriver&#39;,
  &#39;EvbFepDriver&#39;,
- &#39;EvbForceFieldBuilder&#39;,
  &#39;EvbForceGroup&#39;,
  &#39;EvbReporter&#39;,
  &#39;EvbSystemBuilder&#39;,
@@ -872,6 +882,8 @@ FILE
  &#39;LinearAbsorptionCrossSection&#39;,
  &#39;LinearResponseEigenSolver&#39;,
  &#39;LinearResponseSolver&#39;,
+ &#39;LinearResponseUnrestrictedEigenSolver&#39;,
+ &#39;LinearResponseUnrestrictedSolver&#39;,
  &#39;LoPropDriver&#39;,
  &#39;MMDriver&#39;,
  &#39;MMForceFieldGenerator&#39;,
@@ -912,6 +924,9 @@ FILE
  &#39;QuadraticResponseDriver&#39;,
  &#39;RIFockDriver&#39;,
  &#39;RIFockGradDriver&#39;,
+ &#39;RIJKFockDriver&#39;,
+ &#39;ReactionForceFieldBuilder&#39;,
+ &#39;ReactionMatcher&#39;,
  &#39;RespChargesDriver&#39;,
  &#39;ResponseProperty&#39;,
  &#39;SHG&#39;,
@@ -922,6 +937,7 @@ FILE
  &#39;ScfUnrestrictedDriver&#39;,
  &#39;Seminario&#39;,
  &#39;ShgDriver&#39;,
+ &#39;SmdDriver&#39;,
  &#39;SolvationBuilder&#39;,
  &#39;SolvationFepDriver&#39;,
  &#39;SubCommunicators&#39;,
@@ -931,6 +947,7 @@ FILE
  &#39;T4CScreener&#39;,
  &#39;TPA&#39;,
  &#39;TdaEigenSolver&#39;,
+ &#39;TdaUnrestrictedEigenSolver&#39;,
  &#39;TddftGradientDriver&#39;,
  &#39;TddftOrbitalResponse&#39;,
  &#39;TdhfHessianDriver&#39;,
@@ -955,7 +972,7 @@ FILE
  &#39;XtbHessianDriver&#39;,
  &#39;__builtins__&#39;,
  &#39;__cached__&#39;,
- &#39;__deployed__&#39;,
+ &#39;__commit__&#39;,
  &#39;__doc__&#39;,
  &#39;__file__&#39;,
  &#39;__loader__&#39;,
@@ -967,6 +984,7 @@ FILE
  &#39;aodensitymatrix&#39;,
  &#39;aoindices&#39;,
  &#39;assert_msg_critical&#39;,
+ &#39;atombdedriver&#39;,
  &#39;atomtypeidentifier&#39;,
  &#39;available_functionals&#39;,
  &#39;available_pdft_functionals&#39;,
@@ -996,16 +1014,18 @@ FILE
  &#39;cubicresponsedriver&#39;,
  &#39;denmat&#39;,
  &#39;densityviewer&#39;,
+ &#39;densityvieweralternative&#39;,
  &#39;dftutils&#39;,
  &#39;dipole_in_debye&#39;,
  &#39;dispersionmodel&#39;,
  &#39;distributedarray&#39;,
+ &#39;doubleresbeta&#39;,
  &#39;environment&#39;,
  &#39;errorhandler&#39;,
+ &#39;espchargesdriver&#39;,
  &#39;evbdataprocessing&#39;,
  &#39;evbdriver&#39;,
  &#39;evbfepdriver&#39;,
- &#39;evbffbuilder&#39;,
  &#39;evbreporter&#39;,
  &#39;evbsystembuilder&#39;,
  &#39;excitedstateanalysisdriver&#39;,
@@ -1034,7 +1054,9 @@ FILE
  &#39;is_chemical_element&#39;,
  &#39;linearsolver&#39;,
  &#39;lreigensolver&#39;,
+ &#39;lreigensolverunrest&#39;,
  &#39;lrsolver&#39;,
+ &#39;lrsolverunrest&#39;,
  &#39;make_matrices&#39;,
  &#39;make_matrix&#39;,
  &#39;mat_t&#39;,
@@ -1078,8 +1100,10 @@ FILE
  &#39;quadraticresponsedriver&#39;,
  &#39;reactionmatcher&#39;,
  &#39;read_results&#39;,
+ &#39;reaffbuilder&#39;,
  &#39;respchargesdriver&#39;,
  &#39;rifockdriver&#39;,
+ &#39;rijkfockdriver&#39;,
  &#39;rotatory_strength_in_cgs&#39;,
  &#39;rspabsorption&#39;,
  &#39;rspc6&#39;,
@@ -1102,6 +1126,8 @@ FILE
  &#39;set_vlxbasispath&#39;,
  &#39;set_vlxdatapath&#39;,
  &#39;shgdriver&#39;,
+ &#39;smddriver&#39;,
+ &#39;smdsolventproperties&#39;,
  &#39;solvationbuilder&#39;,
  &#39;solvationfepdriver&#39;,
  &#39;subcommunicators&#39;,
@@ -1109,6 +1135,7 @@ FILE
  &#39;symmetryoperations&#39;,
  &#39;tdacppsolver&#39;,
  &#39;tdaeigensolver&#39;,
+ &#39;tdaeigensolverunrest&#39;,
  &#39;tddftgradientdriver&#39;,
  &#39;tddftorbitalresponse&#39;,
  &#39;tdhfhessiandriver&#39;,
