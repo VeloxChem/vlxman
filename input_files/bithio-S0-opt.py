@@ -27,7 +27,7 @@ basis = vlx.MolecularBasis.read(molecule, 'def2-svp')
 scf_drv = vlx.ScfRestrictedDriver()
 scf_drv.filename = 'bithio-S0-opt'
 scf_drv.xcfun = 'b3lyp'
-scf_drv.dispersion = 'd4'
+scf_drv.dispersion = True
 results = scf_drv.compute(molecule, basis)
 
 opt_drv = vlx.OptimizationDriver(scf_drv)
