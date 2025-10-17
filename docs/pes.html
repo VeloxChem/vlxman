@@ -457,7 +457,7 @@ document.write(`
 <span class="n">scf_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">ScfRestrictedDriver</span><span class="p">()</span>
 <span class="n">scf_drv</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;mol-opt&#39;</span>
 <span class="n">scf_drv</span><span class="o">.</span><span class="n">xcfun</span> <span class="o">=</span> <span class="s1">&#39;b3lyp&#39;</span>
-<span class="n">scf_drv</span><span class="o">.</span><span class="n">dispersion</span> <span class="o">=</span> <span class="s1">&#39;d4&#39;</span>
+<span class="n">scf_drv</span><span class="o">.</span><span class="n">dispersion</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="n">results</span> <span class="o">=</span> <span class="n">scf_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">)</span>
 
 <span class="n">opt_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">OptimizationDriver</span><span class="p">(</span><span class="n">scf_drv</span><span class="p">)</span>
@@ -505,7 +505,7 @@ document.write(`
 <span class="n">scf_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">ScfRestrictedDriver</span><span class="p">()</span>
 <span class="n">scf_drv</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;mol-opt&#39;</span>
 <span class="n">scf_drv</span><span class="o">.</span><span class="n">xcfun</span> <span class="o">=</span> <span class="s1">&#39;b3lyp&#39;</span>
-<span class="n">scf_drv</span><span class="o">.</span><span class="n">dispersion</span> <span class="o">=</span> <span class="s1">&#39;d4&#39;</span>
+<span class="n">scf_drv</span><span class="o">.</span><span class="n">dispersion</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="n">scf_results</span> <span class="o">=</span> <span class="n">scf_drv</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">molecule</span><span class="p">,</span> <span class="n">basis</span><span class="p">)</span>
 
 <span class="n">rsp_drv</span> <span class="o">=</span> <span class="n">vlx</span><span class="o">.</span><span class="n">LinearResponseEigenSolver</span><span class="p">()</span>
