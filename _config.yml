@@ -12,7 +12,7 @@ only_build_toc_files   : false
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: cache
-  timeout: 120
+  timeout: 300
 
 #Sphinx settings
 #Force a more recent version of the math engine mathjax
