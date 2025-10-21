@@ -1,0 +1,22 @@
+name: vlxman 
+channels:
+  - conda-forge
+  - veloxchem
+dependencies:
+  - python>=3.10
+  - jupyter-book
+  - jupyterlab
+  - jupyterlab-spellchecker
+  - jupyterlab_code_formatter
+  - black
+  - isort
+  - ghp-import
+  - k3d
+  - ipympl
+  - ipywidgets
+  - openmm
+  - py3dmol
+  - pymbar
+  - rdkit
+  - veloxchem
+
