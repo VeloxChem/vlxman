@@ -8,35 +8,35 @@ VeloxChem is education enabling, providing a means to explain and explore the th
 
 This manual gives a description of the installation process and basic usage of VeloxChem. A more comprehensive view of the ample opportunities for Python software interactions is provided in the [eChem](https://kthpanor.github.io/echem) book {cite}`echem_book`.
 
-```{image} ../images/swedish_moebius.jpg
+:::{image} ../images/swedish_moebius.jpg
 :alt: cover
 :class: bg-primary mb-1
 :width: 400px
 :align: right
-```
+:::
 
 ## Selected functionalities
 
 - Kohn–Sham Density Functional Theory (DFT)
 - Time-dependent DFT (TDDFT)
 - Complex polarization propagator (CPP)
-    - [linear response functions](sec:cpp_lrf)
-    - [quadratic response functions](sec:cpp_qrf)
-    - [cubic response functions](sec:cpp_crf)
-- [Potential energy surface](sec:pes) (PES) exploration for ground and excited states
-- [Optical](sec:uv_vis) (UV/vis) and [X-ray absorption](sec:xray) (XAS, XPS)
-- [Two-photon absorption](sec:tpa) (TPA)
-- [Electronic circular dichroism](sec:ecd) (ECD)
-- [Polarizabilities](sec:alpha) and [dispersion coefficients](sec:c6)
-- [Vibrational spectroscopies](sec:vib_spect)
-    - [Infrared absorption](sec:ir) (IR)
-    - [Raman spectroscopy](sec:raman)
-    - [Resonance Raman spectroscopy](sec:rrs) (RRS)
+    - [linear response functions](#sec:cpp_lrf)
+    - [quadratic response functions](#sec:cpp_qrf)
+    - [cubic response functions](#sec:cpp_crf)
+- [Potential energy surface](#sec:pes) (PES) exploration for ground and excited states
+- [Optical](#sec:uv_vis) (UV/vis) and [X-ray absorption](#sec:xray) (XAS, XPS)
+- [Two-photon absorption](#sec:tpa) (TPA)
+- [Electronic circular dichroism](#sec:ecd) (ECD)
+- [Polarizabilities](#sec:alpha) and [dispersion coefficients](#sec:c6)
+- [Vibrational spectroscopies](#sec:vib_spect)
+    - [Infrared absorption](#sec:ir) (IR)
+    - [Raman spectroscopy](#sec:raman)
+    - [Resonance Raman spectroscopy](#sec:rrs) (RRS)
 - Classical methods
-    - [Molecular mechanics](sec:mm) (MM)
-    - [Interpolation mechanics](sec:im) (IM)
-    - [Molecular dynamics](md) (MD)
-    - [Conformational search](sec:conf_search)
-    - [Polarizable embedding](sec:pe) (PE)
-    - [Localized properties](sec:loc_prop) (LoProp, RESP)
-    - [Empirical valence bond](sec:evb) (EVB)
+    - [Molecular mechanics](#sec:mm) (MM)
+    - [Interpolation mechanics](#sec:im) (IM)
+    - [Molecular dynamics](#sec:md) (MD)
+    - [Conformational search](#sec:conf_search)
+    - [Polarizable embedding](#sec:pe) (PE)
+    - [Localized properties](#sec:loc_prop) (LoProp, RESP)
+    - [Empirical valence bond](#sec:evb) (EVB)

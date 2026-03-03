@@ -12,3 +12,6 @@ _build/
 **/.ipynb_checkpoints
 **/.DS_Store
 
+
+# MyST build outputs
+_build

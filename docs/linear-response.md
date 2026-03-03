@@ -140,11 +140,11 @@ xyz:
 
 ## Laser pulse propagation
 
-VeloxChem allows for calculation of the linear electric dipole response for the frequency region of a single Gaussian-envelope pulse deemed sufficiently large (using the @pulses module).
+VeloxChem allows for calculation of the linear response to a Gaussian-envelope pulse.
 
-The time-domain shape parameters for this pulse may be specified by the user, optionally storing a collection of pertinent results in an HDF5-formatted file or a plaintext ASCII file whose name may be specified by the user.
+The time-domain shape parameters for this pulse may be specified by the user, optionally storing a collection of pertinent results in an HDF5-formatted file or a plain text ASCII file whose name may be specified by the user.
 
-An example of an input file that when run will carry out such a calculation is given below. For more documentation about the available keywords, please consult the source file whose path from the VeloxChem root folder is src/pymodule/pulsedrsp.py. Note in particular that the default of carrier envelope phase may need adjustment to match your desired setup.
+An example of an input file that when run will carry out such a calculation is given below. Note in particular that the default of carrier envelope phase may need adjustment to match your desired setup.
 
 ```
 @jobs

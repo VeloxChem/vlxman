@@ -1,0 +1,70 @@
+version: 1
+project:
+  title: VeloxChem program manual
+  authors:
+    - name: The VeloxChem team
+  copyright: '2025'
+  exclude:
+    - README.md
+  github: veloxchem/vlxman
+  bibliography:
+    - references.bib
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  toc:
+    - file: docs\intro.md
+    - title: Getting started
+      children:
+        - file: docs\limits.md
+        - file: docs\installation.md
+        - file: docs\run_desktop.md
+        - file: docs\run_cluster.md
+        - file: docs\keywords.ipynb
+    - title: Model chemistry
+      children:
+        - file: docs\molecule.ipynb
+        - file: docs\refstate.md
+        - file: docs\functionals.ipynb
+        - file: docs\basis_sets.ipynb
+        - file: docs\hamiltonian.md
+        - file: docs\embedding.md
+    - title: Properties
+      children:
+        - file: docs\pes.md
+        - file: docs\uv-vis.md
+        - file: docs\opt_act.md
+        - file: docs\vib_spect.md
+        - file: docs\magnetic.md
+        - file: docs\linear-response.md
+        - file: docs\nlo.md
+        - file: docs\xray.md
+    - title: Classical methods
+      children:
+        - file: docs\mm.ipynb
+        - file: docs\md.md
+        - file: docs\conf_search.md
+        - file: docs\solvation.ipynb
+        - file: docs\mof_builder.ipynb
+        - file: docs\loc_prop.ipynb
+        - file: docs\im.md
+        - file: docs\evb.md
+    - title: Visualization
+      children:
+        - file: docs\vis.ipynb
+        - file: docs\viamd.md
+    - title: Advanced users
+      children:
+        - file: docs\program_struct.ipynb
+        - file: docs\source_struct.md
+        - file: docs\programming_style.ipynb
+    - title: References
+      children:
+        - file: docs\refs.md
+site:
+  options:
+    logo: images/logo/vlx-logo-blacktext-halo.png
+    favicon: vlx_logo_mark.png
+    folders: true
+  template: book-theme
