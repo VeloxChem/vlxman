@@ -60,7 +60,7 @@ Download a {download}`Python script <../input_files/tq-uv-vis.py>` type of input
 
 **Text file**
 
-Please refer to the [keyword list](sec:uv-vis-keywords) for a complete set of options. Note that natural transition orbitals NTO can be saved using the `nto` keyword. By specifying the `absorption` property, both UV/vis and ECD spectra will be calculated.
+Please refer to the [keyword list](#sec:uv-vis-keywords) for a complete set of options. Note that natural transition orbitals NTO can be saved using the `nto` keyword. By specifying the `absorption` property, both UV/vis and ECD spectra will be calculated.
 
 ```
 @jobs
@@ -157,7 +157,7 @@ Download a {download}`Python script <../input_files/tq-cpp.py>` type of input fi
 
 **Text file**
 
-Please refer to the [keyword list](sec:cpp-keywords) for a complete set of options.
+Please refer to the [keyword list](#sec:cpp-keywords) for a complete set of options.
 
 ```
 @jobs

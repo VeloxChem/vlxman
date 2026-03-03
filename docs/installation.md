@@ -116,7 +116,7 @@ To avoid clashes between dependencies, we recommend to always use a [virtual env
   ```
 
   If you are installing VeloxChem on macOS you may also need to set the
-  `CMAKE_ARGS` environment variable. See [Known issues](known-issues-macos) for
+  `CMAKE_ARGS` environment variable. See [Known issues](#known-issues-macos) for
   details.
 
 - Build and install VeloxChem in the conda environment:

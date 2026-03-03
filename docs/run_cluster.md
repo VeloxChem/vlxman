@@ -66,7 +66,7 @@ The results of the calculation are stored in an [HDF5](https://en.wikipedia.org/
 
 **Text file**
 
-The same SCF calculation can be performed with use of an input file in text format named `myjob.inp` in the in the job script above. Such an input file consists of multiple groups marked with `@group name` and `@end`, see the listing of [text file input keywords](sec:text-file-keywords).
+The same SCF calculation can be performed with use of an input file in text format named `myjob.inp` in the in the job script above. Such an input file consists of multiple groups marked with `@group name` and `@end`, see the listing of [text file input keywords](#sec:text-file-keywords).
 
 ```
 @jobs

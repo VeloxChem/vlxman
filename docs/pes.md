@@ -1,5 +1,6 @@
 (sec:pes)=
 # Potential energy surfaces
+
 Structure optimizations are performed with the aid of geomeTRIC {cite}`geomeTRIC`.
 
 ## Ground state optimization
@@ -30,7 +31,7 @@ Download a {download}`Python script <../input_files/bithio-S0-opt.py>` type of i
 
 **Text file**
 
-Please refer to the [keyword list](sec:opt-keywords) for a complete set of options. Dispersion can be activated in the `@method settings` section by using the keyword `dispersion`.
+Please refer to the [keyword list](#sec:opt-keywords) for a complete set of options. Dispersion can be activated in the `@method settings` section by using the keyword `dispersion`.
 
 ```
 @jobs

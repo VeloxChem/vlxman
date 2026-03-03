@@ -36,10 +36,10 @@ dependencies:
 $ conda install jupyter-book -c conda-forge
 $ git clone https://github.com/VeloxChem/vlxman.git
 $ cd vlxman
-$ vi docs/dft.md
-$ jupyter-book build .
-$ open _build/html/index.html
+$ jupyter-book start
+$ open http://localhost:3000/
 ```
+The browser will show the Jupyter book and interactively update it as you edit pages in JupyterLab or any other tool.
 
 # Publish the manual
 

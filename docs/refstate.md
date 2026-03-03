@@ -2,9 +2,9 @@
 
 By default, the Hartree–Fock method is employed. 
 
-To use Kohn–Sham DFT, any of the several available functionals is specified as illustrated below, see the [exchange-correlation functionals](sec:xc-functionals) page for a complete list of available functionals.
+To use Kohn–Sham DFT, any of the several available functionals is specified as illustrated below, see the [exchange-correlation functionals](#sec:xc-functionals) page for a complete list of available functionals.
 
-For input text files, a detailed [list of keywords](sec:text-file-keywords) is available.
+For input text files, a detailed [list of keywords](#sec:text-file-keywords) is available.
 
 (sec:rhf)=
 ## Restricted closed-shell
