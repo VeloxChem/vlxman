@@ -12,7 +12,7 @@ This manual gives a description of the installation process and basic usage of V
 :alt: cover
 :class: bg-primary mb-1
 :width: 400px
-:align: right
+:align: center
 :::
 
 ## Selected functionalities
