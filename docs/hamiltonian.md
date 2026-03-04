@@ -1,8 +1,79 @@
 # Hamiltonian
+ 
+For a system with $N$ electrons and $M$ nuclei in the quantum mechanical region, VeloxChem implements the nonrelativic electronic Hamiltonian
+
+\begin{align*}
+\hat{H} =
+%
+&- \sum_{i=1}^N
+\frac{\hbar^2}{2 m_\mathrm{e}} \nabla^2_i
+%
+- \sum_{i=1}^N \sum_{A=1}^M
+\frac{Z_A e^2}{4 \pi \varepsilon_0 |\mathbf{r}_i - \mathbf{R}_A|}\\
+%
+&\qquad + \sum_{i=1}^N \sum_{j>i}^N
+\frac{e^2}{4 \pi \varepsilon_0 |\mathbf{r}_i - \mathbf{r}_j|}
+%
++ \sum_{A=1}^M \sum_{B>A}^M
+\frac{Z_A Z_B e^2}{4 \pi \varepsilon_0 |\mathbf{R}_A - \mathbf{R}_B|}
+\end{align*}
+
+introducing in order terms associated with the electronic kinetic energy, electron–nuclear attraction, electron–electron repulsion, and nuclear–nuclear repulsion. We use variables $\mathbf{r}$ and $\mathbf{R}$ to collectively denote the sets of electronic and nuclear coordinates, respectively.
+
+In a brief notation, the electronic Hamiltonian is expressed in terms of the one- and two-electron components in addition to the nuclear repulsion term
+
+$$
+\hat{H} =
+\sum_{i} \hat{h}(i) +
+\sum_{j>i} \hat{g}(i,j) + 
+V^\mathrm{n,rep}
+$$
 
 ## Effective-core potentials
 
-ECP integrals are under implementation.
+ECPs in VeloxChem follow the conventional partitioning into local and nonlocal components:
+
+$$
+\hat{V}_{\text{ECP}}(\mathbf{r})
+= \hat{V}_{\text{loc}}(r)
++ \hat{V}_{\text{nl}}(\mathbf{r})
+$$
+
+Every atom described by an ECP is associated with such an operator, and they are to replace the corresponding electron–nuclear attraction terms in the one‑electron Hamiltonian. For notational convenience, the coordinate origin has here been assumed to be located at the ECP center.
+
+### Local Component
+
+The **local part** of the ECP represents a spherically symmetric potential applied equally to all components of the valence wave function. It often corresponds to the highest angular‑momentum channel of the pseudopotential:
+
+$$
+\hat{V}_{\text{loc}}(r)
+= -\frac{Z_{\text{eff}} e^2}{4 \pi \varepsilon_0  r}
+  + \sum_{k} A_k \, r^{n_k} e^{-a_k r^2}
+$$
+
+This term captures the screened nuclear attraction and mimics the average effect of the removed core electrons.
+
+### Nonlocal Component
+
+The **nonlocal projector terms** introduce angular‑momentum dependence by projecting the wave function onto specific $l$-channels:
+
+$$
+\hat{V}_{\text{nl}}
+= \sum_{l} \sum_{m=-l}^{l}
+    | Y_{lm} \rangle \, V_l(r) \, \langle Y_{lm} |
+$$
+
+Each $V_l(r)$ is a radial potential defined by a parameterized sum of Gaussian functions:
+
+$$
+V_l(r) = \sum_{k} A_{lk} \, r^{n_{lk}} e^{-a_{lk} r^2}
+$$
+
+These projectors enforce the correct nodal structure and scattering behaviour of the valence orbitals, preserving norm conservation and accuracy across chemical environments.
+
+:::{note}
+VeloxChem includes a set of small-core ECPs for elements starting with potassium ($Z = 19$) and ending with radon ($Z = 86$). Alternative choices of ECPs for these elements and also ECPs for other elements can be manually introduced by the user as long as they are of the form described above.
+:::
 
 ## Static electric fields
 
