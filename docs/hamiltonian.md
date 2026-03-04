@@ -48,7 +48,7 @@ The **local part** of the ECP represents a spherically symmetric potential appli
 $$
 \hat{V}_{\text{loc}}(r)
 = -\frac{Z_{\text{eff}} e^2}{4 \pi \varepsilon_0  r}
-  + \sum_{k} A_k \, r^{n_k} e^{-a_k r^2}
+  + \sum_{k} A_k \, \frac{r^{n_k}}{r^2} e^{-a_k r^2}
 $$
 
 This term captures the screened nuclear attraction and mimics the average effect of the removed core electrons.
@@ -77,7 +77,13 @@ VeloxChem includes a set of small-core ECPs for elements starting with potassium
 
 ## Static electric fields
 
-A term can be added in the Hamiltonian to describe the coupling of the molecular system and a time-independent (static), homogeneous, electric field. The vectorial electric-field strength is specified in atomic units.
+A term can be added in the electronic Hamiltonian to describe the coupling of the molecular system and a time-independent (static), homogeneous, electric field, $\mathbf{F}$,
+
+$$
+\hat{V} = - \hat{\boldsymbol{\mu}} \cdot \mathbf{F}
+$$
+
+where $\hat{\boldsymbol{\mu}}$ is the electric dipole moment operator. The vectorial electric-field strength is specified in atomic units.
 
 **Python script**
 
