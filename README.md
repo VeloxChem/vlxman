@@ -44,11 +44,10 @@ The browser will show the Jupyter book and interactively update it as you edit p
 # Publish the manual
 
 ```
-$ pip install ghp-import
-$ ghp-import -n -p -c veloxchem.org -f _build/html
+$ git pull
+$ git commit -m 'comment on your modifications'
+$ git push
 ```
-
-The flag `-c veloxchem.org` will create a file named `CNAME` in the `gh-pages` branch containing the published pages. This file contains a single line with `veloxchem.org` that is needed to be able to reach the manual from the `https://veloxchem.org/` domain. 
 
 # References
 
