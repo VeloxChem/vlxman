@@ -1,8 +1,6 @@
 version: 1
 project:
-  title: VeloxChem program manual
-  authors:
-    - name: The VeloxChem team
+  title: VeloxChem Docs
   copyright: '2025'
   exclude:
     - README.md
@@ -59,9 +57,7 @@ project:
         - file: docs/program_struct.ipynb
         - file: docs/source_struct.md
         - file: docs/programming_style.ipynb
-    - title: References
-      children:
-        - file: docs/refs.md
+    - file: docs/license_citation.md
 site:
   options:
     logo: images/logo/vlx-logo-blacktext-halo.png
