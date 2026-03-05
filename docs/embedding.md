@@ -95,7 +95,7 @@ basis = vlx.MolecularBasis.read(molecule, "def2-svp")
 
 scf_drv = vlx.ScfRestrictedDriver()
 
-scf_drv.solvation_model = "smd
+scf_drv.solvation_model = "smd"
 scf_drv.smd_solvent = "water"
 
 scf_results = scf_drv.compute(molecule, basis)
