@@ -87,7 +87,7 @@ where $\hat{\boldsymbol{\mu}}$ is the electric dipole moment operator. The vecto
 
 **Python script**
 
-```
+```python
 import veloxchem as vlx
 
 mol_xyz_string = """
@@ -98,11 +98,11 @@ molecule = vlx.Molecule.read_xyz_string(mol_xyz_string)
 basis = vlx.MolecularBasis.read(molecule, 'def2-svp')
 
 scf_drv = vlx.ScfRestrictedDriver()
-scf_drv.filename = 'mol-field'
+
 scf_drv.electric_field = [0.01, 0.0, 0.0]  # [x, y, z] components
+
 scf_results = scf_drv.compute(molecule, basis)
 ```
-Download a {download}`Python script <../input_files/pna-field.py>` type of input file to perform an SCF calculation for *para*-nitroaniline in the presence of a static electric field.
 
 **Text file**
 
@@ -122,13 +122,4 @@ multiplicity: 1
 xyz:
 ...
 @end
-```
-
-Download a {download}`text format <../input_files/pna-field.inp>` type of input file to perform an SCF calculation for *para*-nitroaniline in the presence of a static electric field.
-
-```{image} ../images/pna.png
-:alt: cover
-:class: bg-primary mb-1
-:width: 400px
-:align: center
 ```

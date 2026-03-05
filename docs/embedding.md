@@ -44,8 +44,6 @@ opt_drv = vlx.OptimizationDriver(scf_drv)
 opt_results = opt_drv.compute(molecule, basis, scf_results)
 ```
 
-Download a {download}`Python script <../input_files/ethanol-cpcm.py>` type of input file to perform an SCF calculation for ethanol in a water environment.
-
 ::: {note}
 Water is the default solvent. For other solvents, set the dielectric constant:
 
@@ -76,8 +74,6 @@ xyz:
 @end
 ```
 
-Download a {download}`text format <../input_files/ethanol-cpcm.inp>` type of input file to perform an SCF calculation for ethanol in a water environment.
-
 (sec:smd)=
 ### SMD
 
@@ -104,7 +100,6 @@ scf_drv.smd_solvent = "water"
 
 scf_results = scf_drv.compute(molecule, basis)
 ```
-Download a {download}`Python script <../input_files/ethanol-smd.py>` type of input file to perform an SCF calculation for ethanol in a water environment.
 
 **Text file**
 
@@ -127,7 +122,6 @@ xyz:
 ...
 @end
 ```
-Download a {download}`Python script <../input_files/ethanol-smd.inp>` type of input file to perform an SCF calculation for ethanol in a water environment.
 
 (sec:pe)=
 ## Polarizable embedding

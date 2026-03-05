@@ -40,7 +40,7 @@ This script will start a job on two nodes with eight MPI ranks per node (one per
 
 An example Python script type of input file named `myjob.py` in the job script above and and which is running an SCF optimization takes the following form.
 
-```
+```python
 import veloxchem as vlx
 
 xyz_string = """

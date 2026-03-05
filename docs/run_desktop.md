@@ -22,7 +22,7 @@ python myjob.py > myjob.out
 
 The Python script input file named `myjob.py` above can e.g. take the form:
 
-```
+```python
 import veloxchem as vlx
 
 xyz_string = """

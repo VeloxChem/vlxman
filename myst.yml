@@ -20,6 +20,7 @@ project:
         - file: docs/run_desktop.md
         - file: docs/run_cluster.md
         - file: docs/keywords.ipynb
+        - file: docs/input_files.md
     - title: Model chemistry
       children:
         - file: docs/molecule.ipynb
