@@ -1,7 +1,7 @@
 (sec:vib_spect)=
 # Vibrational spectroscopies
 
-Calculations of normal modes are performed with the aid of geomeTRIC {cite}`geomeTRIC`.
+Calculations of normal modes are performed with the aid of [geomeTRIC](https://pypi.org/project/geometric/).
 
 The associated IR spectrum is calculated by default also when Raman or resonance Raman calculations are requested except if specified otherwise.
 
@@ -10,7 +10,7 @@ The associated IR spectrum is calculated by default also when Raman or resonance
 
 **Python script**
 
-```
+```python
 import veloxchem as vlx
 
 xyz="""
@@ -29,11 +29,7 @@ vib_drv = vlx.VibrationalAnalysis(scf_drv)
 vib_drv.do_ir = True
 scf_drv.filename = 'mol-ir'
 vib_results = vib_drv.compute(molecule, basis)
-
 ```
-Download a {download}`Python script <../input_files/acro-ir.py>` type of input file to perform an IR spectrum calculation of the acroleine molecule at the B3LYP/def2-svp level of theory.
-
-
 
 **Text file**
 
@@ -59,14 +55,12 @@ xyz:
 @end
 ```
 
-Download a {download}`text file <../input_files/acro-ir.inp>` type of input file to perform an IR spectrum calculation of the acroleine molecule at the B3LYP/def2-svp level of theory.
-
 (sec:raman)=
 ## Raman
 
 **Python script**
 
-```
+```python
 import veloxchem as vlx
 
 xyz="""
@@ -86,9 +80,7 @@ vib_drv.do_ir = False
 vib_drv.do_raman = True
 vib_drv.filename = 'mol-raman'
 vib_results = vib_drv.compute(molecule, basis)
-
 ```
-Download a {download}`Python script <../input_files/acro-raman.py>` type of input file to perform a Raman spectrum calculation of the acroleine molecule at the B3LYP/def2-svp level of theory.
 
 **Text file**
 
@@ -113,14 +105,13 @@ xyz:
 ...                     
 @end
 ```
-Download a {download}`text file <../input_files/acro-raman.inp>` type of input file to perform a Raman spectrum calculation of the acroleine molecule at the B3LYP/def2-svp level of theory.
 
 (sec:rrs)=
 ## Resonance Raman
 
 **Python script**
 
-```
+```python
 import veloxchem as vlx
 
 xyz="""
@@ -140,9 +131,7 @@ vib_drv.do_ir = False
 vib_drv.do_raman = True
 vib_drv.filename = 'mol-reson-raman'
 vib_results = vib_drv.compute(molecule, basis)
-
 ```
-Download a {download}`Python script <../input_files/acro-reson-raman.py>` type of input file to perform a resonance Raman spectrum calculation of the acroleine molecule at the B3LYP/def2-svp level of theory.
 
 **Text file**
 
@@ -167,13 +156,4 @@ multiplicity: 1
 xyz:
 ...                      
 @end
-```
-
-Download a {download}`text file <../input_files/acro-reson-raman.inp>` type of input file to perform a resonance Raman spectrum calculation of the acroleine molecule at the B3LYP/def2-svp level of theory.
-
-```{image} ../images/acro.png
-:alt: cover
-:class: bg-primary mb-1
-:width: 400px
-:align: center
 ```

@@ -28,8 +28,6 @@ opt_drv.filename = "mol-opt"
 opt_results = opt_drv.compute(molecule, basis, results)
 ```
 
-Download a {download}`Python script <../input_files/bithio-S0-opt.py>` type of input file to perform an optimization for the bithiophene molecule at the B3LYP+D4/def2-svp level of theory.
-
 **Text file**
 
 Please refer to the [keyword list](#sec:opt-keywords) for a complete set of options. Dispersion can be activated in the `@method settings` section by using the keyword `dispersion`.
@@ -52,8 +50,6 @@ xyz:
 ...
 @end
 ```
-
-Download a {download}`text file <../input_files/bithio-S0-opt.inp>` type of input file to perform an optimization for the bithiophene molecule at the B3LYP+D4/def2-svp level of theory.
 
 ```{image} ../images/bithio-S0-opt.gif
 :alt: cover
@@ -94,8 +90,6 @@ opt_drv.filename = 'mol-S1-opt'
 opt_results = opt_drv.compute(molecule, basis, scf_drv, rsp_drv, rsp_results)
 ```
 
-Download a {download}`Python script <../input_files/bithio-S1-opt.py>` type of input file to perform an optimization of the first excited state of bithiophene molecule at the B3LYP/def2-svp level of theory.
-
 **Text file**
 
 To optimize an excited state, you need to use the task optimize and to specify which state you want to optimize with the `state_deriv_index:` keyword in the `@gradient` section.
@@ -126,8 +120,6 @@ xyz:
 ...
 @end
 ```
-
-Download a {download}`text file <../input_files/bithio-S1-opt.inp>` type of input file to perform an optimization of the first excited state of bithiophene molecule at the B3LYP/def2-svp level of theory.
 
 ```{image} ../images/bithio-S1-opt.gif
 :alt: cover
@@ -167,8 +159,6 @@ opt_drv.filename = 'bithio-freeze'
 opt_results = opt_drv.compute(molecule, basis, results)
 ```
 
-Download a {download}`Python script <../input_files/bithio-freeze.py>` type of input file to perform a optimization of the bithiophene molecule at the B3LYP/def2-svp level of theory where the inter-ring distance has been frozen to the initial geometry and where the inter-ring dihedral (S-C-C-S) has been constrained to 90°.
-
 **Text file**
 
 ```
@@ -194,8 +184,6 @@ xyz:
 @end
 
 ```
-
-Download a {download}`text file <../input_files/bithio-freeze.inp>` type of input file to perform a optimization of the bithiophene molecule at the B3LYP/def2-svp level of theory where the inter-ring distance has been frozen to the initial geometry and where the inter-ring dihedral (S-C-C-S) has been constrained to 90°.
 
 ```{image} ../images/bithio-freeze.gif
 :alt: cover
@@ -237,8 +225,6 @@ opt_drv.filename = "bithio-scan"
 opt_results = opt_drv.compute(molecule, basis, results)
 ```
 
-Download a {download}`Python script <../input_files/bithio-scan.py>` type of input file to perform a relaxed scan of the bithiophene molecule at the B3LYP/def2-svp level of theory where the inter-ring dihedral (S-C-C-S) is scanned from 180° to 0° in 9 steps.
-
 **Text file**
 
 ```
@@ -263,8 +249,6 @@ xyz:
 @end
 
 ```
-
-Download a {download}`text file <../input_files/bithio-scan.inp>` type of input file to perform a relaxed scan of the bithiophene molecule at the B3LYP/def2-svp level of theory where the inter-ring dihedral (S-C-C-S) is scanned from 180° to 0° in 9 steps.
 
 ```{image} ../images/bithio-scan.gif
 :alt: cover

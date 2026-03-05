@@ -58,7 +58,6 @@ rsp_drv.nto = True
 rsp_results = rsp_drv.compute(molecule, basis, results)
 
 ```
-Download a {download}`Python script <../input_files/tq-uv-vis.py>` type of input file to calculate the absorption of the ten lowest singlet excited states of the thiophene-quinoxaline molecule at the CAM-B3LYP/def2-svp level of theory.
 
 **Text file**
 
@@ -87,8 +86,6 @@ xyz:
 ...
 @end
 ```
-
-Download a {download}`text file <../input_files/tq-uv-vis.inp>` type of input file to calculate the absorption of the ten lowest singlet excited states of the thiophene-quinoxaline molecule at the CAM-B3LYP/def2-svp level of theory.
 
 ## Complex polarization propagator approach
 
@@ -155,8 +152,6 @@ cpp_drv.filename = 'mol-cpp'
 cpp_results = cpp_drv.compute(molecule, basis, scf_results)
 ```
 
-Download a {download}`Python script <../input_files/tq-cpp.py>` type of input file to calculate the absorption spectrum with CPP of the thiophene-quinoxaline molecule at the CAM-B3LYP/def2-svp level of theory.
-
 **Text file**
 
 Please refer to the [keyword list](#sec:cpp-keywords) for a complete set of options.
@@ -185,5 +180,3 @@ xyz:
 ...
 @end 
 ```
-
-Download a {download}`text file] <../input_files/tq-cpp.inp>` type of input file to calculate the absorption spectrum with CPP of the thiophene-quinoxaline molecule at the CAM-B3LYP/def2-svp level of theory.
