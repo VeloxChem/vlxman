@@ -37,7 +37,7 @@ where $f$ is the [Cauchy distribution](https://en.wikipedia.org/wiki/Cauchy_dist
 
 **Python script**
 
-```
+```python
 import veloxchem as vlx
 
 xyz="""
@@ -131,7 +131,7 @@ The arbitrary frequency region is specified in the input file together with a re
 
 **Python script**
 
-```
+```python
 import veloxchem as vlx
 
 xyz="""

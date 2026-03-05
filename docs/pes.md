@@ -1,12 +1,13 @@
 (sec:pes)=
 # Potential energy surfaces
 
-Structure optimizations are performed with the aid of geomeTRIC {cite}`geomeTRIC`.
+VeloxChem enables the exploration of potential energy surfaces through efficient geometry optimizations and transition‑state searches, using the [geomeTRIC](https://pypi.org/project/geometric/) module as a robust engine that provides stable structure updates for molecular systems.
 
 ## Ground state optimization
 
 **Python script**
-```
+
+```python
 import veloxchem as vlx
 
 xyz="""
@@ -14,16 +15,16 @@ xyz="""
 """
 
 molecule = vlx.Molecule.read_xyz_string(xyz)
-basis = vlx.MolecularBasis.read(molecule, 'def2-svp')
+basis = vlx.MolecularBasis.read(molecule, "def2-svp")
 
 scf_drv = vlx.ScfRestrictedDriver()
-scf_drv.filename = 'mol-opt'
-scf_drv.xcfun = 'b3lyp'
+scf_drv.filename = "mol-opt"
+scf_drv.xcfun = "b3lyp"
 scf_drv.dispersion = True
 results = scf_drv.compute(molecule, basis)
 
 opt_drv = vlx.OptimizationDriver(scf_drv)
-opt_drv.filename = 'mol-opt'
+opt_drv.filename = "mol-opt"
 opt_results = opt_drv.compute(molecule, basis, results)
 ```
 
@@ -64,7 +65,8 @@ Download a {download}`text file <../input_files/bithio-S0-opt.inp>` type of inpu
 ## Excited state optimization
 
 **Python script**
-```
+
+```python
 import veloxchem as vlx
 
 xyz="""
@@ -143,7 +145,8 @@ Internal coordinates (distances, angles, dihedrals) can be constrained during th
 `set` will aim at converging an internal coordinate to a desired value while `freeze` will keep it at its initial value. 
 
 **Python script**
-```
+
+```python
 import veloxchem as vlx
 
 xyz="""
@@ -213,7 +216,7 @@ scan dihedral 6 1 2 3 0 360 19
 
 **Python script**
 
-```
+```python
 import veloxchem as vlx
 
 xyz="""

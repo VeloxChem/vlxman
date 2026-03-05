@@ -21,7 +21,7 @@ VeloxChem implements the CPCM model for:
 
 **Python script**
 
-```
+```python
 import veloxchem as vlx
 
 xyz_string = """
@@ -87,7 +87,7 @@ In Veloxchem, the electrostatic contribution is computed using the CPCM model.
 
 **Python script**
 
-```
+```python
 import veloxchem as vlx
 
 xyz_string = """
@@ -141,7 +141,7 @@ The PE model is invoked in input files by giving the name of the associated pote
 
 **Python script**
 
-```
+```python
 import veloxchem as vlx
 
 xyz_string = """
