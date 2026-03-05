@@ -50,7 +50,7 @@ can be requested, referring to the linear response of the molecular property ass
 
 **Python script**
 
-```
+```python
 import veloxchem as vlx
 
 molecule = vlx.Molecule.read_xyz_string("""4
@@ -87,10 +87,6 @@ lrf.frequencies = [0.0656]
 
 lrf_results = lrf.compute(molecule, basis, scf_results)
 ```
-
-**Text file**
-
-*add me*
 
 (sec:c6)=
 ## C6 dispersion coefficients

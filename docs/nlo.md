@@ -18,7 +18,7 @@ can be requested, referring to the linear response of the molecular property ass
 
 **Python script**
 
-```
+```python
 import veloxchem as vlx
 
 molecule = vlx.Molecule.read_xyz_string("""4
@@ -74,7 +74,7 @@ can be requested, referring to the linear response of the molecular property ass
 
 **Python script**
 
-```
+```python
 import veloxchem as vlx
 
 molecule = vlx.Molecule.read_xyz_string("""4
