@@ -1,15 +1,25 @@
 # Environment
 
-(sec:cpcm)=
-## CPCM
+VeloxChem implements both implicit (CPCM and SMD) and explicit (polarizable embedding) solvation models. 
 
-The conductor-like polarizable continuum model (CPCM) is implemented in VeloxChem for implicit solvation {cite}`Tomasi2005`.
+## Implicit solvation
+
+Implicit solvation models describe the effect of a surrounding liquid environment by replacing the explicit solvent molecules with a continuous dielectric medium that interacts self‑consistently with the electronic structure of the solute. {cite}`Tomasi2005`
 
 A separation is made between equilibrium and non-equilibrium solvation. In the former case, the timescale is such that both nuclear and electronic relaxations take place in the environment, such as in molecular structure optimizations. In the latter case, only electrons are fully equilibrated with the time-dependent solute charge density, such as in UV/vis spectrum simulations. 
 
-**Python script**
+(sec:cpcm)=
+### CPCM
 
-*Change to examples of structure optimization and UV/vis spectrum and show both types of solvation.*
+In the conductor‑like polarizable continuum model (CPCM), the solute is placed inside a cavity defined by its molecular surface, and the reaction field is obtained by solving surface‑charge equations that approximate the dielectric screening of a perfect conductor and are subsequently scaled to represent the desired solvent permittivity.
+
+VeloxChem implements the CPCM model for:
+
+- SCF energies
+- gradients (structure optimizations)
+- linear response (UV/vis spectra and more)
+
+**Python script**
 
 ```
 import veloxchem as vlx
@@ -19,17 +29,30 @@ xyz_string = """
 """
 
 molecule = vlx.Molecule.read_xyz_string(xyz_string)
-basis = vlx.MolecularBasis.read(molecule, 'def2-svp')
+basis = vlx.MolecularBasis.read(molecule, "def2-svp")
 
 scf_drv = vlx.ScfRestrictedDriver()
-scf_drv.solvation_model = 'cpcm'
-scf_drv.cpcm_epsilon = 78.39  # water
-scf_drv.filename = 'mol-cpcm'
-
+scf_drv.xcfun = "b3lyp"
+scf_drv.solvation_model = "cpcm"
 scf_results = scf_drv.compute(molecule, basis)
+
+rsp_drv = vlx.LinearResponseEigenSolver()
+rsp_drv.nstates = 10
+rsp_results = rsp_drv.compute(molecule, basis, scf_results)
+
+opt_drv = vlx.OptimizationDriver(scf_drv)
+opt_results = opt_drv.compute(molecule, basis, scf_results)
 ```
 
 Download a {download}`Python script <../input_files/ethanol-cpcm.py>` type of input file to perform an SCF calculation for ethanol in a water environment.
+
+::: {note}
+Water is the default solvent. For other solvents, set the dielectric constant:
+
+```
+scf_drv.cpcm_epsilon = 24.5  # ethanol
+```
+:::
 
 **Text file**
 
@@ -56,9 +79,11 @@ xyz:
 Download a {download}`text format <../input_files/ethanol-cpcm.inp>` type of input file to perform an SCF calculation for ethanol in a water environment.
 
 (sec:smd)=
-## SMD
+### SMD
 
-The Solvation Model based on Density (SMD) is implemented in VeloxChem for implicit solvation {cite}`Marenich2009`. In Veloxchem, the electrostatic contribution is computed using the CPCM model.
+The solvation model based on density (SMD) combines a self‑consistent reaction‑field description of electrostatic polarization with empirically parametrized terms for cavitation, dispersion, and solvent–solute interactions based on the solute’s electron density, enabling accurate free‑energy predictions across a wide range of solvents. {cite}`Marenich2009`
+
+In Veloxchem, the electrostatic contribution is computed using the CPCM model.
 
 **Python script**
 
@@ -70,12 +95,12 @@ xyz_string = """
 """
 
 molecule = vlx.Molecule.read_xyz_string(xyz_string)
-basis = vlx.MolecularBasis.read(molecule, 'def2-svp')
+basis = vlx.MolecularBasis.read(molecule, "def2-svp")
 
 scf_drv = vlx.ScfRestrictedDriver()
-scf_drv.solvation_model = 'smd'
-scf_drv.smd_solvent = 'water'
-scf_drv.filename = 'mol-smd'
+
+scf_drv.solvation_model = "smd
+scf_drv.smd_solvent = "water"
 
 scf_results = scf_drv.compute(molecule, basis)
 ```
