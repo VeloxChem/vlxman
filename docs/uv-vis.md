@@ -1,9 +1,11 @@
 (sec:uv_vis)=
 # UV/vis absorption/emission
 
+VeloxChem provides UV/vis absorption and emission spectra through two complementary approaches—an eigenvalue‑based TDDFT solver that yields excitation energies and oscillator strengths directly, and the complex polarization propagator (CPP) method that computes frequency‑dependent response functions for broadened, experimentally comparable spectra. {cite}`Norman2018`
+
 ## Generalized eigenvalue equation
 
-The standard method to calculate UV/vis absorption and emission spectra is to solve the generalized eigenvalue equation {cite}`Norman2018`.
+The standard method to calculate UV/vis absorption and emission spectra is to solve the generalized eigenvalue equation.
 
 In the case of SCF theory, it is commonly referred to as the time-dependent density functional theory or Hartree–Fock (TDDFT or TDHF) approach. TDHF is also known as the random phase approximation (RPA). 
 
