@@ -41,17 +41,14 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 If you use VeloxChem in scientific work, please cite the following reference:
 
 ```
-@article{Rinkevicius2020,
-  author    = {Rinkevicius, Zilvinas and Li, Xin and Brand, Michael and
-               Vahtras, Olav and Manby, Frederick R. and Ringholm, Magnus and
-               Helgaker, Trygve and Ruud, Kenneth and Ågren, Hans},
-  title     = {VeloxChem: A Python‐Driven Density‐Functional Theory Program
-               for Spectroscopy Simulations in Molecules and Extended Systems},
-  journal   = {WIREs Computational Molecular Science},
-  volume    = {10},
-  number    = {4},
-  pages     = {e1457},
-  year      = {2020},
-  doi       = {10.1002/wcms.1457}
+@article{veloxchem,
+author = {Rinkevicius, Zilvinas and Li, Xin and Vahtras, Olav and Ahmadzadeh, Karan and Brand, Manuel and Ringholm, Magnus and List, Nanna Holmgaard and Scheurer, Maximilian and Scott, Mikael and Dreuw, Andreas and Norman, Patrick},
+title = {VeloxChem: A Python-driven density-functional theory program for spectroscopy simulations in high-performance computing environments},
+journal = {WIREs Comput. Mol. Sci.},
+volume = {10},
+number = {5},
+pages = {e1457},
+doi = {10.1002/wcms.1457},
+year = {2020}
 }
 ```
