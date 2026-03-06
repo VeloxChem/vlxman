@@ -31,7 +31,7 @@ project:
         - file: docs/embedding.ipynb
     - title: Properties
       children:
-        - file: docs/pes.md
+        - file: docs/pes.ipynb
         - file: docs/uv-vis.md
         - file: docs/opt_act.md
         - file: docs/vib_spect.md
