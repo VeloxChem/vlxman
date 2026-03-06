@@ -74,7 +74,7 @@ These projectors enforce the correct nodal structure and scattering behaviour of
 :::{note}
 VeloxChem includes a set of small-core ECPs for elements starting with potassium ($Z = 19$) and ending with radon ($Z = 86$). Alternative choices of ECPs for these elements and also ECPs for other elements can be manually introduced by the user as long as they are of the form described above.
 :::
-
+(sec:static-electric-fields)=
 ## Static electric fields
 
 A term can be added in the electronic Hamiltonian to describe the coupling of the molecular system and a time-independent (static), homogeneous, electric field, $\mathbf{F}$,

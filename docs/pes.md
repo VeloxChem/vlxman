@@ -3,6 +3,7 @@
 
 VeloxChem enables the exploration of potential energy surfaces through efficient geometry optimizations and transition‑state searches, using the [geomeTRIC](https://pypi.org/project/geometric/) module as a robust engine that provides stable structure updates for molecular systems.
 
+(sec:GS-opt)=
 ## Ground state optimization
 
 **Python script**
@@ -58,6 +59,7 @@ xyz:
 :align: center
 ```
 
+(sec:ES-opt)=
 ## Excited state optimization
 
 **Python script**
