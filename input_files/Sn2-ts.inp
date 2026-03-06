@@ -1,0 +1,25 @@
+@jobs
+task: optimize
+@end
+
+@method settings
+xcfun: b3lyp
+basis: def2-svp
+dispersion: yes # use dft-d4 correction
+@end
+
+@optimize
+transition: yes
+@end
+
+@molecule
+charge: -1
+multiplicity: 1
+xyz:
+Br    0.2922      -0.5300       1.9632
+C    -0.0083       0.4990      -0.0348
+Cl   -0.2878       1.4343      -1.8583
+H    -0.8378      -0.2064      -0.2093
+H     1.0242       0.2019      -0.2821
+H    -0.1889       1.4276       0.5316 
+@end
