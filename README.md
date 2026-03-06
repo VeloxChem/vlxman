@@ -13,7 +13,7 @@ channels:
   - veloxchem
 dependencies:
   - python>=3.10
-  - jupyter-book
+  - jupyter-book>=2.1
   - jupyterlab
   - jupyterlab-spellchecker
   - jupyterlab_code_formatter
@@ -30,10 +30,9 @@ dependencies:
   - veloxchem
 ```
 
-# Some commands
+# Get a local copy of the manual
 
 ```
-$ conda install jupyter-book -c conda-forge
 $ git clone https://github.com/VeloxChem/vlxman.git
 $ cd vlxman
 $ jupyter-book start
@@ -48,6 +47,21 @@ $ git pull
 $ git commit -m 'comment on your modifications'
 $ git push
 ```
+
+# Style directives
+
+- Python script input files are created as code cells and executed. Remove the output from the manual with the tag `remove-output`
+- Text format input files are formatted as code with syntax:
+
+````
+:::{code}
+my input file
+:::
+````
+
+## Include an image
+
+
 
 # References
 
