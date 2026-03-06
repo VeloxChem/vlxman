@@ -1,3 +1,4 @@
+(sec:hamiltonian)=
 # Hamiltonian
  
 For a system with $N$ electrons and $M$ nuclei in the quantum mechanical region, VeloxChem implements the nonrelativic electronic Hamiltonian

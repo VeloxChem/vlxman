@@ -1,3 +1,4 @@
+(sec:ref-states)=
 # Reference states
 
 For Kohn–Sham DFT, any of the several available functionals is specified as illustrated below, see the [exchange-correlation functionals](#sec:xc-functionals) page for a complete list of available functionals.
