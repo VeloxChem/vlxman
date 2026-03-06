@@ -1,3 +1,4 @@
+(sec:environment)=
 # Environment
 
 VeloxChem implements both implicit (CPCM and SMD) and explicit (polarizable embedding) solvation models. 
