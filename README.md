@@ -59,9 +59,37 @@ my input file
 :::
 ````
 
-## Include an image
+- Images are included with the syntax:
 
+````
+:::{image} ../images/myfig.png
+:width: 400px
+:align: left
+:::
+````
 
+- figure are included with the syntax:
+
+````
+:::{figure} ../images/myfig.png
+:width: 400px
+:align: left
+
+Figure: My figure caption.
+:::
+````
+
+- Internal links in the manual are created with the syntax:
+
+```
+[visible text](#sec:link-name)
+```
+
+- Link targets are set with the syntax:
+
+```
+(sec:link-name)=
+```
 
 # References
 
