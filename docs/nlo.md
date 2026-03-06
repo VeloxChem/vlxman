@@ -18,7 +18,7 @@ can be requested, referring to the linear response of the molecular property ass
 
 **Python script**
 
-```python
+:::{python}
 import veloxchem as vlx
 
 molecule = vlx.Molecule.read_xyz_string("""4
@@ -58,7 +58,7 @@ crf_drv.c_frequencies = [0.0656, 0.1312]
 crf_drv.damping = 0.004556  # 1000 cm-1
 
 crf_results = crf_drv.compute(molecule, basis, scf_results)
-```
+:::
 
 (sec:cpp_crf)=
 ## General cubic response functions
@@ -74,7 +74,7 @@ can be requested, referring to the linear response of the molecular property ass
 
 **Python script**
 
-```python
+:::{python}
 import veloxchem as vlx
 
 molecule = vlx.Molecule.read_xyz_string("""4
@@ -117,4 +117,4 @@ crf_drv.d_frequencies = [0.0656, 0.1312]
 crf_drv.damping = 0.004556  # 1000 cm-1
 
 crf_results = crf_drv.compute(molecule, basis, scf_results)
-```
+:::

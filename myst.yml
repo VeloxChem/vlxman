@@ -17,18 +17,18 @@ project:
       children:
         - file: docs/limits.md
         - file: docs/installation.md
-        - file: docs/run_desktop.md
-        - file: docs/run_cluster.md
+        - file: docs/run_desktop.ipynb
+        - file: docs/run_cluster.ipynb
         - file: docs/keywords.ipynb
         - file: docs/input_files.md
     - title: Model chemistry
       children:
         - file: docs/molecule.ipynb
-        - file: docs/refstate.md
+        - file: docs/refstate.ipynb
         - file: docs/functionals.ipynb
         - file: docs/basis_sets.ipynb
-        - file: docs/hamiltonian.md
-        - file: docs/embedding.md
+        - file: docs/hamiltonian.ipynb
+        - file: docs/embedding.ipynb
     - title: Properties
       children:
         - file: docs/pes.md

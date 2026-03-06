@@ -4,9 +4,9 @@
 
 On a personal computer, we recommend importing the VeloxChem Python module and running calculations in Jupyter notebooks. This provides a very flexible framework for the creation of workflows, as amply illustrated in the [eChem book](https://kthpanor.github.io/echem) {cite}`echem_book`.
 
-```{figure} ../images/jupyter_nb.png
+:::{image} ../images/jupyter_nb.png
 :align: center
-```
+:::
 
 ## Using an input file
 
@@ -16,9 +16,9 @@ Calculations can also be run in the terminal window using input files in the for
 
 Terminal command:
 
-```
+:::{code}
 python myjob.py > myjob.out
-```
+:::
 
 The Python script input file named `myjob.py` above can e.g. take the form:
 
@@ -50,13 +50,13 @@ The results of the calculation are stored in an [HDF5](https://en.wikipedia.org/
 
 Terminal command:
 
-```
+:::{code}
 vlx myjob.inp [myjob.out]
-```
+:::
 
 An input file in text format consists of multiple groups marked with `@group name` and `@end`. The default unit for Cartesian coordinates of atoms is Angstrom. An example of the input file named `myjob.inp` above reads:
 
-```
+:::{code}
 @jobs
 task: scf
 @end
@@ -74,4 +74,4 @@ O  0.00000  0.00000  0.00000
 H  0.00000  0.00000  1.79524
 H  1.69319  0.00000 -0.59904
 @end
-```
+:::
