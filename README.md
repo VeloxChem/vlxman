@@ -68,7 +68,7 @@ my input file
 :::
 ````
 
-- figure are included with the syntax:
+- Figures are included with the syntax:
 
 ````
 :::{figure} ../images/myfig.png
@@ -85,7 +85,7 @@ Figure: My figure caption.
 [visible text](#sec:link-name)
 ```
 
-- Link targets are set with the syntax:
+- Link targets are created with the syntax:
 
 ```
 (sec:link-name)=
