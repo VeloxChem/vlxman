@@ -32,7 +32,7 @@ project:
     - title: Properties
       children:
         - file: docs/pes.ipynb
-        - file: docs/uv-vis.md
+        - file: docs/uv-vis.ipynb
         - file: docs/opt_act.md
         - file: docs/vib_spect.md
         - file: docs/magnetic.md
