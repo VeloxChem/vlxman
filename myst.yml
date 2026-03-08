@@ -19,6 +19,7 @@ project:
         - file: docs/installation.md
         - file: docs/run_desktop.ipynb
         - file: docs/run_cluster.ipynb
+        - file: docs/restart.ipynb
         - file: docs/keywords.ipynb
         - file: docs/input_files.md
     - title: Model chemistry
@@ -33,7 +34,7 @@ project:
       children:
         - file: docs/pes.ipynb
         - file: docs/uv-vis.ipynb
-        - file: docs/opt_act.md
+        - file: docs/opt-act.ipynb
         - file: docs/vib_spect.md
         - file: docs/magnetic.md
         - file: docs/linear-response.md
