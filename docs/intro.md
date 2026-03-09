@@ -9,8 +9,6 @@ VeloxChem is education enabling, providing a means to explain and explore the th
 This manual gives a description of the installation process and basic usage of VeloxChem. A more comprehensive view of the ample opportunities for Python software interactions is provided in the [eChem](https://kthpanor.github.io/echem) book {cite}`echem_book`.
 
 :::{image} ../images/swedish_moebius.jpg
-:alt: cover
-:class: bg-primary mb-1
 :width: 400px
 :align: left
 :::
