@@ -328,18 +328,52 @@
         <a href="#sec:ir">IR</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../input_files/alanine-ecd.py" download>alanine-ecd.py</a>
+        <a href="../input_files/acro-ir.py" download>acro-ir.py</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../input_files/alanine-ecd.inp" download>alanine-ecd.inp</a>
+        <a href="../input_files/acro-ir.inp" download>acro-ir.inp</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../output_files/alanine-ecd.out" download>alanine-ecd.out</a>
+        <a href="../output_files/acro-ir.out" download>acro-ir.out</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../output_files/alanine-ecd.h5" download>alanine-ecd.h5</a>
+        <a href="../output_files/acro-ir.h5" download>acro-ir.h5</a>
       </td>
     </tr>       
+    <tr style="background-color: #f9f9f9;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:raman">Raman</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/acro-raman.py" download>acro-raman.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/acro-raman.inp" download>acro-raman.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/acro-raman.out" download>acro-raman.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/acro-raman.h5" download>acro-raman.h5</a>
+      </td>
+    </tr>   
+    <tr style="background-color: #f9f9f9;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:rrs">Resonance Raman</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/acro-rr.py" download>acro-rr.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/acro-rr.inp" download>acro-rr.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/acro-rr.out" download>acro-rr.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/acro-rr.h5" download>acro-rr.h5</a>
+      </td>
+    </tr>  
   </tbody>
 </table>
 </div>
