@@ -35,7 +35,7 @@ project:
         - file: docs/pes.ipynb
         - file: docs/uv-vis.ipynb
         - file: docs/opt-act.ipynb
-        - file: docs/vib_spect.md
+        - file: docs/vib-spect.ipynb
         - file: docs/magnetic.md
         - file: docs/linear-response.md
         - file: docs/nlo.md
