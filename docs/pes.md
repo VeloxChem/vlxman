@@ -61,6 +61,127 @@ Download a {download}`text file <../input_files/bithio-S0-opt.inp>` type of inpu
 :align: center
 ```
 
+## Transition state optimisation
+`transition` will optimize a transition state structure. This requires an initial guess structure that is close to the actual transition state. 
+
+**Python script**
+```
+import veloxchem as vlx
+
+xyz = """
+...
+"""
+
+molecule = vlx.Molecule.read_xyz_string(xyz)
+molecule.set_charge(-1)
+basis = vlx.MolecularBasis.read(molecule, "def2-svp")
+
+scf_drv = vlx.ScfRestrictedDriver()
+scf_drv.xcfun = "B3LYP"
+scf_results = scf_drv.compute(molecule, basis)
+
+opt_drv = vlx.OptimizationDriver(scf_drv)
+opt_drv.transition = True
+opt_results = opt_drv.compute(molecule, basis, scf_results)
+
+```
+Download a {download}`Python script <../input_files/Sn2-ts.py>` type of input file to perform a transition state optimization for the SN2 reaction between methyl chloride and hydroxide at the B3LYP/def2-svp level of theory.
+
+**Text file**
+```
+@jobs
+task: optimize
+@end
+
+@method settings
+xcfun: b3lyp
+basis: def2-svp
+dispersion: yes # use dft-d4 correction
+@end
+
+@optimize
+transition: yes
+@end
+
+@molecule
+charge: -1
+multiplicity: 1
+xyz:
+...
+@end
+```
+Download a {download}`text file <../input_files/Sn2-ts.inp>` type of input file to perform a transition state optimization for the SN2 reaction between methyl chloride and hydroxide at the B3LYP/def2-svp level of theory.
+### Guessing initial transition state structures
+The transition-state guesser can be used to efficiently calculate an initial guess for a transition state structure. More information can be found in the [eChem book](https://kthpanor.github.io/echem/docs/mol_struct/ts_guesser.html)
+
+**Python script**
+```
+import veloxchem as vlx
+
+rea1 = vlx.Molecule.read_smiles("[Br]")
+rea2 = vlx.Molecule.read_smiles("CCl")
+rea1.set_charge(-1)
+
+pro1 = vlx.Molecule.read_smiles("[Cl]")
+pro2 = vlx.Molecule.read_smiles("CBr")
+pro1.set_charge(-1)
+
+tsguesser = vlx.TransitionStateGuesser()
+results = tsguesser.find_transition_state([rea1, rea2], [pro1, pro2])
+```
+Download a {download}`Python script <../input_files/Sn2-guess_ts.py>` type of input file to perform a force-field based generation of an initial guess structure for the transition state of the SN2 reaction between methyl chloride and hydroxide.
+
+### Verification of transition state structure with IRC
+`irc` will perform an intrinsic reaction coordinate (IRC) calculation to verify that a transition state structure connects the expected reactant and product structures.
+
+**Python script**
+```
+import veloxchem as vlx
+
+xyz = """
+...
+"""
+molecule = vlx.Molecule.read_xyz_string(xyz)
+molecule.set_charge(-1)
+basis = vlx.MolecularBasis.read(molecule, "def2-svp")
+
+scf_drv = vlx.ScfRestrictedDriver()
+scf_drv.xcfun = "B3LYP"
+scf_results = scf_drv.compute(molecule, basis)
+
+opt_drv = vlx.OptimizationDriver(scf_drv)
+opt_drv.irc = True
+opt_results = opt_drv.compute(molecule, basis, scf_results)
+
+```
+Download a {download}`Python script <../input_files/Sn2-irc.py>` type of input file to perform an IRC calculation for the transition state of the SN2 reaction between methyl chloride and hydroxide at the B3LYP/def2-svp level of theory.
+
+**Text file**
+```
+@jobs
+task: optimize
+@end
+
+@method settings
+xcfun: b3lyp
+basis: def2-svp
+dispersion: yes # use dft-d4 correction
+@end
+
+@optimize
+irc: yes
+@end
+
+@molecule
+charge: -1
+multiplicity: 1
+xyz:
+...
+@end
+```
+
+Download a {download}`text file <../input_files/Sn2-irc.inp>` type of input file to perform an IRC calculation for the transition state of the SN2 reaction between methyl chloride and hydroxide at the B3LYP/def2-svp level of theory.
+
 ## Excited state optimization
 
 **Python script**
@@ -269,121 +390,3 @@ Download a {download}`text file <../input_files/bithio-scan.inp>` type of input 
 :width: 400px
 :align: center
 ```
-## Transition state optimisation
-`transition` will optimize a transition state structure. This requires an initial guess structure that is close to the actual transition state. 
-
-**Python script**
-```
-import veloxchem as vlx
-
-xyz = """
-...
-"""
-
-molecule = vlx.Molecule.read_xyz_string(xyz)
-molecule.set_charge(-1)
-basis = vlx.MolecularBasis.read(molecule, "def2-svp")
-
-scf_drv = vlx.ScfRestrictedDriver()
-scf_drv.xcfun = "B3LYP"
-scf_results = scf_drv.compute(molecule, basis)
-
-opt_drv = vlx.OptimizationDriver(scf_drv)
-opt_drv.transition = True
-opt_results = opt_drv.compute(molecule, basis, scf_results)
-
-```
-Download a {download}`Python script <../input_files/Sn2-ts.py>` type of input file to perform a transition state optimization for the SN2 reaction between methyl chloride and hydroxide at the B3LYP/def2-svp level of theory.
-**Text file**
-```
-@jobs
-task: optimize
-@end
-
-@method settings
-xcfun: b3lyp
-basis: def2-svp
-dispersion: yes # use dft-d4 correction
-@end
-
-@optimize
-transition: yes
-@end
-
-@molecule
-charge: -1
-multiplicity: 1
-xyz:
-...
-@end
-```
-Download a {download}`text file <../input_files/Sn2-ts.inp>` type of input file to perform a transition state optimization for the SN2 reaction between methyl chloride and hydroxide at the B3LYP/def2-svp level of theory.
-### Guessing initial transition state structures
-The transition-state guesser can be used to efficiently calculate an initial guess for a transition state structure. More information can be found in the [eChem book](https://kthpanor.github.io/echem/docs/mol_struct/ts_guesser.html)
-**Python script**
-```
-import veloxchem as vlx
-
-rea1 = vlx.Molecule.read_smiles("[Br]")
-rea2 = vlx.Molecule.read_smiles("CCl")
-rea1.set_charge(-1)
-
-pro1 = vlx.Molecule.read_smiles("[Cl]")
-pro2 = vlx.Molecule.read_smiles("CBr")
-pro1.set_charge(-1)
-
-tsguesser = vlx.TransitionStateGuesser()
-results = tsguesser.find_transition_state([rea1, rea2], [pro1, pro2])
-```
-Download a {download}`Python script <../input_files/Sn2-guess_ts.py>` type of input file to perform a force-field based generation of an initial guess structure for the transition state of the SN2 reaction between methyl chloride and hydroxide.
-
-## Verification of transition state structure with IRC
-`irc` will perform an intrinsic reaction coordinate (IRC) calculation to verify that a transition state structure connects the expected reactant and product structures.
-
-**Python script**
-```
-import veloxchem as vlx
-
-xyz = """
-...
-"""
-molecule = vlx.Molecule.read_xyz_string(xyz)
-molecule.set_charge(-1)
-basis = vlx.MolecularBasis.read(molecule, "def2-svp")
-
-scf_drv = vlx.ScfRestrictedDriver()
-scf_drv.xcfun = "B3LYP"
-scf_results = scf_drv.compute(molecule, basis)
-
-opt_drv = vlx.OptimizationDriver(scf_drv)
-opt_drv.irc = True
-opt_results = opt_drv.compute(molecule, basis, scf_results)
-
-```
-Download a {download}`Python script <../input_files/Sn2-irc.py>` type of input file to perform an IRC calculation for the transition state of the SN2 reaction between methyl chloride and hydroxide at the B3LYP/def2-svp level of theory.
-
-**Text file**
-```
-@jobs
-task: optimize
-@end
-
-@method settings
-xcfun: b3lyp
-basis: def2-svp
-dispersion: yes # use dft-d4 correction
-@end
-
-@optimize
-irc: yes
-@end
-
-@molecule
-charge: -1
-multiplicity: 1
-xyz:
-...
-@end
-```
-
-Download a {download}`text file <../input_files/Sn2-irc.inp>` type of input file to perform an IRC calculation for the transition state of the SN2 reaction between methyl chloride and hydroxide at the B3LYP/def2-svp level of theory.
