@@ -1,0 +1,1198 @@
+!========================================================================================================================!
+!                                                                                                                        !
+!                                                       VELOXCHEM                                                        !
+!                                              AN ELECTRONIC STRUCTURE CODE                                              !
+!                                                                                                                        !
+!                                        Copyright 2018-2025 VeloxChem developers                                        !
+!========================================================================================================================!
+!                                VeloxChem execution started at Mon Mar  9 15:20:17 2026.                                !
+!========================================================================================================================!
+                                                                                                                          
+* Info * Using 32 OpenMP threads per MPI process.                                                                         
+                                                                                                                          
+* Info * Reading input file bithio-S0-opt.inp...                                                                          
+                                                                                                                          
+* Info * @jobs                                                                                                            
+* Info * task: optimize                                                                                                   
+* Info * @end                                                                                                             
+                                                                                                                          
+* Info * @method_settings                                                                                                 
+* Info * xcfun: b3lyp                                                                                                     
+* Info * basis: def2-svp                                                                                                  
+* Info * dispersion: yes                                                                                                  
+* Info * @end                                                                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             ================================                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           S           1.619800000000       -1.380800000000        0.366300000000                         
+                           S          -1.619800000000        1.380700000000        0.366300000000                         
+                           C           0.709200000000        0.018100000000       -0.016300000000                         
+                           C          -0.709200000000       -0.018100000000       -0.016300000000                         
+                           C           1.515600000000        1.098300000000       -0.300100000000                         
+                           C          -1.515700000000       -1.098200000000       -0.300100000000                         
+                           C           2.899400000000        0.773100000000       -0.202400000000                         
+                           C          -2.899400000000       -0.773100000000       -0.202400000000                         
+                           C           3.097800000000       -0.543000000000        0.152500000000                         
+                           C          -3.097800000000        0.543000000000        0.152500000000                         
+                           H           1.155300000000        2.081800000000       -0.575400000000                         
+                           H          -1.155300000000       -2.081800000000       -0.575300000000                         
+                           H           3.708300000000        1.468500000000       -0.385100000000                         
+                           H          -3.708300000000       -1.468500000000       -0.385100000000                         
+                           H           4.040000000000       -1.052800000000        0.295900000000                         
+                           H          -4.040100000000        1.052900000000        0.295900000000                         
+                                                                                                                          
+                          Molecular charge            : 0                                                                 
+                          Spin multiplicity           : 1                                                                 
+                          Number of atoms             : 16                                                                
+                          Number of alpha electrons   : 43                                                                
+                          Number of beta  electrons   : 43                                                                
+                                                                                                                          
+* Info * Reading basis set from file: /home/linares/miniconda3/envs/vlx-github/lib/python3.12/site-packages/veloxchem/basis/DEF2-SVP
+                                                                                                                          
+                                              Molecular Basis (Atomic Basis)                                              
+                                             ================================                                             
+                                                                                                                          
+                               Basis: DEF2-SVP                                                                            
+                                                                                                                          
+                               Atom Contracted GTOs           Primitive GTOs                                              
+                                                                                                                          
+                               S     (4S,3P,1D)                (10S,7P,1D)                                                
+                               C     (3S,2P,1D)                (7S,4P,1D)                                                 
+                               H     (2S,1P)                   (4S,1P)                                                    
+                                                                                                                          
+                               Contracted Basis Functions : 178                                                           
+                               Primitive Basis Functions  : 306                                                           
+                                                                                                                          
+                                                                                                                          
+                                            Self Consistent Field Driver Setup                                            
+                                           ====================================                                           
+                                                                                                                          
+                   Wave Function Model             : Spin-Restricted Kohn-Sham                                            
+                   Initial Guess Model             : Superposition of Atomic Densities                                    
+                   Convergence Accelerator         : Two Level Direct Inversion of Iterative Subspace                     
+                   Max. Number of Iterations       : 50                                                                   
+                   Max. Number of Error Vectors    : 10                                                                   
+                   Convergence Threshold           : 1.0e-06                                                              
+                   ERI Screening Threshold         : 1.0e-12                                                              
+                   Linear Dependence Threshold     : 1.0e-06                                                              
+                   Exchange-Correlation Functional : B3LYP                                                                
+                   Molecular Grid Level            : 4                                                                    
+                   Dispersion Correction           : D4                                                                   
+                                                                                                                          
+* Info * Nuclear repulsion energy: 637.4306554720 a.u.                                                                    
+                                                                                                                          
+* Info * Using the B3LYP functional.                                                                                      
+                                                                                                                          
+         P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
+                                                                                                                          
+* Info * Using the Libxc library (v6.2.2).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * Molecular grid with 240889 points generated in 0.15 sec.                                                         
+                                                                                                                          
+* Info * Using the D4 dispersion correction.                                                                              
+                                                                                                                          
+         E. Caldeweyher, C. Bannwarth, S. Grimme, J. Chem. Phys., 2017, 147, 034112.
+         E. Caldeweyher, S. Ehlert, A. Hansen, H. Neugebauer, S. Spicher, C. Bannwarth, S. Grimme, J. Chem
+         Phys, 2019, 150, 154122.
+                                                                                                                          
+* Info * Overlap matrix computed in 0.00 sec.                                                                             
+                                                                                                                          
+* Info * Kinetic energy matrix computed in 0.00 sec.                                                                      
+                                                                                                                          
+* Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+* Info * Orthogonalization matrix computed in 0.01 sec.                                                                   
+                                                                                                                          
+* Info * Starting Reduced Basis SCF calculation...                                                                        
+* Info * ...done. SCF energy in reduced basis set: -1100.779708323264 a.u. Time: 1.15 sec.                                
+                                                                                                                          
+* Info * Overlap matrix computed in 0.00 sec.                                                                             
+                                                                                                                          
+* Info * Kinetic energy matrix computed in 0.00 sec.                                                                      
+                                                                                                                          
+* Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+* Info * Orthogonalization matrix computed in 0.01 sec.                                                                   
+                                                                                                                          
+                                                                                                                          
+               Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
+               --------------------------------------------------------------------------------------------               
+                  1     -1104.383329561654    0.0000000000      0.48814626      0.02571273      0.00000000                
+                  2     -1104.383861899272   -0.0005323376      0.48786949      0.02307143      0.49923798                
+                  3     -1104.415785397506   -0.0319234982      0.10076239      0.00485374      0.25828430                
+                  4     -1104.416938074234   -0.0011526767      0.03692357      0.00255273      0.05759402                
+                  5     -1104.417076471967   -0.0001383977      0.01823388      0.00125370      0.02206017                
+                  6     -1104.417123931093   -0.0000474591      0.00173271      0.00006544      0.00900390                
+                  7     -1104.417124376373   -0.0000004453      0.00060328      0.00002815      0.00144643                
+                  8     -1104.417124420722   -0.0000000443      0.00022220      0.00001138      0.00034189                
+                  9     -1104.417124426912   -0.0000000062      0.00007555      0.00000309      0.00011481                
+                 10     -1104.417124427659   -0.0000000007      0.00002331      0.00000107      0.00004127                
+                 11     -1104.417124427737   -0.0000000001      0.00000498      0.00000020      0.00001370                
+                 12     -1104.417124427740   -0.0000000000      0.00000133      0.00000007      0.00000485                
+                 13     -1104.417124427741   -0.0000000000      0.00000025      0.00000001      0.00000122                
+                                                                                                                          
+* Info * Checkpoint written to file: bithio-S0-opt_scf.h5                                                                 
+                                                                                                                          
+* Info * SCF results written to file: bithio-S0-opt.h5                                                                    
+                                                                                                                          
+               *** SCF converged in 13 iterations. Time: 10.33 sec.                                                       
+                                                                                                                          
+               Spin-Restricted Kohn-Sham:                                                                                 
+               --------------------------                                                                                 
+               Total Energy                       :    -1104.4171244277 a.u.                                              
+               Electronic Energy                  :    -1741.8107851886 a.u.                                              
+               Nuclear Repulsion Energy           :      637.4306554720 a.u.                                              
+               D4 Dispersion Correction           :       -0.0369947111 a.u.                                              
+               ------------------------------------                                                                       
+               Gradient Norm                      :        0.0000002505 a.u.                                              
+                                                                                                                          
+                                                                                                                          
+               Ground State Information                                                                                   
+               ------------------------                                                                                   
+               Charge of Molecule            :  0.0                                                                       
+               Multiplicity (2S+1)           :  1                                                                         
+               Magnetic Quantum Number (M_S) :  0.0                                                                       
+                                                                                                                          
+                                                                                                                          
+                                                 Spin Restricted Orbitals                                                 
+                                                 ------------------------                                                 
+                                                                                                                          
+               Molecular Orbital No.  39:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.34592 a.u.                                                                  
+               (   1 S   4s  :     0.15) (   1 S   2p-1:    -0.26) (   1 S   3p-1:    -0.29)                              
+               (   2 S   4s  :     0.15) (   2 S   2p-1:     0.26) (   2 S   3p-1:     0.29)                              
+               (   3 C   1p-1:     0.16) (   4 C   1p-1:    -0.16)                                                        
+                                                                                                                          
+               Molecular Orbital No.  40:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.27573 a.u.                                                                  
+               (   3 C   1p0 :    -0.24) (   3 C   2p0 :    -0.17) (   4 C   1p0 :    -0.24)                              
+               (   4 C   2p0 :    -0.17) (   7 C   1p0 :     0.17) (   8 C   1p0 :     0.17)                              
+               (   9 C   1p0 :     0.25) (   9 C   2p0 :     0.18) (  10 C   1p0 :     0.25)                              
+               (  10 C   2p0 :     0.18)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  41:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.26005 a.u.                                                                  
+               (   1 S   2p0 :    -0.24) (   1 S   3p0 :    -0.33) (   2 S   2p0 :     0.24)                              
+               (   2 S   3p0 :     0.33) (   5 C   1p0 :     0.20) (   6 C   1p0 :    -0.20)                              
+               (   7 C   1p0 :     0.20) (   8 C   1p0 :    -0.20)                                                        
+                                                                                                                          
+               Molecular Orbital No.  42:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.25648 a.u.                                                                  
+               (   1 S   2p0 :    -0.25) (   1 S   3p0 :    -0.34) (   2 S   2p0 :    -0.25)                              
+               (   2 S   3p0 :    -0.34) (   5 C   1p0 :     0.21) (   6 C   1p0 :     0.21)                              
+               (   7 C   1p0 :     0.20) (   8 C   1p0 :     0.20)                                                        
+                                                                                                                          
+               Molecular Orbital No.  43:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.20944 a.u.                                                                  
+               (   3 C   1p0 :     0.23) (   3 C   2p0 :     0.20) (   4 C   1p0 :    -0.23)                              
+               (   4 C   2p0 :    -0.20) (   5 C   1p0 :     0.20) (   6 C   1p0 :    -0.20)                              
+               (   9 C   1p0 :    -0.26) (   9 C   2p0 :    -0.22) (  10 C   1p0 :     0.26)                              
+               (  10 C   2p0 :     0.22)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  44:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:   -0.04554 a.u.                                                                  
+               (   1 S   2p0 :    -0.15) (   1 S   3p0 :    -0.32) (   2 S   2p0 :    -0.15)                              
+               (   2 S   3p0 :    -0.32) (   3 C   1p0 :     0.23) (   3 C   2p0 :     0.25)                              
+               (   4 C   1p0 :     0.23) (   4 C   2p0 :     0.25) (   5 C   1p0 :    -0.21)                              
+               (   5 C   2p0 :    -0.25) (   6 C   1p0 :    -0.21) (   6 C   2p0 :    -0.25)                              
+               (   9 C   1p0 :     0.25) (   9 C   2p0 :     0.29) (  10 C   1p0 :     0.25)                              
+               (  10 C   2p0 :     0.29)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  45:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.00766 a.u.                                                                  
+               (   1 S   3p0 :     0.33) (   2 S   3p0 :    -0.33) (   3 C   3s  :    -0.16)                              
+               (   3 C   1p0 :    -0.21) (   3 C   2p-1:    -0.16) (   3 C   2p0 :    -0.27)                              
+               (   4 C   3s  :     0.16) (   4 C   1p0 :     0.21) (   4 C   2p-1:    -0.16)                              
+               (   4 C   2p0 :     0.27) (   7 C   1p0 :     0.25) (   7 C   2p0 :     0.35)                              
+               (   8 C   1p0 :    -0.25) (   8 C   2p0 :    -0.35) (   9 C   1p0 :    -0.25)                              
+               (   9 C   2p-1:    -0.16) (   9 C   2p0 :    -0.36) (  10 C   1p0 :     0.25)                              
+               (  10 C   2p-1:    -0.16) (  10 C   2p0 :     0.36)                                                        
+                                                                                                                          
+               Molecular Orbital No.  46:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.03486 a.u.                                                                  
+               (   1 S   3p+1:    -0.55) (   2 S   3p+1:     0.55) (   3 C   3s  :    -0.63)                              
+               (   3 C   2p+1:    -0.24) (   4 C   3s  :    -0.62) (   4 C   2p+1:     0.24)                              
+               (   5 C   2p+1:    -0.23) (   5 C   2p-1:    -0.17) (   5 C   2p0 :     0.31)                              
+               (   6 C   1p0 :     0.15) (   6 C   2p+1:     0.23) (   6 C   2p-1:     0.17)                              
+               (   6 C   2p0 :     0.31) (   7 C   1p0 :    -0.20) (   7 C   2p0 :    -0.35)                              
+               (   8 C   1p0 :    -0.20) (   8 C   2p0 :    -0.35) (   9 C   3s  :     0.54)                              
+               (   9 C   2p+1:    -0.15) (   9 C   2p0 :     0.24) (  10 C   3s  :     0.54)                              
+               (  10 C   2p+1:     0.15) (  10 C   2p0 :     0.24) (  12 H   2s  :     0.15)                              
+               (  15 H   2s  :    -0.17) (  16 H   2s  :    -0.17)                                                        
+                                                                                                                          
+               Molecular Orbital No.  47:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.03758 a.u.                                                                  
+               (   1 S   4s  :    -0.17) (   1 S   2p+1:     0.16) (   1 S   3p+1:     0.66)                              
+               (   1 S   3p-1:    -0.29) (   2 S   4s  :     0.17) (   2 S   2p+1:     0.16)                              
+               (   2 S   3p+1:     0.66) (   2 S   3p-1:    -0.29) (   3 C   3s  :     0.60)                              
+               (   3 C   1p-1:    -0.21) (   3 C   2p-1:    -0.34) (   4 C   3s  :    -0.60)                              
+               (   4 C   1p-1:    -0.21) (   4 C   2p-1:    -0.34) (   5 C   2p0 :     0.22)                              
+               (   6 C   3s  :     0.15) (   6 C   2p0 :    -0.22) (   7 C   3s  :     0.23)                              
+               (   7 C   2p-1:    -0.19) (   8 C   3s  :    -0.23) (   8 C   2p-1:    -0.19)                              
+               (   9 C   3s  :    -0.63) (  10 C   3s  :     0.64) (  11 H   2s  :     0.38)                              
+               (  12 H   2s  :    -0.38) (  15 H   2s  :     0.21) (  16 H   2s  :    -0.21)                              
+                                                                                                                          
+               Molecular Orbital No.  48:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.05862 a.u.                                                                  
+               (   1 S   3p+1:     0.46) (   2 S   3p+1:    -0.46) (   3 C   3s  :     0.25)                              
+               (   3 C   2p-1:    -0.25) (   4 C   3s  :     0.25) (   4 C   2p-1:     0.25)                              
+               (   5 C   1p0 :     0.21) (   5 C   2p-1:     0.17) (   5 C   2p0 :     0.32)                              
+               (   6 C   1p0 :     0.21) (   6 C   2p-1:    -0.17) (   6 C   2p0 :     0.32)                              
+               (   7 C   1p0 :    -0.22) (   7 C   2p-1:    -0.16) (   7 C   2p0 :    -0.37)                              
+               (   8 C   1p0 :    -0.22) (   8 C   2p-1:     0.16) (   8 C   2p0 :    -0.37)                              
+               (   9 C   3s  :    -0.47) (   9 C   2p-1:     0.21) (   9 C   2p0 :     0.21)                              
+               (  10 C   3s  :    -0.47) (  10 C   2p-1:    -0.21) (  10 C   2p0 :     0.21)                              
+               (  15 H   2s  :     0.25) (  16 H   2s  :     0.25)                                                        
+                                                                                                                          
+                                                                                                                          
+                                                Ground State Dipole Moment                                                
+                                               ----------------------------                                               
+                                                                                                                          
+                                   X   :        -0.000009 a.u.        -0.000022 Debye                                     
+                                   Y   :         0.000030 a.u.         0.000077 Debye                                     
+                                   Z   :        -0.070795 a.u.        -0.179943 Debye                                     
+                                 Total :         0.070795 a.u.         0.179943 Debye                                     
+                                                                                                                          
+                                                                                                                          
+                                                Optimization Driver Setup                                                 
+                                               ===========================                                                
+                                                                                                                          
+                                     Coordinate System       :    TRIC                                                    
+                                     Constraints             :    No                                                      
+                                     Max. Number of Steps    :    300                                                     
+                                     Transition State        :    No                                                      
+                                     IRC                     :    No                                                      
+                                     Hessian                 :    never                                                   
+                                                                                                                          
+* Info * Using geomeTRIC for geometry optimization.                                                                       
+                                                                                                                          
+         L.-P. Wang and C.C. Song, J. Chem. Phys. 2016, 144, 214108
+                                                                                                                          
+* Info * Computing energy and gradient...                                                                                 
+                                                                                                                          
+                                                SCF Gradient Driver Setup                                                 
+                                               ===========================                                                
+                                                                                                                          
+                          Gradient Type                   : Analytical                                                    
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             --------------------------------                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           S           1.619800000000       -1.380800000000        0.366300000000                         
+                           S          -1.619800000000        1.380700000000        0.366300000000                         
+                           C           0.709200000000        0.018100000000       -0.016300000000                         
+                           C          -0.709200000000       -0.018100000000       -0.016300000000                         
+                           C           1.515600000000        1.098300000000       -0.300100000000                         
+                           C          -1.515700000000       -1.098200000000       -0.300100000000                         
+                           C           2.899400000000        0.773100000000       -0.202400000000                         
+                           C          -2.899400000000       -0.773100000000       -0.202400000000                         
+                           C           3.097800000000       -0.543000000000        0.152500000000                         
+                           C          -3.097800000000        0.543000000000        0.152500000000                         
+                           H           1.155300000000        2.081800000000       -0.575400000000                         
+                           H          -1.155300000000       -2.081800000000       -0.575300000000                         
+                           H           3.708300000000        1.468500000000       -0.385100000000                         
+                           H          -3.708300000000       -1.468500000000       -0.385100000000                         
+                           H           4.040000000000       -1.052800000000        0.295900000000                         
+                           H          -4.040100000000        1.052900000000        0.295900000000                         
+                                                                                                                          
+                                            Analytical Gradient (Hartree/Bohr)                                            
+                                           ------------------------------------                                           
+                                                                                                                          
+                          Atom           Gradient X            Gradient Y            Gradient Z                           
+                                                                                                                          
+                           S          -0.003904841649        0.012202211150       -0.004198453801                         
+                           S           0.003907263901       -0.012269883647       -0.004214462912                         
+                           C          -0.007160993501       -0.013642183157        0.004316847049                         
+                           C           0.007161673417        0.013643030570        0.004316873519                         
+                           C          -0.014180814044        0.002691302849       -0.002458299503                         
+                           C           0.014069348557       -0.002545897989       -0.002429758442                         
+                           C           0.005067772854        0.007715340813       -0.002835516724                         
+                           C          -0.004998570006       -0.007730327277       -0.002835612244                         
+                           C          -0.005950838493       -0.008124362995        0.003142225081                         
+                           C           0.006048641103        0.008072238681        0.003127313375                         
+                           H           0.004397027607       -0.003525160136        0.001484914802                         
+                           H          -0.004367277786        0.003465651728        0.001473362377                         
+                           H          -0.004282118719       -0.003921309864        0.001041150693                         
+                           H           0.004279775289        0.003922415740        0.001041531006                         
+                           H          -0.005038439824        0.003039053759       -0.000496952574                         
+                           H           0.004952318608       -0.002992145663       -0.000485021242                         
+                                                                                                                          
+                                   *** Time spent in gradient calculation: 6.22 sec ***                                   
+                                                                                                                          
+* Info *   Energy   : -1104.4171244277 a.u.                                                                               
+* Info *   Gradient : 1.094412e-02 a.u. (RMS)                                                                             
+* Info *              1.600179e-02 a.u. (Max)                                                                             
+* Info *   Time     : 7.13 sec                                                                                            
+                                                                                                                          
+* Info * Computing energy and gradient...                                                                                 
+                                                                                                                          
+                                                SCF Gradient Driver Setup                                                 
+                                               ===========================                                                
+                                                                                                                          
+                          Gradient Type                   : Analytical                                                    
+                          Exchange-Correlation Functional : B3LYP                                                         
+                          Molecular Grid Level            : 4                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             --------------------------------                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           S           1.692945119564       -1.382971104549        0.366464461292                         
+                           S          -1.692815331198        1.382925819444        0.366441749416                         
+                           C           0.728592034325        0.013736586997       -0.005062198671                         
+                           C          -0.728652272497       -0.013907685034       -0.005075501528                         
+                           C           1.562689947667        1.085142943176       -0.270899848796                         
+                           C          -1.562799199410       -1.085304522228       -0.270924858289                         
+                           C           2.950215547655        0.767509761305       -0.194754376899                         
+                           C          -2.950242166124       -0.767407107921       -0.194765615562                         
+                           C           3.185659266502       -0.548255915865        0.124190299366                         
+                           C          -3.185594141657        0.548390969154        0.124196182108                         
+                           H           1.187250368130        2.073972978150       -0.536253569121                         
+                           H          -1.187431523059       -2.074179504496       -0.536221038713                         
+                           H           3.751146776045        1.483864733147       -0.383451934645                         
+                           H          -3.751275170479       -1.483643364281       -0.383473507927                         
+                           H           4.141339433042       -1.059339174640        0.236081667381                         
+                           H          -4.141216380045        1.059568895228        0.236077672715                         
+                                                                                                                          
+                                            Analytical Gradient (Hartree/Bohr)                                            
+                                           ------------------------------------                                           
+                                                                                                                          
+                          Atom           Gradient X            Gradient Y            Gradient Z                           
+                                                                                                                          
+                           S           0.002048299703        0.012114063413       -0.001634256907                         
+                           S          -0.002058667735       -0.012107366798       -0.001634893085                         
+                           C          -0.001951553374       -0.009799121816        0.000421104693                         
+                           C           0.001926999510        0.009810891669        0.000421829818                         
+                           C          -0.001737738337       -0.002475002240        0.000255922499                         
+                           C           0.001724205492        0.002418198398        0.000239492433                         
+                           C          -0.000505660969       -0.000298908270        0.000803591963                         
+                           C           0.000548149622        0.000311767721        0.000805726361                         
+                           C           0.005962476788       -0.004790880431        0.000030424529                         
+                           C          -0.005970430202        0.004816267059        0.000039970015                         
+                           H           0.000703902429       -0.000194189256        0.000132124070                         
+                           H          -0.000698800607        0.000190327920        0.000132960681                         
+                           H           0.000543010516       -0.000657166234        0.000263470987                         
+                           H          -0.000539413802        0.000659199298        0.000262909009                         
+                           H           0.001215145486        0.000471450451       -0.000274059018                         
+                           H          -0.001209912951       -0.000469555793       -0.000273468613                         
+                                                                                                                          
+                                   *** Time spent in gradient calculation: 6.20 sec ***                                   
+                                                                                                                          
+* Info *   Energy   : -1104.4193196230 a.u.                                                                               
+* Info *   Gradient : 6.378487e-03 a.u. (RMS)                                                                             
+* Info *              1.239423e-02 a.u. (Max)                                                                             
+* Info *   Time     : 14.00 sec                                                                                           
+                                                                                                                          
+* Info * Computing energy and gradient...                                                                                 
+                                                                                                                          
+                                                SCF Gradient Driver Setup                                                 
+                                               ===========================                                                
+                                                                                                                          
+                          Gradient Type                   : Analytical                                                    
+                          Exchange-Correlation Functional : B3LYP                                                         
+                          Molecular Grid Level            : 4                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             --------------------------------                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           S           1.659790052005       -1.397899974539        0.345841557677                         
+                           S          -1.659943623385        1.398006911249        0.345849498309                         
+                           C           0.730858919406        0.034850351737       -0.024227503449                         
+                           C          -0.730881719672       -0.034666653067       -0.024202476878                         
+                           C           1.567225744167        1.111519122777       -0.275301824005                         
+                           C          -1.567205301382       -1.111402635245       -0.275251263744                         
+                           C           2.948742880061        0.781217792090       -0.186834517560                         
+                           C          -2.948797592578       -0.781310553723       -0.186819140806                         
+                           C           3.147215426199       -0.540674336947        0.129684118085                         
+                           C          -3.147261676617        0.540598108241        0.129689459668                         
+                           H           1.188857925234        2.102497338834       -0.539517464444                         
+                           H          -1.188734268924       -2.102315650912       -0.539432486672                         
+                           H           3.762639285664        1.490190721268       -0.362871583712                         
+                           H          -3.762647895335       -1.490339177339       -0.362858273442                         
+                           H           4.096983209158       -1.064300975656        0.250094869570                         
+                           H          -4.097026836611        1.064138204566        0.250084326535                         
+                                                                                                                          
+                                            Analytical Gradient (Hartree/Bohr)                                            
+                                           ------------------------------------                                           
+                                                                                                                          
+                          Atom           Gradient X            Gradient Y            Gradient Z                           
+                                                                                                                          
+                           S          -0.002089047342       -0.004019185073        0.001602704439                         
+                           S           0.002089375236        0.004033462316        0.001607641235                         
+                           C           0.006509682661        0.000795490499        0.000420751129                         
+                           C          -0.006482894497       -0.000777970010        0.000427667213                         
+                           C           0.005376536837        0.001254818354       -0.000188840260                         
+                           C          -0.005372419831       -0.001259370077       -0.000188756174                         
+                           C           0.000724523668        0.002390581201       -0.000422363485                         
+                           C          -0.000777886217       -0.002430392464       -0.000432424091                         
+                           C          -0.004925334477        0.001751966827       -0.000576678472                         
+                           C           0.004932592998       -0.001738853013       -0.000573662188                         
+                           H          -0.000290863550        0.001468554245       -0.000414456198                         
+                           H           0.000281943709       -0.001447616885       -0.000407910482                         
+                           H           0.001552833787        0.001425267117       -0.000439284449                         
+                           H          -0.001557452342       -0.001428001448       -0.000440590574                         
+                           H           0.001211101819       -0.000669177745        0.000013513109                         
+                           H          -0.001182638111        0.000650465215        0.000008936319                         
+                                                                                                                          
+                                   *** Time spent in gradient calculation: 6.12 sec ***                                   
+                                                                                                                          
+* Info *   Energy   : -1104.4201012619 a.u.                                                                               
+* Info *   Gradient : 4.179982e-03 a.u. (RMS)                                                                             
+* Info *              6.571591e-03 a.u. (Max)                                                                             
+* Info *   Time     : 13.28 sec                                                                                           
+                                                                                                                          
+* Info * Computing energy and gradient...                                                                                 
+                                                                                                                          
+                                                SCF Gradient Driver Setup                                                 
+                                               ===========================                                                
+                                                                                                                          
+                          Gradient Type                   : Analytical                                                    
+                          Exchange-Correlation Functional : B3LYP                                                         
+                          Molecular Grid Level            : 4                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             --------------------------------                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           S           1.660690871139       -1.400590987451        0.329963782944                         
+                           S          -1.660701846212        1.400550198011        0.329930080580                         
+                           C           0.725499984089        0.030097735240       -0.027939014267                         
+                           C          -0.725517042670       -0.030153564147       -0.027943355347                         
+                           C           1.551531060809        1.108589611367       -0.277551909610                         
+                           C          -1.551540656111       -1.108647051005       -0.277555094716                         
+                           C           2.930690267337        0.769455168793       -0.183920965677                         
+                           C          -2.930662579895       -0.769371220446       -0.183893064958                         
+                           C           3.150868288746       -0.548248337854        0.131964470388                         
+                           C          -3.150942030550        0.548321517313        0.131967278514                         
+                           H           1.174195179971        2.098692839309       -0.537846555702                         
+                           H          -1.174242097512       -2.098767178447       -0.537834761244                         
+                           H           3.738962990928        1.481797771265       -0.354347701358                         
+                           H          -3.738949821504       -1.481696066138       -0.354309440791                         
+                           H           4.101157308298       -1.065145885976        0.256835993103                         
+                           H          -4.101232792624        1.065219750918        0.256827098803                         
+                                                                                                                          
+                                            Analytical Gradient (Hartree/Bohr)                                            
+                                           ------------------------------------                                           
+                                                                                                                          
+                          Atom           Gradient X            Gradient Y            Gradient Z                           
+                                                                                                                          
+                           S           0.000402382692        0.000277396341       -0.000501464899                         
+                           S          -0.000415531297       -0.000300755651       -0.000507982364                         
+                           C           0.003000201917        0.000604537544        0.000596081778                         
+                           C          -0.003005320959       -0.000613465118        0.000596758287                         
+                           C          -0.000887627250        0.003622031131       -0.001297146632                         
+                           C           0.000900963209       -0.003653709787       -0.001307301932                         
+                           C          -0.003796886087       -0.002581577704        0.000351124871                         
+                           C           0.003839342187        0.002618956512        0.000361170506                         
+                           C           0.001730975441       -0.001315504325        0.000901367402                         
+                           C          -0.001773799762        0.001335251955        0.000906297133                         
+                           H          -0.000277125270        0.000373493277       -0.000145764028                         
+                           H           0.000281244686       -0.000373842634       -0.000145707534                         
+                           H          -0.000348473018       -0.000219849667       -0.000039841145                         
+                           H           0.000352278032        0.000224621341       -0.000038812351                         
+                           H           0.000145188952       -0.000235699063        0.000135136208                         
+                           H          -0.000147824429        0.000238124196        0.000135771186                         
+                                                                                                                          
+                                   *** Time spent in gradient calculation: 6.07 sec ***                                   
+                                                                                                                          
+* Info *   Energy   : -1104.4203732546 a.u.                                                                               
+* Info *   Gradient : 2.588421e-03 a.u. (RMS)                                                                             
+* Info *              4.661537e-03 a.u. (Max)                                                                             
+* Info *   Time     : 12.88 sec                                                                                           
+                                                                                                                          
+* Info * Computing energy and gradient...                                                                                 
+                                                                                                                          
+                                                SCF Gradient Driver Setup                                                 
+                                               ===========================                                                
+                                                                                                                          
+                          Gradient Type                   : Analytical                                                    
+                          Exchange-Correlation Functional : B3LYP                                                         
+                          Molecular Grid Level            : 4                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             --------------------------------                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           S           1.669615306479       -1.406068009579        0.323412358245                         
+                           S          -1.669594785289        1.406091961476        0.323389123762                         
+                           C           0.723059953160        0.017854035361       -0.020698406477                         
+                           C          -0.723086503794       -0.017846719577       -0.020701325905                         
+                           C           1.554825794863        1.090237247907       -0.264735707697                         
+                           C          -1.554888483949       -1.090200455127       -0.264722824275                         
+                           C           2.941201707710        0.774031054900       -0.185108799797                         
+                           C          -2.941261128378       -0.774047428013       -0.185102442129                         
+                           C           3.155417625028       -0.547037279537        0.117894822389                         
+                           C          -3.155384133144        0.547038033196        0.117879140092                         
+                           H           1.172865097510        2.079581531964       -0.514025654827                         
+                           H          -1.172920221843       -2.079560931765       -0.513997112508                         
+                           H           3.743741192769        1.491601914342       -0.353342441996                         
+                           H          -3.743814556534       -1.491608973245       -0.353317476988                         
+                           H           4.105082806531       -1.064123691050        0.233840114258                         
+                           H          -4.105055011136        1.064158718817        0.233825172266                         
+                                                                                                                          
+                                            Analytical Gradient (Hartree/Bohr)                                            
+                                           ------------------------------------                                           
+                                                                                                                          
+                          Atom           Gradient X            Gradient Y            Gradient Z                           
+                                                                                                                          
+                           S           0.000283743811        0.002670899201       -0.000603387074                         
+                           S          -0.000272104509       -0.002664655721       -0.000602068488                         
+                           C          -0.003172153766       -0.002288971625        0.000243378744                         
+                           C           0.003168302286        0.002292199088        0.000242300908                         
+                           C          -0.001574563993       -0.004230352625        0.000388201883                         
+                           C           0.001552267739        0.004267963472        0.000395293862                         
+                           C           0.002617810812        0.002090133621       -0.000486552588                         
+                           C          -0.002630766617       -0.002110885798       -0.000489849981                         
+                           C          -0.000193901756       -0.000346249662        0.000147922086                         
+                           C           0.000234360486        0.000324085160        0.000142173112                         
+                           H           0.000520360603       -0.001121340413        0.000284229773                         
+                           H          -0.000519002013        0.001113919613        0.000282350784                         
+                           H          -0.000372319521       -0.000535003085        0.000149404871                         
+                           H           0.000370004157        0.000532677941        0.000149009749                         
+                           H          -0.000721428229        0.000811133503       -0.000122478666                         
+                           H           0.000709388060       -0.000805588221       -0.000121302895                         
+                                                                                                                          
+                                   *** Time spent in gradient calculation: 6.41 sec ***                                   
+                                                                                                                          
+* Info *   Energy   : -1104.4203816768 a.u.                                                                               
+* Info *   Gradient : 2.704376e-03 a.u. (RMS)                                                                             
+* Info *              4.558652e-03 a.u. (Max)                                                                             
+* Info *   Time     : 14.33 sec                                                                                           
+                                                                                                                          
+* Info * Computing energy and gradient...                                                                                 
+                                                                                                                          
+                                                SCF Gradient Driver Setup                                                 
+                                               ===========================                                                
+                                                                                                                          
+                          Gradient Type                   : Analytical                                                    
+                          Exchange-Correlation Functional : B3LYP                                                         
+                          Molecular Grid Level            : 4                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             --------------------------------                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           S           1.664855047470       -1.404816200104        0.319779737872                         
+                           S          -1.664872411340        1.404837959988        0.319763202602                         
+                           C           0.725208432940        0.026580235379       -0.025332321197                         
+                           C          -0.725235934031       -0.026568827874       -0.025331282596                         
+                           C           1.556729892705        1.103566203942       -0.263822242150                         
+                           C          -1.556759153737       -1.103559072804       -0.263805753479                         
+                           C           2.939911884668        0.774662524933       -0.181565002417                         
+                           C          -2.939940658015       -0.774652561281       -0.181552992246                         
+                           C           3.153171793015       -0.548140865814        0.115738708389                         
+                           C          -3.153186967481        0.548158123423        0.115732850778                         
+                           H           1.177177074013        2.096015553255       -0.510931767059                         
+                           H          -1.177206078637       -2.096012394234       -0.510898174398                         
+                           H           3.746754970505        1.490177269407       -0.346341695451                         
+                           H          -3.746788728070       -1.490164599695       -0.346318161260                         
+                           H           4.102769338305       -1.068715401519        0.229758571003                         
+                           H          -4.102782284107        1.068736101674        0.229747408922                         
+                                                                                                                          
+                                            Analytical Gradient (Hartree/Bohr)                                            
+                                           ------------------------------------                                           
+                                                                                                                          
+                          Atom           Gradient X            Gradient Y            Gradient Z                           
+                                                                                                                          
+                           S          -0.000168189574        0.000158255801        0.000361263234                         
+                           S           0.000169083730       -0.000155591236        0.000361995474                         
+                           C           0.000333551534       -0.000094184099       -0.000002517579                         
+                           C          -0.000334828912        0.000095805090       -0.000002420770                         
+                           C           0.000135716543       -0.000154053314       -0.000267575956                         
+                           C          -0.000136866729        0.000153003270       -0.000267909294                         
+                           C           0.000189713654        0.000235010553        0.000049125945                         
+                           C          -0.000191608604       -0.000237568126        0.000048541821                         
+                           C          -0.000163966469       -0.000063398193       -0.000158198576                         
+                           C           0.000167084355        0.000063395002       -0.000158322432                         
+                           H          -0.000035624936        0.000005451677        0.000024943983                         
+                           H           0.000035474456       -0.000005425425        0.000025082137                         
+                           H           0.000064111670        0.000026538212        0.000024112512                         
+                           H          -0.000064323154       -0.000026802141        0.000024049624                         
+                           H           0.000045065755        0.000022578990       -0.000031534976                         
+                           H          -0.000044391696       -0.000023018847       -0.000031586578                         
+                                                                                                                          
+                                   *** Time spent in gradient calculation: 6.75 sec ***                                   
+                                                                                                                          
+* Info *   Energy   : -1104.4205769308 a.u.                                                                               
+* Info *   Gradient : 2.693227e-04 a.u. (RMS)                                                                             
+* Info *              4.287700e-04 a.u. (Max)                                                                             
+* Info *   Time     : 13.90 sec                                                                                           
+                                                                                                                          
+* Info * Computing energy and gradient...                                                                                 
+                                                                                                                          
+                                                SCF Gradient Driver Setup                                                 
+                                               ===========================                                                
+                                                                                                                          
+                          Gradient Type                   : Analytical                                                    
+                          Exchange-Correlation Functional : B3LYP                                                         
+                          Molecular Grid Level            : 4                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             --------------------------------                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           S           1.664718151845       -1.408093965109        0.306883896667                         
+                           S          -1.664762067033        1.408117037571        0.306865943622                         
+                           C           0.725003590941        0.026451455287       -0.027400853961                         
+                           C          -0.725024795452       -0.026418714734       -0.027397673364                         
+                           C           1.556521727282        1.104719249783       -0.259466177035                         
+                           C          -1.556535886485       -1.104695004715       -0.259444862311                         
+                           C           2.939411496537        0.774596521858       -0.178817278069                         
+                           C          -2.939431508456       -0.774591400673       -0.178800922002                         
+                           C           3.153156364503       -0.549401514811        0.112142597960                         
+                           C          -3.153193652456        0.549407836292        0.112139351733                         
+                           H           1.177390555223        2.098697550016       -0.501059816717                         
+                           H          -1.177393990740       -2.098672208499       -0.501023294639                         
+                           H           3.746130744309        1.491162580664       -0.339416118547                         
+                           H          -3.746141441953       -1.491170478019       -0.339388570716                         
+                           H           4.102624511501       -1.070537111103        0.224505193926                         
+                           H          -4.102667812696        1.070532711481        0.224495711774                         
+                                                                                                                          
+                                            Analytical Gradient (Hartree/Bohr)                                            
+                                           ------------------------------------                                           
+                                                                                                                          
+                          Atom           Gradient X            Gradient Y            Gradient Z                           
+                                                                                                                          
+                           S          -0.000022585240       -0.000044538051        0.000069137770                         
+                           S           0.000021725256        0.000042317103        0.000068787981                         
+                           C           0.000201546962        0.000125685919        0.000129102024                         
+                           C          -0.000198412194       -0.000126273332        0.000129504254                         
+                           C           0.000049524627        0.000024751612       -0.000235375523                         
+                           C          -0.000048527043       -0.000022671261       -0.000234837115                         
+                           C          -0.000063353716       -0.000076612904       -0.000053770046                         
+                           C           0.000062142251        0.000076561847       -0.000053885012                         
+                           C          -0.000002595224        0.000022493038        0.000110292748                         
+                           C           0.000000647531       -0.000021989031        0.000110354648                         
+                           H          -0.000058193894        0.000006511344       -0.000016079417                         
+                           H           0.000058175378       -0.000005916360       -0.000015841550                         
+                           H           0.000018140787        0.000010377427       -0.000022346028                         
+                           H          -0.000018351526       -0.000010234477       -0.000022318528                         
+                           H           0.000031702405        0.000001758865        0.000018706821                         
+                           H          -0.000031586808       -0.000002219563        0.000018637032                         
+                                                                                                                          
+                                   *** Time spent in gradient calculation: 6.47 sec ***                                   
+                                                                                                                          
+* Info *   Energy   : -1104.4205926038 a.u.                                                                               
+* Info *   Gradient : 1.454742e-04 a.u. (RMS)                                                                             
+* Info *              2.703432e-04 a.u. (Max)                                                                             
+* Info *   Time     : 12.99 sec                                                                                           
+                                                                                                                          
+* Info * Computing energy and gradient...                                                                                 
+                                                                                                                          
+                                                SCF Gradient Driver Setup                                                 
+                                               ===========================                                                
+                                                                                                                          
+                          Gradient Type                   : Analytical                                                    
+                          Exchange-Correlation Functional : B3LYP                                                         
+                          Molecular Grid Level            : 4                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             --------------------------------                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           S           1.664663169847       -1.414265741051        0.280724624313                         
+                           S          -1.664653015578        1.414269223774        0.280698378365                         
+                           C           0.724510499201        0.025975010845       -0.030475226210                         
+                           C          -0.724536213142       -0.026001446473       -0.030478239640                         
+                           C           1.556190068468        1.107269938184       -0.246369659786                         
+                           C          -1.556226705222       -1.107288968207       -0.246358580143                         
+                           C           2.938856398917        0.775191832381       -0.171851305969                         
+                           C          -2.938880286189       -0.775158621767       -0.171837338077                         
+                           C           3.153163111959       -0.552945797898        0.098109019850                         
+                           C          -3.153175630837        0.552984018705        0.098102713389                         
+                           H           1.177946564184        2.105202385125       -0.472314531688                         
+                           H          -1.178010375955       -2.105234287030       -0.472294861431                         
+                           H           3.745187520800        1.494308349013       -0.321902113683                         
+                           H          -3.745226424452       -1.494260152303       -0.321876053856                         
+                           H           4.102292066177       -1.076327069448        0.201595134948                         
+                           H          -4.102295094412        1.076385917516        0.201582209002                         
+                                                                                                                          
+                                            Analytical Gradient (Hartree/Bohr)                                            
+                                           ------------------------------------                                           
+                                                                                                                          
+                          Atom           Gradient X            Gradient Y            Gradient Z                           
+                                                                                                                          
+                           S           0.000158002390       -0.000135794114        0.000076675300                         
+                           S          -0.000157943426        0.000135946486        0.000076052606                         
+                           C          -0.000215365565        0.000329220347        0.000012698430                         
+                           C           0.000209914560       -0.000330926748        0.000011992092                         
+                           C          -0.000154609684        0.000107702414       -0.000152596453                         
+                           C           0.000156895928       -0.000114236662       -0.000154093437                         
+                           C          -0.000238312457       -0.000328562789        0.000038225584                         
+                           C           0.000245215317        0.000335039327        0.000039734275                         
+                           C           0.000199802735        0.000059132081        0.000062127724                         
+                           C          -0.000204114049       -0.000058157551        0.000062552348                         
+                           H          -0.000041795801       -0.000026549242       -0.000027968402                         
+                           H           0.000042062026        0.000025678311       -0.000028520190                         
+                           H          -0.000071853929       -0.000025894064       -0.000015020755                         
+                           H           0.000072774232        0.000026334271       -0.000014942451                         
+                           H          -0.000036777156       -0.000019412240        0.000006826375                         
+                           H           0.000036105016        0.000020477481        0.000007070952                         
+                                                                                                                          
+                                   *** Time spent in gradient calculation: 6.55 sec ***                                   
+                                                                                                                          
+* Info *   Energy   : -1104.4206173801 a.u.                                                                               
+* Info *   Gradient : 2.482497e-04 a.u. (RMS)                                                                             
+* Info *              4.170860e-04 a.u. (Max)                                                                             
+* Info *   Time     : 13.75 sec                                                                                           
+                                                                                                                          
+* Info * Computing energy and gradient...                                                                                 
+                                                                                                                          
+                                                SCF Gradient Driver Setup                                                 
+                                               ===========================                                                
+                                                                                                                          
+                          Gradient Type                   : Analytical                                                    
+                          Exchange-Correlation Functional : B3LYP                                                         
+                          Molecular Grid Level            : 4                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             --------------------------------                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           S           1.664376692406       -1.422025030343        0.242502178071                         
+                           S          -1.664523300524        1.422089550851        0.242500524329                         
+                           C           0.724445832226        0.025497779867       -0.035783320907                         
+                           C          -0.724455562687       -0.025346139116       -0.035769254053                         
+                           C           1.557509388004        1.110435263191       -0.228626578057                         
+                           C          -1.557483121005       -1.110313355141       -0.228579851960                         
+                           C           2.940141588666        0.776444139449       -0.162239994105                         
+                           C          -2.940162155259       -0.776501820069       -0.162216053666                         
+                           C           3.153351236892       -0.557358559175        0.078889539335                         
+                           C          -3.153430424075        0.557293203797        0.078889750068                         
+                           H           1.180741674253        2.113843029554       -0.431945354639                         
+                           H          -1.180636158954       -2.113693400993       -0.431880489883                         
+                           H           3.746716980472        1.498462995706       -0.296515751242                         
+                           H          -3.746674111772       -1.498595104059       -0.296480980034                         
+                           H           4.101943603478       -1.083863586894        0.171213637564                         
+                           H          -4.102057322691        1.083737214794        0.171203277564                         
+                                                                                                                          
+                                            Analytical Gradient (Hartree/Bohr)                                            
+                                           ------------------------------------                                           
+                                                                                                                          
+                          Atom           Gradient X            Gradient Y            Gradient Z                           
+                                                                                                                          
+                           S           0.000129743180       -0.000253072680        0.000015609025                         
+                           S          -0.000129920609        0.000248912905        0.000016782916                         
+                           C          -0.000396899429        0.000346873854        0.000010727392                         
+                           C           0.000417223451       -0.000346875133        0.000011722421                         
+                           C          -0.000037519937        0.000032702290       -0.000021932188                         
+                           C           0.000034504029       -0.000003533549       -0.000015154109                         
+                           C          -0.000037631324       -0.000186140615       -0.000011245988                         
+                           C           0.000014823325        0.000169998130       -0.000014774741                         
+                           C           0.000118372806        0.000139171805        0.000059840201                         
+                           C          -0.000108850379       -0.000147193643        0.000057670563                         
+                           H          -0.000010376068       -0.000004406757       -0.000045972740                         
+                           H           0.000008895741        0.000007138680       -0.000045016330                         
+                           H          -0.000034066250        0.000011754584       -0.000020320233                         
+                           H           0.000031476602       -0.000013073688       -0.000020439102                         
+                           H          -0.000019346298       -0.000038183051        0.000012191827                         
+                           H           0.000019564683        0.000035940107        0.000011573587                         
+                                                                                                                          
+                                   *** Time spent in gradient calculation: 6.36 sec ***                                   
+                                                                                                                          
+* Info *   Energy   : -1104.4206395312 a.u.                                                                               
+* Info *   Gradient : 2.355765e-04 a.u. (RMS)                                                                             
+* Info *              5.427110e-04 a.u. (Max)                                                                             
+* Info *   Time     : 13.98 sec                                                                                           
+                                                                                                                          
+* Info * Computing energy and gradient...                                                                                 
+                                                                                                                          
+                                                SCF Gradient Driver Setup                                                 
+                                               ===========================                                                
+                                                                                                                          
+                          Gradient Type                   : Analytical                                                    
+                          Exchange-Correlation Functional : B3LYP                                                         
+                          Molecular Grid Level            : 4                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             --------------------------------                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           S           1.663985850885       -1.428634947872        0.207562964418                         
+                           S          -1.663568466659        1.428431971622        0.207476656572                         
+                           C           0.724442270727        0.024280025603       -0.040632135950                         
+                           C          -0.724505956882       -0.024824269379       -0.040677199842                         
+                           C           1.558221288469        1.112446672756       -0.212038199120                         
+                           C          -1.558401564835       -1.112896226223       -0.212118451187                         
+                           C           2.940774784888        0.777100332678       -0.153343099722                         
+                           C          -2.940756016522       -0.776761217509       -0.153353180765                         
+                           C           3.153187294817       -0.561528996738        0.060236076480                         
+                           C          -3.153079315516        0.561886814078        0.060220122463                         
+                           H           1.182438075738        2.120447327305       -0.393261403554                         
+                           H          -1.182960539249       -2.121028799881       -0.393356643110                         
+                           H           3.747590690824        1.501460589779       -0.272583055444                         
+                           H          -3.747795081792       -1.500865120843       -0.272582199897                         
+                           H           4.101488283010       -1.090282071944        0.141722710396                         
+                           H          -4.101255467046        1.090871140281        0.141708134318                         
+                                                                                                                          
+                                            Analytical Gradient (Hartree/Bohr)                                            
+                                           ------------------------------------                                           
+                                                                                                                          
+                          Atom           Gradient X            Gradient Y            Gradient Z                           
+                                                                                                                          
+                           S           0.000073148308       -0.000109689298        0.000054046060                         
+                           S          -0.000086299161        0.000104484820        0.000046058561                         
+                           C          -0.000284948301        0.000123579244       -0.000036788128                         
+                           C           0.000208173616       -0.000139017239       -0.000041450858                         
+                           C          -0.000028101174       -0.000076683105        0.000039717842                         
+                           C           0.000059332145       -0.000057617937        0.000014453096                         
+                           C           0.000068574608       -0.000004062232        0.000005281455                         
+                           C           0.000054276347        0.000106022717        0.000022661330                         
+                           C          -0.000008778153        0.000080287188       -0.000037357162                         
+                           C          -0.000073561273       -0.000036439625       -0.000027121725                         
+                           H           0.000023597353       -0.000006405930       -0.000022084530                         
+                           H          -0.000015310869       -0.000005803547       -0.000026311833                         
+                           H          -0.000019341216        0.000012999295        0.000006497184                         
+                           H           0.000033491457       -0.000004214398        0.000007657290                         
+                           H          -0.000023436519       -0.000010811689       -0.000003404408                         
+                           H           0.000019194657        0.000023351850       -0.000000695822                         
+                                                                                                                          
+                                   *** Time spent in gradient calculation: 6.55 sec ***                                   
+                                                                                                                          
+* Info *   Energy   : -1104.4206474184 a.u.                                                                               
+* Info *   Gradient : 1.271192e-04 a.u. (RMS)                                                                             
+* Info *              3.127631e-04 a.u. (Max)                                                                             
+* Info *   Time     : 14.45 sec                                                                                           
+                                                                                                                          
+* Info * Computing energy and gradient...                                                                                 
+                                                                                                                          
+                                                SCF Gradient Driver Setup                                                 
+                                               ===========================                                                
+                                                                                                                          
+                          Gradient Type                   : Analytical                                                    
+                          Exchange-Correlation Functional : B3LYP                                                         
+                          Molecular Grid Level            : 4                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             --------------------------------                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           S           1.662806845425       -1.430043366197        0.196898102866                         
+                           S          -1.663931560630        1.430760152355        0.197028575130                         
+                           C           0.724624564894        0.025026145446       -0.042318880477                         
+                           C          -0.724569366758       -0.023462122085       -0.042203661721                         
+                           C           1.558950643481        1.113794629899       -0.207680297640                         
+                           C          -1.558649073495       -1.112460363011       -0.207404657970                         
+                           C           2.941014407758        0.776226581976       -0.150895001195                         
+                           C          -2.941299438867       -0.777228363068       -0.150832985175                         
+                           C           3.152936975374       -0.563702408816        0.055155951287                         
+                           C          -3.153130436891        0.562717839302        0.055157747339                         
+                           H           1.184110251539        2.123327582469       -0.382350172021                         
+                           H          -1.182856445454       -2.121633992078       -0.381986136827                         
+                           H           3.748560228584        1.500474413122       -0.265817238338                         
+                           H          -3.748274260265       -1.502150505708       -0.265725452882                         
+                           H           4.100917008865       -1.093492125839        0.133861483062                         
+                           H          -4.101406491451        1.091952787062        0.133841485918                         
+                                                                                                                          
+                                            Analytical Gradient (Hartree/Bohr)                                            
+                                           ------------------------------------                                           
+                                                                                                                          
+                          Atom           Gradient X            Gradient Y            Gradient Z                           
+                                                                                                                          
+                           S           0.000053801136        0.000011791569       -0.000006481052                         
+                           S           0.000016872606        0.000061344761        0.000022044532                         
+                           C           0.000039216528        0.000070076081       -0.000016708603                         
+                           C           0.000164466324       -0.000003259456       -0.000004335640                         
+                           C          -0.000070912056        0.000199500937       -0.000015604595                         
+                           C          -0.000050422677        0.000223242066        0.000058800666                         
+                           C          -0.000192765855       -0.000182028555        0.000021653612                         
+                           C          -0.000227183117       -0.000179612013       -0.000035806285                         
+                           C           0.000163898923       -0.000064744570        0.000009532052                         
+                           C           0.000161980170       -0.000098299890       -0.000023621738                         
+                           H          -0.000005965961        0.000021132239       -0.000015247749                         
+                           H          -0.000026346266        0.000014809307       -0.000004686040                         
+                           H          -0.000027673105       -0.000008993665        0.000006711634                         
+                           H          -0.000018459046       -0.000025183398        0.000002080253                         
+                           H           0.000007106532       -0.000024245740        0.000005456702                         
+                           H           0.000012384357       -0.000015512054       -0.000002627060                         
+                                                                                                                          
+                                   *** Time spent in gradient calculation: 6.42 sec ***                                   
+                                                                                                                          
+* Info *   Energy   : -1104.4206473161 a.u.                                                                               
+* Info *   Gradient : 1.521587e-04 a.u. (RMS)                                                                             
+* Info *              2.918128e-04 a.u. (Max)                                                                             
+* Info *   Time     : 13.59 sec                                                                                           
+                                                                                                                          
+* Info * Computing energy and gradient...                                                                                 
+                                                                                                                          
+                                                SCF Gradient Driver Setup                                                 
+                                               ===========================                                                
+                                                                                                                          
+                          Gradient Type                   : Analytical                                                    
+                          Exchange-Correlation Functional : B3LYP                                                         
+                          Molecular Grid Level            : 4                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             --------------------------------                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           S           1.663005027905       -1.431247522809        0.192903036552                         
+                           S          -1.663174772238        1.431153724986        0.192913169737                         
+                           C           0.724681560838        0.024062965721       -0.042901566506                         
+                           C          -0.724670944021       -0.024069844159       -0.042890645767                         
+                           C           1.559138162698        1.113148325246       -0.205925420118                         
+                           C          -1.559031855186       -1.113208390526       -0.205894632278                         
+                           C           2.941455494731        0.776512085292       -0.149985693445                         
+                           C          -2.941300819079       -0.776356462043       -0.149937212103                         
+                           C           3.152815343961       -0.563948159936        0.053314441858                         
+                           C          -3.153086487023        0.564034599127        0.053337142944                         
+                           H           1.183922831002        2.122983500229       -0.377992829671                         
+                           H          -1.183835559349       -2.123056298369       -0.377942447326                         
+                           H           3.748965265558        1.501089639097       -0.263306969736                         
+                           H          -3.748752911637       -1.500989283514       -0.263258426063                         
+                           H           4.100856712856       -1.093770077760        0.131031467065                         
+                           H          -4.101184414747        1.093768749737        0.131033179076                         
+                                                                                                                          
+                                            Analytical Gradient (Hartree/Bohr)                                            
+                                           ------------------------------------                                           
+                                                                                                                          
+                          Atom           Gradient X            Gradient Y            Gradient Z                           
+                                                                                                                          
+                           S          -0.000040073008       -0.000017245898       -0.000017321708                         
+                           S          -0.000003831291       -0.000053677333       -0.000025572928                         
+                           C           0.000054647087       -0.000030678035        0.000013033202                         
+                           C          -0.000046421037       -0.000001943350        0.000012204865                         
+                           C           0.000035116104       -0.000042915662        0.000014310518                         
+                           C           0.000010905486       -0.000024195448        0.000005260788                         
+                           C           0.000070436887        0.000076147385       -0.000026484321                         
+                           C           0.000032946688        0.000027733024       -0.000011850648                         
+                           C          -0.000077655978        0.000020692225        0.000011926310                         
+                           C          -0.000047630940        0.000029790794        0.000018722043                         
+                           H           0.000006037199        0.000002409107       -0.000000656455                         
+                           H           0.000005811678       -0.000005870596       -0.000000177216                         
+                           H           0.000013324030        0.000013004185       -0.000001119162                         
+                           H          -0.000003750998       -0.000000803326        0.000000978378                         
+                           H           0.000003917303        0.000007428135        0.000003435041                         
+                           H          -0.000013825016        0.000000180926        0.000004486751                         
+                                                                                                                          
+                                   *** Time spent in gradient calculation: 6.76 sec ***                                   
+                                                                                                                          
+* Info *   Energy   : -1104.4206477966 a.u.                                                                               
+* Info *   Gradient : 5.031267e-05 a.u. (RMS)                                                                             
+* Info *              1.070570e-04 a.u. (Max)                                                                             
+* Info *   Time     : 13.80 sec                                                                                           
+                                                                                                                          
+* Info * Computing energy and gradient...                                                                                 
+                                                                                                                          
+                                                SCF Gradient Driver Setup                                                 
+                                               ===========================                                                
+                                                                                                                          
+                          Gradient Type                   : Analytical                                                    
+                          Exchange-Correlation Functional : B3LYP                                                         
+                          Molecular Grid Level            : 4                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             --------------------------------                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           S           1.663336662140       -1.430766068059        0.196832383299                         
+                           S          -1.662815594440        1.430686341091        0.196732126282                         
+                           C           0.724581256900        0.023832848135       -0.042240154116                         
+                           C          -0.724671906216       -0.024306495914       -0.042287598949                         
+                           C           1.558815196735        1.112687529352       -0.207471686467                         
+                           C          -1.559109552971       -1.113023414996       -0.207548835484                         
+                           C           2.941159944813        0.776269834332       -0.150835503125                         
+                           C          -2.941321317984       -0.776100857108       -0.150878488988                         
+                           C           3.153065395107       -0.563683414706        0.055066053570                         
+                           C          -3.152728594439        0.563940574072        0.055023577811                         
+                           H           1.183412429667        2.122053552870       -0.381811453149                         
+                           H          -1.183998855585       -2.122499955398       -0.381899122727                         
+                           H           3.748463137020        1.500800140643       -0.265764994959                         
+                           H          -3.748884677674       -1.500344468205       -0.265789624765                         
+                           H           4.101219480371       -1.093160432422        0.133646612936                         
+                           H          -4.100713983167        1.093713702112        0.133617084323                         
+                                                                                                                          
+                                            Analytical Gradient (Hartree/Bohr)                                            
+                                           ------------------------------------                                           
+                                                                                                                          
+                          Atom           Gradient X            Gradient Y            Gradient Z                           
+                                                                                                                          
+                           S           0.000022787766        0.000028063256        0.000002125730                         
+                           S           0.000008340440        0.000034345261        0.000003492254                         
+                           C          -0.000044675905        0.000014135713       -0.000000829234                         
+                           C          -0.000031225820        0.000004161732       -0.000004375490                         
+                           C          -0.000016667012       -0.000026147908        0.000008439304                         
+                           C          -0.000000345526       -0.000028985069       -0.000004177860                         
+                           C           0.000003542687       -0.000008273523        0.000001155858                         
+                           C           0.000006383388       -0.000001344045        0.000001471627                         
+                           C           0.000024131055       -0.000001146892       -0.000004176425                         
+                           C           0.000022710091       -0.000007276013       -0.000001911079                         
+                           H          -0.000001180278       -0.000002687523        0.000000462731                         
+                           H          -0.000002846987       -0.000004663927       -0.000003355374                         
+                           H          -0.000001898626        0.000000794384        0.000002122433                         
+                           H           0.000005086580       -0.000004609077        0.000001011703                         
+                           H           0.000001846761        0.000003402749       -0.000000772921                         
+                           H           0.000004070005        0.000000159675        0.000000490035                         
+                                                                                                                          
+                                   *** Time spent in gradient calculation: 6.71 sec ***                                   
+                                                                                                                          
+* Info *   Energy   : -1104.4206479380 a.u.                                                                               
+* Info *   Gradient : 2.386263e-05 a.u. (RMS)                                                                             
+* Info *              4.686622e-05 a.u. (Max)                                                                             
+* Info *   Time     : 13.65 sec                                                                                           
+                                                                                                                          
+* Info * Computing energy and gradient...                                                                                 
+                                                                                                                          
+                                                SCF Gradient Driver Setup                                                 
+                                               ===========================                                                
+                                                                                                                          
+                          Gradient Type                   : Analytical                                                    
+                          Exchange-Correlation Functional : B3LYP                                                         
+                          Molecular Grid Level            : 4                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             --------------------------------                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           S           1.662759057781       -1.430720424121        0.197546798561                         
+                           S          -1.663128066862        1.430820456340        0.197571679762                         
+                           C           0.724628755718        0.024179346030       -0.042156988229                         
+                           C          -0.724614285178       -0.023835489584       -0.042125449019                         
+                           C           1.559112374992        1.112779193726       -0.207883134304                         
+                           C          -1.558974758223       -1.112525226745       -0.207803182562                         
+                           C           2.941310180558        0.775818721765       -0.151080348733                         
+                           C          -2.941268512594       -0.775933095193       -0.151030957896                         
+                           C           3.152723866222       -0.564132364178        0.055378977483                         
+                           C          -3.152954139359        0.563974640014        0.055394880987                         
+                           H           1.184022223174        2.122181977995       -0.382690610847                         
+                           H          -1.183686341988       -2.121857136616       -0.382578857026                         
+                           H           3.748889085189        1.499984610605       -0.266349752194                         
+                           H          -3.748681332151       -1.500286894545       -0.266289783884                         
+                           H           4.100696339682       -1.093900393394        0.134148620420                         
+                           H          -4.101031528065        1.093558763155        0.134147241391                         
+                                                                                                                          
+                                            Analytical Gradient (Hartree/Bohr)                                            
+                                           ------------------------------------                                           
+                                                                                                                          
+                          Atom           Gradient X            Gradient Y            Gradient Z                           
+                                                                                                                          
+                           S           0.000001774698       -0.000020772708        0.000006859366                         
+                           S          -0.000016374513       -0.000010361990        0.000006891991                         
+                           C           0.000008293955        0.000003292537       -0.000006602726                         
+                           C           0.000041093609       -0.000010911635       -0.000003895743                         
+                           C          -0.000006503474        0.000026475056       -0.000004530499                         
+                           C           0.000011155834        0.000020063435        0.000005038334                         
+                           C          -0.000015634343       -0.000011036938        0.000006060795                         
+                           C          -0.000005895634        0.000002494099        0.000003716186                         
+                           C          -0.000002116560        0.000003330071       -0.000004384573                         
+                           C          -0.000010821228       -0.000005176845       -0.000006743077                         
+                           H           0.000000435338        0.000002665334       -0.000002013044                         
+                           H           0.000000532613        0.000002646284        0.000000437198                         
+                           H          -0.000006537876        0.000001870437        0.000000947790                         
+                           H           0.000003089335       -0.000001085164        0.000001364489                         
+                           H          -0.000003659449       -0.000000062491       -0.000000507802                         
+                           H           0.000001135171       -0.000003386079       -0.000001457286                         
+                                                                                                                          
+                                   *** Time spent in gradient calculation: 6.88 sec ***                                   
+                                                                                                                          
+* Info *   Energy   : -1104.4206479639 a.u.                                                                               
+* Info *   Gradient : 1.759970e-05 a.u. (RMS)                                                                             
+* Info *              4.269573e-05 a.u. (Max)                                                                             
+* Info *   Time     : 13.90 sec                                                                                           
+                                                                                                                          
+* Info * Geometry optimization completed.                                                                                 
+                                                                                                                          
+                                                Final Geometry (Angstroms)                                                
+                                               ============================                                               
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           S           1.662759057781       -1.430720424121        0.197546798561                         
+                           S          -1.663128066862        1.430820456340        0.197571679762                         
+                           C           0.724628755718        0.024179346030       -0.042156988229                         
+                           C          -0.724614285178       -0.023835489584       -0.042125449019                         
+                           C           1.559112374992        1.112779193726       -0.207883134304                         
+                           C          -1.558974758223       -1.112525226745       -0.207803182562                         
+                           C           2.941310180558        0.775818721765       -0.151080348733                         
+                           C          -2.941268512594       -0.775933095193       -0.151030957896                         
+                           C           3.152723866222       -0.564132364178        0.055378977483                         
+                           C          -3.152954139359        0.563974640014        0.055394880987                         
+                           H           1.184022223174        2.122181977995       -0.382690610847                         
+                           H          -1.183686341988       -2.121857136616       -0.382578857026                         
+                           H           3.748889085189        1.499984610605       -0.266349752194                         
+                           H          -3.748681332151       -1.500286894545       -0.266289783884                         
+                           H           4.100696339682       -1.093900393394        0.134148620420                         
+                           H          -4.101031528065        1.093558763155        0.134147241391                         
+                                                                                                                          
+                                                                                                                          
+                                             Summary of Geometry Optimization                                             
+                                            ==================================                                            
+                                                                                                                          
+                  Opt.Step       Energy (a.u.)       Energy Change (a.u.)       Displacement (RMS, Max)                   
+                  -------------------------------------------------------------------------------------                   
+                      0       -1104.417124427741        0.000000000000         0.000e+00      0.000e+00                   
+                      1       -1104.419319623016       -0.002195195274         6.972e-02      1.180e-01                   
+                      2       -1104.420101261907       -0.000781638891         3.295e-02      4.669e-02                   
+                      3       -1104.420373254622       -0.000271992716         1.634e-02      2.664e-02                   
+                      4       -1104.420381676799       -0.000008422177         1.882e-02      3.056e-02                   
+                      5       -1104.420576930810       -0.000195254011         9.674e-03      1.730e-02                   
+                      6       -1104.420592603833       -0.000015673023         7.143e-03      1.327e-02                   
+                      7       -1104.420617380133       -0.000024776301         1.907e-02      2.954e-02                   
+                      8       -1104.420639531216       -0.000022151082         2.669e-02      4.144e-02                   
+                      9       -1104.420647418368       -0.000007887153         2.509e-02      3.939e-02                   
+                     10       -1104.420647316108        0.000000102261         7.227e-03      1.149e-02                   
+                     11       -1104.420647796557       -0.000000480449         2.773e-03      4.449e-03                   
+                     12       -1104.420647937966       -0.000000141409         2.553e-03      3.980e-03                   
+                     13       -1104.420647963894       -0.000000025929         6.875e-04      1.012e-03                   
+                                                                                                                          
+                                                                                                                          
+                                              Statistical Deviation between                                               
+                                         Optimized Geometry and Initial Geometry                                          
+                                        =========================================                                         
+                                                                                                                          
+                               Internal Coord.        RMS deviation         Max. deviation                                
+                               -----------------------------------------------------------                                
+                                  Bonds               0.016 Angstrom        0.035 Angstrom                                
+                                  Angles              1.141 degree          2.008 degree                                  
+                                  Dihedrals           4.021 degree         12.236 degree                                  
+                                                                                                                          
+                                    *** Time spent in Optimization Driver: 186.75 sec                                     
+                                                                                                                          
+* Info * Optimization results written to file: bithio-S0-opt.h5                                                           
+                                                                                                                          
+!========================================================================================================================!
+!                               VeloxChem execution completed at Mon Mar  9 15:23:36 2026.                               !
+!========================================================================================================================!
+!                                          Total execution time is 198.40 sec.                                           !
+!========================================================================================================================!
+!                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
+!                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !
+!                     VeloxChem: A Python-driven Density-functional Theory Program for Spectroscopy                      !
+!                                Simulations in High-performance Computing Environments.                                 !
+!                                       WIREs Comput Mol Sci 2020, 10 (5), e1457.                                        !
+!========================================================================================================================!
