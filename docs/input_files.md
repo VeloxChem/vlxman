@@ -247,7 +247,7 @@
     </tr>
     <tr style="background-color: #f9f9f9;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
-        <a href="#sec:TDDFT">TD-DFT</a>
+        <a href="#sec:TDDFT-uv">TD-DFT</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../input_files/tq-uv-vis.py" download>tq-uv-vis.py</a>
@@ -283,7 +283,63 @@
       <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
         <a href="#sec:ecd" style="text-decoration: none; color: inherit;">Optical activity and dichroism</a>
       </td>
+    </tr>
+    <tr style="background-color: #f9f9f9;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:TDDFT-ecd">TD-DFT</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/alanine-ecd.py" download>alanine-ecd.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/alanine-ecd.inp" download>alanine-ecd.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/alanine-ecd.out" download>alanine-ecd.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/alanine-ecd.h5" download>alanine-ecd.h5</a>
+      </td>
     </tr>     
+    <tr style="background-color: #f9f9f9;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:cpp-ecd">CPP</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/alanine-cpp.py" download>alanine-cpp.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/alanine-cpp.inp" download>alanine-cpp.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/alanine-cpp.out" download>alanine-cpp.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/alanine-cpp.h5" download>alanine-cpp.h5</a>
+      </td>
+    </tr>
+    <tr style="background-color: #f5f5f5;">
+      <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
+        <a href="#sec:vib_spect" style="text-decoration: none; color: inherit;">Vibrational spectroscopies</a>
+      </td>
+    </tr>
+    <tr style="background-color: #f9f9f9;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:ir">IR</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/alanine-ecd.py" download>alanine-ecd.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/alanine-ecd.inp" download>alanine-ecd.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/alanine-ecd.out" download>alanine-ecd.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/alanine-ecd.h5" download>alanine-ecd.h5</a>
+      </td>
+    </tr>       
   </tbody>
 </table>
 </div>
