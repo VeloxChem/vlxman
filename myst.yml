@@ -34,12 +34,14 @@ project:
       children:
         - file: docs/pes.ipynb
         - file: docs/uv-vis.ipynb
+        - file: docs/polarizability.ipynb
         - file: docs/opt-act.ipynb
         - file: docs/vib-spect.ipynb
         - file: docs/magnetic.md
-        - file: docs/linear-response.ipynb
-        - file: docs/nlo.md
+        - file: docs/weak-interactions.ipynb
+        - file: docs/nlo.ipynb
         - file: docs/xray.md
+        - file: docs/general-response.ipynb
     - title: Classical methods
       children:
         - file: docs/mm.ipynb
