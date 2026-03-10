@@ -7,11 +7,29 @@ VeloxChem offers modeling of complex molecular systems by means of force-field m
 VeloxChem is education enabling, providing a means to explain and explore the theory underlying computational chemistry in a highly interactive manner {cite}`echem_edu`. It is science enabling, providing a means for accelerated method development in quantum chemistry {cite}`echem_dev`.
 
 This manual gives a description of the installation process and basic usage of VeloxChem. A more comprehensive view of the ample opportunities for Python software interactions is provided in the [eChem](https://kthpanor.github.io/echem) book {cite}`echem_book`.
-
 :::{image} ../images/swedish_moebius.jpg
 :width: 400px
-:align: left
+:align: center
 :::
+
+To stay up to date with VeloxChem, follow us on social media:
+
+<table style="width: 100%; border: none;">
+  <tr>
+    <td style="text-align: center; border: none; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#f0f0f0'" onmouseout="this.style.backgroundColor='transparent'">
+      <a href="https://www.linkedin.com/company/veloxchem/">
+        <img src="../images/LinkedIn.png" width="100px" alt="LinkedIn"/>
+      </a>
+    </td>
+    <td style="text-align: center; border: none; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#f0f0f0'" onmouseout="this.style.backgroundColor='transparent'">
+      <a href="https://bsky.app/profile/veloxchem.bsky.social">
+        <img src="../images/Bluesky.png" width="100px" alt="Bluesky"/>
+      </a>
+    </td>
+  </tr>
+</table>
+
+
 
 ## Selected functionalities
 
