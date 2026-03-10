@@ -37,7 +37,7 @@ project:
         - file: docs/opt-act.ipynb
         - file: docs/vib-spect.ipynb
         - file: docs/magnetic.md
-        - file: docs/linear-response.md
+        - file: docs/linear-response.ipynb
         - file: docs/nlo.md
         - file: docs/xray.md
     - title: Classical methods
