@@ -9,10 +9,10 @@
   <thead>
     <tr style="background-color: #f0f0f0; border-bottom: 2px solid #333;">
       <th style="padding: 12px; text-align: left; border: 1px solid #ddd; width: 28%;">Description</th>
-      <th style="padding: 12px; text-align: center; border: 1px solid #ddd; width: 18%;">Python script (input)</th>
-      <th style="padding: 12px; text-align: center; border: 1px solid #ddd; width: 18%;">Text format (input)</th>
-      <th style="padding: 12px; text-align: center; border: 1px solid #ddd; width: 18%;">Log file (output)</th>
-      <th style="padding: 12px; text-align: center; border: 1px solid #ddd; width: 18%;">HDF5 file (output)</th>
+      <th style="padding: 12px; text-align: center; border: 1px solid #ddd; width: 18%;">Python script <br>(input)</th>
+      <th style="padding: 12px; text-align: center; border: 1px solid #ddd; width: 18%;">Text format <br>(input)</th>
+      <th style="padding: 12px; text-align: center; border: 1px solid #ddd; width: 18%;">Log file<br>(output)</th>
+      <th style="padding: 12px; text-align: center; border: 1px solid #ddd; width: 18%;">HDF5 file<br>(output)</th>
     </tr>
   </thead>
   <tbody>
@@ -38,7 +38,7 @@
         <a href="../output_files/biphenyl-scf.h5" download>biphenyl-scf.h5</a>
       </td>
     </tr>
-    <tr style="background-color: #f9f9f9;">
+    <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
         <a href="#sec:rohf">ROHF optimization</a>
       </td>
@@ -116,7 +116,7 @@
         <a href="../output_files/eth-cpcm.h5" download>eth-cpcm.h5</a>
       </td>
     </tr>
-    <tr style="background-color: #f9f9f9;">
+    <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
         <a href="#sec:smd">SMD</a>
       </td>
@@ -155,7 +155,7 @@
         <a href="../output_files/bithio-S0-opt.h5" download>bithio-S0-opt.h5</a>
       </td>
     </tr>
-    <tr style="background-color: #f9f9f9;">
+    <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
         <a href="#sec:freeze">Set/Freeze coordinate</a>
       </td>
@@ -172,7 +172,7 @@
         <a href="../output_files/bithio-freeze.h5" download>bithio-freeze.h5</a>
       </td>
     </tr>
-    <tr style="background-color: #f9f9f9;">
+    <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
         <a href="#sec:scan">Scan coordinate</a>
       </td>
@@ -189,7 +189,7 @@
         <a href="../output_files/bithio-scan.h5" download>bithio-scan.h5</a>
       </td>
     </tr>
-    <tr style="background-color: #f9f9f9;">
+    <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
         <a href="#sec:TS-opt">TS optimization</a>
       </td>
@@ -206,7 +206,7 @@
         <a href="../output_files/Sn2-ts.h5" download>Sn2-ts.h5</a>
       </td>
     </tr>
-    <tr style="background-color: #f9f9f9;">
+    <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
         <a href="#sec:IRC">IRC</a>
       </td>
@@ -223,7 +223,7 @@
         <a href="../output_files/Sn2-irc.h5" download>Sn2-irc.h5</a>
       </td>
     </tr>
-    <tr style="background-color: #f9f9f9;">
+    <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
         <a href="#sec:ES-opt">S1 Optimization</a>
       </td>
@@ -245,7 +245,7 @@
         <a href="#sec:uv_vis" style="text-decoration: none; color: inherit;">UV/Vis absoprtion/emission</a>
       </td>
     </tr>
-    <tr style="background-color: #f9f9f9;">
+    <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
         <a href="#sec:TDDFT-uv">TD-DFT</a>
       </td>
@@ -262,7 +262,7 @@
         <a href="../output_files/tq-uv-vis.h5" download>tq-uv-vis.h5</a>
       </td>
     </tr>     
-    <tr style="background-color: #f9f9f9;">
+    <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
         <a href="#sec:cpp-uv">CPP</a>
       </td>
@@ -284,7 +284,7 @@
         <a href="#sec:ecd" style="text-decoration: none; color: inherit;">Optical activity and dichroism</a>
       </td>
     </tr>
-    <tr style="background-color: #f9f9f9;">
+    <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
         <a href="#sec:TDDFT-ecd">TD-DFT</a>
       </td>
@@ -301,7 +301,7 @@
         <a href="../output_files/alanine-ecd.h5" download>alanine-ecd.h5</a>
       </td>
     </tr>     
-    <tr style="background-color: #f9f9f9;">
+    <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
         <a href="#sec:cpp-ecd">CPP</a>
       </td>
@@ -323,7 +323,7 @@
         <a href="#sec:vib_spect" style="text-decoration: none; color: inherit;">Vibrational spectroscopies</a>
       </td>
     </tr>
-    <tr style="background-color: #f9f9f9;">
+    <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
         <a href="#sec:ir">IR</a>
       </td>
@@ -340,7 +340,7 @@
         <a href="../output_files/acro-ir.h5" download>acro-ir.h5</a>
       </td>
     </tr>       
-    <tr style="background-color: #f9f9f9;">
+    <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
         <a href="#sec:raman">Raman</a>
       </td>
@@ -357,7 +357,7 @@
         <a href="../output_files/acro-raman.h5" download>acro-raman.h5</a>
       </td>
     </tr>   
-    <tr style="background-color: #f9f9f9;">
+    <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
         <a href="#sec:rrs">Resonance Raman</a>
       </td>
