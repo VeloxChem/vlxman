@@ -247,7 +247,7 @@
     </tr>
     <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
-        <a href="#sec:TDDFT-uv">TD-DFT</a>
+        <a href="#sec:TDDFT-uv">TDDFT</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../input_files/tq-uv-vis.py" download>tq-uv-vis.py</a>
@@ -286,7 +286,7 @@
     </tr>
     <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
-        <a href="#sec:TDDFT-ecd">TD-DFT</a>
+        <a href="#sec:TDDFT-ecd">TDDFT</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../input_files/alanine-ecd.py" download>alanine-ecd.py</a>
