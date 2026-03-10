@@ -1,15 +1,17 @@
 # Next-generation quantum chemistry software
-
+```{figure}
+[![LinkedIn](../images/logo/vlx-logo-blacktext-halo.png)](https://www.veloxchem.org)
+```
 VeloxChem {cite}`veloxchem` is a Python-based open source quantum chemistry software for contemporary and future hardware architectures. It features interactive program access through Jupyter notebooks as well as massively parallel calculations in high-performance computing (HPC) environments. 
 ```{margin}
 [![LinkedIn](../images/LinkedIn.png)](https://www.linkedin.com/company/veloxchem/)
 ```
 VeloxChem offers modeling of complex molecular systems by means of force-field molecular dynamics and polarizable embedding in combination with user-friendly support for automatized solvation and force-field derivations. It is an ideal platform for building simulation workflows and data-driven research {cite}`vlx_workflow`.
-
-VeloxChem is education enabling, providing a means to explain and explore the theory underlying computational chemistry in a highly interactive manner {cite}`echem_edu`. It is science enabling, providing a means for accelerated method development in quantum chemistry {cite}`echem_dev`.
 ```{margin}
 [![Bluesky](../images/Bluesky.png)](https://bsky.app/profile/veloxchem.bsky.social)
 ```
+VeloxChem is education enabling, providing a means to explain and explore the theory underlying computational chemistry in a highly interactive manner {cite}`echem_edu`. It is science enabling, providing a means for accelerated method development in quantum chemistry {cite}`echem_dev`.
+
 This manual gives a description of the installation process and basic usage of VeloxChem. A more comprehensive view of the ample opportunities for Python software interactions is provided in the [eChem](https://kthpanor.github.io/echem) book {cite}`echem_book`.
 
 :::{image} ../images/swedish_moebius.jpg
