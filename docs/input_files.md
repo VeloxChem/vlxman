@@ -308,9 +308,10 @@
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../input_files/eth-res.py" download>eth-res.py</a>
       </td>
-      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">    
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;"> 
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+      <a href="../output_files/eth-res.out" download>eth-res.out</a>   
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
        </td>
@@ -468,6 +469,56 @@
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../output_files/esca-nexafs.h5" download>esca-nexafs.h5</a>
+      </td>
+    </tr>    
+    <tr style="background-color: #f5f5f5;">
+      <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
+        <a href="#sec:general-response" style="text-decoration: none; color: inherit;">General response functions</a>
+      </td>
+    </tr>
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:cpp_lrf">Linear response</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/h2o2-lrf.py" download>h2o2-lrf.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/h2o2-lrf.out" download>h2o2-lrf.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+      </td>
+    </tr>  
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:cpp_qrf">Quadratic response</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/h2o2-qrf.py" download>h2o2-qrf.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/h2o2-qrf.out" download>h2o2-qrf.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+      </td>
+    </tr>   
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:cpp_crf">Cubic response</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/h2o2-crf.py" download>h2o2-crf.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/h2o2-crf.out" download>h2o2-crf.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
       </td>
     </tr>    
   </tbody>

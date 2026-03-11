@@ -1,0 +1,153 @@
+                                                                                                                          
+                                            Self Consistent Field Driver Setup                                            
+                                           ====================================                                           
+                                                                                                                          
+                   Wave Function Model             : Spin-Restricted Kohn-Sham                                            
+                   Initial Guess Model             : Superposition of Atomic Densities                                    
+                   Convergence Accelerator         : Two Level Direct Inversion of Iterative Subspace                     
+                   Max. Number of Iterations       : 50                                                                   
+                   Max. Number of Error Vectors    : 10                                                                   
+                   Convergence Threshold           : 1.0e-06                                                              
+                   ERI Screening Threshold         : 1.0e-12                                                              
+                   Linear Dependence Threshold     : 1.0e-06                                                              
+                   Exchange-Correlation Functional : B3LYP                                                                
+                   Molecular Grid Level            : 4                                                                    
+                                                                                                                          
+* Info * Using the B3LYP functional.                                                                                      
+                                                                                                                          
+         P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
+                                                                                                                          
+* Info * Using the Libxc library (v6.2.2).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * Starting Reduced Basis SCF calculation...                                                                        
+* Info * ...done. SCF energy in reduced basis set: -150.576224260897 a.u. Time: 0.03 sec.                                 
+                                                                                                                          
+                                                                                                                          
+               Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
+               --------------------------------------------------------------------------------------------               
+                  1      -151.430268831063    0.0000000000      0.26870926      0.02049088      0.00000000                
+                  2      -151.435600400912   -0.0053315698      0.10508170      0.00778425      0.10799056                
+                  3      -151.436293576590   -0.0006931757      0.05664858      0.00334393      0.04237147                
+                  4      -151.436604710510   -0.0003111339      0.00234973      0.00016518      0.01609140                
+                  5      -151.436605225444   -0.0000005149      0.00030993      0.00002041      0.00081618                
+                  6      -151.436605234634   -0.0000000092      0.00002726      0.00000229      0.00014360                
+                  7      -151.436605234737   -0.0000000001      0.00000814      0.00000048      0.00001944                
+                  8      -151.436605234743   -0.0000000000      0.00000166      0.00000011      0.00000276                
+                  9      -151.436605234743    0.0000000000      0.00000201      0.00000015      0.00000089                
+                 10      -151.436605234743   -0.0000000000      0.00000005      0.00000000      0.00000046                
+                                                                                                                          
+               *** SCF converged in 10 iterations. Time: 0.28 sec.                                                        
+                                                                                                                          
+               Spin-Restricted Kohn-Sham:                                                                                 
+               --------------------------                                                                                 
+               Total Energy                       :     -151.4366052347 a.u.                                              
+               Electronic Energy                  :     -190.5210516195 a.u.                                              
+               Nuclear Repulsion Energy           :       39.0844463848 a.u.                                              
+               ------------------------------------                                                                       
+               Gradient Norm                      :        0.0000000455 a.u.                                              
+                                                                                                                          
+                                                                                                                          
+               Ground State Information                                                                                   
+               ------------------------                                                                                   
+               Charge of Molecule            :  0.0                                                                       
+               Multiplicity (2S+1)           :  1                                                                         
+               Magnetic Quantum Number (M_S) :  0.0                                                                       
+                                                                                                                          
+                                                                                                                          
+                                             Quadratic Response Driver Setup                                              
+                                            =================================                                             
+                                                                                                                          
+                               ERI Screening Threshold         : 1.0e-12                                                  
+                               Convergance Threshold           : 1.0e-04                                                  
+                               Max. Number of Iterations       : 150                                                      
+                               Damping Parameter               : 4.556000e-03                                             
+                               Exchange-Correlation Functional : B3LYP                                                    
+                               Molecular Grid Level            : 4                                                        
+                                                                                                                          
+                                                                                                                          
+                                              Complex Response Solver Setup                                               
+                                             ===============================                                              
+                                                                                                                          
+                               Number of Frequencies           : 1                                                        
+                               Max. Number of Iterations       : 150                                                      
+                               Convergence Threshold           : 1.0e-04                                                  
+                               ERI Screening Threshold         : 1.0e-12                                                  
+                               Exchange-Correlation Functional : B3LYP                                                    
+                               Molecular Grid Level            : 4                                                        
+                                                                                                                          
+* Info * Using the B3LYP functional.                                                                                      
+                                                                                                                          
+         P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
+                                                                                                                          
+* Info * Using the Libxc library (v6.2.2).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * 11 gerade trial vectors in reduced space                                                                         
+* Info * 11 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   1 * Residuals (Max,Min): 5.82e-01 and 9.76e-02                                            
+                                                                                                                          
+* Info * 22 gerade trial vectors in reduced space                                                                         
+* Info * 22 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   2 * Residuals (Max,Min): 6.78e-02 and 6.58e-03                                            
+                                                                                                                          
+* Info * 33 gerade trial vectors in reduced space                                                                         
+* Info * 32 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   3 * Residuals (Max,Min): 8.97e-03 and 5.06e-04                                            
+                                                                                                                          
+* Info * 42 gerade trial vectors in reduced space                                                                         
+* Info * 43 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   4 * Residuals (Max,Min): 1.30e-03 and 2.54e-05                                            
+                                                                                                                          
+* Info * 49 gerade trial vectors in reduced space                                                                         
+* Info * 50 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   5 * Residuals (Max,Min): 1.74e-04 and 6.04e-06                                            
+                                                                                                                          
+* Info * 51 gerade trial vectors in reduced space                                                                         
+* Info * 52 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   6 * Residuals (Max,Min): 5.93e-05 and 6.04e-06                                            
+                                                                                                                          
+               *** Complex response converged in 6 iterations. Time: 1.45 sec                                             
+                                                                                                                          
+                                                                                                                          
+                                                 Fock Matrix Computation                                                  
+                                                =========================                                                 
+                                                                                                                          
+* Info * Processing 4 Fock builds...                                                                                      
+                                                                                                                          
+* Info * Time spent in Fock matrices: 0.16 sec                                                                            
+                                                                                                                          
+                                                                                                                          
+                                Quadratic response function: << z;x,x >>  (0.0656,0.0656)                                 
+                               ===========================================================                                
+                                                                                                                          
+                                                             Real             Imaginary                                   
+                                   ----------------------------------------------------                                   
+                                   QRF                 0.05815462          -0.75116216j                                   
+                                                                                                                          
+                                                                                                                          
+                                Quadratic response function: << z;x,x >>  (0.1312,0.1312)                                 
+                               ===========================================================                                
+                                                                                                                          
+                                                             Real             Imaginary                                   
+                                   ----------------------------------------------------                                   
+                                   QRF                10.51698754          10.72038683j                                   
+                                                                                                                          
+                              *** Time spent in quadratic response calculation: 1.70 sec ***                              
+                                                                                                                          
