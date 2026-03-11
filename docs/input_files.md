@@ -486,6 +486,7 @@
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/h2o2-lrf.out" download>h2o2-lrf.out</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
       </td>
@@ -500,6 +501,7 @@
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/h2o2-qrf.out" download>h2o2-qrf.out</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
       </td>
@@ -514,6 +516,7 @@
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/h2o2-crf.out" download>h2o2-crf.out</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
       </td>
