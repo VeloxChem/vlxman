@@ -93,7 +93,9 @@ By clicking on *Windows* > *VeloxChem* > *Orbital Grid*, you will display the Or
 
 The grid is tunable in dimension up to 4 x 4, one can change the color for the positive and negative phase of the orbital as well as the transparency. The table on the left shows all the orbitals and their energy and occupancy, the orbital showed in the grid are highlighted in grey in the table.
 
-### Response and Transition 
+### Spectroscopy
+
+#### UV/VIS, ECD with TDDFT
 In the output file provided we have calculated the absorption and circular dichroism for the first 10 excited states and saved the NTO as requested in the input file.
 
 ```
@@ -111,6 +113,7 @@ In the response window, you can choose your unit for the x-axis, choose a broade
 <img src="https://github.com/user-attachments/assets/2731ff20-0518-4533-ab12-b4c5be7e0952" alt="drawing" width="600">
 </p>
 
+#### Transition Analysis 
 To open the Transition Analysis windows and analyze the different transitions, click on *Windows* > *VeloxChem* > *Transition Analysis*.
 The Response and Transition Analysis windows are interactively connected, so clicking on the peak in the response window will activate this specific state in the transition Analysis window and vice versa.
 
@@ -136,5 +139,6 @@ By clicking on Edit mode, you can rename the groups to THIO and QUIN to update t
 | -------- | ------- |
 |![image](https://github.com/user-attachments/assets/0f1c6dd6-007f-4bf0-b474-15f081a6700c) | ![image](https://github.com/user-attachments/assets/fb287c3d-4c13-4564-820e-151e47b84cd8)|
 
+#### UV/VIS, ECD with CPP
 
-
+#### Vibrational Spectroscopy
