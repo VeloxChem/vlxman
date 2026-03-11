@@ -425,6 +425,28 @@
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../output_files/acro-rr.h5" download>acro-rr.h5</a>
       </td>
+    </tr>
+    <tr style="background-color: #f5f5f5;">
+      <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
+        <a href="#sec:weak_interactions" style="text-decoration: none; color: inherit;">Weak interactions</a>
+      </td>
+    </tr>
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:c6">C6</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/meth-c6.py" download>meth-c6.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/meth-c6.inp" download>meth-c6.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/meth-c6.out" download>meth-c6.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/meth-c6.h5" download>meth-c6.h5</a>
+      </td>
     </tr>  
   </tbody>
 </table>
