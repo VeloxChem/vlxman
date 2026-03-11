@@ -7,7 +7,7 @@ basis: 6-31g*
 @end
 
 @resp charges
-xyz_file: all_three_conformers.xyz
+xyz_file: all_conformers.xyz
 @end
 
 @molecule

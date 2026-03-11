@@ -451,6 +451,62 @@
     </tr>
     <tr style="background-color: #f5f5f5;">
       <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
+        <a href="#sec:loc_prop" style="text-decoration: none; color: inherit;">Localized properties</a>
+      </td>
+    </tr>
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:esp">ESP</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/h2o-esp.py" download>h2o-esp.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/h2o-esp.inp" download>h2o-esp.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/h2o-esp.out" download>h2o-esp.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/h2o-esp.h5" download>h2o-esp.h5</a>
+      </td>
+    </tr>
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:resp">RESP</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/h2o-resp.py" download>h2o-resp.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/h2o-resp.inp" download>h2o-resp.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/h2o-resp.out" download>h2o-resp.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/h2o-resp.h5" download>h2o-resp.h5</a>
+      </td>
+    </tr>
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:bol-weighted-resp">Boltzmann-weighted RESP</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/pro-resp-bw.py" download>pro-resp-bw.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/pro-resp-bw.inp" download>pro-resp-bw.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/pro-resp-bw.out" download>pro-resp-bw.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/pro-resp-bw.h5" download>pro-resp-bw.h5</a>
+      </td>
+    </tr>
+    <tr style="background-color: #f5f5f5;">
+      <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
         <a href="#sec:xray" style="text-decoration: none; color: inherit;">X-ray spectroscopies</a>
       </td>
     </tr>

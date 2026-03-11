@@ -39,6 +39,7 @@ project:
         - file: docs/vib-spect.ipynb
         - file: docs/magnetic.md
         - file: docs/weak-interactions.ipynb
+        - file: docs/loc_prop.ipynb
         - file: docs/nlo.ipynb
         - file: docs/xray.ipynb
         - file: docs/general-response.ipynb
@@ -49,7 +50,6 @@ project:
         - file: docs/conf_search.md
         - file: docs/solvation.ipynb
         - file: docs/mof_builder.ipynb
-        - file: docs/loc_prop.ipynb
         - file: docs/im.md
         - file: docs/evb.md
     - title: Visualization

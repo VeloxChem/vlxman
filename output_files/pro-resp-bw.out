@@ -1,0 +1,236 @@
+!========================================================================================================================!
+!                                                                                                                        !
+!                                                       VELOXCHEM                                                        !
+!                                              AN ELECTRONIC STRUCTURE CODE                                              !
+!                                                                                                                        !
+!                                        Copyright 2018-2025 VeloxChem developers                                        !
+!========================================================================================================================!
+!                                VeloxChem execution started at Wed Mar 11 16:52:00 2026.                                !
+!========================================================================================================================!
+                                                                                                                          
+* Info * Using 32 OpenMP threads per MPI process.                                                                         
+                                                                                                                          
+* Info * Reading input file prop-resp-bw.inp...                                                                           
+                                                                                                                          
+* Info * @jobs                                                                                                            
+* Info * task: resp charges                                                                                               
+* Info * @end                                                                                                             
+                                                                                                                          
+* Info * @method_settings                                                                                                 
+* Info * basis: 6-31g*                                                                                                    
+* Info * @end                                                                                                             
+                                                                                                                          
+* Info * @resp_charges                                                                                                    
+* Info * xyz_file: all_conformers.xyz                                                                                     
+* Info * @end                                                                                                             
+                                                                                                                          
+* Info * Found 3 conformers.                                                                                              
+                                                                                                                          
+* Info * Processing conformer 1...                                                                                        
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             ================================                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           C           0.293102854750       -0.675770240189        1.367361895492                         
+                           C           0.206109191925       -0.221436473583       -0.109150294181                         
+                           C          -1.229333228297       -0.092535333874       -0.658192410832                         
+                           O          -1.940179948964        0.878365794385        0.063157279904                         
+                           H          -0.134335471512        0.085226397053        2.056076726749                         
+                           H           1.358594029910       -0.817615151195        1.650115065577                         
+                           H          -0.232799807931       -1.643603948768        1.521281220543                         
+                           H           0.733940227753        0.751914775944       -0.234435084863                         
+                           H           0.746175323299       -0.966156879303       -0.736092261274                         
+                           H          -1.191925654625        0.206263258528       -1.732337850704                         
+                           H          -1.754096696203       -1.074640404572       -0.590250455068                         
+                           H          -1.822990234848        0.652477282621        1.023697867396                         
+                                                                                                                          
+                          Molecular charge            : 0                                                                 
+                          Spin multiplicity           : 1                                                                 
+                          Number of atoms             : 12                                                                
+                          Number of alpha electrons   : 17                                                                
+                          Number of beta  electrons   : 17                                                                
+                                                                                                                          
+                                              Molecular Basis (Atomic Basis)                                              
+                                             ================================                                             
+                                                                                                                          
+                               Basis: 6-31G*                                                                              
+                                                                                                                          
+                               Atom Contracted GTOs           Primitive GTOs                                              
+                                                                                                                          
+                               C     (3S,2P,1D)                (10S,4P,1D)                                                
+                               O     (3S,2P,1D)                (10S,4P,1D)                                                
+                               H     (2S)                      (4S)                                                       
+                                                                                                                          
+                               Contracted Basis Functions : 72                                                            
+                               Primitive Basis Functions  : 140                                                           
+                                                                                                                          
+* Info * Processing conformer 2...                                                                                        
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             ================================                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           C           0.283461903383       -0.633328769933        1.355989801141                         
+                           C           0.204307971591       -0.224076341405       -0.133112169370                         
+                           C          -1.229192131799       -0.085087870589       -0.688136844353                         
+                           O          -1.930123923283        0.917680887775        0.000884082996                         
+                           H          -0.163786873091        0.141428167979        2.016494795373                         
+                           H           1.346584568792       -0.756955175357        1.655173008689                         
+                           H          -0.237472873378       -1.599985574897        1.532303249308                         
+                           H           0.753318379941        0.732750619892       -0.288861180036                         
+                           H           0.729553246983       -0.999532832827       -0.734932154363                         
+                           H          -1.179817010386        0.183516335978       -1.769729198116                         
+                           H          -1.772707358915       -1.055182576731       -0.598392956756                         
+                           H          -1.271814444252        1.627975583921        0.221400977732                         
+                                                                                                                          
+                          Molecular charge            : 0                                                                 
+                          Spin multiplicity           : 1                                                                 
+                          Number of atoms             : 12                                                                
+                          Number of alpha electrons   : 17                                                                
+                          Number of beta  electrons   : 17                                                                
+                                                                                                                          
+                                              Molecular Basis (Atomic Basis)                                              
+                                             ================================                                             
+                                                                                                                          
+                               Basis: 6-31G*                                                                              
+                                                                                                                          
+                               Atom Contracted GTOs           Primitive GTOs                                              
+                                                                                                                          
+                               C     (3S,2P,1D)                (10S,4P,1D)                                                
+                               O     (3S,2P,1D)                (10S,4P,1D)                                                
+                               H     (2S)                      (4S)                                                       
+                                                                                                                          
+                               Contracted Basis Functions : 72                                                            
+                               Primitive Basis Functions  : 140                                                           
+                                                                                                                          
+* Info * Processing conformer 3...                                                                                        
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             ================================                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           C           0.286309558593       -0.690270263577        1.340939142000                         
+                           C           0.210012018563       -0.242974882210       -0.137527916929                         
+                           C          -1.221764176641       -0.052555704695       -0.682495024078                         
+                           O          -1.942880831335       -1.255315976563       -0.610151277492                         
+                           H          -0.217540055587        0.043088373394        2.008099096708                         
+                           H           1.349310674037       -0.759276543921        1.657598940522                         
+                           H          -0.179834340555       -1.689118199210        1.488087821239                         
+                           H           0.757312060893        0.720654906669       -0.250573700752                         
+                           H           0.739133366571       -0.990933928355       -0.770139461113                         
+                           H          -1.750568036714        0.727393008087       -0.085310921565                         
+                           H          -1.177965965409        0.295291085728       -1.741479166764                         
+                           H          -1.304751077784       -1.985772377366       -0.823941972090                         
+                                                                                                                          
+                          Molecular charge            : 0                                                                 
+                          Spin multiplicity           : 1                                                                 
+                          Number of atoms             : 12                                                                
+                          Number of alpha electrons   : 17                                                                
+                          Number of beta  electrons   : 17                                                                
+                                                                                                                          
+                                              Molecular Basis (Atomic Basis)                                              
+                                             ================================                                             
+                                                                                                                          
+                               Basis: 6-31G*                                                                              
+                                                                                                                          
+                               Atom Contracted GTOs           Primitive GTOs                                              
+                                                                                                                          
+                               C     (3S,2P,1D)                (10S,4P,1D)                                                
+                               O     (3S,2P,1D)                (10S,4P,1D)                                                
+                               H     (2S)                      (4S)                                                       
+                                                                                                                          
+                               Contracted Basis Functions : 72                                                            
+                               Primitive Basis Functions  : 140                                                           
+                                                                                                                          
+                                                                                                                          
+                                                RESP Charges Driver Setup                                                 
+                                               ===========================                                                
+                                                                                                                          
+                                         Number of Conformers         :  3                                                
+                                         Number of Layers             :  4                                                
+                                         Points per Square Angstrom   :  1.0                                              
+                                         Total Number of Grid Points  :  1852                                             
+                                                                                                                          
+                                                                                                                          
+                                                     First Stage Fit                                                      
+                                                    -----------------                                                     
+                                                                                                                          
+                                         Restraint Strength           :  0.0005                                           
+                                         Restrained Hydrogens         :  No                                               
+                                         Max. Number of Iterations    :  50                                               
+                                         Convergence Threshold (a.u.) :  1e-06                                            
+                                                                                                                          
+                                      *** Charge fitting converged in 10 iterations.                                      
+                                                                                                                          
+                                        No. | Atom |  Constraints | Charges (a.u.)                                        
+                                       --------------------------------------------                                       
+                                          1     C                     -0.047037                                           
+                                          2     C                      0.030736                                           
+                                          3     C                      0.156881                                           
+                                          4     O                     -0.612997                                           
+                                          5     H                      0.017208                                           
+                                          6     H                      0.008562                                           
+                                          7     H                      0.019074                                           
+                                          8     H                     -0.005458                                           
+                                          9     H                     -0.008223                                           
+                                         10     H                      0.042932                                           
+                                         11     H                      0.017688                                           
+                                         12     H                      0.380634                                           
+                                       --------------------------------------------                                       
+                                               Total Charge  :  0.000000                                                  
+                                                                                                                          
+                                                       Fit Quality                                                        
+                                                      -------------                                                       
+                                       Relative Root-Mean-Square Error  :  0.184701                                       
+                                                                                                                          
+                                                                                                                          
+                                                     Second Stage Fit                                                     
+                                                    ------------------                                                    
+                                                                                                                          
+                                         Restraint Strength           :  0.001                                            
+                                         Restrained Hydrogens         :  No                                               
+                                         Max. Number of Iterations    :  50                                               
+                                         Convergence Threshold (a.u.) :  1e-06                                            
+                                                                                                                          
+                                      *** Charge fitting converged in 5 iterations.                                       
+                                                                                                                          
+                                    No. | Atom | Frozen | Constraints | Charges (a.u.)                                    
+                                   ----------------------------------------------------                                   
+                                      1     C       No                    -0.031030                                       
+                                      2     C       No                     0.030609                                       
+                                      3     C       No                     0.159303                                       
+                                      4     O      Yes                    -0.612997                                       
+                                      5     H       No                     0.010376                                       
+                                      6     H       No         5           0.010376                                       
+                                      7     H       No         6           0.010376                                       
+                                      8     H       No                    -0.009273                                       
+                                      9     H       No         8          -0.009273                                       
+                                     10     H       No                     0.030450                                       
+                                     11     H       No         10          0.030450                                       
+                                     12     H      Yes                     0.380634                                       
+                                   ----------------------------------------------------                                   
+                                               Total Charge  :  0.000000                                                  
+                                                                                                                          
+                                                       Fit Quality                                                        
+                                                      -------------                                                       
+                                       Relative Root-Mean-Square Error  :  0.193735                                       
+                                                                                                                          
+                                       Reference:                                                                         
+                                       J. Phys. Chem. 1993, 97, 10269-10280.                                              
+                                       J. Am. Chem. Soc. 1992, 114, 9075-9079.                                            
+                                                                                                                          
+!========================================================================================================================!
+!                               VeloxChem execution completed at Wed Mar 11 16:52:03 2026.                               !
+!========================================================================================================================!
+!                                           Total execution time is 3.48 sec.                                            !
+!========================================================================================================================!
+!                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
+!                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !
+!                     VeloxChem: A Python-driven Density-functional Theory Program for Spectroscopy                      !
+!                                Simulations in High-performance Computing Environments.                                 !
+!                                       WIREs Comput Mol Sci 2020, 10 (5), e1457.                                        !
+!========================================================================================================================!
