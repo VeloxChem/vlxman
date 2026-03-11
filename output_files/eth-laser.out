@@ -1,0 +1,489 @@
+!========================================================================================================================!
+!                                                                                                                        !
+!                                                       VELOXCHEM                                                        !
+!                                              AN ELECTRONIC STRUCTURE CODE                                              !
+!                                                                                                                        !
+!                                        Copyright 2018-2025 VeloxChem developers                                        !
+!========================================================================================================================!
+!                                VeloxChem execution started at Wed Mar 11 11:35:24 2026.                                !
+!========================================================================================================================!
+                                                                                                                          
+* Info * Using 32 OpenMP threads per MPI process.                                                                         
+                                                                                                                          
+* Info * Reading input file eth-laser.inp...                                                                              
+                                                                                                                          
+* Info * @jobs                                                                                                            
+* Info * task: pulses                                                                                                     
+* Info * @end                                                                                                             
+                                                                                                                          
+* Info * @method_settings                                                                                                 
+* Info * basis: aug-cc-pvdz                                                                                               
+* Info * @end                                                                                                             
+                                                                                                                          
+* Info * @pulses                                                                                                          
+* Info * envelope: gaussian                                                                                               
+* Info * field_max: 1.0e-5                                                                                                
+* Info * number_pulses: 1                                                                                                 
+* Info * centers: 300                                                                                                     
+* Info * field_cutoff_ratio: 1e-5                                                                                         
+* Info * frequency_range: 0.2-0.4(0.001)                                                                                  
+* Info * carrier_frequencies: 0.325                                                                                       
+* Info * pulse_widths: 50                                                                                                 
+* Info * pol_dir: xyz                                                                                                     
+* Info * h5: pulsed                                                                                                       
+* Info * ascii: pulsed                                                                                                    
+* Info * @end                                                                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             ================================                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           C           0.677599970000        0.000000000000        0.000000000000                         
+                           C          -0.677599970000        0.000000000000        0.000000000000                         
+                           H           1.216551970000        0.924144740000        0.000000000000                         
+                           H           1.216551970000       -0.924144740000        0.000000000000                         
+                           H          -1.216551970000       -0.924144740000        0.000000000000                         
+                           H          -1.216551970000        0.924144740000        0.000000000000                         
+                                                                                                                          
+                          Molecular charge            : 0                                                                 
+                          Spin multiplicity           : 1                                                                 
+                          Number of atoms             : 6                                                                 
+                          Number of alpha electrons   : 8                                                                 
+                          Number of beta  electrons   : 8                                                                 
+                                                                                                                          
+* Info * Reading basis set from file: /home/linares/miniconda3/envs/vlx-github/lib/python3.12/site-packages/veloxchem/basis/AUG-CC-PVDZ
+                                                                                                                          
+                                              Molecular Basis (Atomic Basis)                                              
+                                             ================================                                             
+                                                                                                                          
+                               Basis: AUG-CC-PVDZ                                                                         
+                                                                                                                          
+                               Atom Contracted GTOs           Primitive GTOs                                              
+                                                                                                                          
+                               C     (4S,3P,2D)                (18S,5P,2D)                                                
+                               H     (3S,2P)                   (5S,2P)                                                    
+                                                                                                                          
+                               Contracted Basis Functions : 82                                                            
+                               Primitive Basis Functions  : 130                                                           
+                                                                                                                          
+                                                                                                                          
+                                            Self Consistent Field Driver Setup                                            
+                                           ====================================                                           
+                                                                                                                          
+                   Wave Function Model             : Spin-Restricted Hartree-Fock                                         
+                   Initial Guess Model             : Superposition of Atomic Densities                                    
+                   Convergence Accelerator         : Two Level Direct Inversion of Iterative Subspace                     
+                   Max. Number of Iterations       : 50                                                                   
+                   Max. Number of Error Vectors    : 10                                                                   
+                   Convergence Threshold           : 1.0e-06                                                              
+                   ERI Screening Threshold         : 1.0e-12                                                              
+                   Linear Dependence Threshold     : 1.0e-06                                                              
+                                                                                                                          
+* Info * Nuclear repulsion energy: 33.3086336060 a.u.                                                                     
+                                                                                                                          
+* Info * Overlap matrix computed in 0.00 sec.                                                                             
+                                                                                                                          
+* Info * Kinetic energy matrix computed in 0.00 sec.                                                                      
+                                                                                                                          
+* Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+* Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+* Info * Starting Reduced Basis SCF calculation...                                                                        
+* Info * ...done. SCF energy in reduced basis set: -78.006041388275 a.u. Time: 0.05 sec.                                  
+                                                                                                                          
+* Info * Overlap matrix computed in 0.00 sec.                                                                             
+                                                                                                                          
+* Info * Kinetic energy matrix computed in 0.00 sec.                                                                      
+                                                                                                                          
+* Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+* Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+                                                                                                                          
+               Iter. | Hartree-Fock Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
+               --------------------------------------------------------------------------------------------               
+                  1       -78.040875110946    0.0000000000      0.09002537      0.01232804      0.00000000                
+                  2       -78.041880583985   -0.0010054730      0.01526592      0.00256678      0.24872105                
+                  3       -78.041914466282   -0.0000338823      0.00365788      0.00049409      0.01223984                
+                  4       -78.041917486733   -0.0000030205      0.00053856      0.00011284      0.00311476                
+                  5       -78.041917590380   -0.0000001036      0.00010148      0.00001310      0.00051553                
+                  6       -78.041917594585   -0.0000000042      0.00001998      0.00000388      0.00013174                
+                  7       -78.041917594785   -0.0000000002      0.00000254      0.00000043      0.00002141                
+                  8       -78.041917594788   -0.0000000000      0.00000026      0.00000003      0.00000540                
+                                                                                                                          
+* Info * Checkpoint written to file: eth-laser_scf.h5                                                                     
+                                                                                                                          
+* Info * SCF results written to file: eth-laser.h5                                                                        
+                                                                                                                          
+               *** SCF converged in 8 iterations. Time: 0.22 sec.                                                         
+                                                                                                                          
+               Spin-Restricted Hartree-Fock:                                                                              
+               -----------------------------                                                                              
+               Total Energy                       :      -78.0419175948 a.u.                                              
+               Electronic Energy                  :     -111.3505512008 a.u.                                              
+               Nuclear Repulsion Energy           :       33.3086336060 a.u.                                              
+               ------------------------------------                                                                       
+               Gradient Norm                      :        0.0000002631 a.u.                                              
+                                                                                                                          
+                                                                                                                          
+               Ground State Information                                                                                   
+               ------------------------                                                                                   
+               Charge of Molecule            :  0.0                                                                       
+               Multiplicity (2S+1)           :  1                                                                         
+               Magnetic Quantum Number (M_S) :  0.0                                                                       
+                                                                                                                          
+                                                                                                                          
+                                                 Spin Restricted Orbitals                                                 
+                                                 ------------------------                                                 
+                                                                                                                          
+               Molecular Orbital No.   4:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.79874 a.u.                                                                  
+               (   1 C   2s  :    -0.24) (   1 C   3s  :    -0.28) (   1 C   4s  :     0.30)                              
+               (   1 C   1p+1:    -0.16) (   2 C   2s  :     0.24) (   2 C   3s  :     0.28)                              
+               (   2 C   4s  :    -0.30) (   2 C   1p+1:    -0.16) (   3 H   1s  :    -0.20)                              
+               (   4 H   1s  :    -0.20) (   5 H   1s  :     0.20) (   6 H   1s  :     0.20)                              
+                                                                                                                          
+               Molecular Orbital No.   5:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.65019 a.u.                                                                  
+               (   1 C   1p-1:     0.32) (   2 C   1p-1:     0.32) (   3 H   1s  :     0.22)                              
+               (   3 H   2s  :     0.16) (   4 H   1s  :    -0.22) (   4 H   2s  :    -0.16)                              
+               (   5 H   1s  :    -0.22) (   5 H   2s  :    -0.16) (   6 H   1s  :     0.22)                              
+               (   6 H   2s  :     0.16)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.   6:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.58024 a.u.                                                                  
+               (   1 C   1p+1:    -0.41) (   2 C   1p+1:     0.41) (   3 H   1s  :    -0.17)                              
+               (   4 H   1s  :    -0.17) (   5 H   1s  :    -0.17) (   6 H   1s  :    -0.17)                              
+                                                                                                                          
+               Molecular Orbital No.   7:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.51781 a.u.                                                                  
+               (   1 C   1p-1:     0.30) (   2 C   1p-1:    -0.30) (   3 H   1s  :     0.26)                              
+               (   3 H   2s  :     0.35) (   4 H   1s  :    -0.26) (   4 H   2s  :    -0.35)                              
+               (   5 H   1s  :     0.26) (   5 H   2s  :     0.35) (   6 H   1s  :    -0.26)                              
+               (   6 H   2s  :    -0.35)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.   8:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.37099 a.u.                                                                  
+               (   1 C   1p0 :     0.38) (   1 C   2p0 :     0.26) (   2 C   1p0 :     0.38)                              
+               (   2 C   2p0 :     0.26)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.   9:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.04042 a.u.                                                                  
+               (   1 C   3s  :    -0.53) (   1 C   4s  :    -2.00) (   1 C   2p+1:    -0.21)                              
+               (   1 C   3p+1:    -0.35) (   2 C   3s  :    -0.53) (   2 C   4s  :    -2.00)                              
+               (   2 C   2p+1:     0.21) (   2 C   3p+1:     0.35) (   3 H   2s  :     0.54)                              
+               (   3 H   3s  :     0.99) (   4 H   2s  :     0.54) (   4 H   3s  :     0.99)                              
+               (   5 H   2s  :     0.54) (   5 H   3s  :     0.99) (   6 H   2s  :     0.54)                              
+               (   6 H   3s  :     0.99)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  10:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.05063 a.u.                                                                  
+               (   1 C   3s  :    -0.30) (   1 C   2p+1:    -0.56) (   1 C   3p+1:    -1.64)                              
+               (   2 C   3s  :     0.30) (   2 C   2p+1:    -0.56) (   2 C   3p+1:    -1.64)                              
+               (   3 H   2s  :     0.62) (   3 H   3s  :     2.43) (   3 H   2p-1:    -0.19)                              
+               (   4 H   2s  :     0.62) (   4 H   3s  :     2.43) (   4 H   2p-1:     0.19)                              
+               (   5 H   2s  :    -0.62) (   5 H   3s  :    -2.43) (   5 H   2p-1:    -0.19)                              
+               (   6 H   2s  :    -0.62) (   6 H   3s  :    -2.43) (   6 H   2p-1:     0.19)                              
+                                                                                                                          
+               Molecular Orbital No.  11:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.05106 a.u.                                                                  
+               (   1 C   2p-1:    -0.37) (   1 C   3p-1:    -1.21) (   2 C   2p-1:    -0.37)                              
+               (   2 C   3p-1:    -1.21) (   3 H   2s  :     0.61) (   3 H   3s  :     2.68)                              
+               (   4 H   2s  :    -0.61) (   4 H   3s  :    -2.68) (   5 H   2s  :    -0.61)                              
+               (   5 H   3s  :    -2.68) (   6 H   2s  :     0.61) (   6 H   3s  :     2.68)                              
+                                                                                                                          
+               Molecular Orbital No.  12:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.07069 a.u.                                                                  
+               (   1 C   2p-1:    -0.42) (   1 C   3p-1:    -4.55) (   1 C   2d-2:    -0.27)                              
+               (   2 C   2p-1:     0.42) (   2 C   3p-1:     4.55) (   2 C   2d-2:    -0.27)                              
+               (   3 H   2s  :     1.13) (   3 H   3s  :     6.50) (   3 H   2p-1:    -0.20)                              
+               (   4 H   2s  :    -1.13) (   4 H   3s  :    -6.50) (   4 H   2p-1:    -0.20)                              
+               (   5 H   2s  :     1.13) (   5 H   3s  :     6.50) (   5 H   2p-1:     0.20)                              
+               (   6 H   2s  :    -1.13) (   6 H   3s  :    -6.50) (   6 H   2p-1:     0.20)                              
+                                                                                                                          
+               Molecular Orbital No.  13:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.10063 a.u.                                                                  
+               (   1 C   1p0 :    -0.19) (   1 C   2p0 :    -0.25) (   1 C   3p0 :    -1.68)                              
+               (   2 C   1p0 :     0.19) (   2 C   2p0 :     0.25) (   2 C   3p0 :     1.68)                              
+                                                                                                                          
+                                                                                                                          
+                                                Ground State Dipole Moment                                                
+                                               ----------------------------                                               
+                                                                                                                          
+                                   X   :        -0.000000 a.u.        -0.000000 Debye                                     
+                                   Y   :        -0.000000 a.u.        -0.000000 Debye                                     
+                                   Z   :        -0.000000 a.u.        -0.000000 Debye                                     
+                                 Total :         0.000000 a.u.         0.000000 Debye                                     
+                                                                                                                          
+* Info * Pulsed response module adjusts frequencies to intersect with 0                                                   
+                                                                                                                          
+                                         Pulsed Linear Reponse Theory Calculation                                         
+                                        ==========================================                                        
+                                                                                                                          
+                               Field cutoff ratio             : 1e-05                                                     
+                               Envelope                       : gaussian                                                  
+                               Pulse Duration                 : [50.0]                                                    
+                               Carrier Frequency              : [0.325]                                                   
+                               Pulse Center time              : [300.0]                                                   
+                               Max Field                      : [1e-05]                                                   
+                               Polarization Direction         : xyz                                                       
+                               Frequency Range                : 0.2-0.4(0.001)                                            
+                               Zero padding results           : True                                                      
+                                                                                                                          
+                               Frequency     |           Amplitude                                                        
+                               ---------------------------------------------                                              
+                               0.229000      :    0.00000000    -0.00000000j                                              
+                               0.230000      :    0.00000000    -0.00000000j                                              
+                               0.231000      :    0.00000000    +0.00000000j                                              
+                               0.232000      :    0.00000000    +0.00000000j                                              
+                               0.233000      :    0.00000000    +0.00000000j                                              
+                               0.234000      :    0.00000000    +0.00000000j                                              
+                               0.235000      :    0.00000000    +0.00000000j                                              
+                               0.236000      :   -0.00000000    +0.00000000j                                              
+                               0.237000      :   -0.00000000    +0.00000001j                                              
+                               0.238000      :   -0.00000001    +0.00000001j                                              
+                               0.239000      :   -0.00000001    +0.00000001j                                              
+                               0.240000      :   -0.00000001    +0.00000000j                                              
+                               0.241000      :   -0.00000001    -0.00000000j                                              
+                               0.242000      :   -0.00000002    -0.00000001j                                              
+                               0.243000      :   -0.00000002    -0.00000001j                                              
+                               0.244000      :   -0.00000002    -0.00000002j                                              
+                               0.245000      :   -0.00000001    -0.00000003j                                              
+                               0.246000      :   -0.00000000    -0.00000004j                                              
+                               0.247000      :    0.00000001    -0.00000005j                                              
+                               0.248000      :    0.00000003    -0.00000005j                                              
+                               0.249000      :    0.00000006    -0.00000005j                                              
+                               0.250000      :    0.00000008    -0.00000003j                                              
+                               0.251000      :    0.00000011    -0.00000001j                                              
+                               0.252000      :    0.00000013    +0.00000003j                                              
+                               0.253000      :    0.00000013    +0.00000007j                                              
+                               0.254000      :    0.00000013    +0.00000013j                                              
+                               0.255000      :    0.00000010    +0.00000019j                                              
+                               0.256000      :    0.00000004    +0.00000026j                                              
+                               0.257000      :   -0.00000004    +0.00000031j                                              
+                               0.258000      :   -0.00000015    +0.00000033j                                              
+                               0.259000      :   -0.00000029    +0.00000032j                                              
+                               0.260000      :   -0.00000044    +0.00000026j                                              
+                               0.261000      :   -0.00000058    +0.00000014j                                              
+                               0.262000      :   -0.00000070    -0.00000004j                                              
+                               0.263000      :   -0.00000076    -0.00000029j                                              
+                               0.264000      :   -0.00000075    -0.00000058j                                              
+                               0.265000      :   -0.00000064    -0.00000091j                                              
+                               0.266000      :   -0.00000039    -0.00000122j                                              
+                               0.267000      :   -0.00000002    -0.00000149j                                              
+                               0.268000      :    0.00000049    -0.00000165j                                              
+                               0.269000      :    0.00000110    -0.00000164j                                              
+                               0.270000      :    0.00000177    -0.00000143j                                              
+                               0.271000      :    0.00000242    -0.00000097j                                              
+                               0.272000      :    0.00000297    -0.00000024j                                              
+                               0.273000      :    0.00000331    +0.00000074j                                              
+                               0.274000      :    0.00000335    +0.00000191j                                              
+                               0.275000      :    0.00000299    +0.00000320j                                              
+                               0.276000      :    0.00000217    +0.00000446j                                              
+                               0.277000      :    0.00000085    +0.00000553j                                              
+                               0.278000      :   -0.00000093    +0.00000624j                                              
+                               0.279000      :   -0.00000307    +0.00000638j                                              
+                               0.280000      :   -0.00000540    +0.00000582j                                              
+                               0.281000      :   -0.00000768    +0.00000443j                                              
+                               0.282000      :   -0.00000964    +0.00000219j                                              
+                               0.283000      :   -0.00001096    -0.00000085j                                              
+                               0.284000      :   -0.00001134    -0.00000449j                                              
+                               0.285000      :   -0.00001052    -0.00000846j                                              
+                               0.286000      :   -0.00000834    -0.00001235j                                              
+                               0.287000      :   -0.00000475    -0.00001570j                                              
+                               0.288000      :    0.00000011    -0.00001802j                                              
+                               0.289000      :    0.00000595    -0.00001882j                                              
+                               0.290000      :    0.00001229    -0.00001773j                                              
+                               0.291000      :    0.00001851    -0.00001450j                                              
+                               0.292000      :    0.00002389    -0.00000912j                                              
+                               0.293000      :    0.00002767    -0.00000179j                                              
+                               0.294000      :    0.00002917    +0.00000700j                                              
+                               0.295000      :    0.00002785    +0.00001652j                                              
+                               0.296000      :    0.00002339    +0.00002585j                                              
+                               0.297000      :    0.00001579    +0.00003394j                                              
+                               0.298000      :    0.00000541    +0.00003973j                                              
+                               0.299000      :   -0.00000702    +0.00004226j                                              
+                               0.300000      :   -0.00002046    +0.00004082j                                              
+                               0.301000      :   -0.00003361    +0.00003503j                                              
+                               0.302000      :   -0.00004503    +0.00002496j                                              
+                               0.303000      :   -0.00005331    +0.00001115j                                              
+                               0.304000      :   -0.00005722    -0.00000538j                                              
+                               0.305000      :   -0.00005586    -0.00002321j                                              
+                               0.306000      :   -0.00004883    -0.00004062j                                              
+                               0.307000      :   -0.00003629    -0.00005575j                                              
+                               0.308000      :   -0.00001900    -0.00006685j                                              
+                               0.309000      :    0.00000167    -0.00007240j                                              
+                               0.310000      :    0.00002390    -0.00007139j                                              
+                               0.311000      :    0.00004555    -0.00006340j                                              
+                               0.312000      :    0.00006439    -0.00004872j                                              
+                               0.313000      :    0.00007832    -0.00002839j                                              
+                               0.314000      :    0.00008564    -0.00000409j                                              
+                               0.315000      :    0.00008523    +0.00002196j                                              
+                               0.316000      :    0.00007673    +0.00004728j                                              
+                               0.317000      :    0.00006061    +0.00006930j                                              
+                               0.318000      :    0.00003813    +0.00008571j                                              
+                               0.319000      :    0.00001128    +0.00009468j                                              
+                               0.320000      :   -0.00001744    +0.00009508j                                              
+                               0.321000      :   -0.00004527    +0.00008665j                                              
+                               0.322000      :   -0.00006946    +0.00007001j                                              
+                               0.323000      :   -0.00008759    +0.00004665j                                              
+                               0.324000      :   -0.00009783    +0.00001875j                                              
+                               0.325000      :   -0.00009913    -0.00001101j                                              
+                               0.326000      :   -0.00009133    -0.00003976j                                              
+                               0.327000      :   -0.00007522    -0.00006473j                                              
+                               0.328000      :   -0.00005240    -0.00008355j                                              
+                               0.329000      :   -0.00002515    -0.00009447j                                              
+                               0.330000      :    0.00000385    -0.00009659j                                              
+                               0.331000      :    0.00003178    -0.00008989j                                              
+                               0.332000      :    0.00005601    -0.00007525j                                              
+                               0.333000      :    0.00007434    -0.00005431j                                              
+                               0.334000      :    0.00008524    -0.00002929j                                              
+                               0.335000      :    0.00008797    -0.00000272j                                              
+                               0.336000      :    0.00008265    +0.00002279j                                              
+                               0.337000      :    0.00007018    +0.00004489j                                              
+                               0.338000      :    0.00005212    +0.00006166j                                              
+                               0.339000      :    0.00003053    +0.00007185j                                              
+                               0.340000      :    0.00000765    +0.00007489j                                              
+                               0.341000      :   -0.00001426    +0.00007100j                                              
+                               0.342000      :   -0.00003321    +0.00006105j                                              
+                               0.343000      :   -0.00004764    +0.00004643j                                              
+                               0.344000      :   -0.00005655    +0.00002891j                                              
+                               0.345000      :   -0.00005959    +0.00001039j                                              
+                               0.346000      :   -0.00005700    -0.00000730j                                              
+                               0.347000      :   -0.00004956    -0.00002258j                                              
+                               0.348000      :   -0.00003845    -0.00003423j                                              
+                               0.349000      :   -0.00002510    -0.00004155j                                              
+                               0.350000      :   -0.00001100    -0.00004432j                                              
+                               0.351000      :    0.00000243    -0.00004277j                                              
+                               0.352000      :    0.00001400    -0.00003757j                                              
+                               0.353000      :    0.00002285    -0.00002965j                                              
+                               0.354000      :    0.00002849    -0.00002009j                                              
+                               0.355000      :    0.00003079    -0.00001001j                                              
+                               0.356000      :    0.00003000    -0.00000042j                                              
+                               0.357000      :    0.00002660    +0.00000782j                                              
+                               0.358000      :    0.00002130    +0.00001414j                                              
+                               0.359000      :    0.00001487    +0.00001821j                                              
+                               0.360000      :    0.00000810    +0.00001999j                                              
+                               0.361000      :    0.00000167    +0.00001967j                                              
+                               0.362000      :   -0.00000384    +0.00001760j                                              
+                               0.363000      :   -0.00000808    +0.00001428j                                              
+                               0.364000      :   -0.00001084    +0.00001022j                                              
+                               0.365000      :   -0.00001212    +0.00000594j                                              
+                               0.366000      :   -0.00001205    +0.00000189j                                              
+                               0.367000      :   -0.00001088    -0.00000158j                                              
+                               0.368000      :   -0.00000893    -0.00000425j                                              
+                               0.369000      :   -0.00000652    -0.00000601j                                              
+                               0.370000      :   -0.00000399    -0.00000686j                                              
+                               0.371000      :   -0.00000159    -0.00000690j                                              
+                               0.372000      :    0.00000046    -0.00000629j                                              
+                               0.373000      :    0.00000204    -0.00000521j                                              
+                               0.374000      :    0.00000309    -0.00000388j                                              
+                               0.375000      :    0.00000362    -0.00000246j                                              
+                               0.376000      :    0.00000369    -0.00000113j                                              
+                               0.377000      :    0.00000340    +0.00000001j                                              
+                               0.378000      :    0.00000284    +0.00000089j                                              
+                               0.379000      :    0.00000215    +0.00000148j                                              
+                               0.380000      :    0.00000141    +0.00000178j                                              
+                               0.381000      :    0.00000071    +0.00000185j                                              
+                               0.382000      :    0.00000012    +0.00000171j                                              
+                               0.383000      :   -0.00000034    +0.00000145j                                              
+                               0.384000      :   -0.00000065    +0.00000111j                                              
+                               0.385000      :   -0.00000082    +0.00000075j                                              
+                               0.386000      :   -0.00000086    +0.00000040j                                              
+                               0.387000      :   -0.00000081    +0.00000011j                                              
+                               0.388000      :   -0.00000069    -0.00000011j                                              
+                               0.389000      :   -0.00000053    -0.00000027j                                              
+                               0.390000      :   -0.00000037    -0.00000035j                                              
+                               0.391000      :   -0.00000021    -0.00000038j                                              
+                               0.392000      :   -0.00000008    -0.00000036j                                              
+                               0.393000      :    0.00000003    -0.00000031j                                              
+                               0.394000      :    0.00000010    -0.00000024j                                              
+                               0.395000      :    0.00000014    -0.00000017j                                              
+                               0.396000      :    0.00000015    -0.00000010j                                              
+                               0.397000      :    0.00000015    -0.00000004j                                              
+                               0.398000      :    0.00000013    +0.00000000j                                              
+                               0.399000      :    0.00000010    +0.00000003j                                              
+                               0.400000      :    0.00000007    +0.00000005j                                              
+                                                                                                                          
+* Info * Entering CPP Solver from Pulsed Linear Response                                                                  
+                                                                                                                          
+                                              Complex Response Solver Setup                                               
+                                             ===============================                                              
+                                                                                                                          
+                               Number of Frequencies           : 172                                                      
+                               Max. Number of Iterations       : 150                                                      
+                               Convergence Threshold           : 1.0e-04                                                  
+                               ERI Screening Threshold         : 1.0e-12                                                  
+                                                                                                                          
+* Info * 11 gerade trial vectors in reduced space                                                                         
+* Info * 13 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   1 * Residuals (Max,Min): 4.66e-01 and 8.16e-02                                            
+                                                                                                                          
+* Info * 26 gerade trial vectors in reduced space                                                                         
+* Info * 29 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   2 * Residuals (Max,Min): 8.09e-02 and 1.95e-02                                            
+                                                                                                                          
+* Info * 42 gerade trial vectors in reduced space                                                                         
+* Info * 47 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   3 * Residuals (Max,Min): 3.33e-02 and 1.32e-03                                            
+                                                                                                                          
+* Info * 60 gerade trial vectors in reduced space                                                                         
+* Info * 65 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   4 * Residuals (Max,Min): 4.61e-03 and 1.19e-04                                            
+                                                                                                                          
+* Info * 78 gerade trial vectors in reduced space                                                                         
+* Info * 84 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   5 * Residuals (Max,Min): 1.00e-03 and 9.25e-06                                            
+                                                                                                                          
+* Info * 93 gerade trial vectors in reduced space                                                                         
+* Info * 98 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   6 * Residuals (Max,Min): 1.43e-04 and 6.81e-06                                            
+                                                                                                                          
+* Info * 98 gerade trial vectors in reduced space                                                                         
+* Info * 103 ungerade trial vectors in reduced space                                                                      
+                                                                                                                          
+               *** Iteration:   7 * Residuals (Max,Min): 9.98e-05 and 6.81e-06                                            
+                                                                                                                          
+* Info * Checkpoint written to file: eth-laser_rsp.h5                                                                     
+                                                                                                                          
+* Info * Time spent in writing checkpoint file: 0.00 sec                                                                  
+                                                                                                                          
+               *** Complex response converged in 7 iterations. Time: 17.71 sec                                            
+                                                                                                                          
+                                                                                                                          
+* Info * Response solution vectors written to file: eth-laser.h5                                                          
+                                                                                                                          
+* Info * Exiting CPP Solver and returning to Pulsed Linear Response                                                       
+                                                                                                                          
+* Info * Post-processing results and saving to files...                                                                   
+* Info * ...done.                                                                                                         
+                                                                                                                          
+!========================================================================================================================!
+!                               VeloxChem execution completed at Wed Mar 11 11:35:43 2026.                               !
+!========================================================================================================================!
+!                                           Total execution time is 18.30 sec.                                           !
+!========================================================================================================================!
+!                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
+!                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !
+!                     VeloxChem: A Python-driven Density-functional Theory Program for Spectroscopy                      !
+!                                Simulations in High-performance Computing Environments.                                 !
+!                                       WIREs Comput Mol Sci 2020, 10 (5), e1457.                                        !
+!========================================================================================================================!

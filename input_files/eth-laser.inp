@@ -1,0 +1,33 @@
+@jobs
+task: pulses
+@end
+
+@method settings
+basis: aug-cc-pvdz
+@end
+
+@molecule
+charge: 0
+multiplicity: 1
+xyz:
+C        0.67759997    0.00000000    0.00000000
+C       -0.67759997    0.00000000    0.00000000
+H        1.21655197    0.92414474    0.00000000
+H        1.21655197   -0.92414474    0.00000000
+H       -1.21655197   -0.92414474    0.00000000
+H       -1.21655197    0.92414474    0.00000000
+@end
+
+@pulses
+envelope: gaussian
+field_max : 1.0e-5
+number_pulses: 1
+centers: 300 
+field_cutoff_ratio: 1e-5
+frequency_range : 0.2-0.4(0.001)
+carrier_frequencies: 0.325
+pulse_widths: 50 
+pol_dir: xyz
+h5 : pulsed
+ascii : pulsed
+@end
