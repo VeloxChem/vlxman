@@ -447,7 +447,29 @@
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../output_files/meth-c6.h5" download>meth-c6.h5</a>
       </td>
-    </tr>  
+    </tr>
+    <tr style="background-color: #f5f5f5;">
+      <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
+        <a href="#sec:xray" style="text-decoration: none; color: inherit;">X-ray spectroscopies</a>
+      </td>
+    </tr>
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:nexafs">NEXAFS</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/esca-nexafs.py" download>esca-nexafs.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/esca-nexafs.inp" download>esca-nexafs.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/esca-nexafs.out" download>esca-nexafs.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/esca-nexafs.h5" download>esca-nexafs.h5</a>
+      </td>
+    </tr>    
   </tbody>
 </table>
 </div>
