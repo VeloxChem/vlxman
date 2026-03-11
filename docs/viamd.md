@@ -82,7 +82,7 @@ By clicking on *Windows* > *VeloxChem* > *Summary*, you will display the Summary
 * SCF convergence
 * An interactive table of the geometry
 
-![alt text](image.png)
+![alt text](../images/viamd-sum.png)
 
 ### Orbital grid
 By clicking on *Windows* > *VeloxChem* > *Orbital Grid*, you will display the Orbital Grid.
