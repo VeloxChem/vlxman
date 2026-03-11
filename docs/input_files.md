@@ -505,6 +505,23 @@
         <a href="../output_files/pro-resp-bw.h5" download>pro-resp-bw.h5</a>
       </td>
     </tr>
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:loprop">LoProp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/h2o-loprop.py" download>h2o-loprop.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/h2o-loprop.inp" download>h2o-loprop.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/h2o-loprop.out" download>h2o-loprop.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/h2o-loprop.h5" download>h2o-loprop.h5</a>
+      </td>
+    </tr>
     <tr style="background-color: #f5f5f5;">
       <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
         <a href="#sec:xray" style="text-decoration: none; color: inherit;">X-ray spectroscopies</a>
