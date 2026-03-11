@@ -1,0 +1,104 @@
+                                                                                                                          
+                                            Self Consistent Field Driver Setup                                            
+                                           ====================================                                           
+                                                                                                                          
+                   Wave Function Model             : Spin-Restricted Kohn-Sham                                            
+                   Initial Guess Model             : Superposition of Atomic Densities                                    
+                   Convergence Accelerator         : Two Level Direct Inversion of Iterative Subspace                     
+                   Max. Number of Iterations       : 50                                                                   
+                   Max. Number of Error Vectors    : 10                                                                   
+                   Convergence Threshold           : 1.0e-06                                                              
+                   ERI Screening Threshold         : 1.0e-12                                                              
+                   Linear Dependence Threshold     : 1.0e-06                                                              
+                   Exchange-Correlation Functional : B3LYP                                                                
+                   Molecular Grid Level            : 4                                                                    
+                                                                                                                          
+* Info * Using the B3LYP functional.                                                                                      
+                                                                                                                          
+         P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
+                                                                                                                          
+* Info * Using the Libxc library (v6.2.2).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * Starting Reduced Basis SCF calculation...                                                                        
+* Info * ...done. SCF energy in reduced basis set: -77.937969431278 a.u. Time: 0.03 sec.                                  
+                                                                                                                          
+                                                                                                                          
+               Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
+               --------------------------------------------------------------------------------------------               
+                  1       -78.532279020376    0.0000000000      0.14019837      0.01416958      0.00000000                
+                  2       -78.532757839486   -0.0004788191      0.13016301      0.01401035      0.12007506                
+                  3       -78.535117482005   -0.0023596425      0.00099918      0.00011377      0.05093307                
+                  4       -78.535117641230   -0.0000001592      0.00018511      0.00002282      0.00165372                
+                  5       -78.535117646145   -0.0000000049      0.00003564      0.00000326      0.00021221                
+                  6       -78.535117646302   -0.0000000002      0.00000195      0.00000020      0.00004653                
+                  7       -78.535117646303   -0.0000000000      0.00000021      0.00000003      0.00000152                
+                                                                                                                          
+               *** SCF converged in 7 iterations. Time: 0.29 sec.                                                         
+                                                                                                                          
+               Spin-Restricted Kohn-Sham:                                                                                 
+               --------------------------                                                                                 
+               Total Energy                       :      -78.5351176463 a.u.                                              
+               Electronic Energy                  :     -111.8437512523 a.u.                                              
+               Nuclear Repulsion Energy           :       33.3086336060 a.u.                                              
+               ------------------------------------                                                                       
+               Gradient Norm                      :        0.0000002109 a.u.                                              
+                                                                                                                          
+                                                                                                                          
+               Ground State Information                                                                                   
+               ------------------------                                                                                   
+               Charge of Molecule            :  0.0                                                                       
+               Multiplicity (2S+1)           :  1                                                                         
+               Magnetic Quantum Number (M_S) :  0.0                                                                       
+                                                                                                                          
+                                                                                                                          
+                                              Complex Response Solver Setup                                               
+                                             ===============================                                              
+                                                                                                                          
+                               Number of Frequencies           : 160                                                      
+                               Max. Number of Iterations       : 150                                                      
+                               Convergence Threshold           : 1.0e-04                                                  
+                               ERI Screening Threshold         : 1.0e-12                                                  
+                               Exchange-Correlation Functional : B3LYP                                                    
+                               Molecular Grid Level            : 4                                                        
+                                                                                                                          
+* Info * Using the B3LYP functional.                                                                                      
+                                                                                                                          
+         P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
+                                                                                                                          
+* Info * Using the Libxc library (v6.2.2).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * 5 gerade trial vectors in reduced space                                                                          
+* Info * 6 ungerade trial vectors in reduced space                                                                        
+                                                                                                                          
+               *** Iteration:   1 * Residuals (Max,Min): 5.52e-01 and 3.58e-01                                            
+                                                                                                                          
+* Info * 10 gerade trial vectors in reduced space                                                                         
+* Info * 13 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   2 * Residuals (Max,Min): 2.50e-02 and 2.20e-02                                            
+                                                                                                                          
+* Info * 17 gerade trial vectors in reduced space                                                                         
+* Info * 19 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   3 * Residuals (Max,Min): 1.17e-03 and 1.04e-03                                            
+                                                                                                                          
+* Info * 22 gerade trial vectors in reduced space                                                                         
+* Info * 25 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   4 * Residuals (Max,Min): 5.64e-05 and 3.70e-05                                            
+                                                                                                                          
+               *** Complex response converged in 4 iterations. Time: 2.05 sec                                             
+                                                                                                                          
+                                                                                                                          
