@@ -1,6 +1,6 @@
 (sec:input-file-examples)=
 
-# Input file examples
+# Input/output file examples
 
 
 
@@ -279,6 +279,58 @@
         <a href="../output_files/tq-cpp.h5" download>tq-cpp.h5</a>
       </td>
     </tr>
+        <tr style="background-color: #f5f5f5;">
+      <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
+        <a href="#sec:alpha" style="text-decoration: none; color: inherit;">Polarizability</a>
+      </td>
+    </tr>
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:nonres-region">Nonresonant region</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/meth-nonres.py" download>meth-nonres.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/meth-nonres.inp" download>meth-nonres.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/meth-nonres.out" download>meth-nonres.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/meth-nonres.h5" download>meth-nonres.h5</a>
+      </td>
+    </tr>
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:res-region">Resonant region</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/eth-res.py" download>eth-res.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">    
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+       </td>
+    </tr> 
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:laser">Laser pulse propagation</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/eth-laser.inp" download>eth-laser.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/eth-laser.out" download>eth-laser.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/eth-laser.h5" download>eth-laser.h5</a>
+      </td>
+    </tr>  
     <tr style="background-color: #f5f5f5;">
       <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
         <a href="#sec:ecd" style="text-decoration: none; color: inherit;">Optical activity and dichroism</a>
@@ -373,7 +425,51 @@
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../output_files/acro-rr.h5" download>acro-rr.h5</a>
       </td>
-    </tr>  
+    </tr>
+    <tr style="background-color: #f5f5f5;">
+      <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
+        <a href="#sec:weak_interactions" style="text-decoration: none; color: inherit;">Weak interactions</a>
+      </td>
+    </tr>
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:c6">C6</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/meth-c6.py" download>meth-c6.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/meth-c6.inp" download>meth-c6.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/meth-c6.out" download>meth-c6.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/meth-c6.h5" download>meth-c6.h5</a>
+      </td>
+    </tr>
+    <tr style="background-color: #f5f5f5;">
+      <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
+        <a href="#sec:xray" style="text-decoration: none; color: inherit;">X-ray spectroscopies</a>
+      </td>
+    </tr>
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:nexafs">NEXAFS</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/esca-nexafs.py" download>esca-nexafs.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/esca-nexafs.inp" download>esca-nexafs.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/esca-nexafs.out" download>esca-nexafs.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/esca-nexafs.h5" download>esca-nexafs.h5</a>
+      </td>
+    </tr>    
   </tbody>
 </table>
 </div>

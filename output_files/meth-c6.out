@@ -1,0 +1,534 @@
+!========================================================================================================================!
+!                                                                                                                        !
+!                                                       VELOXCHEM                                                        !
+!                                              AN ELECTRONIC STRUCTURE CODE                                              !
+!                                                                                                                        !
+!                                        Copyright 2018-2025 VeloxChem developers                                        !
+!========================================================================================================================!
+!                                VeloxChem execution started at Wed Mar 11 11:57:02 2026.                                !
+!========================================================================================================================!
+                                                                                                                          
+* Info * Using 32 OpenMP threads per MPI process.                                                                         
+                                                                                                                          
+* Info * Reading input file meth-c6.inp...                                                                                
+                                                                                                                          
+* Info * @jobs                                                                                                            
+* Info * task: response                                                                                                   
+* Info * @end                                                                                                             
+                                                                                                                          
+* Info * @method_settings                                                                                                 
+* Info * xcfun: b3lyp                                                                                                     
+* Info * basis: def2-svpd                                                                                                 
+* Info * @end                                                                                                             
+                                                                                                                          
+* Info * @response                                                                                                        
+* Info * property: C6                                                                                                     
+* Info * @end                                                                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             ================================                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           H           0.528800000000        0.161000000000        0.935900000000                         
+                           C           0.000000000000        0.000000000000        0.000000000000                         
+                           H           0.205100000000        0.824000000000       -0.678600000000                         
+                           H           0.334500000000       -0.931400000000       -0.449600000000                         
+                           H          -1.068500000000       -0.053700000000        0.192100000000                         
+                                                                                                                          
+                          Molecular charge            : 0                                                                 
+                          Spin multiplicity           : 1                                                                 
+                          Number of atoms             : 5                                                                 
+                          Number of alpha electrons   : 5                                                                 
+                          Number of beta  electrons   : 5                                                                 
+                                                                                                                          
+* Info * Reading basis set from file: /home/linares/miniconda3/envs/vlx-github/lib/python3.12/site-packages/veloxchem/basis/DEF2-SVPD
+                                                                                                                          
+                                              Molecular Basis (Atomic Basis)                                              
+                                             ================================                                             
+                                                                                                                          
+                               Basis: DEF2-SVPD                                                                           
+                                                                                                                          
+                               Atom Contracted GTOs           Primitive GTOs                                              
+                                                                                                                          
+                               H     (2S,2P)                   (4S,2P)                                                    
+                               C     (4S,2P,2D)                (8S,4P,2D)                                                 
+                                                                                                                          
+                               Contracted Basis Functions : 52                                                            
+                               Primitive Basis Functions  : 70                                                            
+                                                                                                                          
+                                                                                                                          
+                                            Self Consistent Field Driver Setup                                            
+                                           ====================================                                           
+                                                                                                                          
+                   Wave Function Model             : Spin-Restricted Kohn-Sham                                            
+                   Initial Guess Model             : Superposition of Atomic Densities                                    
+                   Convergence Accelerator         : Two Level Direct Inversion of Iterative Subspace                     
+                   Max. Number of Iterations       : 50                                                                   
+                   Max. Number of Error Vectors    : 10                                                                   
+                   Convergence Threshold           : 1.0e-06                                                              
+                   ERI Screening Threshold         : 1.0e-12                                                              
+                   Linear Dependence Threshold     : 1.0e-06                                                              
+                   Exchange-Correlation Functional : B3LYP                                                                
+                   Molecular Grid Level            : 4                                                                    
+                                                                                                                          
+* Info * Nuclear repulsion energy: 13.4728429761 a.u.                                                                     
+                                                                                                                          
+* Info * Using the B3LYP functional.                                                                                      
+                                                                                                                          
+         P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
+                                                                                                                          
+* Info * Using the Libxc library (v6.2.2).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * Molecular grid with 61118 points generated in 0.03 sec.                                                          
+                                                                                                                          
+* Info * Overlap matrix computed in 0.00 sec.                                                                             
+                                                                                                                          
+* Info * Kinetic energy matrix computed in 0.00 sec.                                                                      
+                                                                                                                          
+* Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+* Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+* Info * Starting Reduced Basis SCF calculation...                                                                        
+* Info * ...done. SCF energy in reduced basis set: -40.145086334175 a.u. Time: 0.02 sec.                                  
+                                                                                                                          
+* Info * Overlap matrix computed in 0.00 sec.                                                                             
+                                                                                                                          
+* Info * Kinetic energy matrix computed in 0.00 sec.                                                                      
+                                                                                                                          
+* Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+* Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+                                                                                                                          
+               Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
+               --------------------------------------------------------------------------------------------               
+                  1       -40.488913549443    0.0000000000      0.10769992      0.01232718      0.00000000                
+                  2       -40.488822823935    0.0000907255      0.11359270      0.01258877      0.06616806                
+                  3       -40.490509696650   -0.0016868727      0.00128840      0.00016948      0.03936040                
+                  4       -40.490509913032   -0.0000002164      0.00001698      0.00000191      0.00090717                
+                  5       -40.490509913084   -0.0000000001      0.00000280      0.00000037      0.00002522                
+                  6       -40.490509913085   -0.0000000000      0.00000020      0.00000003      0.00000243                
+                                                                                                                          
+* Info * Checkpoint written to file: meth-c6_scf.h5                                                                       
+                                                                                                                          
+* Info * SCF results written to file: meth-c6.h5                                                                          
+                                                                                                                          
+               *** SCF converged in 6 iterations. Time: 0.13 sec.                                                         
+                                                                                                                          
+               Spin-Restricted Kohn-Sham:                                                                                 
+               --------------------------                                                                                 
+               Total Energy                       :      -40.4905099131 a.u.                                              
+               Electronic Energy                  :      -53.9633528891 a.u.                                              
+               Nuclear Repulsion Energy           :       13.4728429761 a.u.                                              
+               ------------------------------------                                                                       
+               Gradient Norm                      :        0.0000001983 a.u.                                              
+                                                                                                                          
+                                                                                                                          
+               Ground State Information                                                                                   
+               ------------------------                                                                                   
+               Charge of Molecule            :  0.0                                                                       
+               Multiplicity (2S+1)           :  1                                                                         
+               Magnetic Quantum Number (M_S) :  0.0                                                                       
+                                                                                                                          
+                                                                                                                          
+                                                 Spin Restricted Orbitals                                                 
+                                                 ------------------------                                                 
+                                                                                                                          
+               Molecular Orbital No.   1:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:  -10.17306 a.u.                                                                  
+               (   2 C   1s  :    -0.99) (   2 C   3s  :     0.17)                                                        
+                                                                                                                          
+               Molecular Orbital No.   2:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.69120 a.u.                                                                  
+               (   1 H   1s  :     0.18) (   2 C   1s  :    -0.25) (   2 C   2s  :     0.50)                              
+               (   2 C   3s  :    -0.19) (   3 H   1s  :     0.18) (   4 H   1s  :     0.18)                              
+               (   5 H   1s  :     0.18)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.   3:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.39579 a.u.                                                                  
+               (   1 H   1s  :     0.39) (   2 C   1p+1:     0.22) (   2 C   1p0 :     0.39)                              
+               (   3 H   1s  :    -0.21)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.   4:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.39577 a.u.                                                                  
+               (   2 C   1p+1:     0.39) (   2 C   1p0 :    -0.22) (   3 H   1s  :     0.16)                              
+               (   4 H   1s  :     0.22) (   5 H   1s  :    -0.37)                                                        
+                                                                                                                          
+               Molecular Orbital No.   5:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.39576 a.u.                                                                  
+               (   2 C   1p-1:    -0.44) (   3 H   1s  :    -0.30) (   4 H   1s  :     0.33)                              
+                                                                                                                          
+               Molecular Orbital No.   6:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.02398 a.u.                                                                  
+               (   1 H   2s  :    -1.50) (   1 H   2p+1:     0.25) (   1 H   2p0 :     0.44)                              
+               (   2 C   2s  :    -0.43) (   2 C   3s  :     3.23) (   2 C   4s  :     3.33)                              
+               (   3 H   2s  :    -1.50) (   3 H   2p-1:     0.39) (   3 H   2p0 :    -0.32)                              
+               (   4 H   2s  :    -1.50) (   4 H   2p+1:     0.16) (   4 H   2p-1:    -0.44)                              
+               (   4 H   2p0 :    -0.21) (   5 H   2s  :    -1.50) (   5 H   2p+1:    -0.51)                              
+                                                                                                                          
+               Molecular Orbital No.   7:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.12059 a.u.                                                                  
+               (   1 H   2p-1:     0.35) (   2 C   1p-1:    -0.35) (   2 C   2p-1:     0.44)                              
+               (   2 C   2d-1:    -0.41) (   2 C   2d-2:     0.20) (   3 H   2s  :    -1.92)                              
+               (   3 H   2p+1:     0.18) (   3 H   2p-1:     1.21) (   3 H   2p0 :    -0.76)                              
+               (   4 H   2s  :     1.84) (   4 H   2p+1:    -0.36) (   4 H   2p-1:     1.28)                              
+               (   4 H   2p0 :     0.38) (   5 H   2p-1:     0.35)                                                        
+                                                                                                                          
+               Molecular Orbital No.   8:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.12059 a.u.                                                                  
+               (   1 H   2s  :     0.89) (   1 H   2p0 :    -0.73) (   2 C   1p+1:    -0.22)                              
+               (   2 C   1p0 :     0.28) (   2 C   2p+1:     0.28) (   2 C   2p0 :    -0.35)                              
+               (   2 C   2d+2:    -0.44) (   3 H   2s  :    -1.25) (   3 H   2p+1:     0.36)                              
+               (   3 H   2p-1:     0.52) (   3 H   2p0 :    -0.74) (   4 H   2s  :    -1.35)                              
+               (   4 H   2p+1:     0.47) (   4 H   2p-1:    -0.71) (   4 H   2p0 :    -0.61)                              
+               (   5 H   2s  :     1.71) (   5 H   2p+1:     1.21) (   5 H   2p0 :    -0.46)                              
+                                                                                                                          
+               Molecular Orbital No.   9:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.12059 a.u.                                                                  
+               (   1 H   2s  :     2.12) (   1 H   2p+1:    -0.89) (   1 H   2p-1:    -0.24)                              
+               (   1 H   2p0 :    -1.29) (   2 C   1p+1:     0.28) (   2 C   1p0 :     0.21)                              
+               (   2 C   2p+1:    -0.35) (   2 C   2p0 :    -0.27) (   2 C   2d+1:    -0.32)                              
+               (   2 C   2d0 :    -0.31) (   3 H   2s  :    -0.23) (   3 H   2p+1:    -0.26)                              
+               (   3 H   2p0 :    -0.30) (   4 H   2s  :    -0.35) (   4 H   2p+1:    -0.22)                              
+               (   4 H   2p-1:    -0.24) (   4 H   2p0 :    -0.30) (   5 H   2s  :    -1.55)                              
+               (   5 H   2p+1:    -1.17)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  10:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.15116 a.u.                                                                  
+               (   1 H   2s  :     0.36) (   1 H   2p+1:    -0.28) (   1 H   2p-1:    -0.47)                              
+               (   2 C   2p+1:     0.33) (   2 C   2p-1:     0.42) (   3 H   2s  :     0.30)                              
+               (   3 H   2p+1:    -0.37) (   3 H   2p-1:    -0.35) (   3 H   2p0 :    -0.32)                              
+               (   4 H   2s  :    -0.33) (   4 H   2p+1:    -0.48) (   4 H   2p-1:    -0.31)                              
+               (   5 H   2s  :    -0.33) (   5 H   2p+1:    -0.17) (   5 H   2p-1:    -0.50)                              
+               (   5 H   2p0 :    -0.23)                                                                                  
+                                                                                                                          
+                                                                                                                          
+                                                Ground State Dipole Moment                                                
+                                               ----------------------------                                               
+                                                                                                                          
+                                   X   :        -0.000016 a.u.        -0.000041 Debye                                     
+                                   Y   :        -0.000011 a.u.        -0.000028 Debye                                     
+                                   Z   :        -0.000012 a.u.        -0.000031 Debye                                     
+                                 Total :         0.000023 a.u.         0.000058 Debye                                     
+                                                                                                                          
+                                                                                                                          
+                                              C6 Value Response Solver Setup                                              
+                                             ================================                                             
+                                                                                                                          
+                               Number of Integration Points    : 9                                                        
+                               Max. Number of Iterations       : 150                                                      
+                               Convergence Threshold           : 1.0e-03                                                  
+                               ERI Screening Threshold         : 1.0e-12                                                  
+                               Exchange-Correlation Functional : B3LYP                                                    
+                               Molecular Grid Level            : 4                                                        
+                                                                                                                          
+* Info * Using the B3LYP functional.                                                                                      
+                                                                                                                          
+         P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
+                                                                                                                          
+* Info * Using the Libxc library (v6.2.2).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * Molecular grid with 61118 points generated in 0.02 sec.                                                          
+                                                                                                                          
+* Info * Processing 21 Fock builds...                                                                                     
+                                                                                                                          
+* Info * 21 gerade trial vectors in reduced space                                                                         
+* Info * 21 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+* Info * 314.40 kB of memory used for subspace procedure on the master node                                               
+* Info * 99.09 GB of memory available for the solver on the master node                                                   
+                                                                                                                          
+               *** Iteration:   1 * Residuals (Max,Min): 2.31e-01 and 3.50e-02                                            
+                                                                                                                          
+               Operator:  electric dipole (xyz)                                                                           
+                                                                                                                          
+               <<x;x>>_18.5444j :     -0.02487950      0.00000000j   Residual Norm: 0.03502718                            
+               <<x;x>>_3.3592j  :     -0.64587945     -0.00000000j   Residual Norm: 0.09926211                            
+               <<x;x>>_1.2519j  :     -3.27460037      0.00000000j   Residual Norm: 0.16331868                            
+               <<x;x>>_0.5879j  :     -8.07473380      0.00000000j   Residual Norm: 0.20618793                            
+               <<x;x>>_0.3000j  :    -12.60413958      0.00000000j   Residual Norm: 0.22532138                            
+               <<x;x>>_0.1531j  :    -15.07246040      0.00000000j   Residual Norm: 0.23014904                            
+               <<x;x>>_0.0719j  :    -15.98250216     -0.00000000j   Residual Norm: 0.23100665                            
+               <<x;x>>_0.0268j  :    -16.22611179     -0.00000000j   Residual Norm: 0.23115356                            
+               <<x;x>>_0.0049j  :    -16.26497838     -0.00000000j   Residual Norm: 0.23117379                            
+               <<x;x>>_0.0000j  :    -16.26630122     -0.00000000j   Residual Norm: 0.23117447                            
+               <<y;y>>_18.5444j :     -0.02487946      0.00000000j   Residual Norm: 0.03502715                            
+               <<y;y>>_3.3592j  :     -0.64587824      0.00000000j   Residual Norm: 0.09926221                            
+               <<y;y>>_1.2519j  :     -3.27459630      0.00000000j   Residual Norm: 0.16331779                            
+               <<y;y>>_0.5879j  :     -8.07478144      0.00000000j   Residual Norm: 0.20618660                            
+               <<y;y>>_0.3000j  :    -12.60432904      0.00000000j   Residual Norm: 0.22532002                            
+               <<y;y>>_0.1531j  :    -15.07278242      0.00000000j   Residual Norm: 0.23014755                            
+               <<y;y>>_0.0719j  :    -15.98288640      0.00000000j   Residual Norm: 0.23100507                            
+               <<y;y>>_0.0268j  :    -16.22651409      0.00000000j   Residual Norm: 0.23115195                            
+               <<y;y>>_0.0049j  :    -16.26538363      0.00000000j   Residual Norm: 0.23117218                            
+               <<y;y>>_0.0000j  :    -16.26670657     -0.00000000j   Residual Norm: 0.23117285                            
+               <<z;z>>_18.5444j :     -0.02487949      0.00000000j   Residual Norm: 0.03502701                            
+               <<z;z>>_3.3592j  :     -0.64588070      0.00000000j   Residual Norm: 0.09926022                            
+               <<z;z>>_1.2519j  :     -3.27463292      0.00000000j   Residual Norm: 0.16331673                            
+               <<z;z>>_0.5879j  :     -8.07484497      0.00000000j   Residual Norm: 0.20618783                            
+               <<z;z>>_0.3000j  :    -12.60430268      0.00000000j   Residual Norm: 0.22532303                            
+               <<z;z>>_0.1531j  :    -15.07262576      0.00000000j   Residual Norm: 0.23015194                            
+               <<z;z>>_0.0719j  :    -15.98266023      0.00000000j   Residual Norm: 0.23101010                            
+               <<z;z>>_0.0268j  :    -16.22626696      0.00000000j   Residual Norm: 0.23115717                            
+               <<z;z>>_0.0049j  :    -16.26513305      0.00000000j   Residual Norm: 0.23117743                            
+               <<z;z>>_0.0000j  :    -16.26645588     -0.00000000j   Residual Norm: 0.23117811                            
+                                                                                                                          
+* Info * Processing 21 Fock builds...                                                                                     
+                                                                                                                          
+* Info * 42 gerade trial vectors in reduced space                                                                         
+* Info * 42 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+* Info * 472.60 kB of memory used for subspace procedure on the master node                                               
+* Info * 99.09 GB of memory available for the solver on the master node                                                   
+                                                                                                                          
+               *** Iteration:   2 * Residuals (Max,Min): 1.14e-02 and 2.64e-04                                            
+                                                                                                                          
+               Operator:  electric dipole (xyz)                                                                           
+                                                                                                                          
+               <<x;x>>_18.5444j :     -0.02487938      0.00000000j   Residual Norm: 0.00026391                            
+               <<x;x>>_3.3592j  :     -0.64605092     -0.00000000j   Residual Norm: 0.00107317                            
+               <<x;x>>_1.2519j  :     -3.28552739      0.00000000j   Residual Norm: 0.00353693                            
+               <<x;x>>_0.5879j  :     -8.15551215     -0.00000000j   Residual Norm: 0.00737964                            
+               <<x;x>>_0.3000j  :    -12.79992604      0.00000000j   Residual Norm: 0.00994637                            
+               <<x;x>>_0.1531j  :    -15.34320222      0.00000000j   Residual Norm: 0.01099036                            
+               <<x;x>>_0.0719j  :    -16.28190266     -0.00000000j   Residual Norm: 0.01131328                            
+               <<x;x>>_0.0268j  :    -16.53322373     -0.00000000j   Residual Norm: 0.01139503                            
+               <<x;x>>_0.0049j  :    -16.57332149      0.00000000j   Residual Norm: 0.01140790                            
+               <<x;x>>_0.0000j  :    -16.57468624     -0.00000000j   Residual Norm: 0.01140834                            
+               <<y;y>>_18.5444j :     -0.02487933      0.00000000j   Residual Norm: 0.00026393                            
+               <<y;y>>_3.3592j  :     -0.64604972      0.00000000j   Residual Norm: 0.00107316                            
+               <<y;y>>_1.2519j  :     -3.28552344      0.00000000j   Residual Norm: 0.00353694                            
+               <<y;y>>_0.5879j  :     -8.15556144      0.00000000j   Residual Norm: 0.00737988                            
+               <<y;y>>_0.3000j  :    -12.80012221      0.00000000j   Residual Norm: 0.00994686                            
+               <<y;y>>_0.1531j  :    -15.34353575      0.00000000j   Residual Norm: 0.01099100                            
+               <<y;y>>_0.0719j  :    -16.28230059      0.00000000j   Residual Norm: 0.01131397                            
+               <<y;y>>_0.0268j  :    -16.53364034      0.00000000j   Residual Norm: 0.01139573                            
+               <<y;y>>_0.0049j  :    -16.57374114      0.00000000j   Residual Norm: 0.01140861                            
+               <<y;y>>_0.0000j  :    -16.57510600     -0.00000000j   Residual Norm: 0.01140905                            
+               <<z;z>>_18.5444j :     -0.02487936      0.00000000j   Residual Norm: 0.00026387                            
+               <<z;z>>_3.3592j  :     -0.64605217      0.00000000j   Residual Norm: 0.00107321                            
+               <<z;z>>_1.2519j  :     -3.28555985      0.00000000j   Residual Norm: 0.00353702                            
+               <<z;z>>_0.5879j  :     -8.15562468      0.00000000j   Residual Norm: 0.00737992                            
+               <<z;z>>_0.3000j  :    -12.80009465      0.00000000j   Residual Norm: 0.00994700                            
+               <<z;z>>_0.1531j  :    -15.34337650      0.00000000j   Residual Norm: 0.01099128                            
+               <<z;z>>_0.0719j  :    -16.28207111      0.00000000j   Residual Norm: 0.01131432                            
+               <<z;z>>_0.0268j  :    -16.53338967      0.00000000j   Residual Norm: 0.01139610                            
+               <<z;z>>_0.0049j  :    -16.57348700      0.00000000j   Residual Norm: 0.01140898                            
+               <<z;z>>_0.0000j  :    -16.57485173     -0.00000000j   Residual Norm: 0.01140942                            
+                                                                                                                          
+* Info * Processing 18 Fock builds...                                                                                     
+                                                                                                                          
+* Info * 60 gerade trial vectors in reduced space                                                                         
+* Info * 60 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+* Info * 607.68 kB of memory used for subspace procedure on the master node                                               
+* Info * 99.08 GB of memory available for the solver on the master node                                                   
+                                                                                                                          
+               *** Iteration:   3 * Residuals (Max,Min): 2.64e-04 and 1.60e-05                                            
+                                                                                                                          
+               Operator:  electric dipole (xyz)                                                                           
+                                                                                                                          
+               <<x;x>>_3.3592j  :     -0.64605090      0.00000000j   Residual Norm: 0.00001599                            
+               <<x;x>>_1.2519j  :     -3.28553046      0.00000000j   Residual Norm: 0.00003309                            
+               <<x;x>>_0.5879j  :     -8.15557877      0.00000000j   Residual Norm: 0.00007560                            
+               <<x;x>>_0.3000j  :    -12.80015625     -0.00000000j   Residual Norm: 0.00012478                            
+               <<x;x>>_0.1531j  :    -15.34356061      0.00000000j   Residual Norm: 0.00014854                            
+               <<x;x>>_0.0719j  :    -16.28231370      0.00000000j   Residual Norm: 0.00015718                            
+               <<x;x>>_0.0268j  :    -16.53364937     -0.00000000j   Residual Norm: 0.00015934                            
+               <<x;x>>_0.0049j  :    -16.57374948      0.00000000j   Residual Norm: 0.00015968                            
+               <<x;x>>_0.0000j  :    -16.57511431     -0.00000000j   Residual Norm: 0.00015969                            
+               <<y;y>>_3.3592j  :     -0.64604970      0.00000000j   Residual Norm: 0.00001599                            
+               <<y;y>>_1.2519j  :     -3.28552651      0.00000000j   Residual Norm: 0.00003309                            
+               <<y;y>>_0.5879j  :     -8.15562806      0.00000000j   Residual Norm: 0.00007551                            
+               <<y;y>>_0.3000j  :    -12.80035243      0.00000000j   Residual Norm: 0.00012507                            
+               <<y;y>>_0.1531j  :    -15.34389417      0.00000000j   Residual Norm: 0.00014979                            
+               <<y;y>>_0.0719j  :    -16.28271166      0.00000000j   Residual Norm: 0.00015901                            
+               <<y;y>>_0.0268j  :    -16.53406602      0.00000000j   Residual Norm: 0.00016135                            
+               <<y;y>>_0.0049j  :    -16.57416918      0.00000000j   Residual Norm: 0.00016172                            
+               <<y;y>>_0.0000j  :    -16.57553411     -0.00000000j   Residual Norm: 0.00016173                            
+               <<z;z>>_3.3592j  :     -0.64605214      0.00000000j   Residual Norm: 0.00001600                            
+               <<z;z>>_1.2519j  :     -3.28556292      0.00000000j   Residual Norm: 0.00003311                            
+               <<z;z>>_0.5879j  :     -8.15569130      0.00000000j   Residual Norm: 0.00007562                            
+               <<z;z>>_0.3000j  :    -12.80032487      0.00000000j   Residual Norm: 0.00013139                            
+               <<z;z>>_0.1531j  :    -15.34373492      0.00000000j   Residual Norm: 0.00016825                            
+               <<z;z>>_0.0719j  :    -16.28248216      0.00000000j   Residual Norm: 0.00018422                            
+               <<z;z>>_0.0268j  :    -16.53381534      0.00000000j   Residual Norm: 0.00018861                            
+               <<z;z>>_0.0049j  :    -16.57391501      0.00000000j   Residual Norm: 0.00018931                            
+               <<z;z>>_0.0000j  :    -16.57527982     -0.00000000j   Residual Norm: 0.00018934                            
+                                                                                                                          
+* Info * Checkpoint written to file: meth-c6_rsp.h5                                                                       
+                                                                                                                          
+* Info * Time spent in writing checkpoint file: 0.01 sec                                                                  
+                                                                                                                          
+               *** Complex response converged in 3 iterations. Time: 0.86 sec                                             
+                                                                                                                          
+                                                                                                                          
+* Info * Response solution vectors written to file: meth-c6.h5                                                            
+                                                                                                                          
+               Response Functions at Given Imaginary Frequencies                                                          
+               =================================================                                                          
+                                                                                                                          
+               Dipole  Dipole   Frequency            Real        Imaginary                                                
+               -----------------------------------------------------------                                                
+               <<  x  ;  x  >>    18.5444     -0.02487938      0.00000000j                                                
+               <<  x  ;  y  >>    18.5444     -0.00000001      0.00000000j                                                
+               <<  x  ;  z  >>    18.5444     -0.00000001      0.00000000j                                                
+               <<  y  ;  x  >>    18.5444     -0.00000001     -0.00000000j                                                
+               <<  y  ;  y  >>    18.5444     -0.02487933      0.00000000j                                                
+               <<  y  ;  z  >>    18.5444     -0.00000001     -0.00000000j                                                
+               <<  z  ;  x  >>    18.5444     -0.00000001      0.00000000j                                                
+               <<  z  ;  y  >>    18.5444     -0.00000001      0.00000000j                                                
+               <<  z  ;  z  >>    18.5444     -0.02487936      0.00000000j                                                
+                                                                                                                          
+               Dipole  Dipole   Frequency            Real        Imaginary                                                
+               -----------------------------------------------------------                                                
+               <<  x  ;  x  >>     3.3592     -0.64605090      0.00000000j                                                
+               <<  x  ;  y  >>     3.3592      0.00000012      0.00000000j                                                
+               <<  x  ;  z  >>     3.3592     -0.00000107      0.00000000j                                                
+               <<  y  ;  x  >>     3.3592      0.00000012     -0.00000000j                                                
+               <<  y  ;  y  >>     3.3592     -0.64604970      0.00000000j                                                
+               <<  y  ;  z  >>     3.3592      0.00000019     -0.00000000j                                                
+               <<  z  ;  x  >>     3.3592     -0.00000107      0.00000000j                                                
+               <<  z  ;  y  >>     3.3592      0.00000019      0.00000000j                                                
+               <<  z  ;  z  >>     3.3592     -0.64605214      0.00000000j                                                
+                                                                                                                          
+               Dipole  Dipole   Frequency            Real        Imaginary                                                
+               -----------------------------------------------------------                                                
+               <<  x  ;  x  >>     1.2519     -3.28553046      0.00000000j                                                
+               <<  x  ;  y  >>     1.2519      0.00000798      0.00000000j                                                
+               <<  x  ;  z  >>     1.2519     -0.00001545     -0.00000000j                                                
+               <<  y  ;  x  >>     1.2519      0.00000798     -0.00000000j                                                
+               <<  y  ;  y  >>     1.2519     -3.28552651      0.00000000j                                                
+               <<  y  ;  z  >>     1.2519      0.00000868     -0.00000000j                                                
+               <<  z  ;  x  >>     1.2519     -0.00001545      0.00000000j                                                
+               <<  z  ;  y  >>     1.2519      0.00000868      0.00000000j                                                
+               <<  z  ;  z  >>     1.2519     -3.28556292      0.00000000j                                                
+                                                                                                                          
+               Dipole  Dipole   Frequency            Real        Imaginary                                                
+               -----------------------------------------------------------                                                
+               <<  x  ;  x  >>     0.5879     -8.15557877      0.00000000j                                                
+               <<  x  ;  y  >>     0.5879      0.00004107      0.00000000j                                                
+               <<  x  ;  z  >>     0.5879     -0.00002446     -0.00000000j                                                
+               <<  y  ;  x  >>     0.5879      0.00004107     -0.00000000j                                                
+               <<  y  ;  y  >>     0.5879     -8.15562806      0.00000000j                                                
+               <<  y  ;  z  >>     0.5879      0.00003963     -0.00000000j                                                
+               <<  z  ;  x  >>     0.5879     -0.00002446      0.00000000j                                                
+               <<  z  ;  y  >>     0.5879      0.00003963      0.00000000j                                                
+               <<  z  ;  z  >>     0.5879     -8.15569130      0.00000000j                                                
+                                                                                                                          
+               Dipole  Dipole   Frequency            Real        Imaginary                                                
+               -----------------------------------------------------------                                                
+               <<  x  ;  x  >>     0.3000    -12.80015625     -0.00000000j                                                
+               <<  x  ;  y  >>     0.3000      0.00009095      0.00000000j                                                
+               <<  x  ;  z  >>     0.3000      0.00002101     -0.00000000j                                                
+               <<  y  ;  x  >>     0.3000      0.00009095      0.00000000j                                                
+               <<  y  ;  y  >>     0.3000    -12.80035243      0.00000000j                                                
+               <<  y  ;  z  >>     0.3000      0.00007906     -0.00000000j                                                
+               <<  z  ;  x  >>     0.3000      0.00002101      0.00000000j                                                
+               <<  z  ;  y  >>     0.3000      0.00007906      0.00000000j                                                
+               <<  z  ;  z  >>     0.3000    -12.80032487      0.00000000j                                                
+                                                                                                                          
+               Dipole  Dipole   Frequency            Real        Imaginary                                                
+               -----------------------------------------------------------                                                
+               <<  x  ;  x  >>     0.1531    -15.34356061      0.00000000j                                                
+               <<  x  ;  y  >>     0.1531      0.00012348      0.00000000j                                                
+               <<  x  ;  z  >>     0.1531      0.00008272     -0.00000000j                                                
+               <<  y  ;  x  >>     0.1531      0.00012348      0.00000000j                                                
+               <<  y  ;  y  >>     0.1531    -15.34389417      0.00000000j                                                
+               <<  y  ;  z  >>     0.1531      0.00010192     -0.00000000j                                                
+               <<  z  ;  x  >>     0.1531      0.00008272      0.00000000j                                                
+               <<  z  ;  y  >>     0.1531      0.00010192      0.00000000j                                                
+               <<  z  ;  z  >>     0.1531    -15.34373492      0.00000000j                                                
+                                                                                                                          
+               Dipole  Dipole   Frequency            Real        Imaginary                                                
+               -----------------------------------------------------------                                                
+               <<  x  ;  x  >>     0.0719    -16.28231370      0.00000000j                                                
+               <<  x  ;  y  >>     0.0719      0.00013569      0.00000000j                                                
+               <<  x  ;  z  >>     0.0719      0.00011499     -0.00000000j                                                
+               <<  y  ;  x  >>     0.0719      0.00013569     -0.00000000j                                                
+               <<  y  ;  y  >>     0.0719    -16.28271166      0.00000000j                                                
+               <<  y  ;  z  >>     0.0719      0.00010990     -0.00000000j                                                
+               <<  z  ;  x  >>     0.0719      0.00011499      0.00000000j                                                
+               <<  z  ;  y  >>     0.0719      0.00010990      0.00000000j                                                
+               <<  z  ;  z  >>     0.0719    -16.28248216      0.00000000j                                                
+                                                                                                                          
+               Dipole  Dipole   Frequency            Real        Imaginary                                                
+               -----------------------------------------------------------                                                
+               <<  x  ;  x  >>     0.0268    -16.53364937     -0.00000000j                                                
+               <<  x  ;  y  >>     0.0268      0.00013894      0.00000000j                                                
+               <<  x  ;  z  >>     0.0268      0.00012467     -0.00000000j                                                
+               <<  y  ;  x  >>     0.0268      0.00013894     -0.00000000j                                                
+               <<  y  ;  y  >>     0.0268    -16.53406602      0.00000000j                                                
+               <<  y  ;  z  >>     0.0268      0.00011195     -0.00000000j                                                
+               <<  z  ;  x  >>     0.0268      0.00012467      0.00000000j                                                
+               <<  z  ;  y  >>     0.0268      0.00011195      0.00000000j                                                
+               <<  z  ;  z  >>     0.0268    -16.53381534      0.00000000j                                                
+                                                                                                                          
+               Dipole  Dipole   Frequency            Real        Imaginary                                                
+               -----------------------------------------------------------                                                
+               <<  x  ;  x  >>     0.0049    -16.57374948      0.00000000j                                                
+               <<  x  ;  y  >>     0.0049      0.00013945      0.00000000j                                                
+               <<  x  ;  z  >>     0.0049      0.00012626     -0.00000000j                                                
+               <<  y  ;  x  >>     0.0049      0.00013945      0.00000000j                                                
+               <<  y  ;  y  >>     0.0049    -16.57416918      0.00000000j                                                
+               <<  y  ;  z  >>     0.0049      0.00011228     -0.00000000j                                                
+               <<  z  ;  x  >>     0.0049      0.00012626      0.00000000j                                                
+               <<  z  ;  y  >>     0.0049      0.00011228      0.00000000j                                                
+               <<  z  ;  z  >>     0.0049    -16.57391501      0.00000000j                                                
+                                                                                                                          
+               Dipole  Dipole   Frequency            Real        Imaginary                                                
+               -----------------------------------------------------------                                                
+               <<  x  ;  x  >>     0.0000    -16.57511431     -0.00000000j                                                
+               <<  x  ;  y  >>     0.0000      0.00013947     -0.00000000j                                                
+               <<  x  ;  z  >>     0.0000      0.00012631     -0.00000000j                                                
+               <<  y  ;  x  >>     0.0000      0.00013947     -0.00000000j                                                
+               <<  y  ;  y  >>     0.0000    -16.57553411     -0.00000000j                                                
+               <<  y  ;  z  >>     0.0000      0.00011229     -0.00000000j                                                
+               <<  z  ;  x  >>     0.0000      0.00012631     -0.00000000j                                                
+               <<  z  ;  y  >>     0.0000      0.00011229     -0.00000000j                                                
+               <<  z  ;  z  >>     0.0000    -16.57527982     -0.00000000j                                                
+                                                                                                                          
+               C6 Dispersion Coefficient                                                                                  
+               =========================                                                                                  
+                                                                                                                          
+               Reference: Amos et al., J. Chem. Phys. 89, 2186 (1985).                                                    
+                                                                                                                          
+               Homomolecular C_6 value        :    120.418530 a.u.                                                        
+                                                                                                                          
+               Static polarizability alpha(0) :     16.575309 a.u.                                                        
+                                                                                                                          
+!========================================================================================================================!
+!                               VeloxChem execution completed at Wed Mar 11 11:57:03 2026.                               !
+!========================================================================================================================!
+!                                           Total execution time is 1.09 sec.                                            !
+!========================================================================================================================!
+!                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
+!                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !
+!                     VeloxChem: A Python-driven Density-functional Theory Program for Spectroscopy                      !
+!                                Simulations in High-performance Computing Environments.                                 !
+!                                       WIREs Comput Mol Sci 2020, 10 (5), e1457.                                        !
+!========================================================================================================================!

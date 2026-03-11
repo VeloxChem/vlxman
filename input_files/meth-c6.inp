@@ -1,0 +1,23 @@
+@jobs
+task: response
+@end
+
+@method settings
+xcfun: b3lyp
+basis: def2-svpd
+@end
+
+@response
+property: C6
+@end
+
+@molecule
+charge: 0
+multiplicity: 1
+xyz:
+  H      0.5288      0.1610      0.9359
+  C      0.0000      0.0000      0.0000
+  H      0.2051      0.8240     -0.6786
+  H      0.3345     -0.9314     -0.4496
+  H     -1.0685     -0.0537      0.1921
+@end
