@@ -529,6 +529,20 @@
     </tr>
     <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:xps">XPS</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/esca-xps.py" download>esca-xps.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/esca-xps.out" download>esca-xps.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+      </td>
+    </tr>     <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
         <a href="#sec:nexafs">NEXAFS</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
