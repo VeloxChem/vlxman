@@ -1,0 +1,810 @@
+!========================================================================================================================!
+!                                                                                                                        !
+!                                                       VELOXCHEM                                                        !
+!                                              AN ELECTRONIC STRUCTURE CODE                                              !
+!                                                                                                                        !
+!                                        Copyright 2018-2025 VeloxChem developers                                        !
+!========================================================================================================================!
+!                                VeloxChem execution started at Thu Mar 12 08:41:59 2026.                                !
+!========================================================================================================================!
+                                                                                                                          
+* Info * Using 32 OpenMP threads per MPI process.                                                                         
+                                                                                                                          
+* Info * Reading input file esca-rixs.inp...                                                                              
+                                                                                                                          
+* Info * @jobs                                                                                                            
+* Info * task: response                                                                                                   
+* Info * @end                                                                                                             
+                                                                                                                          
+* Info * @method_settings                                                                                                 
+* Info * xcfun: cam-b3lyp                                                                                                 
+* Info * basis: def2-svp                                                                                                  
+* Info * @end                                                                                                             
+                                                                                                                          
+* Info * @response                                                                                                        
+* Info * property: rixs                                                                                                   
+* Info * photon_energy: 10.1428                                                                                           
+* Info * nstates: 20                                                                                                      
+* Info * num_core_orbitals: 8                                                                                             
+* Info * num_core_states: 10                                                                                              
+* Info * restricted_subspace: False                                                                                       
+* Info * @end                                                                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             ================================                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           C           1.326024532622        0.471089167011       -1.154937296389                         
+                           C           0.484399509715        0.908494386259        0.037569541020                         
+                           C           0.270494167717       -0.188493907246        1.053914467110                         
+                           O           0.701245126416       -1.308212251798        0.971080711541                         
+                           C          -0.582260522270        0.210893702941        2.291730106998                         
+                           F          -0.731967860619       -0.799813015071        3.135965340271                         
+                           F          -1.800383044157        0.625073687043        1.897202571864                         
+                           F           0.003899498844        1.231896946553        2.943599980006                         
+                           H           1.453639490166        1.302028888463       -1.864264306255                         
+                           H           0.853135331881       -0.368249103011       -1.686230702784                         
+                           H           2.322713498820        0.134038471332       -0.833394707486                         
+                           H           0.936346512410        1.764030447212        0.571699332428                         
+                           H          -0.514670521097        1.267150587304       -0.270103071648                         
+                                                                                                                          
+                          Molecular charge            : 0                                                                 
+                          Spin multiplicity           : 1                                                                 
+                          Number of atoms             : 13                                                                
+                          Number of alpha electrons   : 32                                                                
+                          Number of beta  electrons   : 32                                                                
+                                                                                                                          
+* Info * Reading basis set from file: /home/linares/miniconda3/envs/vlx-github/lib/python3.12/site-packages/veloxchem/basis/DEF2-SVP
+                                                                                                                          
+                                              Molecular Basis (Atomic Basis)                                              
+                                             ================================                                             
+                                                                                                                          
+                               Basis: DEF2-SVP                                                                            
+                                                                                                                          
+                               Atom Contracted GTOs           Primitive GTOs                                              
+                                                                                                                          
+                               C     (3S,2P,1D)                (7S,4P,1D)                                                 
+                               O     (3S,2P,1D)                (7S,4P,1D)                                                 
+                               F     (3S,2P,1D)                (7S,4P,1D)                                                 
+                               H     (2S,1P)                   (4S,1P)                                                    
+                                                                                                                          
+                               Contracted Basis Functions : 137                                                           
+                               Primitive Basis Functions  : 227                                                           
+                                                                                                                          
+                                                                                                                          
+                                            Self Consistent Field Driver Setup                                            
+                                           ====================================                                           
+                                                                                                                          
+                   Wave Function Model             : Spin-Restricted Kohn-Sham                                            
+                   Initial Guess Model             : Superposition of Atomic Densities                                    
+                   Convergence Accelerator         : Two Level Direct Inversion of Iterative Subspace                     
+                   Max. Number of Iterations       : 50                                                                   
+                   Max. Number of Error Vectors    : 10                                                                   
+                   Convergence Threshold           : 1.0e-06                                                              
+                   ERI Screening Threshold         : 1.0e-12                                                              
+                   Linear Dependence Threshold     : 1.0e-06                                                              
+                   Exchange-Correlation Functional : CAM-B3LYP                                                            
+                   Molecular Grid Level            : 4                                                                    
+                                                                                                                          
+* Info * Nuclear repulsion energy: 409.9100889659 a.u.                                                                    
+                                                                                                                          
+* Info * Using the CAM-B3LYP functional.                                                                                  
+                                                                                                                          
+         T. Yanai, D. P. Tew, and N. C. Handy.,  Chem. Phys. Lett. 393, 51 (2004)
+                                                                                                                          
+* Info * Using the Libxc library (v6.2.2).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * Molecular grid with 190914 points generated in 0.11 sec.                                                         
+                                                                                                                          
+* Info * Overlap matrix computed in 0.00 sec.                                                                             
+                                                                                                                          
+* Info * Kinetic energy matrix computed in 0.00 sec.                                                                      
+                                                                                                                          
+* Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+* Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+* Info * Starting Reduced Basis SCF calculation...                                                                        
+* Info * ...done. SCF energy in reduced basis set: -526.938455740283 a.u. Time: 0.36 sec.                                 
+                                                                                                                          
+* Info * Overlap matrix computed in 0.00 sec.                                                                             
+                                                                                                                          
+* Info * Kinetic energy matrix computed in 0.00 sec.                                                                      
+                                                                                                                          
+* Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+* Info * Orthogonalization matrix computed in 0.01 sec.                                                                   
+                                                                                                                          
+                                                                                                                          
+               Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
+               --------------------------------------------------------------------------------------------               
+                  1      -529.586728466451    0.0000000000      0.53374620      0.03593589      0.00000000                
+                  2      -529.603124499110   -0.0163960327      0.34722120      0.01846824      0.24699450                
+                  3      -529.612890240900   -0.0097657418      0.11504978      0.00660439      0.11657923                
+                  4      -529.613961545143   -0.0010713042      0.02982386      0.00173799      0.03726681                
+                  5      -529.614036248887   -0.0000747037      0.00809739      0.00064678      0.01189255                
+                  6      -529.614042270130   -0.0000060212      0.00116613      0.00004845      0.00281801                
+                  7      -529.614042478615   -0.0000002085      0.00038410      0.00002043      0.00090265                
+                  8      -529.614042496457   -0.0000000178      0.00012919      0.00000627      0.00018292                
+                  9      -529.614042498603   -0.0000000021      0.00004534      0.00000240      0.00009678                
+                 10      -529.614042498793   -0.0000000002      0.00001186      0.00000045      0.00002019                
+                 11      -529.614042498810   -0.0000000000      0.00000290      0.00000015      0.00000634                
+                 12      -529.614042498812   -0.0000000000      0.00000064      0.00000003      0.00000258                
+                                                                                                                          
+* Info * Checkpoint written to file: esca-rixs_scf.h5                                                                     
+                                                                                                                          
+* Info * SCF results written to file: esca-rixs.h5                                                                        
+                                                                                                                          
+               *** SCF converged in 12 iterations. Time: 8.22 sec.                                                        
+                                                                                                                          
+               Spin-Restricted Kohn-Sham:                                                                                 
+               --------------------------                                                                                 
+               Total Energy                       :     -529.6140424988 a.u.                                              
+               Electronic Energy                  :     -939.5241314647 a.u.                                              
+               Nuclear Repulsion Energy           :      409.9100889659 a.u.                                              
+               ------------------------------------                                                                       
+               Gradient Norm                      :        0.0000006381 a.u.                                              
+                                                                                                                          
+                                                                                                                          
+               Ground State Information                                                                                   
+               ------------------------                                                                                   
+               Charge of Molecule            :  0.0                                                                       
+               Multiplicity (2S+1)           :  1                                                                         
+               Magnetic Quantum Number (M_S) :  0.0                                                                       
+                                                                                                                          
+                                                                                                                          
+                                                 Spin Restricted Orbitals                                                 
+                                                 ------------------------                                                 
+                                                                                                                          
+               Molecular Orbital No.  28:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.47293 a.u.                                                                  
+               (   1 C   1p+1:     0.20) (   3 C   1p+1:    -0.25) (   4 O   1p+1:    -0.35)                              
+               (   4 O   1p0 :    -0.20) (   4 O   2p+1:    -0.22) (  10 H   1s  :    -0.16)                              
+               (  11 H   1s  :     0.16)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  29:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.46119 a.u.                                                                  
+               (   1 C   1p0 :     0.32) (   2 C   1p+1:     0.16) (   2 C   1p0 :    -0.22)                              
+               (   3 C   1p0 :     0.18) (   4 O   1p0 :     0.18) (   6 F   1p0 :    -0.16)                              
+               (   9 H   1s  :    -0.27)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  30:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.45015 a.u.                                                                  
+               (   1 C   1p-1:     0.36) (   2 C   1p-1:    -0.20) (   9 H   1s  :     0.22)                              
+               (  10 H   1s  :    -0.20) (  11 H   1s  :    -0.20)                                                        
+                                                                                                                          
+               Molecular Orbital No.  31:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.42831 a.u.                                                                  
+               (   1 C   1p+1:     0.25) (   2 C   1p+1:    -0.24) (   4 O   1p+1:     0.17)                              
+               (  10 H   1s  :    -0.23) (  11 H   1s  :     0.23) (  12 H   1s  :    -0.24)                              
+               (  13 H   1s  :     0.24)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  32:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.35142 a.u.                                                                  
+               (   2 C   3s  :     0.29) (   2 C   1p-1:    -0.19) (   2 C   2p-1:    -0.18)                              
+               (   3 C   1p0 :    -0.15) (   4 O   1p+1:    -0.23) (   4 O   1p0 :     0.47)                              
+               (   4 O   2p+1:    -0.16) (   4 O   2p0 :     0.34) (   5 C   2s  :    -0.18)                              
+               (   5 C   3s  :    -0.17) (   5 C   1p0 :     0.20)                                                        
+                                                                                                                          
+               Molecular Orbital No.  33:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:   -0.00279 a.u.                                                                  
+               (   3 C   1p+1:     0.42) (   3 C   1p0 :     0.24) (   3 C   2p+1:     0.39)                              
+               (   3 C   2p0 :     0.23) (   4 O   1p+1:    -0.35) (   4 O   1p0 :    -0.20)                              
+               (   4 O   2p+1:    -0.36) (   4 O   2p0 :    -0.21) (  12 H   2s  :    -0.23)                              
+               (  13 H   2s  :     0.23)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  34:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.09279 a.u.                                                                  
+               (   1 C   3s  :    -1.85) (   1 C   2p+1:    -0.16) (   1 C   2p0 :     0.23)                              
+               (   2 C   3s  :    -1.48) (   2 C   2p+1:     0.34) (   2 C   2p-1:    -0.44)                              
+               (   2 C   2p0 :    -0.33) (   3 C   3s  :     0.77) (   4 O   3s  :    -0.26)                              
+               (   5 C   2p0 :     0.17) (   9 H   2s  :     0.91) (  10 H   2s  :     0.75)                              
+               (  11 H   2s  :     0.75) (  12 H   2s  :     1.02) (  13 H   2s  :     1.02)                              
+                                                                                                                          
+               Molecular Orbital No.  35:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.14075 a.u.                                                                  
+               (   1 C   3s  :    -2.68) (   1 C   2p0 :    -0.21) (   2 C   3s  :     2.54)                              
+               (   2 C   2p-1:     0.24) (   2 C   2p0 :    -0.30) (   3 C   2p0 :     0.20)                              
+               (   5 C   3s  :    -0.38) (   7 F   3s  :     0.15) (   8 F   3s  :     0.15)                              
+               (   9 H   2s  :     0.59) (  10 H   2s  :     1.08) (  11 H   2s  :     1.08)                              
+               (  12 H   2s  :    -1.12) (  13 H   2s  :    -1.12)                                                        
+                                                                                                                          
+               Molecular Orbital No.  36:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.14605 a.u.                                                                  
+               (   1 C   1p+1:    -0.15) (   1 C   2p+1:    -0.34) (   1 C   2p0 :    -0.20)                              
+               (   2 C   1p+1:    -0.26) (   2 C   1p0 :    -0.15) (   2 C   2p+1:    -0.84)                              
+               (   2 C   2p-1:    -0.29) (   2 C   2p0 :    -0.49) (   5 C   2p+1:     0.16)                              
+               (  10 H   2s  :    -0.75) (  11 H   2s  :     0.75) (  12 H   2s  :     1.34)                              
+               (  13 H   2s  :    -1.34)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  37:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.16690 a.u.                                                                  
+               (   1 C   3s  :     0.42) (   1 C   1p-1:     0.31) (   1 C   2p+1:    -0.19)                              
+               (   1 C   2p-1:     1.18) (   1 C   2p0 :    -0.38) (   2 C   3s  :    -0.88)                              
+               (   2 C   2p-1:    -0.15) (   3 C   3s  :     0.80) (   5 C   3s  :    -0.38)                              
+               (   5 C   2p+1:    -0.19) (   5 C   2p-1:     0.21) (   5 C   2p0 :     0.20)                              
+               (   9 H   2s  :    -1.93) (  10 H   2s  :     0.80) (  11 H   2s  :     0.81)                              
+               (  12 H   2s  :     0.31) (  13 H   2s  :     0.31)                                                        
+                                                                                                                          
+                                                                                                                          
+                                                Ground State Dipole Moment                                                
+                                               ----------------------------                                               
+                                                                                                                          
+                                   X   :         0.122104 a.u.         0.310358 Debye                                     
+                                   Y   :         0.740678 a.u.         1.882616 Debye                                     
+                                   Z   :        -0.649208 a.u.        -1.650122 Debye                                     
+                                 Total :         0.992464 a.u.         2.522591 Debye                                     
+                                                                                                                          
+                                                                                                                          
+                                            Linear Response EigenSolver Setup                                             
+                                           ===================================                                            
+                                                                                                                          
+                               Number of States                : 20                                                       
+                               Max. Number of Iterations       : 150                                                      
+                               Convergence Threshold           : 2.0e-05                                                  
+                               ERI Screening Threshold         : 1.0e-12                                                  
+                               Exchange-Correlation Functional : CAM-B3LYP                                                
+                               Molecular Grid Level            : 4                                                        
+                                                                                                                          
+* Info * Using the CAM-B3LYP functional.                                                                                  
+                                                                                                                          
+         T. Yanai, D. P. Tew, and N. C. Handy.,  Chem. Phys. Lett. 393, 51 (2004)
+                                                                                                                          
+* Info * Using the Libxc library (v6.2.2).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * 20 gerade trial vectors in reduced space                                                                         
+* Info * 20 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   1 * Residuals (Max,Min): 7.03e-01 and 7.21e-02                                            
+                                                                                                                          
+* Info * 40 gerade trial vectors in reduced space                                                                         
+* Info * 40 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   2 * Residuals (Max,Min): 8.70e-02 and 3.52e-02                                            
+                                                                                                                          
+* Info * 60 gerade trial vectors in reduced space                                                                         
+* Info * 60 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   3 * Residuals (Max,Min): 3.38e-02 and 7.37e-03                                            
+                                                                                                                          
+* Info * 80 gerade trial vectors in reduced space                                                                         
+* Info * 80 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   4 * Residuals (Max,Min): 1.07e-01 and 9.20e-04                                            
+                                                                                                                          
+* Info * 100 gerade trial vectors in reduced space                                                                        
+* Info * 100 ungerade trial vectors in reduced space                                                                      
+                                                                                                                          
+               *** Iteration:   5 * Residuals (Max,Min): 2.88e-02 and 9.88e-05                                            
+                                                                                                                          
+* Info * 120 gerade trial vectors in reduced space                                                                        
+* Info * 120 ungerade trial vectors in reduced space                                                                      
+                                                                                                                          
+               *** Iteration:   6 * Residuals (Max,Min): 9.15e-03 and 1.42e-05                                            
+                                                                                                                          
+* Info * 139 gerade trial vectors in reduced space                                                                        
+* Info * 139 ungerade trial vectors in reduced space                                                                      
+                                                                                                                          
+               *** Iteration:   7 * Residuals (Max,Min): 1.99e-03 and 6.30e-06                                            
+                                                                                                                          
+* Info * 154 gerade trial vectors in reduced space                                                                        
+* Info * 154 ungerade trial vectors in reduced space                                                                      
+                                                                                                                          
+               *** Iteration:   8 * Residuals (Max,Min): 6.37e-04 and 3.54e-06                                            
+                                                                                                                          
+* Info * 162 gerade trial vectors in reduced space                                                                        
+* Info * 162 ungerade trial vectors in reduced space                                                                      
+                                                                                                                          
+               *** Iteration:   9 * Residuals (Max,Min): 1.54e-04 and 3.26e-06                                            
+                                                                                                                          
+* Info * 166 gerade trial vectors in reduced space                                                                        
+* Info * 166 ungerade trial vectors in reduced space                                                                      
+                                                                                                                          
+               *** Iteration:   10 * Residuals (Max,Min): 3.97e-05 and 2.80e-06                                           
+                                                                                                                          
+* Info * 167 gerade trial vectors in reduced space                                                                        
+* Info * 167 ungerade trial vectors in reduced space                                                                      
+                                                                                                                          
+               *** Iteration:   11 * Residuals (Max,Min): 1.27e-05 and 2.71e-06                                           
+                                                                                                                          
+* Info * Checkpoint written to file: esca-rixs_rsp_rixs.h5                                                                
+                                                                                                                          
+* Info * Time spent in writing checkpoint file: 0.02 sec                                                                  
+                                                                                                                          
+               *** Linear response converged in 11 iterations. Time: 81.73 sec                                            
+                                                                                                                          
+                                                                                                                          
+* Info * Response solution vectors written to file: esca-rixs.h5                                                          
+                                                                                                                          
+               Electric Transition Dipole Moments (dipole length, a.u.)                                                   
+               --------------------------------------------------------                                                   
+                                                X            Y            Z                                               
+               Excited State    S1:      0.018446     0.006267     0.010778                                               
+               Excited State    S2:      0.085493     0.038045     0.046010                                               
+               Excited State    S3:     -0.034113     0.531657    -0.258415                                               
+               Excited State    S4:      0.005239     0.001611     0.002972                                               
+               Excited State    S5:     -0.046150    -0.078382     0.126415                                               
+               Excited State    S6:      0.036536     0.012459     0.021264                                               
+               Excited State    S7:     -0.243177     0.579582     0.078126                                               
+               Excited State    S8:      0.017229    -0.086354     0.021166                                               
+               Excited State    S9:     -0.179261    -0.067620    -0.105902                                               
+               Excited State   S10:      0.017940     0.006501     0.008936                                               
+               Excited State   S11:     -0.109980     0.321329    -0.007698                                               
+               Excited State   S12:     -0.089867    -0.042783     0.180984                                               
+               Excited State   S13:     -0.061711    -0.020743    -0.035560                                               
+               Excited State   S14:      0.070635     0.024172     0.040876                                               
+               Excited State   S15:      0.151311     0.184858    -0.369555                                               
+               Excited State   S16:      0.052540     0.314144    -0.275476                                               
+               Excited State   S17:      0.020922    -0.145098     0.048155                                               
+               Excited State   S18:      0.236647     0.163741    -0.507179                                               
+               Excited State   S19:      0.011254     0.007527    -0.012793                                               
+               Excited State   S20:     -0.092275    -0.031561    -0.051483                                               
+                                                                                                                          
+               Electric Transition Dipole Moments (dipole velocity, a.u.)                                                 
+               ----------------------------------------------------------                                                 
+                                                X            Y            Z                                               
+               Excited State    S1:      0.016583     0.005694     0.009845                                               
+               Excited State    S2:      0.078218     0.034581     0.042534                                               
+               Excited State    S3:     -0.039197     0.471832    -0.214047                                               
+               Excited State    S4:      0.014657     0.004755     0.008405                                               
+               Excited State    S5:     -0.045552    -0.090407     0.132486                                               
+               Excited State    S6:      0.080023     0.027256     0.046556                                               
+               Excited State    S7:     -0.215789     0.524135     0.063555                                               
+               Excited State    S8:      0.009763    -0.107424     0.046593                                               
+               Excited State    S9:     -0.189434    -0.071331    -0.111399                                               
+               Excited State   S10:      0.020436     0.007222     0.010384                                               
+               Excited State   S11:     -0.103032     0.342918    -0.032800                                               
+               Excited State   S12:     -0.079572    -0.064670     0.175488                                               
+               Excited State   S13:     -0.061362    -0.020739    -0.035330                                               
+               Excited State   S14:      0.089792     0.030859     0.051918                                               
+               Excited State   S15:      0.137188     0.152487    -0.326207                                               
+               Excited State   S16:      0.051023     0.347882    -0.292789                                               
+               Excited State   S17:      0.001721    -0.127944     0.071547                                               
+               Excited State   S18:      0.237878     0.235440    -0.553635                                               
+               Excited State   S19:      0.043022     0.020353     0.004439                                               
+               Excited State   S20:     -0.090843    -0.031824    -0.050464                                               
+                                                                                                                          
+               Magnetic Transition Dipole Moments (a.u.)                                                                  
+               -----------------------------------------                                                                  
+                                                X            Y            Z                                               
+               Excited State    S1:     -0.219522     0.493807     0.087617                                               
+               Excited State    S2:      0.124457     0.139754    -0.303834                                               
+               Excited State    S3:     -0.218406    -0.025904    -0.009103                                               
+               Excited State    S4:     -0.135676    -0.045779     0.261352                                               
+               Excited State    S5:     -0.087752    -0.063534    -0.073841                                               
+               Excited State    S6:     -0.231461    -0.010575     0.405450                                               
+               Excited State    S7:     -0.215919    -0.091187     0.019678                                               
+               Excited State    S8:      0.026896    -0.003574    -0.014087                                               
+               Excited State    S9:      0.020088    -0.034858    -0.007471                                               
+               Excited State   S10:     -0.067599     0.054344     0.084760                                               
+               Excited State   S11:     -0.189082    -0.055972    -0.008517                                               
+               Excited State   S12:     -0.033833    -0.063307    -0.037751                                               
+               Excited State   S13:      0.094974    -0.308601     0.018701                                               
+               Excited State   S14:     -0.142734    -0.345292     0.451048                                               
+               Excited State   S15:     -0.319198    -0.009360    -0.137679                                               
+               Excited State   S16:      0.383651     0.224025     0.332842                                               
+               Excited State   S17:      0.180582     0.038827     0.064016                                               
+               Excited State   S18:      0.188718     0.243364     0.190565                                               
+               Excited State   S19:      0.066723     0.049321    -0.124770                                               
+               Excited State   S20:      0.102159    -0.049990    -0.152315                                               
+                                                                                                                          
+               One-Photon Absorption                                                                                      
+               ---------------------                                                                                      
+               Excited State    S1:      0.16001143 a.u.      4.35413 eV    Osc.Str.    0.0001                            
+               Excited State    S2:      0.30585617 a.u.      8.32277 eV    Osc.Str.    0.0022                            
+               Excited State    S3:      0.30639564 a.u.      8.33745 eV    Osc.Str.    0.0716                            
+               Excited State    S4:      0.31620144 a.u.      8.60428 eV    Osc.Str.    0.0000                            
+               Excited State    S5:      0.32961040 a.u.      8.96916 eV    Osc.Str.    0.0053                            
+               Excited State    S6:      0.34837638 a.u.      9.47980 eV    Osc.Str.    0.0005                            
+               Excited State    S7:      0.35673130 a.u.      9.70715 eV    Osc.Str.    0.0954                            
+               Excited State    S8:      0.36197627 a.u.      9.84988 eV    Osc.Str.    0.0020                            
+               Excited State    S9:      0.37976961 a.u.     10.33406 eV    Osc.Str.    0.0121                            
+               Excited State   S10:      0.38051727 a.u.     10.35440 eV    Osc.Str.    0.0001                            
+               Excited State   S11:      0.38124094 a.u.     10.37409 eV    Osc.Str.    0.0293                            
+               Excited State   S12:      0.38276874 a.u.     10.41567 eV    Osc.Str.    0.0109                            
+               Excited State   S13:      0.38783382 a.u.     10.55350 eV    Osc.Str.    0.0014                            
+               Excited State   S14:      0.38856884 a.u.     10.57350 eV    Osc.Str.    0.0019                            
+               Excited State   S15:      0.39831855 a.u.     10.83880 eV    Osc.Str.    0.0514                            
+               Excited State   S16:      0.41066241 a.u.     11.17469 eV    Osc.Str.    0.0485                            
+               Excited State   S17:      0.41332900 a.u.     11.24726 eV    Osc.Str.    0.0066                            
+               Excited State   S18:      0.42078449 a.u.     11.45013 eV    Osc.Str.    0.0954                            
+               Excited State   S19:      0.42135857 a.u.     11.46575 eV    Osc.Str.    0.0001                            
+               Excited State   S20:      0.42260587 a.u.     11.49969 eV    Osc.Str.    0.0034                            
+                                                                                                                          
+               Electronic Circular Dichroism                                                                              
+               -----------------------------                                                                              
+               Excited State    S1:     Rot.Str.      0.000034 a.u.     0.0160 [10**(-40) cgs]                            
+               Excited State    S2:     Rot.Str.      0.001644 a.u.     0.7752 [10**(-40) cgs]                            
+               Excited State    S3:     Rot.Str.     -0.001713 a.u.    -0.8075 [10**(-40) cgs]                            
+               Excited State    S4:     Rot.Str.     -0.000010 a.u.    -0.0046 [10**(-40) cgs]                            
+               Excited State    S5:     Rot.Str.     -0.000042 a.u.    -0.0197 [10**(-40) cgs]                            
+               Excited State    S6:     Rot.Str.      0.000066 a.u.     0.0310 [10**(-40) cgs]                            
+               Excited State    S7:     Rot.Str.      0.000049 a.u.     0.0232 [10**(-40) cgs]                            
+               Excited State    S8:     Rot.Str.     -0.000010 a.u.    -0.0046 [10**(-40) cgs]                            
+               Excited State    S9:     Rot.Str.     -0.000487 a.u.    -0.2294 [10**(-40) cgs]                            
+               Excited State   S10:     Rot.Str.     -0.000109 a.u.    -0.0513 [10**(-40) cgs]                            
+               Excited State   S11:     Rot.Str.      0.000567 a.u.     0.2673 [10**(-40) cgs]                            
+               Excited State   S12:     Rot.Str.      0.000161 a.u.     0.0761 [10**(-40) cgs]                            
+               Excited State   S13:     Rot.Str.     -0.000089 a.u.    -0.0417 [10**(-40) cgs]                            
+               Excited State   S14:     Rot.Str.     -0.000054 a.u.    -0.0255 [10**(-40) cgs]                            
+               Excited State   S15:     Rot.Str.     -0.000306 a.u.    -0.1442 [10**(-40) cgs]                            
+               Excited State   S16:     Rot.Str.      0.000057 a.u.     0.0269 [10**(-40) cgs]                            
+               Excited State   S17:     Rot.Str.     -0.000077 a.u.    -0.0362 [10**(-40) cgs]                            
+               Excited State   S18:     Rot.Str.     -0.003314 a.u.    -1.5623 [10**(-40) cgs]                            
+               Excited State   S19:     Rot.Str.      0.003320 a.u.     1.5654 [10**(-40) cgs]                            
+               Excited State   S20:     Rot.Str.     -0.000003 a.u.    -0.0015 [10**(-40) cgs]                            
+                                                                                                                          
+               Character of excitations:                                                                                  
+                                                                                                                          
+               Excited state 1                                                                                            
+               ---------------                                                                                            
+               HOMO     -> LUMO         0.9901                                                                            
+                                                                                                                          
+               Excited state 2                                                                                            
+               ---------------                                                                                            
+               HOMO-3   -> LUMO        -0.6873                                                                            
+               HOMO-2   -> LUMO        -0.6412                                                                            
+               HOMO-6   -> LUMO        -0.2832                                                                            
+                                                                                                                          
+               Excited state 3                                                                                            
+               ---------------                                                                                            
+               HOMO-1   -> LUMO        -0.9830                                                                            
+                                                                                                                          
+               Excited state 4                                                                                            
+               ---------------                                                                                            
+               HOMO-3   -> LUMO        -0.6500                                                                            
+               HOMO-2   -> LUMO         0.6452                                                                            
+               HOMO-9   -> LUMO         0.3226                                                                            
+                                                                                                                          
+               Excited state 5                                                                                            
+               ---------------                                                                                            
+               HOMO     -> LUMO+1      -0.9581                                                                            
+                                                                                                                          
+               Excited state 6                                                                                            
+               ---------------                                                                                            
+               HOMO-6   -> LUMO         0.8682                                                                            
+               HOMO-2   -> LUMO        -0.3190                                                                            
+               HOMO-9   -> LUMO         0.2695                                                                            
+                                                                                                                          
+               Excited state 7                                                                                            
+               ---------------                                                                                            
+               HOMO-4   -> LUMO         0.9336                                                                            
+               HOMO     -> LUMO+6      -0.2456                                                                            
+                                                                                                                          
+               Excited state 8                                                                                            
+               ---------------                                                                                            
+               HOMO-5   -> LUMO         0.9928                                                                            
+                                                                                                                          
+               Excited state 9                                                                                            
+               ---------------                                                                                            
+               HOMO     -> LUMO+3      -0.9799                                                                            
+                                                                                                                          
+               Excited state 10                                                                                           
+               ----------------                                                                                           
+               HOMO-8   -> LUMO        -0.9548                                                                            
+                                                                                                                          
+               Excited state 11                                                                                           
+               ----------------                                                                                           
+               HOMO     -> LUMO+2      -0.9136                                                                            
+               HOMO     -> LUMO+6       0.3202                                                                            
+                                                                                                                          
+               Excited state 12                                                                                           
+               ----------------                                                                                           
+               HOMO-7   -> LUMO         0.9799                                                                            
+                                                                                                                          
+               Excited state 13                                                                                           
+               ----------------                                                                                           
+               HOMO-1   -> LUMO+1      -0.6413                                                                            
+               HOMO-9   -> LUMO        -0.6271                                                                            
+               HOMO-6   -> LUMO         0.2457                                                                            
+                                                                                                                          
+               Excited state 14                                                                                           
+               ----------------                                                                                           
+               HOMO-1   -> LUMO+1      -0.7493                                                                            
+               HOMO-9   -> LUMO         0.5406                                                                            
+               HOMO-6   -> LUMO        -0.2154                                                                            
+                                                                                                                          
+               Excited state 15                                                                                           
+               ----------------                                                                                           
+               HOMO     -> LUMO+6       0.7143                                                                            
+               HOMO     -> LUMO+4       0.5241                                                                            
+               HOMO     -> LUMO+2       0.3242                                                                            
+                                                                                                                          
+               Excited state 16                                                                                           
+               ----------------                                                                                           
+               HOMO-2   -> LUMO+1      -0.9462                                                                            
+               HOMO     -> LUMO+4       0.2480                                                                            
+                                                                                                                          
+               Excited state 17                                                                                           
+               ----------------                                                                                           
+               HOMO-10  -> LUMO        -0.8815                                                                            
+               HOMO     -> LUMO+4      -0.3760                                                                            
+                                                                                                                          
+               Excited state 18                                                                                           
+               ----------------                                                                                           
+               HOMO     -> LUMO+4       0.5607                                                                            
+               HOMO-3   -> LUMO+1       0.4873                                                                            
+               HOMO     -> LUMO+6      -0.3759                                                                            
+               HOMO-10  -> LUMO        -0.3750                                                                            
+               HOMO-12  -> LUMO         0.2116                                                                            
+                                                                                                                          
+               Excited state 19                                                                                           
+               ----------------                                                                                           
+               HOMO     -> LUMO+5      -0.9491                                                                            
+               HOMO-11  -> LUMO        -0.2011                                                                            
+                                                                                                                          
+               Excited state 20                                                                                           
+               ----------------                                                                                           
+               HOMO-11  -> LUMO        -0.9194                                                                            
+               HOMO-9   -> LUMO         0.2982                                                                            
+                                                                                                                          
+                                                                                                                          
+                                            Linear Response EigenSolver Setup                                             
+                                           ===================================                                            
+                                                                                                                          
+                               Number of States                : 10                                                       
+                               Max. Number of Iterations       : 150                                                      
+                               Convergence Threshold           : 2.0e-05                                                  
+                               ERI Screening Threshold         : 1.0e-12                                                  
+                               Exchange-Correlation Functional : CAM-B3LYP                                                
+                               Molecular Grid Level            : 4                                                        
+                                                                                                                          
+* Info * Using the CAM-B3LYP functional.                                                                                  
+                                                                                                                          
+         T. Yanai, D. P. Tew, and N. C. Handy.,  Chem. Phys. Lett. 393, 51 (2004)
+                                                                                                                          
+* Info * Using the Libxc library (v6.2.2).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * 10 gerade trial vectors in reduced space                                                                         
+* Info * 10 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   1 * Residuals (Max,Min): 1.15e-01 and 3.79e-02                                            
+                                                                                                                          
+* Info * 20 gerade trial vectors in reduced space                                                                         
+* Info * 20 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   2 * Residuals (Max,Min): 7.71e-02 and 5.35e-03                                            
+                                                                                                                          
+* Info * 30 gerade trial vectors in reduced space                                                                         
+* Info * 30 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   3 * Residuals (Max,Min): 3.66e-02 and 5.09e-04                                            
+                                                                                                                          
+* Info * 40 gerade trial vectors in reduced space                                                                         
+* Info * 40 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   4 * Residuals (Max,Min): 1.18e-02 and 4.82e-05                                            
+                                                                                                                          
+* Info * 50 gerade trial vectors in reduced space                                                                         
+* Info * 50 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   5 * Residuals (Max,Min): 6.86e-03 and 2.87e-06                                            
+                                                                                                                          
+* Info * 58 gerade trial vectors in reduced space                                                                         
+* Info * 58 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   6 * Residuals (Max,Min): 2.53e-03 and 1.25e-06                                            
+                                                                                                                          
+* Info * 65 gerade trial vectors in reduced space                                                                         
+* Info * 64 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   7 * Residuals (Max,Min): 3.70e-04 and 1.43e-06                                            
+                                                                                                                          
+* Info * 66 gerade trial vectors in reduced space                                                                         
+* Info * 65 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   8 * Residuals (Max,Min): 9.92e-05 and 1.43e-06                                            
+                                                                                                                          
+* Info * 67 gerade trial vectors in reduced space                                                                         
+* Info * 66 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   9 * Residuals (Max,Min): 1.63e-05 and 1.43e-06                                            
+                                                                                                                          
+* Info * Checkpoint written to file: esca-rixs_rsp_rixs_cvs.h5                                                            
+                                                                                                                          
+* Info * Time spent in writing checkpoint file: 0.01 sec                                                                  
+                                                                                                                          
+               *** Linear response converged in 9 iterations. Time: 36.97 sec                                             
+                                                                                                                          
+                                                                                                                          
+* Info * Response solution vectors written to file: esca-rixs.h5                                                          
+                                                                                                                          
+               Electric Transition Dipole Moments (dipole length, a.u.)                                                   
+               --------------------------------------------------------                                                   
+                                                X            Y            Z                                               
+               Excited State    S1:     -0.003397    -0.001165    -0.001963                                               
+               Excited State    S2:     -0.076544    -0.026165    -0.044342                                               
+               Excited State    S3:      0.000613     0.000217     0.000382                                               
+               Excited State    S4:      0.012904     0.002820    -0.023932                                               
+               Excited State    S5:     -0.017984     0.037065     0.009101                                               
+               Excited State    S6:      0.007424    -0.059446     0.021063                                               
+               Excited State    S7:     -0.050243    -0.016571    -0.029284                                               
+               Excited State    S8:      0.058341     0.020055     0.033793                                               
+               Excited State    S9:      0.005412    -0.018110     0.001368                                               
+               Excited State   S10:     -0.005673    -0.025207     0.024888                                               
+                                                                                                                          
+               Electric Transition Dipole Moments (dipole velocity, a.u.)                                                 
+               ----------------------------------------------------------                                                 
+                                                X            Y            Z                                               
+               Excited State    S1:     -0.002559    -0.000877    -0.001477                                               
+               Excited State    S2:     -0.075486    -0.025801    -0.043728                                               
+               Excited State    S3:      0.000701     0.000246     0.000432                                               
+               Excited State    S4:      0.013033     0.002560    -0.024002                                               
+               Excited State    S5:     -0.018241     0.038054     0.008960                                               
+               Excited State    S6:      0.008128    -0.060877     0.020667                                               
+               Excited State    S7:     -0.051349    -0.016933    -0.029918                                               
+               Excited State    S8:      0.059357     0.020406     0.034389                                               
+               Excited State    S9:      0.003569    -0.017000     0.003890                                               
+               Excited State   S10:     -0.003801    -0.026934     0.022683                                               
+                                                                                                                          
+               Magnetic Transition Dipole Moments (a.u.)                                                                  
+               -----------------------------------------                                                                  
+                                                X            Y            Z                                               
+               Excited State    S1:     -0.010933     0.003757     0.016712                                               
+               Excited State    S2:      0.342092    -0.650366    -0.206797                                               
+               Excited State    S3:      0.005214    -0.014143    -0.000435                                               
+               Excited State    S4:     -0.077458     0.162999    -0.024670                                               
+               Excited State    S5:      0.063611    -0.048989     0.337564                                               
+               Excited State    S6:     -0.589396    -0.357010    -0.820557                                               
+               Excited State    S7:     -0.328341     0.985563     0.005099                                               
+               Excited State    S8:      0.296747    -0.161372    -0.416525                                               
+               Excited State    S9:     -0.174218    -0.090582    -0.236021                                               
+               Excited State   S10:      0.207534    -0.109100    -0.094770                                               
+                                                                                                                          
+               One-Photon Absorption                                                                                      
+               ---------------------                                                                                      
+               Excited State    S1:     10.12438061 a.u.    275.49843 eV    Osc.Str.    0.0001                            
+               Excited State    S2:     10.14146367 a.u.    275.96328 eV    Osc.Str.    0.0575                            
+               Excited State    S3:     10.14639446 a.u.    276.09746 eV    Osc.Str.    0.0000                            
+               Excited State    S4:     10.21531301 a.u.    277.97283 eV    Osc.Str.    0.0051                            
+               Excited State    S5:     10.22775121 a.u.    278.31129 eV    Osc.Str.    0.0121                            
+               Excited State    S6:     10.24946857 a.u.    278.90225 eV    Osc.Str.    0.0276                            
+               Excited State    S7:     10.25098734 a.u.    278.94358 eV    Osc.Str.    0.0250                            
+               Excited State    S8:     10.25942128 a.u.    279.17308 eV    Osc.Str.    0.0338                            
+               Excited State    S9:     10.27791314 a.u.    279.67626 eV    Osc.Str.    0.0025                            
+               Excited State   S10:     10.28757003 a.u.    279.93904 eV    Osc.Str.    0.0088                            
+                                                                                                                          
+               Electronic Circular Dichroism                                                                              
+               -----------------------------                                                                              
+               Excited State    S1:     Rot.Str.     -0.000000 a.u.    -0.0000 [10**(-40) cgs]                            
+               Excited State    S2:     Rot.Str.     -0.000000 a.u.    -0.0000 [10**(-40) cgs]                            
+               Excited State    S3:     Rot.Str.     -0.000000 a.u.    -0.0000 [10**(-40) cgs]                            
+               Excited State    S4:     Rot.Str.     -0.000000 a.u.    -0.0000 [10**(-40) cgs]                            
+               Excited State    S5:     Rot.Str.      0.000000 a.u.     0.0000 [10**(-40) cgs]                            
+               Excited State    S6:     Rot.Str.     -0.000016 a.u.    -0.0074 [10**(-40) cgs]                            
+               Excited State    S7:     Rot.Str.      0.000019 a.u.     0.0088 [10**(-40) cgs]                            
+               Excited State    S8:     Rot.Str.     -0.000003 a.u.    -0.0014 [10**(-40) cgs]                            
+               Excited State    S9:     Rot.Str.      0.000000 a.u.     0.0000 [10**(-40) cgs]                            
+               Excited State   S10:     Rot.Str.      0.000000 a.u.     0.0000 [10**(-40) cgs]                            
+                                                                                                                          
+               Character of excitations:                                                                                  
+                                                                                                                          
+               Excited state 1                                                                                            
+               ---------------                                                                                            
+               core_7   -> LUMO         0.9971                                                                            
+                                                                                                                          
+               Excited state 2                                                                                            
+               ---------------                                                                                            
+               core_6   -> LUMO        -0.9939                                                                            
+                                                                                                                          
+               Excited state 3                                                                                            
+               ---------------                                                                                            
+               core_8   -> LUMO        -0.9983                                                                            
+                                                                                                                          
+               Excited state 4                                                                                            
+               ---------------                                                                                            
+               core_8   -> LUMO+1      -0.9636                                                                            
+                                                                                                                          
+               Excited state 5                                                                                            
+               ---------------                                                                                            
+               core_7   -> LUMO+1      -0.9526                                                                            
+               core_7   -> LUMO+2       0.2392                                                                            
+                                                                                                                          
+               Excited state 6                                                                                            
+               ---------------                                                                                            
+               core_8   -> LUMO+4      -0.8748                                                                            
+               core_8   -> LUMO+2      -0.4631                                                                            
+                                                                                                                          
+               Excited state 7                                                                                            
+               ---------------                                                                                            
+               core_8   -> LUMO+3       0.8061                                                                            
+               core_8   -> LUMO+5       0.5788                                                                            
+                                                                                                                          
+               Excited state 8                                                                                            
+               ---------------                                                                                            
+               core_7   -> LUMO+3      -0.9602                                                                            
+               core_7   -> LUMO+5       0.2267                                                                            
+                                                                                                                          
+               Excited state 9                                                                                            
+               ---------------                                                                                            
+               core_8   -> LUMO+2       0.8548                                                                            
+               core_8   -> LUMO+4      -0.4474                                                                            
+                                                                                                                          
+               Excited state 10                                                                                           
+               ----------------                                                                                           
+               core_7   -> LUMO+2      -0.9095                                                                            
+               core_7   -> LUMO+8       0.2090                                                                            
+               core_7   -> LUMO+1      -0.2063                                                                            
+                                                                                                                          
+                                                                                                                          
+                                     Resonant Inelastic X-ray Scattering (RIXS) Setup                                     
+                                     ================================================                                     
+                                                                                                                          
+                               Scattering angle (theta) [rad]   : 0.00                                                    
+                               Lifetime broadening (gamma) [eV] : 0.12                                                    
+                               Incoming photon energies [a.u.]  : 10.1428                                                 
+                               Incoming photon energies [eV]    : 276.00                                                  
+                               Number of intermediate states    : 10                                                      
+                               Number of final states           : 20                                                      
+                                                                                                                          
+                                                     State index sets                                                     
+                               Intermediate/core states         : [0 ... 9]                                               
+                               Final/valence states             : [0 ... 19]                                              
+                                                                                                                          
+                                                       Orbital sets                                                       
+                               Core orbitals                    : [Core1 ... Core8]                                       
+                               Valence orbitals                 : [HOMO-23 ... HOMO]                                      
+                               Virtual orbitals                 : [LUMO ... LUMO+104]                                     
+                                                                                                                          
+* Info * Running RIXS calculation in the two-shot approach                                                                
+                                                                                                                          
+* Info * Computed RIXS cross-sections for 20 final states at photon energy: 276.00 eV.                                    
+                                                                                                                          
+               RIXS cross-sections at incident X-ray energy 276.00 eV, energy-loss mode                                   
+               ------------------------------------------------------------------------                                   
+               Ground State     S0:      0.00000000 a.u.      0.00000 eV    Cross-section    7.24e+03                     
+               Excited State    S1:      0.16001143 a.u.      4.35413 eV    Cross-section    4.42e+02                     
+               Excited State    S2:      0.30585617 a.u.      8.32277 eV    Cross-section    1.74e+03                     
+               Excited State    S3:      0.30639564 a.u.      8.33745 eV    Cross-section    1.92e+01                     
+               Excited State    S4:      0.31620144 a.u.      8.60428 eV    Cross-section    2.71e+03                     
+               Excited State    S5:      0.32961040 a.u.      8.96916 eV    Cross-section    1.48e+01                     
+               Excited State    S6:      0.34837638 a.u.      9.47980 eV    Cross-section    2.00e+03                     
+               Excited State    S7:      0.35673130 a.u.      9.70715 eV    Cross-section    9.09e+02                     
+               Excited State    S8:      0.36197627 a.u.      9.84988 eV    Cross-section    2.21e-01                     
+               Excited State    S9:      0.37976961 a.u.     10.33406 eV    Cross-section    3.13e+00                     
+               Excited State   S10:      0.38051727 a.u.     10.35440 eV    Cross-section    1.34e+02                     
+               Excited State   S11:      0.38124094 a.u.     10.37409 eV    Cross-section    8.87e+00                     
+               Excited State   S12:      0.38276874 a.u.     10.41567 eV    Cross-section    7.93e+00                     
+               Excited State   S13:      0.38783382 a.u.     10.55350 eV    Cross-section    4.03e+02                     
+               Excited State   S14:      0.38856884 a.u.     10.57350 eV    Cross-section    3.13e+02                     
+               Excited State   S15:      0.39831855 a.u.     10.83880 eV    Cross-section    5.43e+00                     
+               Excited State   S16:      0.41066241 a.u.     11.17469 eV    Cross-section    1.91e+00                     
+               Excited State   S17:      0.41332900 a.u.     11.24726 eV    Cross-section    1.43e+02                     
+               Excited State   S18:      0.42078449 a.u.     11.45013 eV    Cross-section    1.02e+01                     
+               Excited State   S19:      0.42135857 a.u.     11.46575 eV    Cross-section    1.05e+01                     
+               Excited State   S20:      0.42260587 a.u.     11.49969 eV    Cross-section    3.03e+00                     
+                                                                                                                          
+                                                                                                                          
+* Info * Writing to files...                                                                                              
+                                                                                                                          
+* Info * ...done.                                                                                                         
+                                                                                                                          

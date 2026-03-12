@@ -557,7 +557,24 @@
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../output_files/esca-nexafs.h5" download>esca-nexafs.h5</a>
       </td>
-    </tr>    
+    </tr> 
+    </tr>     <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:rixs">RIXS</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/esca-rixs.py" download>esca-rixs.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/esca-rixs.inp" download>esca-rixs.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/esca-rixs.out" download>esca-rixs.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/esca-rixs.h5" download>esca-rixs.h5</a>
+      </td>
+    </tr>   
     <tr style="background-color: #f5f5f5;">
       <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
         <a href="#sec:general-response" style="text-decoration: none; color: inherit;">General response functions</a>
