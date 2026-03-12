@@ -490,7 +490,7 @@
     </tr>
     <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
-        <a href="#sec:bol-weighted-resp">Boltzmann-weighted RESP</a>
+        <a href="#subsec:bol-weighted-resp">Boltzmann-weighted RESP</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../input_files/pro-resp-bw.py" download>pro-resp-bw.py</a>
