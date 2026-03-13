@@ -1,7 +1,11 @@
-# Next-generation quantum chemistry software
-```{figure}
-[![VLX](../images/logo/vlx-logo-blacktext-halo.png)](https://www.veloxchem.org)
-```
+ # Next-generation quantum chemistry software
+
+<p align="center">
+  <a href="https://www.veloxchem.org">
+    <img src="../images/logo/vlx-logo-blacktext-halo.png">
+  </a>
+</p>
+
 VeloxChem {cite}`veloxchem` is a Python-based open source quantum chemistry software for contemporary and future hardware architectures. It features interactive program access through Jupyter notebooks as well as massively parallel calculations in high-performance computing (HPC) environments. 
 ```{margin}
 [![LinkedIn](../images/LinkedIn.png)](https://www.linkedin.com/company/veloxchem/)
@@ -18,7 +22,6 @@ This manual gives a description of the installation process and basic usage of V
 :width: 400px
 :align: center
 :::
-
 
 ## Selected functionalities
 
