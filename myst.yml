@@ -46,7 +46,7 @@ project:
     - title: Classical methods
       children:
         - file: docs/mm.ipynb
-        - file: docs/md.md
+        - file: docs/md.ipynb
         - file: docs/conf_search.md
         - file: docs/solvation.ipynb
         - file: docs/mof_builder.ipynb
