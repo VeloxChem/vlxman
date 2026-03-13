@@ -47,7 +47,7 @@ project:
       children:
         - file: docs/mm.ipynb
         - file: docs/md.ipynb
-        - file: docs/conf_search.md
+        - file: docs/conf_search.ipynb
         - file: docs/solvation.ipynb
         - file: docs/mof_builder.ipynb
         - file: docs/im.md

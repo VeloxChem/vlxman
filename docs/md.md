@@ -1,2 +1,0 @@
-(sec:md)=
-# Molecular dynamics
