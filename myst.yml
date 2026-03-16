@@ -47,9 +47,9 @@ project:
       children:
         - file: docs/mm.ipynb
         - file: docs/md.ipynb
-        - file: docs/conf_search.ipynb
         - file: docs/solvation.ipynb
-        - file: docs/mof_builder.ipynb
+        - file: docs/conf_search.ipynb
+        - file: docs/comp_sys_builder.ipynb
         - file: docs/im.md
         - file: docs/evb.md
     - title: Visualization
@@ -65,6 +65,6 @@ project:
 site:
   options:
     logo: images/logo/vlx-logo-blacktext-halo.png
-    favicon: vlx_logo_mark.png
+    favicon: images/logo/vlx-logo-blacktext-halo.png
     folders: true
   template: book-theme
