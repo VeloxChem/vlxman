@@ -50,7 +50,7 @@ project:
         - file: docs/solvation.ipynb
         - file: docs/conf_search.ipynb
         - file: docs/comp_sys_builder.ipynb
-        - file: docs/im.md
+        - file: docs/im.ipynb
         - file: docs/evb.md
     - title: Visualization
       children:
