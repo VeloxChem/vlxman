@@ -34,6 +34,7 @@ project:
       children:
         - file: docs/pes.ipynb
         - file: docs/uv-vis.ipynb
+        - file: docs/first_order_props.ipynb
         - file: docs/polarizability.ipynb
         - file: docs/opt-act.ipynb
         - file: docs/vib-spect.ipynb
