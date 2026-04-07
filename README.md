@@ -1,6 +1,6 @@
-# Locaion of the web pages on the GitHub repo.
+# Locaion of the web pages
 
-https://veloxchem.github.io/vlxman/docs/intro.html
+https://veloxchem.org
 
 # Environment YML file
 
