@@ -5,7 +5,7 @@
 !                                                                                                                        !
 !                                        Copyright 2018-2025 VeloxChem developers                                        !
 !========================================================================================================================!
-!                                VeloxChem execution started at Mon May 19 13:47:51 2025.                                !
+!                                VeloxChem execution started at Mon Apr 13 19:53:28 2026.                                !
 !========================================================================================================================!
                                                                                                                           
 * Info * Using 32 OpenMP threads per MPI process.                                                                         
@@ -52,7 +52,7 @@
                           Number of alpha electrons   : 24                                                                
                           Number of beta  electrons   : 24                                                                
                                                                                                                           
-* Info * Reading basis set from file: /home/linares/miniconda3/envs/vlx-github/lib/python3.12/site-packages/veloxchem/basis/DEF2-SVP
+* Info * Reading basis set from file: /home/xinli/gitlab/VeloxChem.codex/vlxenv-cx/lib/python3.13/site-packages/veloxchem/basis/DEF2-SVP
                                                                                                                           
                                               Molecular Basis (Atomic Basis)                                              
                                              ================================                                             
@@ -90,7 +90,7 @@
                                                                                                                           
          T. Yanai, D. P. Tew, and N. C. Handy.,  Chem. Phys. Lett. 393, 51 (2004)
                                                                                                                           
-* Info * Using the Libxc library (v6.2.2).                                                                                
+* Info * Using the Libxc library (v7.0.0).                                                                                
                                                                                                                           
          S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
                                                                                                                           
@@ -98,7 +98,7 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
-* Info * Molecular grid with 176425 points generated in 0.19 sec.                                                         
+* Info * Molecular grid with 176425 points generated in 0.07 sec.                                                         
                                                                                                                           
 * Info * Overlap matrix computed in 0.00 sec.                                                                             
                                                                                                                           
@@ -109,7 +109,7 @@
 * Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
                                                                                                                           
 * Info * Starting Reduced Basis SCF calculation...                                                                        
-* Info * ...done. SCF energy in reduced basis set: -321.446722891568 a.u. Time: 0.23 sec.                                 
+* Info * ...done. SCF energy in reduced basis set: -321.446718411529 a.u. Time: 0.15 sec.                                 
                                                                                                                           
 * Info * Overlap matrix computed in 0.00 sec.                                                                             
                                                                                                                           
@@ -122,24 +122,24 @@
                                                                                                                           
                Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
                --------------------------------------------------------------------------------------------               
-                  1      -323.349244709600    0.0000000000      0.37657040      0.02582794      0.00000000                
-                  2      -323.355828727966   -0.0065840184      0.29336305      0.01603149      0.23971383                
-                  3      -323.363609625394   -0.0077808974      0.10377147      0.00695685      0.10944077                
-                  4      -323.364523587974   -0.0009139626      0.02463299      0.00138580      0.03454835                
-                  5      -323.364577138569   -0.0000535506      0.00826288      0.00054191      0.01013407                
-                  6      -323.364583448234   -0.0000063097      0.00244966      0.00014644      0.00286986                
-                  7      -323.364584100656   -0.0000006524      0.00031097      0.00001778      0.00112460                
-                  8      -323.364584119101   -0.0000000184      0.00019961      0.00000866      0.00029193                
-                  9      -323.364584124124   -0.0000000050      0.00003776      0.00000134      0.00009183                
-                 10      -323.364584124323   -0.0000000002      0.00001162      0.00000039      0.00002419                
-                 11      -323.364584124336   -0.0000000000      0.00000608      0.00000023      0.00000616                
-                 12      -323.364584124341   -0.0000000000      0.00000074      0.00000003      0.00000227                
+                  1      -323.349201776252    0.0000000000      0.37713802      0.02587604      0.00000000                
+                  2      -323.357339882427   -0.0081381062      0.26733595      0.01415404      0.22903416                
+                  3      -323.363741498068   -0.0064016156      0.09636886      0.00653746      0.09887562                
+                  4      -323.364536071908   -0.0007945738      0.02171320      0.00114730      0.03171999                
+                  5      -323.364579140498   -0.0000430686      0.00670046      0.00043388      0.00873684                
+                  6      -323.364583616166   -0.0000044757      0.00190709      0.00011058      0.00256802                
+                  7      -323.364584098696   -0.0000004825      0.00029242      0.00001487      0.00109467                
+                  8      -323.364584120021   -0.0000000213      0.00016375      0.00000736      0.00029076                
+                  9      -323.364584124119   -0.0000000041      0.00003515      0.00000127      0.00010119                
+                 10      -323.364584124324   -0.0000000002      0.00001073      0.00000042      0.00002641                
+                 11      -323.364584124338   -0.0000000000      0.00000467      0.00000017      0.00000586                
+                 12      -323.364584124341   -0.0000000000      0.00000073      0.00000003      0.00000245                
                                                                                                                           
 * Info * Checkpoint written to file: alanine-ecd_scf.h5                                                                   
                                                                                                                           
 * Info * SCF results written to file: alanine-ecd.h5                                                                      
                                                                                                                           
-               *** SCF converged in 12 iterations. Time: 4.58 sec.                                                        
+               *** SCF converged in 12 iterations. Time: 3.75 sec.                                                        
                                                                                                                           
                Spin-Restricted Kohn-Sham:                                                                                 
                --------------------------                                                                                 
@@ -147,7 +147,7 @@
                Electronic Energy                  :     -573.0622010245 a.u.                                              
                Nuclear Repulsion Energy           :      249.6976169002 a.u.                                              
                ------------------------------------                                                                       
-               Gradient Norm                      :        0.0000007436 a.u.                                              
+               Gradient Norm                      :        0.0000007264 a.u.                                              
                                                                                                                           
                                                                                                                           
                Ground State Information                                                                                   
@@ -244,7 +244,7 @@
                                                 Ground State Dipole Moment                                                
                                                ----------------------------                                               
                                                                                                                           
-                                   X   :         0.324034 a.u.         0.823612 Debye                                     
+                                   X   :         0.324034 a.u.         0.823613 Debye                                     
                                    Y   :        -0.550144 a.u.        -1.398326 Debye                                     
                                    Z   :        -0.060688 a.u.        -0.154254 Debye                                     
                                  Total :         0.641357 a.u.         1.630168 Debye                                     
@@ -264,7 +264,7 @@
                                                                                                                           
          T. Yanai, D. P. Tew, and N. C. Handy.,  Chem. Phys. Lett. 393, 51 (2004)
                                                                                                                           
-* Info * Using the Libxc library (v6.2.2).                                                                                
+* Info * Using the Libxc library (v7.0.0).                                                                                
                                                                                                                           
          S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
                                                                                                                           
@@ -272,70 +272,28 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
-* Info * Molecular grid with 176425 points generated in 0.11 sec.                                                         
+* Info * Molecular grid with 176425 points generated in 0.07 sec.                                                         
                                                                                                                           
-* Info * Processing 10 Fock builds...                                                                                     
-                                                                                                                          
-* Info * 10 gerade trial vectors in reduced space                                                                         
-* Info * 10 ungerade trial vectors in reduced space                                                                       
-                                                                                                                          
-* Info * 1.10 MB of memory used for subspace procedure on the master node                                                 
-* Info * 116.84 GB of memory available for the solver on the master node                                                  
-                                                                                                                          
-               *** Iteration:   1 * Residuals (Max,Min): 7.16e-01 and 9.87e-02                                            
-                                                                                                                          
-               Excitation 1   :      0.22032738 Residual Norm: 0.14567529                                                 
-               Excitation 2   :      0.23237723 Residual Norm: 0.09866600                                                 
-               Excitation 3   :      0.27345630 Residual Norm: 0.15249894                                                 
-               Excitation 4   :      0.31344177 Residual Norm: 0.11775520                                                 
-               Excitation 5   :      0.31486303 Residual Norm: 0.15833550                                                 
-               Excitation 6   :      0.32038341 Residual Norm: 0.11451228                                                 
-               Excitation 7   :      0.34199219 Residual Norm: 0.12922975                                                 
-               Excitation 8   :      0.34508190 Residual Norm: 0.13612776                                                 
-               Excitation 9   :      0.35625234 Residual Norm: 0.24928992                                                 
-               Excitation 10  :      0.40904629 Residual Norm: 0.71607464                                                 
-                                                                                                                          
-* Info * Processing 10 Fock builds...                                                                                     
-                                                                                                                          
-* Info * 20 gerade trial vectors in reduced space                                                                         
-* Info * 20 ungerade trial vectors in reduced space                                                                       
-                                                                                                                          
-* Info * 1.83 MB of memory used for subspace procedure on the master node                                                 
-* Info * 116.85 GB of memory available for the solver on the master node                                                  
-                                                                                                                          
-               *** Iteration:   2 * Residuals (Max,Min): 8.81e-02 and 3.48e-02                                            
-                                                                                                                          
-               Excitation 1   :      0.21322479 Residual Norm: 0.04575459                                                 
-               Excitation 2   :      0.22978064 Residual Norm: 0.03476178                                                 
-               Excitation 3   :      0.26969539 Residual Norm: 0.03696827                                                 
-               Excitation 4   :      0.30681466 Residual Norm: 0.07106859                                                 
-               Excitation 5   :      0.30806921 Residual Norm: 0.07063723                                                 
-               Excitation 6   :      0.31623171 Residual Norm: 0.06895049                                                 
-               Excitation 7   :      0.32983659 Residual Norm: 0.08691572                                                 
-               Excitation 8   :      0.33907439 Residual Norm: 0.06043703                                                 
-               Excitation 9   :      0.34647784 Residual Norm: 0.06450038                                                 
-               Excitation 10  :      0.35485644 Residual Norm: 0.08807371                                                 
-                                                                                                                          
-* Info * Processing 10 Fock builds...                                                                                     
+* Info * Processing 30 Fock builds...                                                                                     
                                                                                                                           
 * Info * 30 gerade trial vectors in reduced space                                                                         
 * Info * 30 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
 * Info * 2.55 MB of memory used for subspace procedure on the master node                                                 
-* Info * 116.85 GB of memory available for the solver on the master node                                                  
+* Info * 27.13 GB of memory available for the solver on the master node                                                   
                                                                                                                           
-               *** Iteration:   3 * Residuals (Max,Min): 4.29e-02 and 1.37e-02                                            
+               *** Iteration:   1 * Residuals (Max,Min): 1.74e-01 and 1.03e-01                                            
                                                                                                                           
-               Excitation 1   :      0.21275455 Residual Norm: 0.01372766                                                 
-               Excitation 2   :      0.22942183 Residual Norm: 0.01482481                                                 
-               Excitation 3   :      0.26923328 Residual Norm: 0.01404418                                                 
-               Excitation 4   :      0.30510325 Residual Norm: 0.02693223                                                 
-               Excitation 5   :      0.30619942 Residual Norm: 0.03107108                                                 
-               Excitation 6   :      0.31477379 Residual Norm: 0.02451182                                                 
-               Excitation 7   :      0.32757088 Residual Norm: 0.03533865                                                 
-               Excitation 8   :      0.33703778 Residual Norm: 0.04267686                                                 
-               Excitation 9   :      0.34482029 Residual Norm: 0.02829022                                                 
-               Excitation 10  :      0.35228099 Residual Norm: 0.04291858                                                 
+               Excitation 1   :      0.21690197 Residual Norm: 0.13241666                                                 
+               Excitation 2   :      0.23187027 Residual Norm: 0.10266475                                                 
+               Excitation 3   :      0.27294748 Residual Norm: 0.15203112                                                 
+               Excitation 4   :      0.30900307 Residual Norm: 0.11294286                                                 
+               Excitation 5   :      0.31327579 Residual Norm: 0.16382004                                                 
+               Excitation 6   :      0.31851971 Residual Norm: 0.11562068                                                 
+               Excitation 7   :      0.33724538 Residual Norm: 0.12669112                                                 
+               Excitation 8   :      0.33791935 Residual Norm: 0.12506434                                                 
+               Excitation 9   :      0.34233863 Residual Norm: 0.15167911                                                 
+               Excitation 10  :      0.34761478 Residual Norm: 0.17377610                                                 
                                                                                                                           
 * Info * Processing 10 Fock builds...                                                                                     
                                                                                                                           
@@ -343,20 +301,20 @@
 * Info * 40 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
 * Info * 3.28 MB of memory used for subspace procedure on the master node                                                 
-* Info * 116.85 GB of memory available for the solver on the master node                                                  
+* Info * 27.14 GB of memory available for the solver on the master node                                                   
                                                                                                                           
-               *** Iteration:   4 * Residuals (Max,Min): 6.56e-02 and 2.82e-03                                            
+               *** Iteration:   2 * Residuals (Max,Min): 1.05e-01 and 2.95e-02                                            
                                                                                                                           
-               Excitation 1   :      0.21271674 Residual Norm: 0.00282045                                                 
-               Excitation 2   :      0.22936836 Residual Norm: 0.00375818                                                 
-               Excitation 3   :      0.26918972 Residual Norm: 0.00436615                                                 
-               Excitation 4   :      0.30493745 Residual Norm: 0.00941684                                                 
-               Excitation 5   :      0.30592334 Residual Norm: 0.00779445                                                 
-               Excitation 6   :      0.31458016 Residual Norm: 0.00949001                                                 
-               Excitation 7   :      0.32722279 Residual Norm: 0.01282840                                                 
-               Excitation 8   :      0.33635843 Residual Norm: 0.02222728                                                 
-               Excitation 9   :      0.34443188 Residual Norm: 0.01911188                                                 
-               Excitation 10  :      0.35011627 Residual Norm: 0.06561711                                                 
+               Excitation 1   :      0.21294868 Residual Norm: 0.03524798                                                 
+               Excitation 2   :      0.22958885 Residual Norm: 0.02948792                                                 
+               Excitation 3   :      0.26952493 Residual Norm: 0.03692733                                                 
+               Excitation 4   :      0.30611367 Residual Norm: 0.03516803                                                 
+               Excitation 5   :      0.30680920 Residual Norm: 0.07787833                                                 
+               Excitation 6   :      0.31539569 Residual Norm: 0.05833550                                                 
+               Excitation 7   :      0.33105649 Residual Norm: 0.10514133                                                 
+               Excitation 8   :      0.33226198 Residual Norm: 0.07320209                                                 
+               Excitation 9   :      0.33652384 Residual Norm: 0.05650240                                                 
+               Excitation 10  :      0.34122087 Residual Norm: 0.06417162                                                 
                                                                                                                           
 * Info * Processing 10 Fock builds...                                                                                     
                                                                                                                           
@@ -364,20 +322,20 @@
 * Info * 50 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
 * Info * 4.01 MB of memory used for subspace procedure on the master node                                                 
-* Info * 116.84 GB of memory available for the solver on the master node                                                  
+* Info * 27.15 GB of memory available for the solver on the master node                                                   
                                                                                                                           
-               *** Iteration:   5 * Residuals (Max,Min): 8.44e-02 and 6.48e-04                                            
+               *** Iteration:   3 * Residuals (Max,Min): 4.52e-02 and 7.38e-03                                            
                                                                                                                           
-               Excitation 1   :      0.21271473 Residual Norm: 0.00064817                                                 
-               Excitation 2   :      0.22936424 Residual Norm: 0.00089890                                                 
-               Excitation 3   :      0.26918426 Residual Norm: 0.00097866                                                 
-               Excitation 4   :      0.30491600 Residual Norm: 0.00273936                                                 
-               Excitation 5   :      0.30590483 Residual Norm: 0.00251953                                                 
-               Excitation 6   :      0.31455455 Residual Norm: 0.00353385                                                 
-               Excitation 7   :      0.32717309 Residual Norm: 0.00495664                                                 
-               Excitation 8   :      0.33602989 Residual Norm: 0.02013975                                                 
-               Excitation 9   :      0.34247683 Residual Norm: 0.08442741                                                 
-               Excitation 10  :      0.34472144 Residual Norm: 0.04319881                                                 
+               Excitation 1   :      0.21273281 Residual Norm: 0.00996730                                                 
+               Excitation 2   :      0.22937658 Residual Norm: 0.00826659                                                 
+               Excitation 3   :      0.26920787 Residual Norm: 0.01226135                                                 
+               Excitation 4   :      0.30508630 Residual Norm: 0.02770544                                                 
+               Excitation 5   :      0.30591796 Residual Norm: 0.00738422                                                 
+               Excitation 6   :      0.31462181 Residual Norm: 0.01546778                                                 
+               Excitation 7   :      0.32791123 Residual Norm: 0.04519737                                                 
+               Excitation 8   :      0.33146486 Residual Norm: 0.01461450                                                 
+               Excitation 9   :      0.33580545 Residual Norm: 0.01752574                                                 
+               Excitation 10  :      0.34002349 Residual Norm: 0.02889281                                                 
                                                                                                                           
 * Info * Processing 10 Fock builds...                                                                                     
                                                                                                                           
@@ -385,20 +343,20 @@
 * Info * 60 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
 * Info * 4.74 MB of memory used for subspace procedure on the master node                                                 
-* Info * 116.84 GB of memory available for the solver on the master node                                                  
+* Info * 27.15 GB of memory available for the solver on the master node                                                   
                                                                                                                           
-               *** Iteration:   6 * Residuals (Max,Min): 1.06e-01 and 1.00e-04                                            
+               *** Iteration:   4 * Residuals (Max,Min): 1.64e-02 and 1.59e-03                                            
                                                                                                                           
-               Excitation 1   :      0.21271466 Residual Norm: 0.00010008                                                 
-               Excitation 2   :      0.22936404 Residual Norm: 0.00020778                                                 
-               Excitation 3   :      0.26918404 Residual Norm: 0.00022560                                                 
-               Excitation 4   :      0.30491277 Residual Norm: 0.00127641                                                 
-               Excitation 5   :      0.30590324 Residual Norm: 0.00073608                                                 
-               Excitation 6   :      0.31455026 Residual Norm: 0.00146520                                                 
-               Excitation 7   :      0.32716580 Residual Norm: 0.00205829                                                 
-               Excitation 8   :      0.33575198 Residual Norm: 0.05998255                                                 
-               Excitation 9   :      0.33597814 Residual Norm: 0.10581397                                                 
-               Excitation 10  :      0.34092614 Residual Norm: 0.07079726                                                 
+               Excitation 1   :      0.21271533 Residual Norm: 0.00189135                                                 
+               Excitation 2   :      0.22936448 Residual Norm: 0.00159284                                                 
+               Excitation 3   :      0.26918508 Residual Norm: 0.00194016                                                 
+               Excitation 4   :      0.30492355 Residual Norm: 0.00713696                                                 
+               Excitation 5   :      0.30590400 Residual Norm: 0.00195981                                                 
+               Excitation 6   :      0.31455491 Residual Norm: 0.00471996                                                 
+               Excitation 7   :      0.32724603 Residual Norm: 0.01635417                                                 
+               Excitation 8   :      0.33140626 Residual Norm: 0.00394263                                                 
+               Excitation 9   :      0.33570801 Residual Norm: 0.00594508                                                 
+               Excitation 10  :      0.33970518 Residual Norm: 0.01499422                                                 
                                                                                                                           
 * Info * Processing 10 Fock builds...                                                                                     
                                                                                                                           
@@ -406,104 +364,62 @@
 * Info * 70 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
 * Info * 5.47 MB of memory used for subspace procedure on the master node                                                 
-* Info * 116.83 GB of memory available for the solver on the master node                                                  
+* Info * 27.14 GB of memory available for the solver on the master node                                                   
                                                                                                                           
-               *** Iteration:   7 * Residuals (Max,Min): 3.66e-02 and 1.94e-05                                            
+               *** Iteration:   5 * Residuals (Max,Min): 6.13e-03 and 2.16e-04                                            
                                                                                                                           
-               Excitation 1   :      0.21271466 Residual Norm: 0.00001939   converged                                     
-               Excitation 2   :      0.22936403 Residual Norm: 0.00004023   converged                                     
-               Excitation 3   :      0.26918403 Residual Norm: 0.00005392   converged                                     
-               Excitation 4   :      0.30491235 Residual Norm: 0.00038802                                                 
-               Excitation 5   :      0.30590309 Residual Norm: 0.00022733                                                 
-               Excitation 6   :      0.31454962 Residual Norm: 0.00044416                                                 
-               Excitation 7   :      0.32716410 Residual Norm: 0.00097012                                                 
-               Excitation 8   :      0.33175757 Residual Norm: 0.03656905                                                 
-               Excitation 9   :      0.33572081 Residual Norm: 0.00812989                                                 
-               Excitation 10  :      0.33980725 Residual Norm: 0.02293979                                                 
+               Excitation 1   :      0.21271468 Residual Norm: 0.00035457                                                 
+               Excitation 2   :      0.22936403 Residual Norm: 0.00021596                                                 
+               Excitation 3   :      0.26918406 Residual Norm: 0.00040616                                                 
+               Excitation 4   :      0.30491283 Residual Norm: 0.00168560                                                 
+               Excitation 5   :      0.30590312 Residual Norm: 0.00047557                                                 
+               Excitation 6   :      0.31454998 Residual Norm: 0.00127601                                                 
+               Excitation 7   :      0.32717135 Residual Norm: 0.00612841                                                 
+               Excitation 8   :      0.33140248 Residual Norm: 0.00121245                                                 
+               Excitation 9   :      0.33569842 Residual Norm: 0.00194967                                                 
+               Excitation 10  :      0.33963433 Residual Norm: 0.00593258                                                 
+                                                                                                                          
+* Info * Processing 10 Fock builds...                                                                                     
+                                                                                                                          
+* Info * 80 gerade trial vectors in reduced space                                                                         
+* Info * 80 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+* Info * 6.20 MB of memory used for subspace procedure on the master node                                                 
+* Info * 27.14 GB of memory available for the solver on the master node                                                   
+                                                                                                                          
+               *** Iteration:   6 * Residuals (Max,Min): 1.51e-03 and 3.85e-05                                            
+                                                                                                                          
+               Excitation 1   :      0.21271466 Residual Norm: 0.00005891   converged                                     
+               Excitation 2   :      0.22936402 Residual Norm: 0.00003852   converged                                     
+               Excitation 3   :      0.26918403 Residual Norm: 0.00007364   converged                                     
+               Excitation 4   :      0.30491233 Residual Norm: 0.00032115                                                 
+               Excitation 5   :      0.30590307 Residual Norm: 0.00010228                                                 
+               Excitation 6   :      0.31454959 Residual Norm: 0.00029951                                                 
+               Excitation 7   :      0.32716423 Residual Norm: 0.00126275                                                 
+               Excitation 8   :      0.33140211 Residual Norm: 0.00029023                                                 
+               Excitation 9   :      0.33569752 Residual Norm: 0.00046935                                                 
+               Excitation 10  :      0.33962559 Residual Norm: 0.00150643                                                 
                                                                                                                           
 * Info * Processing 7 Fock builds...                                                                                      
-                                                                                                                          
-* Info * 77 gerade trial vectors in reduced space                                                                         
-* Info * 77 ungerade trial vectors in reduced space                                                                       
-                                                                                                                          
-* Info * 5.98 MB of memory used for subspace procedure on the master node                                                 
-* Info * 116.82 GB of memory available for the solver on the master node                                                  
-                                                                                                                          
-               *** Iteration:   8 * Residuals (Max,Min): 1.05e-02 and 1.48e-05                                            
-                                                                                                                          
-               Excitation 1   :      0.21271466 Residual Norm: 0.00001482   converged                                     
-               Excitation 2   :      0.22936403 Residual Norm: 0.00002294   converged                                     
-               Excitation 3   :      0.26918403 Residual Norm: 0.00002885   converged                                     
-               Excitation 4   :      0.30491232 Residual Norm: 0.00009568   converged                                     
-               Excitation 5   :      0.30590308 Residual Norm: 0.00005094   converged                                     
-               Excitation 6   :      0.31454958 Residual Norm: 0.00011335                                                 
-               Excitation 7   :      0.32716388 Residual Norm: 0.00026628                                                 
-               Excitation 8   :      0.33143300 Residual Norm: 0.01051464                                                 
-               Excitation 9   :      0.33570021 Residual Norm: 0.00307639                                                 
-               Excitation 10  :      0.33964932 Residual Norm: 0.00877637                                                 
-                                                                                                                          
-* Info * Processing 5 Fock builds...                                                                                      
-                                                                                                                          
-* Info * 82 gerade trial vectors in reduced space                                                                         
-* Info * 82 ungerade trial vectors in reduced space                                                                       
-                                                                                                                          
-* Info * 6.35 MB of memory used for subspace procedure on the master node                                                 
-* Info * 116.82 GB of memory available for the solver on the master node                                                  
-                                                                                                                          
-               *** Iteration:   9 * Residuals (Max,Min): 3.20e-03 and 1.28e-05                                            
-                                                                                                                          
-               Excitation 1   :      0.21271466 Residual Norm: 0.00001283   converged                                     
-               Excitation 2   :      0.22936403 Residual Norm: 0.00002168   converged                                     
-               Excitation 3   :      0.26918403 Residual Norm: 0.00002698   converged                                     
-               Excitation 4   :      0.30491232 Residual Norm: 0.00003126   converged                                     
-               Excitation 5   :      0.30590308 Residual Norm: 0.00002356   converged                                     
-               Excitation 6   :      0.31454957 Residual Norm: 0.00002952   converged                                     
-               Excitation 7   :      0.32716386 Residual Norm: 0.00008098   converged                                     
-               Excitation 8   :      0.33140447 Residual Norm: 0.00320141                                                 
-               Excitation 9   :      0.33569765 Residual Norm: 0.00092095                                                 
-               Excitation 10  :      0.33962691 Residual Norm: 0.00289113                                                 
-                                                                                                                          
-* Info * Processing 2 Fock builds...                                                                                      
-                                                                                                                          
-* Info * 84 gerade trial vectors in reduced space                                                                         
-* Info * 84 ungerade trial vectors in reduced space                                                                       
-                                                                                                                          
-* Info * 6.49 MB of memory used for subspace procedure on the master node                                                 
-* Info * 116.82 GB of memory available for the solver on the master node                                                  
-                                                                                                                          
-               *** Iteration:   10 * Residuals (Max,Min): 6.67e-04 and 8.12e-06                                           
-                                                                                                                          
-               Excitation 1   :      0.21271466 Residual Norm: 0.00001273   converged                                     
-               Excitation 2   :      0.22936403 Residual Norm: 0.00002172   converged                                     
-               Excitation 3   :      0.26918403 Residual Norm: 0.00002636   converged                                     
-               Excitation 4   :      0.30491232 Residual Norm: 0.00002590   converged                                     
-               Excitation 5   :      0.30590308 Residual Norm: 0.00002119   converged                                     
-               Excitation 6   :      0.31454957 Residual Norm: 0.00000812   converged                                     
-               Excitation 7   :      0.32716385 Residual Norm: 0.00002207   converged                                     
-               Excitation 8   :      0.33140219 Residual Norm: 0.00066697                                                 
-               Excitation 9   :      0.33569748 Residual Norm: 0.00019791                                                 
-               Excitation 10  :      0.33962517 Residual Norm: 0.00062302                                                 
-                                                                                                                          
-* Info * Processing 3 Fock builds...                                                                                      
                                                                                                                           
 * Info * 87 gerade trial vectors in reduced space                                                                         
 * Info * 87 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
 * Info * 6.71 MB of memory used for subspace procedure on the master node                                                 
-* Info * 116.82 GB of memory available for the solver on the master node                                                  
+* Info * 27.13 GB of memory available for the solver on the master node                                                   
                                                                                                                           
-               *** Iteration:   11 * Residuals (Max,Min): 1.49e-04 and 7.04e-06                                           
+               *** Iteration:   7 * Residuals (Max,Min): 3.34e-04 and 1.94e-05                                            
                                                                                                                           
-               Excitation 1   :      0.21271466 Residual Norm: 0.00001260   converged                                     
-               Excitation 2   :      0.22936403 Residual Norm: 0.00002148   converged                                     
-               Excitation 3   :      0.26918403 Residual Norm: 0.00002572   converged                                     
-               Excitation 4   :      0.30491232 Residual Norm: 0.00002573   converged                                     
-               Excitation 5   :      0.30590308 Residual Norm: 0.00002111   converged                                     
-               Excitation 6   :      0.31454957 Residual Norm: 0.00000704   converged                                     
-               Excitation 7   :      0.32716385 Residual Norm: 0.00001794   converged                                     
-               Excitation 8   :      0.33140210 Residual Norm: 0.00014559                                                 
-               Excitation 9   :      0.33569747 Residual Norm: 0.00004720   converged                                     
-               Excitation 10  :      0.33962507 Residual Norm: 0.00014913                                                 
+               Excitation 1   :      0.21271466 Residual Norm: 0.00003011   converged                                     
+               Excitation 2   :      0.22936402 Residual Norm: 0.00002809   converged                                     
+               Excitation 3   :      0.26918403 Residual Norm: 0.00005612   converged                                     
+               Excitation 4   :      0.30491231 Residual Norm: 0.00005604   converged                                     
+               Excitation 5   :      0.30590307 Residual Norm: 0.00001939   converged                                     
+               Excitation 6   :      0.31454957 Residual Norm: 0.00007022   converged                                     
+               Excitation 7   :      0.32716387 Residual Norm: 0.00025223                                                 
+               Excitation 8   :      0.33140209 Residual Norm: 0.00006511   converged                                     
+               Excitation 9   :      0.33569747 Residual Norm: 0.00009773   converged                                     
+               Excitation 10  :      0.33962509 Residual Norm: 0.00033441                                                 
                                                                                                                           
 * Info * Processing 2 Fock builds...                                                                                      
                                                                                                                           
@@ -511,26 +427,26 @@
 * Info * 89 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
 * Info * 6.86 MB of memory used for subspace procedure on the master node                                                 
-* Info * 116.82 GB of memory available for the solver on the master node                                                  
+* Info * 27.13 GB of memory available for the solver on the master node                                                   
                                                                                                                           
-               *** Iteration:   12 * Residuals (Max,Min): 3.57e-05 and 7.07e-06                                           
+               *** Iteration:   8 * Residuals (Max,Min): 7.33e-05 and 1.77e-05                                            
                                                                                                                           
-               Excitation 1   :      0.21271466 Residual Norm: 0.00001260   converged                                     
-               Excitation 2   :      0.22936403 Residual Norm: 0.00002144   converged                                     
-               Excitation 3   :      0.26918403 Residual Norm: 0.00002561   converged                                     
-               Excitation 4   :      0.30491232 Residual Norm: 0.00002553   converged                                     
-               Excitation 5   :      0.30590308 Residual Norm: 0.00002114   converged                                     
-               Excitation 6   :      0.31454957 Residual Norm: 0.00000707   converged                                     
-               Excitation 7   :      0.32716385 Residual Norm: 0.00001771   converged                                     
-               Excitation 8   :      0.33140209 Residual Norm: 0.00003279   converged                                     
-               Excitation 9   :      0.33569747 Residual Norm: 0.00002094   converged                                     
-               Excitation 10  :      0.33962507 Residual Norm: 0.00003573   converged                                     
+               Excitation 1   :      0.21271466 Residual Norm: 0.00002993   converged                                     
+               Excitation 2   :      0.22936402 Residual Norm: 0.00002739   converged                                     
+               Excitation 3   :      0.26918403 Residual Norm: 0.00005568   converged                                     
+               Excitation 4   :      0.30491231 Residual Norm: 0.00003829   converged                                     
+               Excitation 5   :      0.30590307 Residual Norm: 0.00001768   converged                                     
+               Excitation 6   :      0.31454957 Residual Norm: 0.00006290   converged                                     
+               Excitation 7   :      0.32716385 Residual Norm: 0.00004387   converged                                     
+               Excitation 8   :      0.33140209 Residual Norm: 0.00004984   converged                                     
+               Excitation 9   :      0.33569747 Residual Norm: 0.00006589   converged                                     
+               Excitation 10  :      0.33962507 Residual Norm: 0.00007334   converged                                     
                                                                                                                           
 * Info * Checkpoint written to file: alanine-ecd_rsp.h5                                                                   
                                                                                                                           
 * Info * Time spent in writing checkpoint file: 0.01 sec                                                                  
                                                                                                                           
-               *** Linear response converged in 12 iterations. Time: 36.56 sec                                            
+               *** Linear response converged in 8 iterations. Time: 25.80 sec                                             
                                                                                                                           
                                                                                                                           
 * Info * Running NTO analysis for S1...                                                                                   
@@ -549,52 +465,52 @@
                Electric Transition Dipole Moments (dipole length, a.u.)                                                   
                --------------------------------------------------------                                                   
                                                 X            Y            Z                                               
-               Excited State    S1:      0.038893     0.049128    -0.077144                                               
-               Excited State    S2:      0.015500     0.057431    -0.065425                                               
-               Excited State    S3:     -0.124014    -0.109347    -0.027476                                               
-               Excited State    S4:     -0.408009    -0.179488    -0.140209                                               
-               Excited State    S5:      0.015196     0.011995    -0.213192                                               
-               Excited State    S6:     -0.325026     0.248645     0.023412                                               
-               Excited State    S7:      0.272875    -0.583349    -0.140746                                               
-               Excited State    S8:     -0.012382    -0.081545     0.080125                                               
-               Excited State    S9:     -0.253838     0.243392     0.020321                                               
-               Excited State   S10:     -0.208591     0.135621     0.081393                                               
+               Excited State    S1:      0.038888     0.049121    -0.077143                                               
+               Excited State    S2:      0.015500     0.057428    -0.065422                                               
+               Excited State    S3:     -0.124004    -0.109326    -0.027470                                               
+               Excited State    S4:      0.408000     0.179477     0.140221                                               
+               Excited State    S5:     -0.015187    -0.011988     0.213187                                               
+               Excited State    S6:      0.325021    -0.248633    -0.023408                                               
+               Excited State    S7:     -0.272876     0.583346     0.140735                                               
+               Excited State    S8:      0.012390     0.081525    -0.080132                                               
+               Excited State    S9:      0.253817    -0.243385    -0.020314                                               
+               Excited State   S10:      0.208578    -0.135598    -0.081350                                               
                                                                                                                           
                Electric Transition Dipole Moments (dipole velocity, a.u.)                                                 
                ----------------------------------------------------------                                                 
                                                 X            Y            Z                                               
-               Excited State    S1:      0.053840     0.064837    -0.125255                                               
-               Excited State    S2:      0.025600     0.043297    -0.057675                                               
-               Excited State    S3:     -0.345491    -0.154802    -0.089167                                               
-               Excited State    S4:     -0.429671    -0.134094    -0.135986                                               
-               Excited State    S5:     -0.007958    -0.013722    -0.242167                                               
-               Excited State    S6:     -0.411527     0.194685    -0.005639                                               
-               Excited State    S7:      0.281083    -0.529408    -0.130852                                               
-               Excited State    S8:     -0.045022    -0.116218     0.223645                                               
-               Excited State    S9:     -0.205478     0.267741     0.018999                                               
-               Excited State   S10:     -0.183514     0.140148     0.076700                                               
+               Excited State    S1:      0.053835     0.064817    -0.125257                                               
+               Excited State    S2:      0.025604     0.043285    -0.057673                                               
+               Excited State    S3:     -0.345483    -0.154776    -0.089159                                               
+               Excited State    S4:      0.429655     0.134080     0.136003                                               
+               Excited State    S5:      0.007972     0.013733     0.242159                                               
+               Excited State    S6:      0.411516    -0.194671     0.005648                                               
+               Excited State    S7:     -0.281084     0.529402     0.130834                                               
+               Excited State    S8:      0.045027     0.116185    -0.223645                                               
+               Excited State    S9:      0.205440    -0.267727    -0.018989                                               
+               Excited State   S10:      0.183520    -0.140131    -0.076640                                               
                                                                                                                           
                Magnetic Transition Dipole Moments (a.u.)                                                                  
                -----------------------------------------                                                                  
                                                 X            Y            Z                                               
-               Excited State    S1:     -0.152205    -0.365735    -0.155585                                               
-               Excited State    S2:      0.181466     0.047783    -0.013310                                               
-               Excited State    S3:     -0.072504    -0.107597     0.383525                                               
-               Excited State    S4:     -0.050958     0.012969     0.185969                                               
-               Excited State    S5:     -0.052558    -0.157738    -0.018745                                               
-               Excited State    S6:      0.005737     0.124043    -0.155422                                               
-               Excited State    S7:      0.057397    -0.010186    -0.479327                                               
-               Excited State    S8:     -0.227168    -0.166349    -0.148837                                               
-               Excited State    S9:      0.232147    -0.223323    -0.025233                                               
-               Excited State   S10:     -0.370039     0.172709     0.018171                                               
+               Excited State    S1:     -0.152209    -0.365737    -0.155588                                               
+               Excited State    S2:      0.181464     0.047781    -0.013307                                               
+               Excited State    S3:     -0.072501    -0.107594     0.383531                                               
+               Excited State    S4:      0.050940    -0.012952    -0.185960                                               
+               Excited State    S5:      0.052562     0.157734     0.018744                                               
+               Excited State    S6:     -0.005738    -0.124033     0.155413                                               
+               Excited State    S7:     -0.057401     0.010176     0.479329                                               
+               Excited State    S8:      0.227197     0.166353     0.148848                                               
+               Excited State    S9:     -0.232165     0.223334     0.025222                                               
+               Excited State   S10:      0.370040    -0.172673    -0.018174                                               
                                                                                                                           
                One-Photon Absorption                                                                                      
                ---------------------                                                                                      
                Excited State    S1:      0.21271466 a.u.      5.78826 eV    Osc.Str.    0.0014                            
-               Excited State    S2:      0.22936403 a.u.      6.24131 eV    Osc.Str.    0.0012                            
+               Excited State    S2:      0.22936402 a.u.      6.24131 eV    Osc.Str.    0.0012                            
                Excited State    S3:      0.26918403 a.u.      7.32487 eV    Osc.Str.    0.0050                            
-               Excited State    S4:      0.30491232 a.u.      8.29709 eV    Osc.Str.    0.0444                            
-               Excited State    S5:      0.30590308 a.u.      8.32405 eV    Osc.Str.    0.0093                            
+               Excited State    S4:      0.30491231 a.u.      8.29709 eV    Osc.Str.    0.0444                            
+               Excited State    S5:      0.30590307 a.u.      8.32405 eV    Osc.Str.    0.0093                            
                Excited State    S6:      0.31454957 a.u.      8.55933 eV    Osc.Str.    0.0352                            
                Excited State    S7:      0.32716385 a.u.      8.90258 eV    Osc.Str.    0.0948                            
                Excited State    S8:      0.33140209 a.u.      9.01791 eV    Osc.Str.    0.0029                            
@@ -603,16 +519,16 @@
                                                                                                                           
                Electronic Circular Dichroism                                                                              
                -----------------------------                                                                              
-               Excited State    S1:     Rot.Str.     -0.012420 a.u.    -5.8553 [10**(-40) cgs]                            
-               Excited State    S2:     Rot.Str.      0.007482 a.u.     3.5274 [10**(-40) cgs]                            
-               Excited State    S3:     Rot.Str.      0.007508 a.u.     3.5396 [10**(-40) cgs]                            
-               Excited State    S4:     Rot.Str.     -0.005133 a.u.    -2.4199 [10**(-40) cgs]                            
-               Excited State    S5:     Rot.Str.      0.007122 a.u.     3.3578 [10**(-40) cgs]                            
-               Excited State    S6:     Rot.Str.      0.022665 a.u.    10.6852 [10**(-40) cgs]                            
-               Excited State    S7:     Rot.Str.      0.084247 a.u.    39.7178 [10**(-40) cgs]                            
-               Excited State    S8:     Rot.Str.     -0.003726 a.u.    -1.7567 [10**(-40) cgs]                            
-               Excited State    S9:     Rot.Str.     -0.107973 a.u.   -50.9032 [10**(-40) cgs]                            
-               Excited State   S10:     Rot.Str.      0.093506 a.u.    44.0827 [10**(-40) cgs]                            
+               Excited State    S1:     Rot.Str.     -0.012412 a.u.    -5.8514 [10**(-40) cgs]                            
+               Excited State    S2:     Rot.Str.      0.007482 a.u.     3.5273 [10**(-40) cgs]                            
+               Excited State    S3:     Rot.Str.      0.007506 a.u.     3.5385 [10**(-40) cgs]                            
+               Excited State    S4:     Rot.Str.     -0.005141 a.u.    -2.4237 [10**(-40) cgs]                            
+               Excited State    S5:     Rot.Str.      0.007124 a.u.     3.3586 [10**(-40) cgs]                            
+               Excited State    S6:     Rot.Str.      0.022662 a.u.    10.6838 [10**(-40) cgs]                            
+               Excited State    S7:     Rot.Str.      0.084235 a.u.    39.7119 [10**(-40) cgs]                            
+               Excited State    S8:     Rot.Str.     -0.003731 a.u.    -1.7591 [10**(-40) cgs]                            
+               Excited State    S9:     Rot.Str.     -0.107968 a.u.   -50.9006 [10**(-40) cgs]                            
+               Excited State   S10:     Rot.Str.      0.093499 a.u.    44.0796 [10**(-40) cgs]                            
                                                                                                                           
                Character of excitations:                                                                                  
                                                                                                                           
@@ -634,55 +550,55 @@
                                                                                                                           
                Excited state 4                                                                                            
                ---------------                                                                                            
-               HOMO-1   -> LUMO+1      -0.7249                                                                            
-               HOMO-2   -> LUMO        -0.5651                                                                            
-               HOMO-1   -> LUMO+2       0.2226                                                                            
-               HOMO     -> LUMO+1      -0.2084                                                                            
+               HOMO-1   -> LUMO+1       0.7249                                                                            
+               HOMO-2   -> LUMO         0.5651                                                                            
+               HOMO-1   -> LUMO+2      -0.2226                                                                            
+               HOMO     -> LUMO+1       0.2084                                                                            
                                                                                                                           
                Excited state 5                                                                                            
                ---------------                                                                                            
-               HOMO     -> LUMO+3       0.9034                                                                            
-               HOMO     -> LUMO+7       0.2855                                                                            
-               HOMO     -> LUMO+4      -0.2523                                                                            
+               HOMO     -> LUMO+3      -0.9034                                                                            
+               HOMO     -> LUMO+7      -0.2855                                                                            
+               HOMO     -> LUMO+4       0.2523                                                                            
                                                                                                                           
                Excited state 6                                                                                            
                ---------------                                                                                            
-               HOMO     -> LUMO+1      -0.8017                                                                            
-               HOMO     -> LUMO+4      -0.3451                                                                            
-               HOMO     -> LUMO+2       0.3337                                                                            
+               HOMO     -> LUMO+1       0.8017                                                                            
+               HOMO     -> LUMO+4       0.3451                                                                            
+               HOMO     -> LUMO+2      -0.3337                                                                            
                                                                                                                           
                Excited state 7                                                                                            
                ---------------                                                                                            
-               HOMO-2   -> LUMO        -0.6218                                                                            
-               HOMO-1   -> LUMO+1       0.6196                                                                            
-               HOMO-1   -> LUMO+2       0.3665                                                                            
+               HOMO-2   -> LUMO         0.6218                                                                            
+               HOMO-1   -> LUMO+1      -0.6196                                                                            
+               HOMO-1   -> LUMO+2      -0.3665                                                                            
                                                                                                                           
                Excited state 8                                                                                            
                ---------------                                                                                            
-               HOMO-2   -> LUMO+1       0.9194                                                                            
-               HOMO-2   -> LUMO+2      -0.2991                                                                            
+               HOMO-2   -> LUMO+1      -0.9194                                                                            
+               HOMO-2   -> LUMO+2       0.2990                                                                            
                                                                                                                           
                Excited state 9                                                                                            
                ---------------                                                                                            
-               HOMO     -> LUMO+4       0.6706                                                                            
-               HOMO     -> LUMO+2       0.3737                                                                            
-               HOMO-5   -> LUMO        -0.2995                                                                            
-               HOMO-6   -> LUMO         0.2439                                                                            
-               HOMO     -> LUMO+5       0.2346                                                                            
-               HOMO     -> LUMO+1      -0.2044                                                                            
+               HOMO     -> LUMO+4      -0.6706                                                                            
+               HOMO     -> LUMO+2      -0.3737                                                                            
+               HOMO-5   -> LUMO         0.2995                                                                            
+               HOMO-6   -> LUMO        -0.2439                                                                            
+               HOMO     -> LUMO+5      -0.2346                                                                            
+               HOMO     -> LUMO+1       0.2044                                                                            
                                                                                                                           
                Excited state 10                                                                                           
                ----------------                                                                                           
-               HOMO-5   -> LUMO         0.5560                                                                            
-               HOMO-4   -> LUMO         0.4277                                                                            
-               HOMO-6   -> LUMO        -0.4199                                                                            
-               HOMO     -> LUMO+4       0.3600                                                                            
-               HOMO-3   -> LUMO         0.2542                                                                            
+               HOMO-5   -> LUMO        -0.5560                                                                            
+               HOMO-4   -> LUMO        -0.4277                                                                            
+               HOMO-6   -> LUMO         0.4199                                                                            
+               HOMO     -> LUMO+4      -0.3600                                                                            
+               HOMO-3   -> LUMO        -0.2542                                                                            
                                                                                                                           
 !========================================================================================================================!
-!                               VeloxChem execution completed at Mon May 19 13:48:32 2025.                               !
+!                               VeloxChem execution completed at Mon Apr 13 19:53:58 2026.                               !
 !========================================================================================================================!
-!                                           Total execution time is 41.62 sec.                                           !
+!                                           Total execution time is 29.82 sec.                                           !
 !========================================================================================================================!
 !                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
 !                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !

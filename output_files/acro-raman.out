@@ -5,7 +5,7 @@
 !                                                                                                                        !
 !                                        Copyright 2018-2025 VeloxChem developers                                        !
 !========================================================================================================================!
-!                                VeloxChem execution started at Tue May 20 13:17:29 2025.                                !
+!                                VeloxChem execution started at Mon Apr 13 19:54:44 2026.                                !
 !========================================================================================================================!
                                                                                                                           
 * Info * Using 32 OpenMP threads per MPI process.                                                                         
@@ -45,7 +45,7 @@
                           Number of alpha electrons   : 15                                                                
                           Number of beta  electrons   : 15                                                                
                                                                                                                           
-* Info * Reading basis set from file: /home/linares/miniconda3/envs/vlx-github/lib/python3.12/site-packages/veloxchem/basis/DEF2-SVP
+* Info * Reading basis set from file: /home/xinli/gitlab/VeloxChem.codex/vlxenv-cx/lib/python3.13/site-packages/veloxchem/basis/DEF2-SVP
                                                                                                                           
                                               Molecular Basis (Atomic Basis)                                              
                                              ================================                                             
@@ -82,7 +82,7 @@
                                                                                                                           
          P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
                                                                                                                           
-* Info * Using the Libxc library (v6.2.2).                                                                                
+* Info * Using the Libxc library (v7.0.0).                                                                                
                                                                                                                           
          S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
                                                                                                                           
@@ -90,7 +90,7 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
-* Info * Molecular grid with 113597 points generated in 0.07 sec.                                                         
+* Info * Molecular grid with 113597 points generated in 0.04 sec.                                                         
                                                                                                                           
 * Info * Overlap matrix computed in 0.00 sec.                                                                             
                                                                                                                           
@@ -101,7 +101,7 @@
 * Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
                                                                                                                           
 * Info * Starting Reduced Basis SCF calculation...                                                                        
-* Info * ...done. SCF energy in reduced basis set: -190.519433708976 a.u. Time: 0.19 sec.                                 
+* Info * ...done. SCF energy in reduced basis set: -190.519433463218 a.u. Time: 0.07 sec.                                 
                                                                                                                           
 * Info * Overlap matrix computed in 0.00 sec.                                                                             
                                                                                                                           
@@ -109,28 +109,28 @@
                                                                                                                           
 * Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
                                                                                                                           
-* Info * Orthogonalization matrix computed in 0.02 sec.                                                                   
+* Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
                                                                                                                           
                                                                                                                           
                Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
                --------------------------------------------------------------------------------------------               
-                  1      -191.757704033234    0.0000000000      0.34835803      0.04292201      0.00000000                
-                  2      -191.753942793786    0.0037612394      0.40558684      0.04408646      0.23729898                
-                  3      -191.770399465417   -0.0164566716      0.11163178      0.00999188      0.15696645                
-                  4      -191.771566527350   -0.0011670619      0.01984292      0.00174511      0.05105135                
-                  5      -191.771603873495   -0.0000373461      0.01031291      0.00092975      0.01403270                
-                  6      -191.771618688809   -0.0000148153      0.00103560      0.00006468      0.00355610                
-                  7      -191.771618823183   -0.0000001344      0.00018982      0.00001086      0.00035271                
-                  8      -191.771618827506   -0.0000000043      0.00006201      0.00000397      0.00009238                
-                  9      -191.771618827996   -0.0000000005      0.00001290      0.00000099      0.00002345                
-                 10      -191.771618828017   -0.0000000000      0.00000170      0.00000012      0.00000864                
-                 11      -191.771618828017   -0.0000000000      0.00000018      0.00000002      0.00000123                
+                  1      -191.757777878525    0.0000000000      0.34733978      0.04274726      0.00000000                
+                  2      -191.757338339512    0.0004395390      0.36613990      0.03902061      0.22308380                
+                  3      -191.770372141671   -0.0130338022      0.11299698      0.01005689      0.14638332                
+                  4      -191.771576832552   -0.0012046909      0.01753487      0.00149328      0.05036261                
+                  5      -191.771606855027   -0.0000300225      0.00926663      0.00084319      0.01235935                
+                  6      -191.771618715535   -0.0000118605      0.00092649      0.00006018      0.00308154                
+                  7      -191.771618823408   -0.0000001079      0.00018470      0.00001041      0.00033715                
+                  8      -191.771618827647   -0.0000000042      0.00005269      0.00000350      0.00008781                
+                  9      -191.771618828000   -0.0000000004      0.00001141      0.00000090      0.00001988                
+                 10      -191.771618828017   -0.0000000000      0.00000173      0.00000013      0.00000816                
+                 11      -191.771618828017   -0.0000000000      0.00000018      0.00000001      0.00000129                
                                                                                                                           
 * Info * Checkpoint written to file: acro-raman_scf.h5                                                                    
                                                                                                                           
 * Info * SCF results written to file: acro-raman.h5                                                                       
                                                                                                                           
-               *** SCF converged in 11 iterations. Time: 2.19 sec.                                                        
+               *** SCF converged in 11 iterations. Time: 0.91 sec.                                                        
                                                                                                                           
                Spin-Restricted Kohn-Sham:                                                                                 
                --------------------------                                                                                 
@@ -138,7 +138,7 @@
                Electronic Energy                  :     -294.5054408296 a.u.                                              
                Nuclear Repulsion Energy           :      102.7338220016 a.u.                                              
                ------------------------------------                                                                       
-               Gradient Norm                      :        0.0000001829 a.u.                                              
+               Gradient Norm                      :        0.0000001821 a.u.                                              
                                                                                                                           
                                                                                                                           
                Ground State Information                                                                                   
@@ -230,9 +230,9 @@
                                                ----------------------------                                               
                                                                                                                           
                                    X   :        -1.195367 a.u.        -3.038321 Debye                                     
-                                   Y   :        -0.098606 a.u.        -0.250630 Debye                                     
+                                   Y   :        -0.098606 a.u.        -0.250631 Debye                                     
                                    Z   :         0.037150 a.u.         0.094426 Debye                                     
-                                 Total :         1.200003 a.u.         3.050102 Debye                                     
+                                 Total :         1.200003 a.u.         3.050103 Debye                                     
                                                                                                                           
                                                                                                                           
                                                Vibrational Analysis Driver                                                
@@ -246,8 +246,8 @@
                           - Raman activity                                                                                
                                                                                                                           
                                                                                                                           
-                                                    SCF Hessian Driver                                                    
-                                                   ====================                                                   
+                                                 SCF Hessian Driver Setup                                                 
+                                                ==========================                                                
                                                                                                                           
                           Hessian Type                    : Analytical                                                    
                           Exchange-Correlation Functional : B3LYP                                                         
@@ -257,21 +257,11 @@
                                                                                                                           
          Reference: P. Deglmann, F. Furche, R. Ahlrichs, Chem. Phys. Lett. 2002, 362, 511-518.
                                                                                                                           
-                                                                                                                          
-                                         Coupled-Perturbed Kohn-Sham Solver Setup                                         
-                                        ==========================================                                        
-                                                                                                                          
-                          Solver Type                     : Iterative Subspace Algorithm                                  
-                          Max. Number of Iterations       : 150                                                           
-                          Convergence Threshold           : 1.0e-04                                                       
-                          Exchange-Correlation Functional : B3LYP                                                         
-                          Molecular Grid Level            : 4                                                             
-                                                                                                                          
 * Info * Using the B3LYP functional.                                                                                      
                                                                                                                           
          P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
                                                                                                                           
-* Info * Using the Libxc library (v6.2.2).                                                                                
+* Info * Using the Libxc library (v7.0.0).                                                                                
                                                                                                                           
          S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
                                                                                                                           
@@ -279,18 +269,28 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
-* Info * Molecular grid with 113597 points generated in 0.07 sec.                                                         
+* Info * Molecular grid with 113597 points generated in 0.04 sec.                                                         
                                                                                                                           
-* Info * CPHF/CPKS integral derivatives computed in 4.12 sec.                                                             
+* Info * CPHF/CPKS integral derivatives computed in 1.47 sec.                                                             
                                                                                                                           
-* Info * CPHF/CPKS right-hand side computed in 4.35 sec.                                                                  
+* Info * CPHF/CPKS right-hand side computed in 1.61 sec.                                                                  
+                                                                                                                          
+                                                                                                                          
+                                         Coupled-Perturbed Kohn-Sham Solver Setup                                         
+                                        ------------------------------------------                                        
+                                                                                                                          
+                          Solver Type                     : Iterative Subspace Algorithm                                  
+                          Max. Number of Iterations       : 150                                                           
+                          Convergence Threshold           : 1.0e-04                                                       
+                          Exchange-Correlation Functional : B3LYP                                                         
+                          Molecular Grid Level            : 4                                                             
                                                                                                                           
 * Info * Processing 21 Fock builds...                                                                                     
                                                                                                                           
 * Info * 21 trial vectors in reduced space                                                                                
                                                                                                                           
-* Info * 484.58 kB of memory used for subspace procedure on the master node                                               
-* Info * 113.12 GB of memory available for the solver on the master node                                                  
+* Info * 491.82 kB of memory used for subspace procedure on the master node                                               
+* Info * 27.07 GB of memory available for the solver on the master node                                                   
                                                                                                                           
                *** Iteration:   1 * Residuals (Max,Min): 6.67e-01 and 5.78e-02                                            
                                                                                                                           
@@ -298,8 +298,8 @@
                                                                                                                           
 * Info * 42 trial vectors in reduced space                                                                                
                                                                                                                           
-* Info * 792.02 kB of memory used for subspace procedure on the master node                                               
-* Info * 113.11 GB of memory available for the solver on the master node                                                  
+* Info * 799.26 kB of memory used for subspace procedure on the master node                                               
+* Info * 27.08 GB of memory available for the solver on the master node                                                   
                                                                                                                           
                *** Iteration:   2 * Residuals (Max,Min): 5.09e-02 and 7.19e-03                                            
                                                                                                                           
@@ -307,8 +307,8 @@
                                                                                                                           
 * Info * 63 trial vectors in reduced space                                                                                
                                                                                                                           
-* Info * 1.10 MB of memory used for subspace procedure on the master node                                                 
-* Info * 113.08 GB of memory available for the solver on the master node                                                  
+* Info * 1.11 MB of memory used for subspace procedure on the master node                                                 
+* Info * 27.11 GB of memory available for the solver on the master node                                                   
                                                                                                                           
                *** Iteration:   3 * Residuals (Max,Min): 4.70e-03 and 4.69e-04                                            
                                                                                                                           
@@ -316,8 +316,8 @@
                                                                                                                           
 * Info * 80 trial vectors in reduced space                                                                                
                                                                                                                           
-* Info * 1.41 MB of memory used for subspace procedure on the master node                                                 
-* Info * 113.06 GB of memory available for the solver on the master node                                                  
+* Info * 1.42 MB of memory used for subspace procedure on the master node                                                 
+* Info * 27.12 GB of memory available for the solver on the master node                                                   
                                                                                                                           
                *** Iteration:   4 * Residuals (Max,Min): 3.42e-04 and 3.57e-05                                            
                                                                                                                           
@@ -325,8 +325,8 @@
                                                                                                                           
 * Info * 96 trial vectors in reduced space                                                                                
                                                                                                                           
-* Info * 1.76 MB of memory used for subspace procedure on the master node                                                 
-* Info * 113.04 GB of memory available for the solver on the master node                                                  
+* Info * 1.77 MB of memory used for subspace procedure on the master node                                                 
+* Info * 27.14 GB of memory available for the solver on the master node                                                   
                                                                                                                           
                *** Iteration:   5 * Residuals (Max,Min): 9.31e-05 and 7.00e-06                                            
                                                                                                                           
@@ -334,14 +334,14 @@
                                                                                                                           
 * Info * Time spent in writing checkpoint file: 0.00 sec                                                                  
                                                                                                                           
-               *** Coupled-Perturbed Kohn-Sham converged in 5 iterations. Time: 25.87 sec                                 
+               *** Coupled-Perturbed Kohn-Sham converged in 5 iterations. Time: 8.73 sec                                  
                                                                                                                           
                                                                                                                           
 * Info * First order derivative contributions to the Hessian computed in 0.00 sec.                                        
                                                                                                                           
-* Info * Second order derivative contributions to the Hessian computed in 15.16 sec.                                      
+* Info * Second order derivative contributions to the Hessian computed in 13.34 sec.                                      
                                                                                                                           
-                                   *** Time spent in Hessian calculation: 41.06 sec ***                                   
+                                   *** Time spent in Hessian calculation: 22.09 sec ***                                   
                                                                                                                           
                                                                                                                           
                                                                                                                           
@@ -359,7 +359,7 @@
                                                                                                                           
          P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
                                                                                                                           
-* Info * Using the Libxc library (v6.2.2).                                                                                
+* Info * Using the Libxc library (v7.0.0).                                                                                
                                                                                                                           
          S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
                                                                                                                           
@@ -367,119 +367,47 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
-* Info * Molecular grid with 113597 points generated in 0.06 sec.                                                         
-                                                                                                                          
-* Info * Processing 3 Fock builds...                                                                                      
-                                                                                                                          
 * Info * 0 gerade trial vectors in reduced space                                                                          
 * Info * 3 ungerade trial vectors in reduced space                                                                        
                                                                                                                           
-* Info * 103.60 kB of memory used for subspace procedure on the master node                                               
-* Info * 112.50 GB of memory available for the solver on the master node                                                  
-                                                                                                                          
                *** Iteration:   1 * Residuals (Max,Min): 1.09e+00 and 4.10e-01                                            
-                                                                                                                          
-               <<x;x>>_0.0000 :    -44.16942092 Residual Norm: 1.09169354                                                 
-               <<y;y>>_0.0000 :    -31.66076806 Residual Norm: 0.41004007                                                 
-               <<z;z>>_0.0000 :    -16.29340251 Residual Norm: 0.54448827                                                 
-                                                                                                                          
-* Info * Processing 3 Fock builds...                                                                                      
                                                                                                                           
 * Info * 0 gerade trial vectors in reduced space                                                                          
 * Info * 6 ungerade trial vectors in reduced space                                                                        
                                                                                                                           
-* Info * 147.52 kB of memory used for subspace procedure on the master node                                               
-* Info * 112.51 GB of memory available for the solver on the master node                                                  
-                                                                                                                          
                *** Iteration:   2 * Residuals (Max,Min): 1.61e-01 and 4.42e-02                                            
-                                                                                                                          
-               <<x;x>>_0.0000 :    -55.03705383 Residual Norm: 0.16091639                                                 
-               <<y;y>>_0.0000 :    -33.08718179 Residual Norm: 0.13099257                                                 
-               <<z;z>>_0.0000 :    -17.03578072 Residual Norm: 0.04417744                                                 
-                                                                                                                          
-* Info * Processing 3 Fock builds...                                                                                      
                                                                                                                           
 * Info * 0 gerade trial vectors in reduced space                                                                          
 * Info * 9 ungerade trial vectors in reduced space                                                                        
                                                                                                                           
-* Info * 191.44 kB of memory used for subspace procedure on the master node                                               
-* Info * 112.50 GB of memory available for the solver on the master node                                                  
-                                                                                                                          
                *** Iteration:   3 * Residuals (Max,Min): 7.08e-02 and 9.86e-03                                            
-                                                                                                                          
-               <<x;x>>_0.0000 :    -55.39219530 Residual Norm: 0.07083449                                                 
-               <<y;y>>_0.0000 :    -33.22034990 Residual Norm: 0.02646466                                                 
-               <<z;z>>_0.0000 :    -17.04072914 Residual Norm: 0.00985854                                                 
-                                                                                                                          
-* Info * Processing 3 Fock builds...                                                                                      
                                                                                                                           
 * Info * 0 gerade trial vectors in reduced space                                                                          
 * Info * 12 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-* Info * 235.36 kB of memory used for subspace procedure on the master node                                               
-* Info * 112.46 GB of memory available for the solver on the master node                                                  
-                                                                                                                          
                *** Iteration:   4 * Residuals (Max,Min): 1.70e-02 and 2.10e-03                                            
-                                                                                                                          
-               <<x;x>>_0.0000 :    -55.47595896 Residual Norm: 0.01704984                                                 
-               <<y;y>>_0.0000 :    -33.22521397 Residual Norm: 0.00366453                                                 
-               <<z;z>>_0.0000 :    -17.04102826 Residual Norm: 0.00209624                                                 
-                                                                                                                          
-* Info * Processing 3 Fock builds...                                                                                      
                                                                                                                           
 * Info * 0 gerade trial vectors in reduced space                                                                          
 * Info * 15 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-* Info * 279.28 kB of memory used for subspace procedure on the master node                                               
-* Info * 112.47 GB of memory available for the solver on the master node                                                  
-                                                                                                                          
                *** Iteration:   5 * Residuals (Max,Min): 4.01e-03 and 4.78e-04                                            
-                                                                                                                          
-               <<x;x>>_0.0000 :    -55.47998414 Residual Norm: 0.00400551                                                 
-               <<y;y>>_0.0000 :    -33.22531304 Residual Norm: 0.00063226                                                 
-               <<z;z>>_0.0000 :    -17.04104116 Residual Norm: 0.00047791                                                 
-                                                                                                                          
-* Info * Processing 3 Fock builds...                                                                                      
                                                                                                                           
 * Info * 0 gerade trial vectors in reduced space                                                                          
 * Info * 18 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-* Info * 323.39 kB of memory used for subspace procedure on the master node                                               
-* Info * 112.51 GB of memory available for the solver on the master node                                                  
-                                                                                                                          
                *** Iteration:   6 * Residuals (Max,Min): 5.19e-04 and 6.78e-05                                            
-                                                                                                                          
-               <<x;x>>_0.0000 :    -55.48026370 Residual Norm: 0.00051862                                                 
-               <<y;y>>_0.0000 :    -33.22531604 Residual Norm: 0.00008285                                                 
-               <<z;z>>_0.0000 :    -17.04104183 Residual Norm: 0.00006779                                                 
-                                                                                                                          
-* Info * Processing 1 Fock build...                                                                                       
                                                                                                                           
 * Info * 0 gerade trial vectors in reduced space                                                                          
 * Info * 19 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-* Info * 337.84 kB of memory used for subspace procedure on the master node                                               
-* Info * 112.51 GB of memory available for the solver on the master node                                                  
-                                                                                                                          
                *** Iteration:   7 * Residuals (Max,Min): 8.28e-05 and 6.78e-05                                            
-                                                                                                                          
-               <<x;x>>_0.0000 :    -55.48026807 Residual Norm: 0.00008216                                                 
                                                                                                                           
 * Info * Checkpoint written to file: acro-raman_rsp.h5                                                                    
                                                                                                                           
-* Info * Time spent in writing checkpoint file: 0.00 sec                                                                  
+* Info * Time spent in writing checkpoint file: 0.01 sec                                                                  
                                                                                                                           
-               *** Linear response converged in 7 iterations. Time: 3.90 sec                                              
+               *** Linear response converged in 7 iterations. Time: 1.37 sec                                              
                                                                                                                           
-                                                                                                                          
-* Info * Response solution vectors written to file: acro-raman.h5                                                         
-                                                                                                                          
-               Polarizability (w=0.0000)                                                                                  
-               -------------------------                                                                                  
-                                  X              Y              Z                                                         
-               X        55.48026807     1.48256162    -1.04429483                                                         
-               Y         1.48256200    33.22531604    -1.52620324                                                         
-               Z        -1.04429497    -1.52620324    17.04104183                                                         
                                                                                                                           
                                                                                                                           
                                               Polarizability Gradient Driver                                              
@@ -489,9 +417,30 @@
                           Exchange-Correlation Functional : B3LYP                                                         
                           Molecular Grid Level            : 4                                                             
                                                                                                                           
+* Info * Using the B3LYP functional.                                                                                      
+                                                                                                                          
+         P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
+                                                                                                                          
+* Info * Using the Libxc library (v7.0.0).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * Building RHS for w = 0.000                                                                                       
+* Info * 4.66 kB of memory used for subspace procedure on the master node                                                 
+* Info * 26.26 GB of memory available for the solver on the master node                                                   
+                                                                                                                          
+* Info * 1.57 MB of memory used for subspace procedure on the master node                                                 
+* Info * 26.26 GB of memory available for the solver on the master node                                                   
+                                                                                                                          
+* Info * ** Time spent on constructing the orbrsp RHS for 1 frequencies: 1.62 sec **                                      
+                                                                                                                          
                                                                                                                           
                                          Coupled-Perturbed Kohn-Sham Solver Setup                                         
-                                        ==========================================                                        
+                                        ------------------------------------------                                        
                                                                                                                           
                           Solver Type                     : Iterative Subspace Algorithm                                  
                           Max. Number of Iterations       : 150                                                           
@@ -499,71 +448,23 @@
                           Number of frequencies           : 1                                                             
                           Vector components               : xyz                                                           
                                                                                                                           
-* Info * Using the B3LYP functional.                                                                                      
-                                                                                                                          
-         P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
-                                                                                                                          
-* Info * Using the Libxc library (v6.2.2).                                                                                
-                                                                                                                          
-         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
-                                                                                                                          
-* Info * Using the following algorithm for XC numerical integration.                                                      
-                                                                                                                          
-         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
-                                                                                                                          
-* Info * Molecular grid with 113597 points generated in 0.05 sec.                                                         
-                                                                                                                          
-* Info * Building RHS for w = 0.000                                                                                       
-* Info * 4.66 kB of memory used for subspace procedure on the master node                                                 
-* Info * 112.65 GB of memory available for the solver on the master node                                                  
-                                                                                                                          
-* Info * 1.57 MB of memory used for subspace procedure on the master node                                                 
-* Info * 112.65 GB of memory available for the solver on the master node                                                  
-                                                                                                                          
-* Info * ** Time spent on constructing the orbrsp RHS for 1 frequencies: 3.39 sec **                                      
-                                                                                                                          
-* Info * Processing 6 Fock builds...                                                                                      
-                                                                                                                          
 * Info * 6 trial vectors in reduced space                                                                                 
-                                                                                                                          
-* Info * 132.37 kB of memory used for subspace procedure on the master node                                               
-* Info * 112.64 GB of memory available for the solver on the master node                                                  
                                                                                                                           
                *** Iteration:   1 * Residuals (Max,Min): 2.16e-01 and 5.70e-02                                            
                                                                                                                           
-* Info * Processing 6 Fock builds...                                                                                      
-                                                                                                                          
 * Info * 12 trial vectors in reduced space                                                                                
-                                                                                                                          
-* Info * 220.21 kB of memory used for subspace procedure on the master node                                               
-* Info * 112.53 GB of memory available for the solver on the master node                                                  
                                                                                                                           
                *** Iteration:   2 * Residuals (Max,Min): 4.00e-02 and 1.28e-02                                            
                                                                                                                           
-* Info * Processing 6 Fock builds...                                                                                      
-                                                                                                                          
 * Info * 18 trial vectors in reduced space                                                                                
-                                                                                                                          
-* Info * 308.05 kB of memory used for subspace procedure on the master node                                               
-* Info * 112.59 GB of memory available for the solver on the master node                                                  
                                                                                                                           
                *** Iteration:   3 * Residuals (Max,Min): 4.80e-03 and 2.01e-03                                            
                                                                                                                           
-* Info * Processing 6 Fock builds...                                                                                      
-                                                                                                                          
 * Info * 24 trial vectors in reduced space                                                                                
-                                                                                                                          
-* Info * 395.89 kB of memory used for subspace procedure on the master node                                               
-* Info * 112.59 GB of memory available for the solver on the master node                                                  
                                                                                                                           
                *** Iteration:   4 * Residuals (Max,Min): 6.66e-04 and 3.01e-04                                            
                                                                                                                           
-* Info * Processing 6 Fock builds...                                                                                      
-                                                                                                                          
 * Info * 30 trial vectors in reduced space                                                                                
-                                                                                                                          
-* Info * 527.82 kB of memory used for subspace procedure on the master node                                               
-* Info * 112.62 GB of memory available for the solver on the master node                                                  
                                                                                                                           
                *** Iteration:   5 * Residuals (Max,Min): 9.63e-05 and 3.21e-05                                            
                                                                                                                           
@@ -571,14 +472,14 @@
                                                                                                                           
 * Info * Time spent in writing checkpoint file: 0.00 sec                                                                  
                                                                                                                           
-               *** Coupled-Perturbed Kohn-Sham converged in 5 iterations. Time: 8.76 sec                                  
+               *** Coupled-Perturbed Kohn-Sham converged in 5 iterations. Time: 3.51 sec                                  
                                                                                                                           
                                                                                                                           
 * Info * Using the B3LYP functional.                                                                                      
                                                                                                                           
          P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
                                                                                                                           
-* Info * Using the Libxc library (v6.2.2).                                                                                
+* Info * Using the Libxc library (v7.0.0).                                                                                
                                                                                                                           
          S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
                                                                                                                           
@@ -586,23 +487,21 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
-* Info * Molecular grid with 113597 points generated in 0.06 sec.                                                         
-                                                                                                                          
 * Info * Building omega for w = 0.000                                                                                     
 * Info * 277.56 kB of memory used for subspace procedure on the master node                                               
-* Info * 112.52 GB of memory available for the solver on the master node                                                  
+* Info * 26.28 GB of memory available for the solver on the master node                                                   
                                                                                                                           
                                                                                                                           
-                      ** Time spent on constructing omega multipliers for 1 frequencies: 1.64 sec **                      
+                      ** Time spent on constructing omega multipliers for 1 frequencies: 0.57 sec **                      
                                                                                                                           
 * Info * Building gradient for frequency = 0.000                                                                          
                                                                                                                           
 * Info * 396.00 bytes of memory used for subspace procedure on the master node                                            
-* Info * 112.71 GB of memory available for the solver on the master node                                                  
+* Info * 26.42 GB of memory available for the solver on the master node                                                   
                                                                                                                           
-* Info * ** Time spent on constructing the analytical gradient for 1 frequencies: 28.71 sec **                            
+* Info * ** Time spent on constructing the analytical gradient for 1 frequencies: 20.58 sec **                            
                                                                                                                           
-                             *** Time spent in polarizability gradient driver: 39.18 sec ***                              
+                             *** Time spent in polarizability gradient driver: 24.70 sec ***                              
                                                                                                                           
                                                    Free Energy Analysis                                                   
                                                   ======================                                                  
@@ -611,14 +510,14 @@
        No Imaginary Frequencies                                                                                           
                                                                                                                           
        Free energy contributions calculated at @ 298.15 K:                                                                
-       Zero-point vibrational energy:                                   38.3700 kcal/mol                                  
-       H   (Trans + Rot + Vib = Tot):   1.4812 +   0.8887 +   0.9566 =   3.3266 kcal/mol                                  
-       S   (Trans + Rot + Vib = Tot):  38.0192 +  23.3631 +   5.0979 =  66.4801 cal/mol/K                                 
-       TS  (Trans + Rot + Vib = Tot):  11.3354 +   6.9657 +   1.5199 =  19.8211 kcal/mol                                  
+       Zero-point vibrational energy:                                   38.3765 kcal/mol                                  
+       H   (Trans + Rot + Vib = Tot):   1.4812 +   0.8887 +   0.9563 =   3.3263 kcal/mol                                  
+       S   (Trans + Rot + Vib = Tot):  38.0172 +  23.3616 +   5.0960 =  66.4748 cal/mol/K                                 
+       TS  (Trans + Rot + Vib = Tot):  11.3348 +   6.9653 +   1.5194 =  19.8195 kcal/mol                                  
                                                                                                                           
        Ground State Electronic Energy    : E0                        =  -191.77161883 au (   -120338.5077 kcal/mol)       
-       Free Energy Correction (Harmonic) : ZPVE + [H-TS]_T,R,V       =     0.03486092 au (        21.8756 kcal/mol)       
-       Gibbs Free Energy (Harmonic)      : E0 + ZPVE + [H-TS]_T,R,V  =  -191.73675791 au (   -120316.6321 kcal/mol)       
+       Free Energy Correction (Harmonic) : ZPVE + [H-TS]_T,R,V       =     0.03487334 au (        21.8834 kcal/mol)       
+       Gibbs Free Energy (Harmonic)      : E0 + ZPVE + [H-TS]_T,R,V  =  -191.73674549 au (   -120316.6243 kcal/mol)       
                                                                                                                           
                                                                                                                           
                                                    Vibrational Analysis                                                   
@@ -628,105 +527,107 @@
                                                                                                                           
                                    Vibrational Mode      5                                                                
                                    ----------------------------------------------------                                   
-                                   Harmonic frequency:                 916.93  cm**-1                                     
-                                   Reduced mass:                       1.5446  amu                                        
+                                   Harmonic frequency:                 917.12  cm**-1                                     
+                                   Reduced mass:                       1.5439  amu                                        
                                    Force constant:                     0.7651  mdyne/A                                    
-                                   IR intensity:                      20.1488  km/mol                                     
-                                   Raman activity:  static             1.2835  A**4/amu                                   
+                                   IR intensity:                      20.1353  km/mol                                     
+                                   Raman activity:  static             1.2868  A**4/amu                                   
                                    Normal mode:                                                                           
                                                               X           Y           Z                                   
-                                   1       C            -0.0818     -0.1085      0.0118                                   
-                                   2       C            -0.0443     -0.0729      0.0077                                   
-                                   3       C             0.0449      0.1359     -0.0135                                   
+                                   1       C            -0.0819     -0.1086      0.0118                                   
+                                   2       C            -0.0443     -0.0728      0.0077                                   
+                                   3       C             0.0448      0.1359     -0.0134                                   
                                    4       O             0.0376     -0.0128      0.0003                                   
-                                   5       H             0.1815      0.1956     -0.0221                                   
+                                   5       H             0.1816      0.1955     -0.0221                                   
                                    6       H            -0.6102      0.3734     -0.0197                                   
-                                   7       H             0.5193      0.1248     -0.0236                                   
-                                   8       H             0.2818      0.0509     -0.0113                                   
+                                   7       H             0.5193      0.1247     -0.0236                                   
+                                   8       H             0.2819      0.0510     -0.0113                                   
                                                                                                                           
                                                                                                                           
                                    Vibrational Mode      6                                                                
                                    ----------------------------------------------------                                   
-                                   Harmonic frequency:                 989.42  cm**-1                                     
-                                   Reduced mass:                       1.3104  amu                                        
-                                   Force constant:                     0.7558  mdyne/A                                    
-                                   IR intensity:                      38.2833  km/mol                                     
-                                   Raman activity:  static             0.8264  A**4/amu                                   
+                                   Harmonic frequency:                 989.59  cm**-1                                     
+                                   Reduced mass:                       1.3102  amu                                        
+                                   Force constant:                     0.7560  mdyne/A                                    
+                                   IR intensity:                      38.3194  km/mol                                     
+                                   Raman activity:  static             0.8275  A**4/amu                                   
                                    Normal mode:                                                                           
                                                               X           Y           Z                                   
-                                   1       C             0.0037      0.0144      0.1576                                   
+                                   1       C             0.0037      0.0144      0.1577                                   
                                    2       C            -0.0004     -0.0017     -0.0186                                   
                                    3       C            -0.0010     -0.0039     -0.0430                                   
                                    4       O             0.0003      0.0011      0.0122                                   
-                                   5       H             0.0037      0.0143      0.1567                                   
-                                   6       H            -0.0150     -0.0582     -0.6380                                   
-                                   7       H            -0.0169     -0.0653     -0.7160                                   
-                                   8       H            -0.0033     -0.0128     -0.1404                                   
+                                   5       H             0.0037      0.0143      0.1566                                   
+                                   6       H            -0.0150     -0.0582     -0.6377                                   
+                                   7       H            -0.0169     -0.0653     -0.7162                                   
+                                   8       H            -0.0033     -0.0129     -0.1410                                   
                                                                                                                           
                                                                                                                           
                                    Vibrational Mode      9                                                                
                                    ----------------------------------------------------                                   
-                                   Harmonic frequency:                1160.45  cm**-1                                     
-                                   Reduced mass:                       1.9423  amu                                        
-                                   Force constant:                     1.5411  mdyne/A                                    
-                                   IR intensity:                      34.4776  km/mol                                     
-                                   Raman activity:  static            11.6450  A**4/amu                                   
+                                   Harmonic frequency:                1160.76  cm**-1                                     
+                                   Reduced mass:                       1.9404  amu                                        
+                                   Force constant:                     1.5404  mdyne/A                                    
+                                   IR intensity:                      34.4919  km/mol                                     
+                                   Raman activity:  static            11.6587  A**4/amu                                   
                                    Normal mode:                                                                           
                                                               X           Y           Z                                   
-                                   1       C             0.0470      0.0376     -0.0045                                   
-                                   2       C            -0.0199     -0.1756      0.0165                                   
-                                   3       C             0.0389      0.2147     -0.0205                                   
-                                   4       O            -0.0121     -0.0335      0.0033                                   
-                                   5       H             0.1153      0.2551     -0.0260                                   
-                                   6       H             0.2120     -0.1172      0.0057                                   
-                                   7       H            -0.2011     -0.0597      0.0102                                   
-                                   8       H            -0.7197     -0.4607      0.0590                                   
+                                   1       C             0.0471      0.0374     -0.0045                                   
+                                   2       C            -0.0199     -0.1754      0.0165                                   
+                                   3       C             0.0388      0.2147     -0.0205                                   
+                                   4       O            -0.0121     -0.0334      0.0033                                   
+                                   5       H             0.1155      0.2552     -0.0260                                   
+                                   6       H             0.2115     -0.1169      0.0057                                   
+                                   7       H            -0.2002     -0.0595      0.0101                                   
+                                   8       H            -0.7202     -0.4607      0.0590                                   
                                                                                                                           
                                                                                                                           
                                    Vibrational Mode      14                                                               
                                    ----------------------------------------------------                                   
-                                   Harmonic frequency:                1823.14  cm**-1                                     
-                                   Reduced mass:                      10.0961  amu                                        
-                                   Force constant:                    19.7717  mdyne/A                                    
-                                   IR intensity:                     221.6294  km/mol                                     
-                                   Raman activity:  static            56.9974  A**4/amu                                   
+                                   Harmonic frequency:                1823.73  cm**-1                                     
+                                   Reduced mass:                      10.0893  amu                                        
+                                   Force constant:                    19.7713  mdyne/A                                    
+                                   IR intensity:                     221.7930  km/mol                                     
+                                   Raman activity:  static            57.0510  A**4/amu                                   
                                    Normal mode:                                                                           
                                                               X           Y           Z                                   
-                                   1       C            -0.0227      0.0111     -0.0005                                   
-                                   2       C             0.0984      0.0008     -0.0024                                   
-                                   3       C            -0.7108      0.0421      0.0129                                   
-                                   4       O             0.4722     -0.0583     -0.0058                                   
-                                   5       H             0.2396      0.3728     -0.0396                                   
-                                   6       H             0.0063     -0.0162      0.0013                                   
-                                   7       H             0.0395      0.0247     -0.0032                                   
-                                   8       H            -0.2130     -0.1003      0.0142                                   
+                                   1       C             0.0228     -0.0111      0.0005                                   
+                                   2       C            -0.0985     -0.0009      0.0024                                   
+                                   3       C             0.7110     -0.0421     -0.0129                                   
+                                   4       O            -0.4720      0.0583      0.0058                                   
+                                   5       H            -0.2394     -0.3729      0.0397                                   
+                                   6       H            -0.0063      0.0163     -0.0013                                   
+                                   7       H            -0.0395     -0.0248      0.0032                                   
+                                   8       H             0.2129      0.1003     -0.0142                                   
                                                                                                                           
                                                                                                                           
                                    Vibrational Mode      15                                                               
                                    ----------------------------------------------------                                   
-                                   Harmonic frequency:                2866.01  cm**-1                                     
-                                   Reduced mass:                       1.0843  amu                                        
-                                   Force constant:                     5.2474  mdyne/A                                    
-                                   IR intensity:                     105.5145  km/mol                                     
-                                   Raman activity:  static           108.0798  A**4/amu                                   
+                                   Harmonic frequency:                2866.31  cm**-1                                     
+                                   Reduced mass:                       1.0842  amu                                        
+                                   Force constant:                     5.2481  mdyne/A                                    
+                                   IR intensity:                     105.5592  km/mol                                     
+                                   Raman activity:  static           108.0997  A**4/amu                                   
                                    Normal mode:                                                                           
                                                               X           Y           Z                                   
-                                   1       C             0.0010     -0.0002     -0.0000                                   
-                                   2       C            -0.0028     -0.0013      0.0002                                   
-                                   3       C            -0.0276      0.0782     -0.0065                                   
-                                   4       O            -0.0020     -0.0003      0.0001                                   
-                                   5       H             0.3787     -0.9186      0.0749                                   
-                                   6       H             0.0023     -0.0056      0.0005                                   
-                                   7       H             0.0032      0.0093     -0.0009                                   
-                                   8       H            -0.0025      0.0053     -0.0004                                   
+                                   1       C            -0.0010      0.0002      0.0000                                   
+                                   2       C             0.0028      0.0013     -0.0002                                   
+                                   3       C             0.0277     -0.0783      0.0065                                   
+                                   4       O             0.0020      0.0003     -0.0001                                   
+                                   5       H            -0.3787      0.9186     -0.0749                                   
+                                   6       H            -0.0023      0.0056     -0.0005                                   
+                                   7       H            -0.0032     -0.0093      0.0009                                   
+                                   8       H             0.0025     -0.0053      0.0004                                   
                                                                                                                           
                                                                                                                           
 * Info * Full vibrational analysis results written to: acro-raman-vib-results.out                                         
                                                                                                                           
+* Info * Vibrational analysis results written to file: acro-raman.h5                                                      
+                                                                                                                          
 !========================================================================================================================!
-!                               VeloxChem execution completed at Tue May 20 13:18:56 2025.                               !
+!                               VeloxChem execution completed at Mon Apr 13 19:55:33 2026.                               !
 !========================================================================================================================!
-!                                           Total execution time is 86.66 sec.                                           !
+!                                           Total execution time is 49.19 sec.                                           !
 !========================================================================================================================!
 !                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
 !                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !
