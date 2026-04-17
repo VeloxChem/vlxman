@@ -1,6 +1,6 @@
-# Locaion of the web pages on the GitHub repo.
+# Locaion of the web pages
 
-https://veloxchem.github.io/vlxman/docs/intro.html
+https://veloxchem.org
 
 # Environment YML file
 
@@ -90,6 +90,22 @@ Figure: My figure caption.
 ```
 (sec:link-name)=
 ```
+
+## More cell tags
+
+| Tag | Description |
+|----------|-------------|
+| remove-cell	| Remove the cell from the rendered output.| 
+| remove-input	| Remove the code cell input/source from the rendered output.| 
+| remove-output	| Remove the code cell output from the rendered output.| 
+| hide-cell	| Hides the cell from the rendered output.| 
+| hide-input	| Hides the code cell input/source from the rendered output.| 
+| hide-output	| Hides the code cell output from the rendered output.| 
+| remove-stderr	| Remove the code cell output stderr from the rendered output. See also project config| 
+| remove-stdout	| Remove the code cell output stdout from the rendered output. See also project config| 
+| skip-execution	| Skip this cell, when executing the notebook| 
+| raises-exception	| Expect the code cell to raise an Exception (and continue execution)| 
+
 
 # References
 
