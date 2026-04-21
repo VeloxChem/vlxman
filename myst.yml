@@ -53,9 +53,12 @@ project:
         - file: docs/comp_sys_builder.ipynb
         - file: docs/im.ipynb
         - file: docs/evb.md
-    - title: Visualization
+    - title: Visualization and Analysis
       children:
-        - file: docs/vis.ipynb
+        - file: docs/mol-vis.ipynb
+        - file: docs/opt-vis.ipynb
+        - file: docs/spectra-vis.ipynb
+        - file: docs/vib-vis.ipynb
         - file: docs/viamd.md
     - title: Advanced users
       children:
