@@ -72,6 +72,7 @@ $ git clone https://github.com/VeloxChem/VeloxChem.git
 - [CMake](https://cmake.org/)
 - C++ compiler supporting the C++20 standard and OpenMP
 - [Eigen](https://gitlab.com/libeigen/eigen)
+- [Boost Math](https://github.com/boostorg/math) (header-only)
 - [Libxc](https://libxc.gitlab.io/)
 - [Python](https://www.python.org/) (>=3.9) that includes the interpreter, the development header files, and the development libraries
 - [NumPy](https://numpy.org/)
@@ -158,7 +159,7 @@ To avoid clashes between dependencies, we recommend to always use a [virtual env
   $ python3 -m pip install h5py pytest psutil geometric cmake pybind11-global scikit-build ninja rdkit
   ```
 
-- Clone [Eigen](https://gitlab.com/libeigen/eigen).
+- Clone [Eigen](https://gitlab.com/libeigen/eigen) and [Boost Math](https://github.com/boostorg/math).
 
 - Install Libxc according to [Libxc documentation](https://libxc.gitlab.io/).
 
@@ -170,6 +171,7 @@ To avoid clashes between dependencies, we recommend to always use a [virtual env
   ```
   $ cd VeloxChem
   $ export EIGEN_INCLUDE_DIR=/path/to/your/eigen
+  $ export BOOST_INCLUDE_DIR=/path/to/your/boost-math
   $ export SKBUILD_CONFIGURE_OPTIONS="-DCMAKE_CXX_COMPILER=CC"
   $ export CMAKE_PREFIX_PATH=/path/to/your/libxc:$CMAKE_PREFIX_PATH
   $ export LD_LIBRARY_PATH=/path/to/your/libxc/lib:$LD_LIBRARY_PATH
@@ -197,7 +199,7 @@ To avoid clashes between dependencies, we recommend to always use a [virtual env
   ```
   $ sudo apt update
   $ sudo apt install build-essential wget cmake git python3 python3-pip python3-venv
-  $ sudo apt install libopenblas-openmp-dev liblapacke-dev libeigen3-dev mpich
+  $ sudo apt install libopenblas-openmp-dev liblapacke-dev libeigen3-dev libboost-math-dev mpich
   ```
 
 - Install Libxc according to [Libxc documentation](https://libxc.gitlab.io/).
