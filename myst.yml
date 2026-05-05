@@ -56,6 +56,7 @@ project:
     - title: Visualization and Analysis
       children:
         - file: docs/mol-vis.ipynb
+        - file: docs/elec-vis.ipynb
         - file: docs/opt-vis.ipynb
         - file: docs/spectra-vis.ipynb
         - file: docs/vib-vis.ipynb
