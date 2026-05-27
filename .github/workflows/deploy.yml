@@ -46,7 +46,7 @@ jobs:
         run: jupyter-book build --html
       - name: Create redirect for old intro
         run: |
-          cat > ./_build/html/intro.html <<'EOF'
+          cat > ./_build/html/docs/intro.html <<'EOF'
           <!doctype html>
           <html lang="en">
             <head>
