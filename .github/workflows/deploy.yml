@@ -44,6 +44,26 @@ jobs:
         run: npm list -g --depth=1
       - name: Build HTML Assets
         run: jupyter-book build --html
+      - name: Create redirect for old intro
+        run: |
+          cat > ./_build/html/intro.html <<'EOF'
+          <!doctype html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <title>Redirecting…</title>
+            <meta http-equiv="refresh" content="0; url=https://veloxchem.org">
+            <link rel="canonical" href="https://veloxchem.org">
+          <script>
+            window.location.replace("https://veloxchem.org");
+          </script>
+        </head>
+        <body>
+          <p>Redirecting to <a href="https://veloxchem.org">veloxchem.org</a>.</p>
+        </body>
+        </html>
+        EOF
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
