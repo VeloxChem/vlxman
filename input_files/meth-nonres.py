@@ -7,7 +7,7 @@ scf_drv = vlx.ScfRestrictedDriver()
 scf_drv.xcfun = "b3lyp"
 scf_results = scf_drv.compute(molecule, basis)
 
-lr_drv = vlx.LinearResponseDriver()
+lr_drv = vlx.LinearResponseSolver()
 
 lr_drv.property = "polarizability"
 lr_drv.frequencies = [0.0656]  # static field is default

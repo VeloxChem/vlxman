@@ -1,4 +1,5 @@
 import veloxchem as vlx
+import numpy as np 
 
 xyz="""
 13
