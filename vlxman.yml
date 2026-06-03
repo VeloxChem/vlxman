@@ -1,4 +1,4 @@
-name: vlxman-dev
+name: vlxman
 channels:
   - conda-forge
   - veloxchem
@@ -14,8 +14,8 @@ dependencies:
   - k3d
   - ipympl
   - ipywidgets
-  - mdanalysis
   - openmm
+  - mdanalysis
   - py3dmol
   - pymbar
   - rdkit
