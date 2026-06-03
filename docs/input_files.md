@@ -292,6 +292,7 @@
         <a href="../input_files/pna-GS-dipole.py" download>pna-GS-dipole.py</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/pna-GS-dipole.inp" download>pna-GS-dipole.inp</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../output_files/pna-GS-dipole.out" download>pna-GS-dipole.out</a>
@@ -594,6 +595,7 @@
         <a href="../input_files/esca-xps.py" download>esca-xps.py</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/esca-xps.inp" download>esca-xps.inp</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../output_files/esca-xps.out" download>esca-xps.out</a>
@@ -602,7 +604,22 @@
       </td>
     </tr>     <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
-        <a href="#sec:nexafs">NEXAFS</a>
+        <a href="#sec:xas-cvs">XAS (CVS)</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/xas-cvs.py" download>xas-cvs.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/xas-cvs.inp" download>xas-cvs.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+      </td>
+    </tr> 
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:xas-cpp">XAS (CPP)</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../input_files/esca-nexafs.py" download>esca-nexafs.py</a>
@@ -616,7 +633,7 @@
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../output_files/esca-nexafs.h5" download>esca-nexafs.h5</a>
       </td>
-    </tr> 
+    </tr>
     <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
         <a href="#sec:rixs">RIXS</a>
