@@ -1,4 +1,4 @@
-name: vlxman
+name: vlxman-dev-3
 channels:
   - conda-forge
   - veloxchem
