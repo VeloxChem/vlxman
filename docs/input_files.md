@@ -601,6 +601,7 @@
         <a href="../output_files/esca-xps.out" download>esca-xps.out</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+       <a href="../output_files/esca-xps.out" download>esca-xps.h5</a>
       </td>
     </tr>     <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
@@ -613,8 +614,10 @@
         <a href="../input_files/xas-cvs.inp" download>xas-cvs.inp</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+       <a href="../input_files/xas-cvs.out" download>xas-cvs.out</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+       <a href="../input_files/xas-cvs.h5" download>xas-cvs.h5</a>
       </td>
     </tr> 
     <tr style="background-color: #fff;">
