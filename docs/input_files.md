@@ -614,10 +614,10 @@
         <a href="../input_files/xas-cvs.inp" download>xas-cvs.inp</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-       <a href="../input_files/xas-cvs.out" download>xas-cvs.out</a>
+       <a href="../output_files/xas-cvs.out" download>xas-cvs.out</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-       <a href="../input_files/xas-cvs.h5" download>xas-cvs.h5</a>
+       <a href="../output_files/xas-cvs.h5" download>xas-cvs.h5</a>
       </td>
     </tr> 
     <tr style="background-color: #fff;">
