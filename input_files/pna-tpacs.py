@@ -27,10 +27,11 @@ basis = vlx.MolecularBasis.read(molecule, 'def2-svp')
 
 scf_drv = vlx.ScfRestrictedDriver()
 scf_drv.filename = 'pna-tpacs'
-scf_drv.xcfun = "cam-b3lyp"
+scf_drv.xcfun = "MN15"
 scf_results = scf_drv.compute(molecule, basis)
 
-tpa_drv = vlx.TpaReducedDriver()
+tpa_drv = vlx.TpaDriver()
+tpa_drv.filename = 'pna-tpacs'
 
 tpa_drv.frequencies = np.arange(0.05, 0.11, 0.0025) 
 
