@@ -1,0 +1,290 @@
+!========================================================================================================================!
+!                                                                                                                        !
+!                                                       VELOXCHEM                                                        !
+!                                              AN ELECTRONIC STRUCTURE CODE                                              !
+!                                                                                                                        !
+!                                        Copyright 2018-2025 VeloxChem developers                                        !
+!========================================================================================================================!
+!                      VeloxChem execution started on 16 MPI processes at Thu Jun  4 14:59:06 2026.                      !
+!========================================================================================================================!
+                                                                                                                          
+* Info * Using 16 OpenMP threads per MPI process.                                                                         
+                                                                                                                          
+* Info * Reading input file alpha-helix-acetone-water-pe.inp...                                                           
+                                                                                                                          
+* Info * @jobs                                                                                                            
+* Info * task: scf                                                                                                        
+* Info * @end                                                                                                             
+                                                                                                                          
+* Info * @method_settings                                                                                                 
+* Info * basis: aug-cc-pvdz                                                                                               
+* Info * potfile: pe_frame_000000.pot                                                                                     
+* Info * @end                                                                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             ================================                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           H          23.092395780000       21.922395710000       22.434394840000                         
+                           C          23.382396700000       22.952394490000       22.654396060000                         
+                           H          24.332395550000       23.142396930000       22.144395830000                         
+                           H          22.602394100000       23.562397000000       22.184394840000                         
+                           C          23.442396160000       23.262393950000       24.094394680000                         
+                           O          23.012395860000       22.442396160000       24.924396510000                         
+                           C          24.082395550000       24.582395550000       24.504396440000                         
+                           H          24.362396240000       24.562395100000       25.554395680000                         
+                           H          24.922395710000       24.802394870000       23.844396590000                         
+                           H          23.462396620000       25.462394710000       24.354394910000                         
+                                                                                                                          
+                          Molecular charge            : 0                                                                 
+                          Spin multiplicity           : 1                                                                 
+                          Number of atoms             : 10                                                                
+                          Number of alpha electrons   : 16                                                                
+                          Number of beta  electrons   : 16                                                                
+                                                                                                                          
+* Info * Reading basis set from file: /cfs/klemming/projects/supr/panor/lxin/gitlab/VeloxChemMP.test/vlxenv/lib/python3.11/site-packages/veloxchem/basis/AUG-CC-PVDZ
+                                                                                                                          
+                                              Molecular Basis (Atomic Basis)                                              
+                                             ================================                                             
+                                                                                                                          
+                               Basis: AUG-CC-PVDZ                                                                         
+                                                                                                                          
+                               Atom Contracted GTOs           Primitive GTOs                                              
+                                                                                                                          
+                               H     (3S,2P)                   (5S,2P)                                                    
+                               C     (4S,3P,2D)                (18S,5P,2D)                                                
+                               O     (4S,3P,2D)                (18S,5P,2D)                                                
+                                                                                                                          
+                               Contracted Basis Functions : 146                                                           
+                               Primitive Basis Functions  : 238                                                           
+                                                                                                                          
+                                                                                                                          
+                                            Self Consistent Field Driver Setup                                            
+                                           ====================================                                           
+                                                                                                                          
+                   Wave Function Model             : Spin-Restricted Hartree-Fock with PE                                 
+                   Initial Guess Model             : Superposition of Atomic Densities                                    
+                   Convergence Accelerator         : Two Level Direct Inversion of Iterative Subspace                     
+                   Max. Number of Iterations       : 50                                                                   
+                   Max. Number of Error Vectors    : 10                                                                   
+                   Convergence Threshold           : 1.0e-06                                                              
+                   ERI Screening Threshold         : 1.0e-12                                                              
+                   Linear Dependence Threshold     : 1.0e-06                                                              
+                                                                                                                          
+* Info * Nuclear repulsion energy: 119.0352504019 a.u.                                                                    
+                                                                                                                          
+* Info * Reading polarizable embedding: pe_frame_000000.json                                                              
+                                                                                                                          
+* Info * Embedding settings:                                                                                              
+* Info * - embedding_method : PE                                                                                          
+* Info * - induced_dipoles                                                                                                
+* Info *   - solver          : jidiis                                                                                     
+* Info *   - threshold       : 1e-08                                                                                      
+* Info *   - max_iterations  : 100                                                                                        
+* Info *   - mic             : False                                                                                      
+                                                                                                                          
+* Info * Overlap matrix computed in 0.00 sec.                                                                             
+                                                                                                                          
+* Info * Kinetic energy matrix computed in 0.09 sec.                                                                      
+                                                                                                                          
+* Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+* Info * Orthogonalization matrix computed in 0.02 sec.                                                                   
+                                                                                                                          
+* Info * Starting Reduced Basis SCF calculation...                                                                        
+* Info * ...done. SCF energy in reduced basis set: -191.881107617013 a.u. Time: 0.55 sec.                                 
+                                                                                                                          
+* Info * Overlap matrix computed in 0.01 sec.                                                                             
+                                                                                                                          
+* Info * Kinetic energy matrix computed in 0.00 sec.                                                                      
+                                                                                                                          
+* Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+* Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+                                                                                                                          
+               Iter. | Hartree-Fock Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
+               --------------------------------------------------------------------------------------------               
+                  1      -192.044942294972    0.0000000000      0.16937924      0.00720691      0.00000000                
+                  2      -192.048755920647   -0.0038136257      0.05559258      0.00256667      0.31249519                
+                  3      -192.049198187532   -0.0004422669      0.01945311      0.00098918      0.02956233                
+                  4      -192.049271709408   -0.0000735219      0.00740181      0.00044688      0.01344662                
+                  5      -192.049292714125   -0.0000210047      0.00441381      0.00026166      0.00891004                
+                  6      -192.049298303767   -0.0000055896      0.00113011      0.00005482      0.00517810                
+                  7      -192.049298889693   -0.0000005859      0.00024878      0.00002004      0.00183706                
+                  8      -192.049298901047   -0.0000000114      0.00005789      0.00000410      0.00034288                
+                  9      -192.049298902067   -0.0000000010      0.00001540      0.00000076      0.00007398                
+                 10      -192.049298901697    0.0000000004      0.00000474      0.00000016      0.00001570                
+                 11      -192.049298901683    0.0000000000      0.00000188      0.00000010      0.00000663                
+                 12      -192.049298901680    0.0000000000      0.00000086      0.00000005      0.00000285                
+                                                                                                                          
+* Info * Checkpoint written to file: alpha-helix-acetone-water-pe_scf.h5                                                  
+                                                                                                                          
+* Info * SCF results written to file: alpha-helix-acetone-water-pe.h5                                                     
+                                                                                                                          
+               *** SCF converged in 12 iterations. Time: 2.46 sec.                                                        
+                                                                                                                          
+               Spin-Restricted Hartree-Fock with PE:                                                                      
+               -------------------------------------                                                                      
+               Total Energy                       :     -192.0492989017 a.u.                                              
+               Electronic Energy                  :     -311.0845493035 a.u.                                              
+               Nuclear Repulsion Energy           :      119.0352504019 a.u.                                              
+               ------------------------------------                                                                       
+               Gradient Norm                      :        0.0000008586 a.u.                                              
+                                                                                                                          
+                                                                                                                          
+               Polarizable Embedding (PE) Energy Contributions                                                            
+               ------------------------------------                                                                       
+               Electrostatic Contribution         :       -0.0442201949 a.u.                                              
+               Induced Contribution               :       -0.0327222710 a.u.                                              
+               ------------------------------------                                                                       
+                                                                                                                          
+               Ground State Information                                                                                   
+               ------------------------                                                                                   
+               Charge of Molecule            :  0.0                                                                       
+               Multiplicity (2S+1)           :  1                                                                         
+               Magnetic Quantum Number (M_S) :  0.0                                                                       
+                                                                                                                          
+                                                                                                                          
+                                                 Spin Restricted Orbitals                                                 
+                                                 ------------------------                                                 
+                                                                                                                          
+               Molecular Orbital No.  12:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.62686 a.u.                                                                  
+               (   2 C   1p0 :     0.17) (   3 H   1s  :    -0.16) (   5 C   1p0 :    -0.19)                              
+               (   6 O   1p-1:    -0.21) (   7 C   1p0 :     0.31) (   8 H   1s  :     0.29)                              
+               (   8 H   2s  :     0.24) (   9 H   1s  :    -0.19) (   9 H   2s  :    -0.15)                              
+                                                                                                                          
+               Molecular Orbital No.  13:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.60691 a.u.                                                                  
+               (   2 C   1p+1:     0.26) (   3 H   1s  :     0.16) (   4 H   1s  :    -0.24)                              
+               (   7 C   1p+1:    -0.31) (   9 H   1s  :    -0.25) (   9 H   2s  :    -0.15)                              
+               (  10 H   1s  :     0.24)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  14:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.58683 a.u.                                                                  
+               (   1 H   1s  :    -0.34) (   1 H   2s  :    -0.28) (   2 C   4s  :     0.25)                              
+               (   2 C   1p+1:     0.17) (   2 C   1p-1:     0.34) (   3 H   1s  :     0.21)                              
+               (   3 H   2s  :     0.15) (   7 C   4s  :    -0.17) (   7 C   1p0 :     0.19)                              
+               (   8 H   1s  :     0.17)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  15:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.55950 a.u.                                                                  
+               (   2 C   1p+1:    -0.16) (   4 H   1s  :     0.18) (   5 C   1p+1:     0.17)                              
+               (   6 O   1p+1:     0.42) (   6 O   1p-1:    -0.17) (   6 O   2p+1:     0.32)                              
+                                                                                                                          
+               Molecular Orbital No.  16:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.49737 a.u.                                                                  
+               (   2 C   4s  :     0.28) (   2 C   1p0 :    -0.24) (   2 C   2p0 :    -0.17)                              
+               (   5 C   1p0 :     0.18) (   5 C   3p-1:     0.17) (   5 C   3p0 :     0.18)                              
+               (   6 O   1p-1:    -0.32) (   6 O   1p0 :    -0.39) (   6 O   2p-1:    -0.26)                              
+               (   6 O   2p0 :    -0.30) (   7 C   4s  :    -0.34) (   7 C   1p-1:    -0.19)                              
+                                                                                                                          
+               Molecular Orbital No.  17:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:   -0.03690 a.u.                                                                  
+               (   1 H   3s  :    -0.42) (   2 C   4s  :    -5.81) (   2 C   2p-1:     0.19)                              
+               (   2 C   2p0 :    -0.23) (   2 C   3p+1:    -0.57) (   2 C   3p-1:    -0.24)                              
+               (   2 C   3p0 :    -1.45) (   3 H   3s  :    -0.17) (   4 H   2s  :    -0.40)                              
+               (   4 H   3s  :    -0.79) (   5 C   3s  :     0.49) (   5 C   4s  :     6.03)                              
+               (   5 C   2p+1:     0.20) (   5 C   2p-1:     0.44) (   5 C   3p+1:     0.68)                              
+               (   5 C   3p0 :    -4.30) (   5 C   2d+1:     0.21) (   5 C   2d-1:     0.38)                              
+               (   6 O   3s  :     0.20) (   6 O   4s  :     1.06) (   6 O   3p0 :     0.25)                              
+               (   7 C   3s  :     0.38) (   7 C   4s  :     1.96) (   7 C   2p+1:     0.26)                              
+               (   7 C   2p-1:     0.78) (   7 C   2p0 :     0.23) (   7 C   3p+1:    -0.72)                              
+               (   7 C   3p-1:     0.16) (   7 C   3p0 :     1.66) (   7 C   2d+2:     0.16)                              
+               (   7 C   2d-1:     0.18) (   7 C   2d-2:    -0.17) (   8 H   2s  :    -1.07)                              
+               (   8 H   3s  :    -1.43) (   8 H   2p-1:    -0.18) (   8 H   2p0 :     0.33)                              
+               (   9 H   2s  :    -0.41) (   9 H   3s  :     1.53) (  10 H   2s  :    -0.83)                              
+               (  10 H   3s  :    -1.33) (  10 H   2p-1:     0.18)                                                        
+                                                                                                                          
+               Molecular Orbital No.  18:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:   -0.01265 a.u.                                                                  
+               (   1 H   2s  :     0.18) (   1 H   3s  :     0.60) (   2 C   3s  :     0.47)                              
+               (   2 C   4s  :     3.22) (   2 C   2p0 :     0.17) (   2 C   3p+1:    -0.41)                              
+               (   2 C   3p-1:     0.59) (   2 C   3p0 :     0.79) (   3 H   2s  :    -0.16)                              
+               (   3 H   3s  :     0.70) (   4 H   2s  :    -0.39) (   4 H   3s  :    -0.32)                              
+               (   5 C   4s  :    -0.30) (   5 C   2p0 :     0.19) (   5 C   3p+1:     0.71)                              
+               (   5 C   3p-1:     0.26) (   5 C   3p0 :     2.70) (   5 C   2d-1:    -0.29)                              
+               (   6 O   4s  :    -1.26) (   6 O   3p-1:    -0.19) (   7 C   3s  :     0.18)                              
+               (   7 C   2p+1:    -0.23) (   7 C   2p-1:     0.27) (   7 C   3p+1:    -0.78)                              
+               (   7 C   3p-1:     1.78) (   7 C   3p0 :    -1.38) (   7 C   2d-1:    -0.23)                              
+               (   8 H   2s  :     0.39) (   8 H   3s  :     2.25) (   8 H   2p0 :    -0.17)                              
+               (   9 H   2s  :    -0.18) (  10 H   2s  :    -0.83) (  10 H   3s  :    -4.75)                              
+                                                                                                                          
+               Molecular Orbital No.  19:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.00750 a.u.                                                                  
+               (   1 H   2s  :     1.08) (   1 H   3s  :     2.43) (   1 H   2p-1:     0.27)                              
+               (   2 C   4s  :    -3.08) (   2 C   2p+1:     0.16) (   2 C   2p-1:     0.29)                              
+               (   2 C   2p0 :     0.97) (   2 C   3p+1:     1.48) (   2 C   3p-1:     1.48)                              
+               (   2 C   3p0 :     0.34) (   2 C   2d0 :     0.23) (   3 H   2s  :     0.39)                              
+               (   3 H   3s  :    -1.54) (   4 H   2s  :     0.58) (   4 H   3s  :     1.24)                              
+               (   5 C   3s  :    -0.41) (   5 C   4s  :    -3.64) (   5 C   2p-1:     0.34)                              
+               (   5 C   2p0 :     0.76) (   5 C   3p+1:    -2.12) (   5 C   3p-1:    -2.57)                              
+               (   5 C   3p0 :    -1.64) (   5 C   2d-1:    -0.18) (   5 C   2d0 :    -0.20)                              
+               (   6 O   4s  :    -0.36) (   6 O   3p+1:     0.17) (   6 O   3p0 :     0.19)                              
+               (   7 C   3s  :     0.39) (   7 C   4s  :     6.27) (   7 C   2p+1:     0.36)                              
+               (   7 C   2p-1:     0.22) (   7 C   2p0 :     0.47) (   7 C   3p+1:     0.40)                              
+               (   7 C   3p-1:    -1.29) (   7 C   3p0 :     1.35) (   8 H   2s  :    -1.18)                              
+               (   8 H   3s  :    -2.87) (   8 H   2p0 :     0.28) (   9 H   2s  :    -0.43)                              
+               (   9 H   3s  :     0.58) (  10 H   2s  :     0.16) (  10 H   3s  :     0.71)                              
+                                                                                                                          
+               Molecular Orbital No.  20:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.02445 a.u.                                                                  
+               (   1 H   2s  :    -0.67) (   1 H   3s  :    -3.19) (   2 C   3s  :     0.28)                              
+               (   2 C   4s  :     9.07) (   2 C   2p-1:    -0.35) (   2 C   3p+1:     0.75)                              
+               (   2 C   3p-1:    -2.01) (   2 C   3p0 :     2.92) (   3 H   2s  :    -0.32)                              
+               (   3 H   3s  :     1.34) (   4 H   2s  :     0.20) (   4 H   3s  :     4.35)                              
+               (   5 C   4s  :    -8.60) (   5 C   3p-1:     3.52) (   5 C   3p0 :     4.89)                              
+               (   6 O   4s  :     0.90) (   6 O   3p-1:    -0.19) (   6 O   3p0 :    -0.51)                              
+               (   7 C   3s  :     0.23) (   7 C   4s  :    -0.33) (   7 C   3p+1:     0.99)                              
+               (   7 C   3p-1:     0.25) (   7 C   3p0 :    -1.54) (   7 C   2d-1:    -0.15)                              
+               (   8 H   2s  :     0.28) (   8 H   3s  :     0.67) (   9 H   3s  :    -3.01)                              
+               (  10 H   2s  :    -0.32) (  10 H   3s  :    -1.04)                                                        
+                                                                                                                          
+               Molecular Orbital No.  21:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.03744 a.u.                                                                  
+               (   1 H   2s  :     0.40) (   1 H   3s  :     1.57) (   1 H   2p-1:     0.15)                              
+               (   2 C   3s  :     0.38) (   2 C   4s  :     4.25) (   2 C   2p-1:     0.17)                              
+               (   2 C   2p0 :    -0.21) (   2 C   3p+1:     0.47) (   2 C   3p-1:     1.74)                              
+               (   2 C   2d-1:    -0.15) (   3 H   2s  :    -0.68) (   3 H   2p+1:     0.16)                              
+               (   4 H   2s  :    -0.57) (   4 H   3s  :    -3.62) (   5 C   4s  :    -3.94)                              
+               (   5 C   2p+1:    -0.17) (   5 C   2p-1:    -0.47) (   5 C   3p+1:    -1.68)                              
+               (   5 C   3p-1:    -1.42) (   5 C   3p0 :     1.17) (   5 C   2d+1:    -0.17)                              
+               (   5 C   2d-1:    -0.32) (   6 O   3s  :    -0.16) (   6 O   4s  :    -1.10)                              
+               (   6 O   3p0 :     0.16) (   7 C   3s  :     0.50) (   7 C   4s  :     2.43)                              
+               (   7 C   2p-1:    -0.60) (   7 C   3p+1:     1.05) (   7 C   3p-1:    -1.34)                              
+               (   7 C   3p0 :     0.63) (   8 H   2s  :    -0.19) (   8 H   3s  :    -2.99)                              
+               (   9 H   2s  :     0.24) (   9 H   3s  :    -1.17) (  10 H   2s  :     0.48)                              
+               (  10 H   3s  :     4.03)                                                                                  
+                                                                                                                          
+                                                                                                                          
+                                                Ground State Dipole Moment                                                
+                                               ----------------------------                                               
+                                                                                                                          
+                                   X   :         0.820915 a.u.         2.086557 Debye                                     
+                                   Y   :         1.270937 a.u.         3.230398 Debye                                     
+                                   Z   :        -1.570949 a.u.        -3.992953 Debye                                     
+                                 Total :         2.181068 a.u.         5.543723 Debye                                     
+                                                                                                                          
+!========================================================================================================================!
+!                               VeloxChem execution completed at Thu Jun  4 14:59:31 2026.                               !
+!========================================================================================================================!
+!                                           Total execution time is 24.92 sec.                                           !
+!========================================================================================================================!
+!                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
+!                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !
+!                     VeloxChem: A Python-driven Density-functional Theory Program for Spectroscopy                      !
+!                                Simulations in High-performance Computing Environments.                                 !
+!                                       WIREs Comput Mol Sci 2020, 10 (5), e1457.                                        !
+!========================================================================================================================!

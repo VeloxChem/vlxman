@@ -133,6 +133,23 @@
         <a href="../output_files/eth-smd.h5" download>eth-smd.h5</a>
       </td>
     </tr>
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:penpe">PE/NPE</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/alpha-helix-acetone-water-pe.py" download>alpha-helix-acetone-water-pe.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/alpha-helix-acetone-water-pe.inp" download>alpha-helix-acetone-water-pe.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/alpha-helix-acetone-water-pe.out" download>alpha-helix-acetone-water-pe.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/alpha-helix-acetone-water-pe.h5" download>alpha-helix-acetone-water-pe.h5</a>
+      </td>
+    </tr>
     <tr style="background-color: #f5f5f5;">
       <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
         <a href="#sec:pes" style="text-decoration: none; color: inherit;">Potential energy surfaces</a>
