@@ -70,6 +70,6 @@ project:
 site:
   options:
     logo: images/logo/vlx-logo-blacktext-halo.png
-    favicon: images/logo/vlx-logo-blacktext-halo.png
+    favicon: vlx_logo_mark.png
     folders: true
   template: book-theme

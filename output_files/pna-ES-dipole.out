@@ -1,0 +1,251 @@
+                                                                                                                          
+                                            Self Consistent Field Driver Setup                                            
+                                           ====================================                                           
+                                                                                                                          
+                   Wave Function Model             : Spin-Restricted Kohn-Sham                                            
+                   Initial Guess Model             : Superposition of Atomic Densities                                    
+                   Convergence Accelerator         : Two Level Direct Inversion of Iterative Subspace                     
+                   Max. Number of Iterations       : 50                                                                   
+                   Max. Number of Error Vectors    : 10                                                                   
+                   Convergence Threshold           : 1.0e-06                                                              
+                   ERI Screening Threshold         : 1.0e-12                                                              
+                   Linear Dependence Threshold     : 1.0e-06                                                              
+                   Exchange-Correlation Functional : CAM-B3LYP                                                            
+                   Molecular Grid Level            : 4                                                                    
+                                                                                                                          
+* Info * Using the CAM-B3LYP functional.                                                                                  
+                                                                                                                          
+         T. Yanai, D. P. Tew, and N. C. Handy.,  Chem. Phys. Lett. 393, 51 (2004)
+                                                                                                                          
+* Info * Using the Libxc library (v7.0.0).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * Starting Reduced Basis SCF calculation...                                                                        
+* Info * ...done. SCF energy in reduced basis set: -488.592567247947 a.u. Time: 0.63 sec.                                 
+                                                                                                                          
+                                                                                                                          
+               Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
+               --------------------------------------------------------------------------------------------               
+                  1      -491.494706132810    0.0000000000      0.44648638      0.03955627      0.00000000                
+                  2      -491.499431174212   -0.0047250414      0.42293450      0.02989239      0.28032062                
+                  3      -491.515459469203   -0.0160282950      0.10235834      0.00712671      0.12863752                
+                  4      -491.516387722199   -0.0009282530      0.01374882      0.00083084      0.03404774                
+                  5      -491.516409564267   -0.0000218421      0.00713712      0.00044611      0.00785916                
+                  6      -491.516416500561   -0.0000069363      0.00275390      0.00026746      0.00388127                
+                  7      -491.516417669122   -0.0000011686      0.00059257      0.00002808      0.00136863                
+                  8      -491.516417720417   -0.0000000513      0.00024124      0.00001701      0.00032861                
+                  9      -491.516417731394   -0.0000000110      0.00005530      0.00000397      0.00014663                
+                 10      -491.516417732064   -0.0000000007      0.00004020      0.00000212      0.00004550                
+                 11      -491.516417732284   -0.0000000002      0.00001545      0.00000139      0.00002165                
+                 12      -491.516417732309   -0.0000000000      0.00000865      0.00000079      0.00000792                
+                 13      -491.516417732318   -0.0000000000      0.00000236      0.00000011      0.00000399                
+                 14      -491.516417732319   -0.0000000000      0.00000061      0.00000003      0.00000173                
+                                                                                                                          
+* Info * Checkpoint written to file: pna-ES-dipole_scf.h5                                                                 
+                                                                                                                          
+* Info * SCF results written to file: pna-ES-dipole.h5                                                                    
+                                                                                                                          
+               *** SCF converged in 14 iterations. Time: 10.66 sec.                                                       
+                                                                                                                          
+               Spin-Restricted Kohn-Sham:                                                                                 
+               --------------------------                                                                                 
+               Total Energy                       :     -491.5164177323 a.u.                                              
+               Electronic Energy                  :     -985.4194185212 a.u.                                              
+               Nuclear Repulsion Energy           :      493.9030007889 a.u.                                              
+               ------------------------------------                                                                       
+               Gradient Norm                      :        0.0000006116 a.u.                                              
+                                                                                                                          
+                                                                                                                          
+               Ground State Information                                                                                   
+               ------------------------                                                                                   
+               Charge of Molecule            :  0.0                                                                       
+               Multiplicity (2S+1)           :  1                                                                         
+               Magnetic Quantum Number (M_S) :  0.0                                                                       
+                                                                                                                          
+                                                                                                                          
+                                             Quadratic Response Driver Setup                                              
+                                            =================================                                             
+                                                                                                                          
+                                    ERI Screening Threshold         : 1.0e-12                                             
+                                    Convergance Threshold           : 1.0e-04                                             
+                                    Max. Number of Iterations       : 150                                                 
+                                    Max. Number of Iterations       : 150                                                 
+                                                                                                                          
+                                                                                                                          
+                                            Linear Response EigenSolver Setup                                             
+                                           ===================================                                            
+                                                                                                                          
+                               Number of States                : 3                                                        
+                               Max. Number of Iterations       : 150                                                      
+                               Convergence Threshold           : 1.0e-04                                                  
+                               ERI Screening Threshold         : 1.0e-12                                                  
+                               Exchange-Correlation Functional : CAM-B3LYP                                                
+                               Molecular Grid Level            : 4                                                        
+                                                                                                                          
+* Info * Using the CAM-B3LYP functional.                                                                                  
+                                                                                                                          
+         T. Yanai, D. P. Tew, and N. C. Handy.,  Chem. Phys. Lett. 393, 51 (2004)
+                                                                                                                          
+* Info * Using the Libxc library (v7.0.0).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * 9 gerade trial vectors in reduced space                                                                          
+* Info * 9 ungerade trial vectors in reduced space                                                                        
+                                                                                                                          
+               *** Iteration:   1 * Residuals (Max,Min): 3.29e-01 and 1.17e-01                                            
+                                                                                                                          
+* Info * 12 gerade trial vectors in reduced space                                                                         
+* Info * 12 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   2 * Residuals (Max,Min): 8.57e-02 and 3.39e-02                                            
+                                                                                                                          
+* Info * 15 gerade trial vectors in reduced space                                                                         
+* Info * 15 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   3 * Residuals (Max,Min): 4.90e-02 and 7.25e-03                                            
+                                                                                                                          
+* Info * 18 gerade trial vectors in reduced space                                                                         
+* Info * 18 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   4 * Residuals (Max,Min): 2.00e-02 and 1.46e-03                                            
+                                                                                                                          
+* Info * 21 gerade trial vectors in reduced space                                                                         
+* Info * 21 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   5 * Residuals (Max,Min): 7.77e-03 and 5.01e-04                                            
+                                                                                                                          
+* Info * 24 gerade trial vectors in reduced space                                                                         
+* Info * 24 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   6 * Residuals (Max,Min): 2.29e-03 and 1.74e-04                                            
+                                                                                                                          
+* Info * 27 gerade trial vectors in reduced space                                                                         
+* Info * 27 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   7 * Residuals (Max,Min): 6.87e-04 and 3.24e-05                                            
+                                                                                                                          
+* Info * 28 gerade trial vectors in reduced space                                                                         
+* Info * 28 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   8 * Residuals (Max,Min): 2.32e-04 and 3.23e-05                                            
+                                                                                                                          
+* Info * 29 gerade trial vectors in reduced space                                                                         
+* Info * 29 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   9 * Residuals (Max,Min): 8.27e-05 and 3.13e-05                                            
+                                                                                                                          
+* Info * Checkpoint written to file: pna-ES-dipole_rsp_doublequadres_rpa.h5                                               
+                                                                                                                          
+* Info * Time spent in writing checkpoint file: 0.02 sec                                                                  
+                                                                                                                          
+               *** Linear response converged in 9 iterations. Time: 23.65 sec                                             
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                              Complex Response Solver Setup                                               
+                                             ===============================                                              
+                                                                                                                          
+                               Number of Frequencies           : 1                                                        
+                               Max. Number of Iterations       : 150                                                      
+                               Convergence Threshold           : 1.0e-04                                                  
+                               ERI Screening Threshold         : 1.0e-12                                                  
+                               Exchange-Correlation Functional : CAM-B3LYP                                                
+                               Molecular Grid Level            : 4                                                        
+                                                                                                                          
+* Info * Using the CAM-B3LYP functional.                                                                                  
+                                                                                                                          
+         T. Yanai, D. P. Tew, and N. C. Handy.,  Chem. Phys. Lett. 393, 51 (2004)
+                                                                                                                          
+* Info * Using the Libxc library (v7.0.0).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * 0 gerade trial vectors in reduced space                                                                          
+* Info * 3 ungerade trial vectors in reduced space                                                                        
+                                                                                                                          
+               *** Iteration:   1 * Residuals (Max,Min): 1.20e+00 and 6.54e-01                                            
+                                                                                                                          
+* Info * 0 gerade trial vectors in reduced space                                                                          
+* Info * 6 ungerade trial vectors in reduced space                                                                        
+                                                                                                                          
+               *** Iteration:   2 * Residuals (Max,Min): 2.75e-01 and 6.11e-02                                            
+                                                                                                                          
+* Info * 0 gerade trial vectors in reduced space                                                                          
+* Info * 9 ungerade trial vectors in reduced space                                                                        
+                                                                                                                          
+               *** Iteration:   3 * Residuals (Max,Min): 1.05e-01 and 1.54e-02                                            
+                                                                                                                          
+* Info * 0 gerade trial vectors in reduced space                                                                          
+* Info * 12 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   4 * Residuals (Max,Min): 2.70e-02 and 4.61e-03                                            
+                                                                                                                          
+* Info * 0 gerade trial vectors in reduced space                                                                          
+* Info * 15 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   5 * Residuals (Max,Min): 1.24e-02 and 2.27e-03                                            
+                                                                                                                          
+* Info * 0 gerade trial vectors in reduced space                                                                          
+* Info * 18 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   6 * Residuals (Max,Min): 3.25e-03 and 8.89e-04                                            
+                                                                                                                          
+* Info * 0 gerade trial vectors in reduced space                                                                          
+* Info * 21 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   7 * Residuals (Max,Min): 1.16e-03 and 2.17e-04                                            
+                                                                                                                          
+* Info * 0 gerade trial vectors in reduced space                                                                          
+* Info * 24 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   8 * Residuals (Max,Min): 2.95e-04 and 6.84e-05                                            
+                                                                                                                          
+* Info * 0 gerade trial vectors in reduced space                                                                          
+* Info * 26 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   9 * Residuals (Max,Min): 9.20e-05 and 5.97e-05                                            
+                                                                                                                          
+* Info * Checkpoint written to file: pna-ES-dipole_rsp_doublequadres_cpp.h5                                               
+                                                                                                                          
+* Info * Time spent in writing checkpoint file: 0.02 sec                                                                  
+                                                                                                                          
+               *** Complex response converged in 9 iterations. Time: 20.42 sec                                            
+                                                                                                                          
+                                                                                                                          
+                                                 Fock Matrix Computation                                                  
+                                                =========================                                                 
+                                                                                                                          
+* Info * Processing 2 Fock builds...                                                                                      
+                                                                                                                          
+* Info * Time spent in Fock matrices: 1.98 sec                                                                            
+                                                                                                                          
+* Info * Checkpoint written to file: pna-ES-dipole_rsp_doublequadres_fock.h5                                              
+                                                                                                                          
+* Info * Time spent in writing checkpoint file: 0.00 sec                                                                  
+                                                                                                                          
+                                                                                                                          
+                                 Summary of Double residue of Quadratic Response Function                                 
+                                ==========================================================                                
+                                                                                                                          
+                     Excited state dipole moments                                                                         
+                     ----------------------------                                                                         
+                                                    X           Y           Z                                             
+                     <3|mu|3> :             -4.997484    0.000064   -0.001738                                             
+                                                                                                                          
+                    *** Time spent in double residue of quadratic response calculation: 46.27 sec ***                     
+                                                                                                                          
+

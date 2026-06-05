@@ -298,6 +298,44 @@
     </tr>
         <tr style="background-color: #f5f5f5;">
       <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
+        <a href="#sec:fop" style="text-decoration: none; color: inherit;">First-order properties</a>
+      </td>
+    </tr>
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:dipole">Electric dipole moment GS</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/pna-GS-dipole.py" download>pna-GS-dipole.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/pna-GS-dipole.inp" download>pna-GS-dipole.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/pna-GS-dipole.out" download>pna-GS-dipole.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/pna-GS-dipole.h5" download>pna-GS-dipole.h5</a>
+      </td>
+    </tr>
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:res-region">Electric dipole moment ES</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/pna-ES-dipole.py" download>pna-ES-dipole.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/pna-ES-dipole.out" download>pna-ES-dipole.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/pna-ES-dipole.h5" download>pna-ES-dipole.h5</a>
+      </td>
+    </tr> 
+        <tr style="background-color: #f5f5f5;">
+      <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
         <a href="#sec:alpha" style="text-decoration: none; color: inherit;">Polarizability</a>
       </td>
     </tr>
@@ -525,6 +563,44 @@
     </tr>
     <tr style="background-color: #f5f5f5;">
       <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
+        <a href="#sec:nlo" style="text-decoration: none; color: inherit;">Multi-photon interactions</a>
+      </td>
+    </tr>
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:tpa">Two-photon absorption</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/pna-tpa.py" download>pna-tpa.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/pna-tpa.inp" download>pna-tpa.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/pna-tpa.out" download>pna-tpa.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+       <a href="../output_files/pna-tpa.h5" download>pna-tpa.h5</a>
+      </td>
+    </tr>     <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:tpacs">TPA cross section</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/pna-tpacs.py" download>pna-tpacs.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/pna-tpacs.inp" download>pna-tpacs.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/pna-tpacs.out" download>pna-tpacs.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/pna-tpacs.h5" download>pna-tpacs.h5</a>
+      </td>
+    </tr>   
+    <tr style="background-color: #f5f5f5;">
+      <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
         <a href="#sec:xray" style="text-decoration: none; color: inherit;">X-ray spectroscopies</a>
       </td>
     </tr>
@@ -536,15 +612,34 @@
         <a href="../input_files/esca-xps.py" download>esca-xps.py</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/esca-xps.inp" download>esca-xps.inp</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../output_files/esca-xps.out" download>esca-xps.out</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+       <a href="../output_files/esca-xps.out" download>esca-xps.h5</a>
       </td>
     </tr>     <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
-        <a href="#sec:nexafs">NEXAFS</a>
+        <a href="#sec:xas-cvs">XAS (CVS)</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/xas-cvs.py" download>xas-cvs.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/xas-cvs.inp" download>xas-cvs.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+       <a href="../output_files/xas-cvs.out" download>xas-cvs.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+       <a href="../output_files/xas-cvs.h5" download>xas-cvs.h5</a>
+      </td>
+    </tr> 
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:xas-cpp">XAS (CPP)</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../input_files/esca-nexafs.py" download>esca-nexafs.py</a>
@@ -558,8 +653,8 @@
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../output_files/esca-nexafs.h5" download>esca-nexafs.h5</a>
       </td>
-    </tr> 
-    </tr>     <tr style="background-color: #fff;">
+    </tr>
+    <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
         <a href="#sec:rixs">RIXS</a>
       </td>

@@ -1,25 +1,94 @@
+!========================================================================================================================!
+!                                                                                                                        !
+!                                                       VELOXCHEM                                                        !
+!                                              AN ELECTRONIC STRUCTURE CODE                                              !
+!                                                                                                                        !
+!                                        Copyright 2018-2025 VeloxChem developers                                        !
+!========================================================================================================================!
+!                                VeloxChem execution started at Wed Jun  3 12:01:39 2026.                                !
+!========================================================================================================================!
+                                                                                                                          
+* Info * Using 32 OpenMP threads per MPI process.                                                                         
+                                                                                                                          
+* Info * Reading input file esca-xps.inp...                                                                               
+                                                                                                                          
+* Info * @jobs                                                                                                            
+* Info * task: xps                                                                                                        
+* Info * @end                                                                                                             
+                                                                                                                          
+* Info * @method_settings                                                                                                 
+* Info * xcfun: b3lyp                                                                                                     
+* Info * basis: def2-svp                                                                                                  
+* Info * @end                                                                                                             
+                                                                                                                          
+* Info * @xps                                                                                                             
+* Info * element: C, O                                                                                                    
+* Info * @end                                                                                                             
+                                                                                                                          
+                                              Molecular Geometry (Angstroms)                                              
+                                             ================================                                             
+                                                                                                                          
+                          Atom         Coordinate X          Coordinate Y          Coordinate Z                           
+                                                                                                                          
+                           C           1.326024532622        0.471089167011       -1.154937296389                         
+                           C           0.484399509715        0.908494386259        0.037569541020                         
+                           C           0.270494167717       -0.188493907246        1.053914467110                         
+                           O           0.701245126416       -1.308212251798        0.971080711541                         
+                           C          -0.582260522270        0.210893702941        2.291730106998                         
+                           F          -0.731967860619       -0.799813015071        3.135965340271                         
+                           F          -1.800383044157        0.625073687043        1.897202571864                         
+                           F           0.003899498844        1.231896946553        2.943599980006                         
+                           H           1.453639490166        1.302028888463       -1.864264306255                         
+                           H           0.853135331881       -0.368249103011       -1.686230702784                         
+                           H           2.322713498820        0.134038471332       -0.833394707486                         
+                           H           0.936346512410        1.764030447212        0.571699332428                         
+                           H          -0.514670521097        1.267150587304       -0.270103071648                         
+                                                                                                                          
+                          Molecular charge            : 0                                                                 
+                          Spin multiplicity           : 1                                                                 
+                          Number of atoms             : 13                                                                
+                          Number of alpha electrons   : 32                                                                
+                          Number of beta  electrons   : 32                                                                
+                                                                                                                          
+* Info * Reading basis set from file: /home/linares/miniconda3/envs/vlxsrc/lib/python3.13/site-packages/veloxchem/basis/DEF2-SVP
+                                                                                                                          
+                                              Molecular Basis (Atomic Basis)                                              
+                                             ================================                                             
+                                                                                                                          
+                               Basis: DEF2-SVP                                                                            
+                                                                                                                          
+                               Atom Contracted GTOs           Primitive GTOs                                              
+                                                                                                                          
+                               C     (3S,2P,1D)                (7S,4P,1D)                                                 
+                               O     (3S,2P,1D)                (7S,4P,1D)                                                 
+                               F     (3S,2P,1D)                (7S,4P,1D)                                                 
+                               H     (2S,1P)                   (4S,1P)                                                    
+                                                                                                                          
+                               Contracted Basis Functions : 137                                                           
+                               Primitive Basis Functions  : 227                                                           
+                                                                                                                          
                                                                                                                           
                                             Self Consistent Field Driver Setup                                            
                                            ====================================                                           
                                                                                                                           
                    Wave Function Model             : Spin-Restricted Kohn-Sham                                            
                    Initial Guess Model             : Superposition of Atomic Densities                                    
-                   Convergence Accelerator         : Direct Inversion of Iterative Subspace                               
+                   Convergence Accelerator         : Two Level Direct Inversion of Iterative Subspace                     
                    Max. Number of Iterations       : 50                                                                   
                    Max. Number of Error Vectors    : 10                                                                   
                    Convergence Threshold           : 1.0e-06                                                              
                    ERI Screening Threshold         : 1.0e-12                                                              
                    Linear Dependence Threshold     : 1.0e-06                                                              
-                   Resolution of the Identity      : RI-J                                                                 
-                   Exchange-Correlation Functional : PBE                                                                  
+                   Exchange-Correlation Functional : B3LYP                                                                
                    Molecular Grid Level            : 4                                                                    
                                                                                                                           
-* Info * Using the PBE functional.                                                                                        
+* Info * Nuclear repulsion energy: 409.9100889659 a.u.                                                                    
                                                                                                                           
-         J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
-         J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+* Info * Using the B3LYP functional.                                                                                      
                                                                                                                           
-* Info * Using the Libxc library (v6.2.2).                                                                                
+         P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
+                                                                                                                          
+* Info * Using the Libxc library (v7.0.0).                                                                                
                                                                                                                           
          S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
                                                                                                                           
@@ -27,43 +96,56 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
-* Info * Using the resolution of the identity (RI) approximation.                                                         
+* Info * Molecular grid with 190914 points generated in 0.11 sec.                                                         
                                                                                                                           
-* Info * Dimension of RI auxiliary basis set (DEF2-UNIVERSAL-JFIT): 447                                                   
+* Info * Overlap matrix computed in 0.00 sec.                                                                             
                                                                                                                           
-* Info * Two-center integrals for RI done in 0.00 sec.                                                                    
+* Info * Kinetic energy matrix computed in 0.00 sec.                                                                      
                                                                                                                           
-* Info * Metric(s) for RI done in 0.01 sec.                                                                               
+* Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
                                                                                                                           
-* Info * Buffer preparation for RI done in 0.02 sec.                                                                      
+* Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+* Info * Starting Reduced Basis SCF calculation...                                                                        
+* Info * ...done. SCF energy in reduced basis set: -526.938455740283 a.u. Time: 0.29 sec.                                 
+                                                                                                                          
+* Info * Overlap matrix computed in 0.00 sec.                                                                             
+                                                                                                                          
+* Info * Kinetic energy matrix computed in 0.00 sec.                                                                      
+                                                                                                                          
+* Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+* Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
                                                                                                                           
                                                                                                                           
                Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
                --------------------------------------------------------------------------------------------               
-                  1      -528.918435667164    0.0000000000      1.63629550      0.07435813      0.00000000                
-                  2      -528.283256465795    0.6351792014      2.90136884      0.17838955      1.63257648                
-                  3      -529.222490035539   -0.9392335697      0.36138621      0.02031877      1.01839498                
-                  4      -529.228988703154   -0.0064986676      0.25564864      0.01427408      0.21072158                
-                  5      -529.235816366760   -0.0068276636      0.05523741      0.00341941      0.10508490                
-                  6      -529.236117966581   -0.0003015998      0.01663053      0.00062320      0.01814013                
-                  7      -529.236146317028   -0.0000283504      0.00371364      0.00015127      0.00607085                
-                  8      -529.236147548859   -0.0000012318      0.00130558      0.00006353      0.00169513                
-                  9      -529.236147719545   -0.0000001707      0.00020273      0.00000999      0.00044321                
-                 10      -529.236147724739   -0.0000000052      0.00009655      0.00000578      0.00011930                
-                 11      -529.236147719573    0.0000000052      0.00002228      0.00000097      0.00003569                
-                 12      -529.236147723339   -0.0000000038      0.00000561      0.00000029      0.00001236                
-                 13      -529.236147727411   -0.0000000041      0.00000166      0.00000008      0.00000265                
-                 14      -529.236147722576    0.0000000048      0.00000047      0.00000002      0.00000069                
+                  1      -529.744620047957    0.0000000000      0.68187132      0.04451920      0.00000000                
+                  2      -529.761724189171   -0.0171041412      0.52853611      0.02994243      0.34292965                
+                  3      -529.785309905891   -0.0235857167      0.18859233      0.01154555      0.18544344                
+                  4      -529.788269310006   -0.0029594041      0.05989831      0.00344551      0.07752242                
+                  5      -529.788585911979   -0.0003166020      0.00958419      0.00082579      0.02089948                
+                  6      -529.788594060748   -0.0000081488      0.00131577      0.00006847      0.00345142                
+                  7      -529.788594198377   -0.0000001376      0.00081039      0.00003744      0.00068283                
+                  8      -529.788594267177   -0.0000000688      0.00011457      0.00000605      0.00028403                
+                  9      -529.788594268231   -0.0000000011      0.00004229      0.00000202      0.00005041                
+                 10      -529.788594268396   -0.0000000002      0.00000776      0.00000045      0.00001442                
+                 11      -529.788594268402   -0.0000000000      0.00000252      0.00000012      0.00000351                
+                 12      -529.788594268403   -0.0000000000      0.00000059      0.00000003      0.00000128                
                                                                                                                           
-               *** SCF converged in 14 iterations. Time: 2.69 sec.                                                        
+* Info * Checkpoint written to file: esca-xps_scf.h5                                                                      
+                                                                                                                          
+* Info * SCF results written to file: esca-xps.h5                                                                         
+                                                                                                                          
+               *** SCF converged in 12 iterations. Time: 3.98 sec.                                                        
                                                                                                                           
                Spin-Restricted Kohn-Sham:                                                                                 
                --------------------------                                                                                 
-               Total Energy                       :     -529.2361477226 a.u.                                              
-               Electronic Energy                  :     -939.1462366885 a.u.                                              
+               Total Energy                       :     -529.7885942684 a.u.                                              
+               Electronic Energy                  :     -939.6986832343 a.u.                                              
                Nuclear Repulsion Energy           :      409.9100889659 a.u.                                              
                ------------------------------------                                                                       
-               Gradient Norm                      :        0.0000004749 a.u.                                              
+               Gradient Norm                      :        0.0000005919 a.u.                                              
                                                                                                                           
                                                                                                                           
                Ground State Information                                                                                   
@@ -73,29 +155,139 @@
                Magnetic Quantum Number (M_S) :  0.0                                                                       
                                                                                                                           
                                                                                                                           
-* Info * Checkpoint written to file: vlx_20260312_c68bcd41_scf.h5                                                         
+                                                 Spin Restricted Orbitals                                                 
+                                                 ------------------------                                                 
+                                                                                                                          
+               Molecular Orbital No.  28:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.40769 a.u.                                                                  
+               (   1 C   1p+1:     0.19) (   3 C   1p+1:    -0.25) (   4 O   1p+1:    -0.36)                              
+               (   4 O   1p0 :    -0.21) (   4 O   2p+1:    -0.22) (  10 H   1s  :    -0.15)                              
+               (  11 H   1s  :     0.15)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  29:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.39632 a.u.                                                                  
+               (   1 C   1p0 :    -0.31) (   2 C   1p+1:    -0.15) (   2 C   1p0 :     0.22)                              
+               (   3 C   1p0 :    -0.19) (   4 O   1p0 :    -0.18) (   6 F   1p0 :     0.17)                              
+               (   9 H   1s  :     0.27)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  30:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.38694 a.u.                                                                  
+               (   1 C   1p-1:    -0.36) (   2 C   1p-1:     0.20) (   9 H   1s  :    -0.23)                              
+               (  10 H   1s  :     0.20) (  11 H   1s  :     0.20) (  12 H   1s  :     0.15)                              
+               (  13 H   1s  :     0.15)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  31:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.36728 a.u.                                                                  
+               (   1 C   1p+1:    -0.25) (   2 C   1p+1:     0.24) (   4 O   1p+1:    -0.17)                              
+               (  10 H   1s  :     0.24) (  11 H   1s  :    -0.24) (  12 H   1s  :     0.24)                              
+               (  13 H   1s  :    -0.24)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  32:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 2.000 Energy:   -0.28724 a.u.                                                                  
+               (   2 C   3s  :    -0.30) (   2 C   1p-1:     0.19) (   2 C   2p-1:     0.18)                              
+               (   4 O   1p+1:     0.23) (   4 O   1p0 :    -0.48) (   4 O   2p+1:     0.16)                              
+               (   4 O   2p0 :    -0.34) (   5 C   2s  :     0.18) (   5 C   3s  :     0.17)                              
+               (   5 C   1p0 :    -0.20)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  33:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:   -0.05871 a.u.                                                                  
+               (   3 C   1p+1:    -0.43) (   3 C   1p0 :    -0.25) (   3 C   2p+1:    -0.38)                              
+               (   3 C   2p0 :    -0.22) (   4 O   1p+1:     0.35) (   4 O   1p0 :     0.20)                              
+               (   4 O   2p+1:     0.35) (   4 O   2p0 :     0.20) (  12 H   2s  :     0.21)                              
+               (  13 H   2s  :    -0.21)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  34:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.04857 a.u.                                                                  
+               (   1 C   2s  :    -0.16) (   1 C   3s  :    -1.79) (   1 C   2p+1:    -0.15)                              
+               (   1 C   2p0 :     0.21) (   2 C   3s  :    -1.41) (   2 C   2p+1:     0.33)                              
+               (   2 C   2p-1:    -0.44) (   2 C   2p0 :    -0.32) (   3 C   3s  :     0.76)                              
+               (   4 O   3s  :    -0.27) (   5 C   2p0 :     0.18) (   9 H   2s  :     0.89)                              
+               (  10 H   2s  :     0.72) (  11 H   2s  :     0.72) (  12 H   2s  :     1.00)                              
+               (  13 H   2s  :     1.00)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  35:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.09474 a.u.                                                                  
+               (   1 C   2s  :    -0.16) (   1 C   3s  :    -2.58) (   1 C   2p0 :    -0.22)                              
+               (   2 C   3s  :     2.45) (   2 C   2p-1:     0.23) (   2 C   2p0 :    -0.31)                              
+               (   3 C   2p0 :     0.19) (   5 C   3s  :    -0.39) (   7 F   3s  :     0.16)                              
+               (   8 F   3s  :     0.16) (   9 H   2s  :     0.55) (  10 H   2s  :     1.05)                              
+               (  11 H   2s  :     1.04) (  12 H   2s  :    -1.09) (  13 H   2s  :    -1.08)                              
+                                                                                                                          
+               Molecular Orbital No.  36:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.09814 a.u.                                                                  
+               (   1 C   1p+1:     0.16) (   1 C   2p+1:     0.32) (   1 C   2p0 :     0.19)                              
+               (   2 C   1p+1:     0.28) (   2 C   1p0 :     0.16) (   2 C   2p+1:     0.82)                              
+               (   2 C   2p-1:     0.28) (   2 C   2p0 :     0.48) (   5 C   2p+1:    -0.17)                              
+               (  10 H   2s  :     0.71) (  11 H   2s  :    -0.72) (  12 H   2s  :    -1.30)                              
+               (  13 H   2s  :     1.31)                                                                                  
+                                                                                                                          
+               Molecular Orbital No.  37:                                                                                 
+               --------------------------                                                                                 
+               Occupation: 0.000 Energy:    0.11871 a.u.                                                                  
+               (   1 C   3s  :     0.35) (   1 C   1p-1:     0.32) (   1 C   2p+1:    -0.22)                              
+               (   1 C   2p-1:     1.13) (   1 C   2p0 :    -0.29) (   2 C   3s  :    -0.95)                              
+               (   3 C   3s  :     0.81) (   3 C   2p-1:     0.19) (   5 C   3s  :    -0.41)                              
+               (   5 C   1p-1:     0.18) (   5 C   2p+1:    -0.20) (   5 C   2p-1:     0.27)                              
+               (   5 C   2p0 :     0.19) (   9 H   2s  :    -1.77) (  10 H   2s  :     0.81)                              
+               (  11 H   2s  :     0.82) (  12 H   2s  :     0.29) (  13 H   2s  :     0.29)                              
+                                                                                                                          
+                                                                                                                          
+                                                Ground State Dipole Moment                                                
+                                               ----------------------------                                               
+                                                                                                                          
+                                   X   :         0.119039 a.u.         0.302566 Debye                                     
+                                   Y   :         0.732644 a.u.         1.862194 Debye                                     
+                                   Z   :        -0.639114 a.u.        -1.624466 Debye                                     
+                                 Total :         0.979491 a.u.         2.489619 Debye                                     
+                                                                                                                          
+                                                                                                                          
+                                                        XPS Driver                                                        
+                                                       ============                                                       
+                                                                                                                          
+* Info * Computing core ionization energies for element(s): C, O                                                          
+* Info * Method type: DFT                                                                                                 
+* Info * XC functional: B3LYP                                                                                             
+* Info * Using DFT energy ranges for core orbital identification                                                          
+                                                                                                                          
+                                                                                                                          
+* Info * Processing element: C                                                                                            
+* Info * ------------------------------------------------------------                                                     
+* Info * Found 4 core orbital(s) for C:                                                                                   
+* Info *   MO 4 -> Atom 5 (C) with 97.9% contribution                                                                     
+* Info *   MO 5 -> Atom 3 (C) with 98.0% contribution                                                                     
+* Info *   MO 6 -> Atom 2 (C) with 98.2% contribution                                                                     
+* Info *   MO 7 -> Atom 1 (C) with 98.1% contribution                                                                     
+                                                                                                                          
+* Info * Computing FCH for C orbital 4 (Atom 5, contribution: 97.9%)...                                                   
                                                                                                                           
                                             Self Consistent Field Driver Setup                                            
                                            ====================================                                           
                                                                                                                           
                    Wave Function Model             : Spin-Unrestricted Kohn-Sham                                          
-                   Initial Guess Model             : Restart from Checkpoint                                              
+                   Initial Guess Model             : User Supplied Orbitals                                               
                    Convergence Accelerator         : Direct Inversion of Iterative Subspace                               
                    Max. Number of Iterations       : 50                                                                   
                    Max. Number of Error Vectors    : 10                                                                   
                    Convergence Threshold           : 1.0e-06                                                              
                    ERI Screening Threshold         : 1.0e-12                                                              
                    Linear Dependence Threshold     : 1.0e-06                                                              
-                   Resolution of the Identity      : RI-J                                                                 
-                   Exchange-Correlation Functional : PBE                                                                  
+                   Exchange-Correlation Functional : B3LYP                                                                
                    Molecular Grid Level            : 4                                                                    
                                                                                                                           
-* Info * Using the PBE functional.                                                                                        
+* Info * Using the B3LYP functional.                                                                                      
                                                                                                                           
-         J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
-         J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+         P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
                                                                                                                           
-* Info * Using the Libxc library (v6.2.2).                                                                                
+* Info * Using the Libxc library (v7.0.0).                                                                                
                                                                                                                           
          S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
                                                                                                                           
@@ -103,54 +295,45 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
-* Info * Restarting from checkpoint file: vlx_20260312_c68bcd41_scf.h5                                                    
-                                                                                                                          
-* Info * Using the resolution of the identity (RI) approximation.                                                         
-                                                                                                                          
-* Info * Dimension of RI auxiliary basis set (DEF2-UNIVERSAL-JFIT): 447                                                   
-                                                                                                                          
-* Info * Two-center integrals for RI done in 0.00 sec.                                                                    
-                                                                                                                          
-* Info * Metric(s) for RI done in 0.01 sec.                                                                               
-                                                                                                                          
-* Info * Buffer preparation for RI done in 0.02 sec.                                                                      
+* Info * Starting from user supplied orbitals                                                                             
                                                                                                                           
                                                                                                                           
                Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
                --------------------------------------------------------------------------------------------               
-                  1      -517.791207304559    0.0000000000      2.11132407      0.14648420      0.00000000                
-                  2      -387.300676165913  130.4905311386     10.84731322      0.49678942      5.75851879                
-                  3      -496.906951422066 -109.6062752562      4.27289401      0.20238135      5.20758224                
-                  4      -517.728713987198  -20.8217625651      2.33337305      0.16212026      2.69220579                
-                  5      -518.211929290950   -0.4832153038      0.66588829      0.03647573      0.75266807                
-                  6      -518.225893870307   -0.0139645794      0.55229682      0.03483503      0.26593388                
-                  7      -518.244792745576   -0.0188988753      0.32026038      0.01721941      0.11387618                
-                  8      -518.250718645054   -0.0059258995      0.18735489      0.00870713      0.09139160                
-                  9      -518.253331276416   -0.0026126314      0.04142819      0.00211008      0.05609041                
-                 10      -518.253450919651   -0.0001196432      0.02082996      0.00119811      0.02221108                
-                 11      -518.253494362267   -0.0000434426      0.00839697      0.00071102      0.00725588                
-                 12      -518.253501293568   -0.0000069313      0.00180634      0.00008405      0.00285738                
-                 13      -518.253501721169   -0.0000004276      0.00033292      0.00002427      0.00080720                
-                 14      -518.253501744799   -0.0000000236      0.00022682      0.00001594      0.00027045                
-                 15      -518.253501757109   -0.0000000123      0.00009038      0.00000556      0.00012891                
-                 16      -518.253501751296    0.0000000058      0.00006535      0.00000333      0.00007703                
-                 17      -518.253501758229   -0.0000000069      0.00003027      0.00000147      0.00003594                
-                 18      -518.253501756735    0.0000000015      0.00001160      0.00000053      0.00001282                
-                 19      -518.253501754995    0.0000000017      0.00000605      0.00000028      0.00000548                
-                 20      -518.253501755558   -0.0000000006      0.00000184      0.00000010      0.00000261                
-                 21      -518.253501755546    0.0000000000      0.00000090      0.00000004      0.00000085                
+                  1      -518.289010077889    0.0000000000      2.09106208      0.14588425      0.00000000                
+                  2      -516.742082018497    1.5469280594      4.31219465      0.21681912      2.40766509                
+                  3      -518.670776640964   -1.9286946225      0.88329431      0.05562338      1.79151673                
+                  4      -518.697847191240   -0.0270705503      0.74102319      0.04892962      0.44847577                
+                  5      -518.747307831938   -0.0494606407      0.15826985      0.00941357      0.23791115                
+                  6      -518.750188913996   -0.0028810821      0.03645947      0.00156008      0.05865136                
+                  7      -518.750300118319   -0.0001112043      0.01581178      0.00084293      0.01358365                
+                  8      -518.750323586558   -0.0000234682      0.00469606      0.00023963      0.00533234                
+                  9      -518.750327323421   -0.0000037369      0.00223713      0.00016303      0.00262359                
+                 10      -518.750328270266   -0.0000009468      0.00069048      0.00004129      0.00145704                
+                 11      -518.750328365307   -0.0000000950      0.00016832      0.00000853      0.00053424                
+                 12      -518.750328368438   -0.0000000031      0.00014040      0.00000616      0.00011174                
+                 13      -518.750328370856   -0.0000000024      0.00003983      0.00000251      0.00005266                
+                 14      -518.750328371270   -0.0000000004      0.00002553      0.00000194      0.00002181                
+                 15      -518.750328371604   -0.0000000003      0.00001511      0.00000158      0.00002547                
+                 16      -518.750328371702   -0.0000000001      0.00000616      0.00000047      0.00001652                
+                 17      -518.750328371718   -0.0000000000      0.00000229      0.00000013      0.00000694                
+                 18      -518.750328371718   -0.0000000000      0.00000113      0.00000006      0.00000181                
+                 19      -518.750328371718    0.0000000000      0.00000112      0.00000006      0.00000070                
+                 20      -518.750328371719   -0.0000000000      0.00000026      0.00000001      0.00000045                
                                                                                                                           
-* Info * Checkpoint written to file: vlx_20260312_c68bcd41_scf.h5                                                         
+* Info * Checkpoint written to file: esca-xps_scf.h5                                                                      
                                                                                                                           
-               *** SCF converged in 21 iterations. Time: 7.45 sec.                                                        
+* Info * SCF results written to file: esca-xps.h5                                                                         
+                                                                                                                          
+               *** SCF converged in 20 iterations. Time: 12.03 sec.                                                       
                                                                                                                           
                Spin-Unrestricted Kohn-Sham:                                                                               
                ----------------------------                                                                               
-               Total Energy                       :     -518.2535017555 a.u.                                              
-               Electronic Energy                  :     -928.1635907214 a.u.                                              
+               Total Energy                       :     -518.7503283717 a.u.                                              
+               Electronic Energy                  :     -928.6604173376 a.u.                                              
                Nuclear Repulsion Energy           :      409.9100889659 a.u.                                              
                ------------------------------------                                                                       
-               Gradient Norm                      :        0.0000008978 a.u.                                              
+               Gradient Norm                      :        0.0000002564 a.u.                                              
                                                                                                                           
                                                                                                                           
                Ground State Information                                                                                   
@@ -158,32 +341,31 @@
                Charge of Molecule            :  1.0                                                                       
                Multiplicity (2S+1)           :  2                                                                         
                Magnetic Quantum Number (M_S) :  0.5                                                                       
-               Expectation value of S**2     :  0.7591                                                                    
+               Expectation value of S**2     :  0.7586                                                                    
                                                                                                                           
+* Info *   Orbital 4 (Atom 5): Ionization Energy = 300.37 eV                                                              
                                                                                                                           
-* Info * Checkpoint written to file: vlx_20260312_ee0c498c_scf.h5                                                         
+* Info * Computing FCH for C orbital 5 (Atom 3, contribution: 98.0%)...                                                   
                                                                                                                           
                                             Self Consistent Field Driver Setup                                            
                                            ====================================                                           
                                                                                                                           
                    Wave Function Model             : Spin-Unrestricted Kohn-Sham                                          
-                   Initial Guess Model             : Restart from Checkpoint                                              
+                   Initial Guess Model             : User Supplied Orbitals                                               
                    Convergence Accelerator         : Direct Inversion of Iterative Subspace                               
                    Max. Number of Iterations       : 50                                                                   
                    Max. Number of Error Vectors    : 10                                                                   
                    Convergence Threshold           : 1.0e-06                                                              
                    ERI Screening Threshold         : 1.0e-12                                                              
                    Linear Dependence Threshold     : 1.0e-06                                                              
-                   Resolution of the Identity      : RI-J                                                                 
-                   Exchange-Correlation Functional : PBE                                                                  
+                   Exchange-Correlation Functional : B3LYP                                                                
                    Molecular Grid Level            : 4                                                                    
                                                                                                                           
-* Info * Using the PBE functional.                                                                                        
+* Info * Using the B3LYP functional.                                                                                      
                                                                                                                           
-         J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
-         J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+         P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
                                                                                                                           
-* Info * Using the Libxc library (v6.2.2).                                                                                
+* Info * Using the Libxc library (v7.0.0).                                                                                
                                                                                                                           
          S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
                                                                                                                           
@@ -191,56 +373,44 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
-* Info * Restarting from checkpoint file: vlx_20260312_ee0c498c_scf.h5                                                    
-                                                                                                                          
-* Info * Using the resolution of the identity (RI) approximation.                                                         
-                                                                                                                          
-* Info * Dimension of RI auxiliary basis set (DEF2-UNIVERSAL-JFIT): 447                                                   
-                                                                                                                          
-* Info * Two-center integrals for RI done in 0.00 sec.                                                                    
-                                                                                                                          
-* Info * Metric(s) for RI done in 0.03 sec.                                                                               
-                                                                                                                          
-* Info * Buffer preparation for RI done in 0.01 sec.                                                                      
+* Info * Starting from user supplied orbitals                                                                             
                                                                                                                           
                                                                                                                           
                Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
                --------------------------------------------------------------------------------------------               
-                  1      -517.916475681878    0.0000000000      2.08986449      0.11686948      0.00000000                
-                  2      -422.290317250922   95.6261584310      8.08712952      0.42113530      4.94460306                
-                  3      -472.237941249225  -49.9476239983      5.13564697      0.23510512      4.59042279                
-                  4      -491.570526439802  -19.3325851906      4.92352045      0.21026429      3.18229248                
-                  5      -517.778613212822  -26.2080867730      2.40089564      0.08161876      1.58614213                
-                  6      -518.278683282317   -0.5000700695      1.06854220      0.03722839      0.59678294                
-                  7      -518.318034610474   -0.0393513282      0.79541623      0.02998828      0.21272489                
-                  8      -518.347670840496   -0.0296362300      0.62062991      0.03531021      0.39417987                
-                  9      -518.382026915568   -0.0343560751      0.23451382      0.01417964      0.23263476                
-                 10      -518.384755938112   -0.0027290225      0.14459657      0.00554673      0.05844541                
-                 11      -518.385793710165   -0.0010377721      0.10487948      0.00542999      0.03335249                
-                 12      -518.386749753211   -0.0009560430      0.03400457      0.00146584      0.03102077                
-                 13      -518.386836716579   -0.0000869634      0.01530266      0.00079580      0.01310615                
-                 14      -518.386859260119   -0.0000225435      0.00463940      0.00034063      0.00674993                
-                 15      -518.386861767566   -0.0000025074      0.00097190      0.00007368      0.00176927                
-                 16      -518.386861907396   -0.0000001398      0.00016997      0.00001282      0.00042902                
-                 17      -518.386861911596   -0.0000000042      0.00008670      0.00000537      0.00011819                
-                 18      -518.386861912303   -0.0000000007      0.00004975      0.00000412      0.00004587                
-                 19      -518.386861913394   -0.0000000011      0.00001841      0.00000129      0.00002821                
-                 20      -518.386861912820    0.0000000006      0.00001458      0.00000074      0.00001253                
-                 21      -518.386861915840   -0.0000000030      0.00000545      0.00000024      0.00001044                
-                 22      -518.386861909478    0.0000000064      0.00000247      0.00000011      0.00000293                
-                 23      -518.386861913631   -0.0000000042      0.00000084      0.00000005      0.00000111                
+                  1      -518.422092868207    0.0000000000      2.07204001      0.11573997      0.00000000                
+                  2      -517.685701575948    0.7363912923      3.14009819      0.15939317      2.13078623                
+                  3      -518.830437846163   -1.1447362702      0.78398928      0.05282656      1.42962840                
+                  4      -518.868867144228   -0.0384292981      0.42586853      0.02291159      0.33018199                
+                  5      -518.887704953591   -0.0188378094      0.15033422      0.00843206      0.19474989                
+                  6      -518.889999291205   -0.0022943376      0.03199004      0.00182300      0.05129826                
+                  7      -518.890131562353   -0.0001322711      0.01189504      0.00081198      0.01358688                
+                  8      -518.890171610253   -0.0000400479      0.00611816      0.00058654      0.00611461                
+                  9      -518.890205196092   -0.0000335858      0.00406637      0.00032522      0.00793256                
+                 10      -518.890221623691   -0.0000164276      0.00187940      0.00017296      0.00727382                
+                 11      -518.890224009679   -0.0000023860      0.00117062      0.00006149      0.00304259                
+                 12      -518.890224384028   -0.0000003743      0.00038982      0.00002107      0.00108387                
+                 13      -518.890224431154   -0.0000000471      0.00007854      0.00000652      0.00041277                
+                 14      -518.890224434698   -0.0000000035      0.00003956      0.00000253      0.00012541                
+                 15      -518.890224435050   -0.0000000004      0.00002108      0.00000129      0.00004027                
+                 16      -518.890224435101   -0.0000000001      0.00001472      0.00000111      0.00001489                
+                 17      -518.890224435117   -0.0000000000      0.00000876      0.00000053      0.00000831                
+                 18      -518.890224435125   -0.0000000000      0.00000125      0.00000006      0.00000281                
+                 19      -518.890224435125   -0.0000000000      0.00000073      0.00000003      0.00000089                
                                                                                                                           
-* Info * Checkpoint written to file: vlx_20260312_ee0c498c_scf.h5                                                         
+* Info * Checkpoint written to file: esca-xps_scf.h5                                                                      
                                                                                                                           
-               *** SCF converged in 23 iterations. Time: 6.26 sec.                                                        
+* Info * SCF results written to file: esca-xps.h5                                                                         
+                                                                                                                          
+               *** SCF converged in 19 iterations. Time: 11.54 sec.                                                       
                                                                                                                           
                Spin-Unrestricted Kohn-Sham:                                                                               
                ----------------------------                                                                               
-               Total Energy                       :     -518.3868619136 a.u.                                              
-               Electronic Energy                  :     -928.2969508795 a.u.                                              
+               Total Energy                       :     -518.8902244351 a.u.                                              
+               Electronic Energy                  :     -928.8003134010 a.u.                                              
                Nuclear Repulsion Energy           :      409.9100889659 a.u.                                              
                ------------------------------------                                                                       
-               Gradient Norm                      :        0.0000008449 a.u.                                              
+               Gradient Norm                      :        0.0000007349 a.u.                                              
                                                                                                                           
                                                                                                                           
                Ground State Information                                                                                   
@@ -248,32 +418,31 @@
                Charge of Molecule            :  1.0                                                                       
                Multiplicity (2S+1)           :  2                                                                         
                Magnetic Quantum Number (M_S) :  0.5                                                                       
-               Expectation value of S**2     :  0.7660                                                                    
+               Expectation value of S**2     :  0.7713                                                                    
                                                                                                                           
+* Info *   Orbital 5 (Atom 3): Ionization Energy = 296.56 eV                                                              
                                                                                                                           
-* Info * Checkpoint written to file: vlx_20260312_0f717d76_scf.h5                                                         
+* Info * Computing FCH for C orbital 6 (Atom 2, contribution: 98.2%)...                                                   
                                                                                                                           
                                             Self Consistent Field Driver Setup                                            
                                            ====================================                                           
                                                                                                                           
                    Wave Function Model             : Spin-Unrestricted Kohn-Sham                                          
-                   Initial Guess Model             : Restart from Checkpoint                                              
+                   Initial Guess Model             : User Supplied Orbitals                                               
                    Convergence Accelerator         : Direct Inversion of Iterative Subspace                               
                    Max. Number of Iterations       : 50                                                                   
                    Max. Number of Error Vectors    : 10                                                                   
                    Convergence Threshold           : 1.0e-06                                                              
                    ERI Screening Threshold         : 1.0e-12                                                              
                    Linear Dependence Threshold     : 1.0e-06                                                              
-                   Resolution of the Identity      : RI-J                                                                 
-                   Exchange-Correlation Functional : PBE                                                                  
+                   Exchange-Correlation Functional : B3LYP                                                                
                    Molecular Grid Level            : 4                                                                    
                                                                                                                           
-* Info * Using the PBE functional.                                                                                        
+* Info * Using the B3LYP functional.                                                                                      
                                                                                                                           
-         J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
-         J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+         P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
                                                                                                                           
-* Info * Using the Libxc library (v6.2.2).                                                                                
+* Info * Using the Libxc library (v7.0.0).                                                                                
                                                                                                                           
          S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
                                                                                                                           
@@ -281,51 +450,43 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
-* Info * Restarting from checkpoint file: vlx_20260312_0f717d76_scf.h5                                                    
-                                                                                                                          
-* Info * Using the resolution of the identity (RI) approximation.                                                         
-                                                                                                                          
-* Info * Dimension of RI auxiliary basis set (DEF2-UNIVERSAL-JFIT): 447                                                   
-                                                                                                                          
-* Info * Two-center integrals for RI done in 0.00 sec.                                                                    
-                                                                                                                          
-* Info * Metric(s) for RI done in 0.00 sec.                                                                               
-                                                                                                                          
-* Info * Buffer preparation for RI done in 0.01 sec.                                                                      
+* Info * Starting from user supplied orbitals                                                                             
                                                                                                                           
                                                                                                                           
                Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
                --------------------------------------------------------------------------------------------               
-                  1      -517.994847456702    0.0000000000      2.12425928      0.16036036      0.00000000                
-                  2      -419.211990897668   98.7828565590      9.30835854      0.50395333      6.28240476                
-                  3      -517.790023234458  -98.5780323368      2.49354997      0.12186374      5.88386089                
-                  4      -518.437828993382   -0.6478057589      0.62756266      0.02977476      1.13910821                
-                  5      -518.460803599307   -0.0229746059      0.43356589      0.02953456      0.31788466                
-                  6      -518.476090101300   -0.0152865020      0.20212928      0.00888545      0.16382022                
-                  7      -518.479262454590   -0.0031723533      0.09062084      0.00758406      0.07587102                
-                  8      -518.479835703689   -0.0005732491      0.02413830      0.00107735      0.03194293                
-                  9      -518.479899751143   -0.0000640475      0.00447397      0.00031093      0.00884144                
-                 10      -518.479902139204   -0.0000023881      0.00107803      0.00004965      0.00200415                
-                 11      -518.479902200157   -0.0000000610      0.00072330      0.00004057      0.00047025                
-                 12      -518.479902245373   -0.0000000452      0.00010074      0.00000450      0.00024705                
-                 13      -518.479902249132   -0.0000000038      0.00004620      0.00000229      0.00004850                
-                 14      -518.479902245005    0.0000000041      0.00001007      0.00000061      0.00002169                
-                 15      -518.479902245155   -0.0000000002      0.00000613      0.00000036      0.00000897                
-                 16      -518.479902249484   -0.0000000043      0.00000338      0.00000022      0.00000397                
-                 17      -518.479902246366    0.0000000031      0.00000118      0.00000006      0.00000258                
-                 18      -518.479902249858   -0.0000000035      0.00000090      0.00000006      0.00000095                
+                  1      -518.508884323095    0.0000000000      2.11041577      0.15986426      0.00000000                
+                  2      -518.061074626335    0.4478096968      2.78705243      0.13663979      2.22449185                
+                  3      -518.917328433711   -0.8562538074      0.88812839      0.06038146      1.42355403                
+                  4      -518.977597351797   -0.0602689181      0.40727618      0.02597099      0.36586234                
+                  5      -518.993403617599   -0.0158062658      0.03857147      0.00190002      0.13221775                
+                  6      -518.993555058096   -0.0001514405      0.01408871      0.00084794      0.01748692                
+                  7      -518.993573969597   -0.0000189115      0.00707527      0.00054063      0.00550138                
+                  8      -518.993579233889   -0.0000052643      0.00186508      0.00012807      0.00261067                
+                  9      -518.993580103140   -0.0000008693      0.00074964      0.00004055      0.00142002                
+                 10      -518.993580232446   -0.0000001293      0.00024990      0.00001530      0.00056816                
+                 11      -518.993580243909   -0.0000000115      0.00007691      0.00000797      0.00014676                
+                 12      -518.993580247306   -0.0000000034      0.00004263      0.00000376      0.00007527                
+                 13      -518.993580248349   -0.0000000010      0.00003503      0.00000196      0.00003953                
+                 14      -518.993580248884   -0.0000000005      0.00001352      0.00000075      0.00003544                
+                 15      -518.993580248950   -0.0000000001      0.00000837      0.00000050      0.00001449                
+                 16      -518.993580248962   -0.0000000000      0.00000227      0.00000014      0.00000536                
+                 17      -518.993580248964   -0.0000000000      0.00000103      0.00000006      0.00000177                
+                 18      -518.993580248963    0.0000000000      0.00000034      0.00000002      0.00000055                
                                                                                                                           
-* Info * Checkpoint written to file: vlx_20260312_0f717d76_scf.h5                                                         
+* Info * Checkpoint written to file: esca-xps_scf.h5                                                                      
                                                                                                                           
-               *** SCF converged in 18 iterations. Time: 4.29 sec.                                                        
+* Info * SCF results written to file: esca-xps.h5                                                                         
+                                                                                                                          
+               *** SCF converged in 18 iterations. Time: 10.69 sec.                                                       
                                                                                                                           
                Spin-Unrestricted Kohn-Sham:                                                                               
                ----------------------------                                                                               
-               Total Energy                       :     -518.4799022499 a.u.                                              
-               Electronic Energy                  :     -928.3899912158 a.u.                                              
+               Total Energy                       :     -518.9935802490 a.u.                                              
+               Electronic Energy                  :     -928.9036692149 a.u.                                              
                Nuclear Repulsion Energy           :      409.9100889659 a.u.                                              
                ------------------------------------                                                                       
-               Gradient Norm                      :        0.0000008992 a.u.                                              
+               Gradient Norm                      :        0.0000003373 a.u.                                              
                                                                                                                           
                                                                                                                           
                Ground State Information                                                                                   
@@ -333,32 +494,31 @@
                Charge of Molecule            :  1.0                                                                       
                Multiplicity (2S+1)           :  2                                                                         
                Magnetic Quantum Number (M_S) :  0.5                                                                       
-               Expectation value of S**2     :  0.7580                                                                    
+               Expectation value of S**2     :  0.7573                                                                    
                                                                                                                           
+* Info *   Orbital 6 (Atom 2): Ionization Energy = 293.75 eV                                                              
                                                                                                                           
-* Info * Checkpoint written to file: vlx_20260312_2b772103_scf.h5                                                         
+* Info * Computing FCH for C orbital 7 (Atom 1, contribution: 98.1%)...                                                   
                                                                                                                           
                                             Self Consistent Field Driver Setup                                            
                                            ====================================                                           
                                                                                                                           
                    Wave Function Model             : Spin-Unrestricted Kohn-Sham                                          
-                   Initial Guess Model             : Restart from Checkpoint                                              
+                   Initial Guess Model             : User Supplied Orbitals                                               
                    Convergence Accelerator         : Direct Inversion of Iterative Subspace                               
                    Max. Number of Iterations       : 50                                                                   
                    Max. Number of Error Vectors    : 10                                                                   
                    Convergence Threshold           : 1.0e-06                                                              
                    ERI Screening Threshold         : 1.0e-12                                                              
                    Linear Dependence Threshold     : 1.0e-06                                                              
-                   Resolution of the Identity      : RI-J                                                                 
-                   Exchange-Correlation Functional : PBE                                                                  
+                   Exchange-Correlation Functional : B3LYP                                                                
                    Molecular Grid Level            : 4                                                                    
                                                                                                                           
-* Info * Using the PBE functional.                                                                                        
+* Info * Using the B3LYP functional.                                                                                      
                                                                                                                           
-         J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
-         J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+         P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
                                                                                                                           
-* Info * Using the Libxc library (v6.2.2).                                                                                
+* Info * Using the Libxc library (v7.0.0).                                                                                
                                                                                                                           
          S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
                                                                                                                           
@@ -366,52 +526,42 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
-* Info * Restarting from checkpoint file: vlx_20260312_2b772103_scf.h5                                                    
-                                                                                                                          
-* Info * Using the resolution of the identity (RI) approximation.                                                         
-                                                                                                                          
-* Info * Dimension of RI auxiliary basis set (DEF2-UNIVERSAL-JFIT): 447                                                   
-                                                                                                                          
-* Info * Two-center integrals for RI done in 0.00 sec.                                                                    
-                                                                                                                          
-* Info * Metric(s) for RI done in 0.01 sec.                                                                               
-                                                                                                                          
-* Info * Buffer preparation for RI done in 0.01 sec.                                                                      
+* Info * Starting from user supplied orbitals                                                                             
                                                                                                                           
                                                                                                                           
                Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
                --------------------------------------------------------------------------------------------               
-                  1      -518.016050797350    0.0000000000      2.10236267      0.23796073      0.00000000                
-                  2      -430.510887498924   87.5051632984      8.85280209      0.49710667      5.88850553                
-                  3      -517.729486865553  -87.2185993666      2.63670851      0.12308138      5.46679139                
-                  4      -518.424914778591   -0.6954279130      0.77553322      0.04031299      1.08022288                
-                  5      -518.452458314953   -0.0275435364      0.64882605      0.04492067      0.37033810                
-                  6      -518.485283513121   -0.0328251982      0.28811734      0.01364403      0.20665719                
-                  7      -518.491417318533   -0.0061338054      0.13167011      0.00919611      0.08357340                
-                  8      -518.492833703276   -0.0014163847      0.03605230      0.00186865      0.07654953                
-                  9      -518.492974744439   -0.0001410412      0.01099208      0.00051070      0.01720890                
-                 10      -518.492985407827   -0.0000106634      0.00417329      0.00021052      0.00429321                
-                 11      -518.492986826167   -0.0000014183      0.00178469      0.00008796      0.00179015                
-                 12      -518.492987127800   -0.0000003016      0.00029281      0.00001572      0.00059229                
-                 13      -518.492987138090   -0.0000000103      0.00012401      0.00000729      0.00019432                
-                 14      -518.492987141985   -0.0000000039      0.00005675      0.00000326      0.00008184                
-                 15      -518.492987141726    0.0000000003      0.00002365      0.00000165      0.00004216                
-                 16      -518.492987140696    0.0000000010      0.00002664      0.00000178      0.00002238                
-                 17      -518.492987142342   -0.0000000016      0.00000265      0.00000022      0.00000996                
-                 18      -518.492987142483   -0.0000000001      0.00000194      0.00000014      0.00000205                
-                 19      -518.492987138261    0.0000000042      0.00000066      0.00000003      0.00000090                
+                  1      -518.530549082057    0.0000000000      2.08989144      0.23728857      0.00000000                
+                  2      -518.367398472093    0.1631506100      2.25537758      0.13624142      1.95101635                
+                  3      -519.003745824938   -0.6363473528      0.18375578      0.00909997      1.17605497                
+                  4      -519.005663342683   -0.0019175177      0.13953631      0.00914748      0.11878336                
+                  5      -519.007299643135   -0.0016363005      0.04715966      0.00319590      0.06696039                
+                  6      -519.007522514420   -0.0002228713      0.01137274      0.00049793      0.01669728                
+                  7      -519.007537115497   -0.0000146011      0.00553061      0.00038337      0.00467953                
+                  8      -519.007541467759   -0.0000043523      0.00171304      0.00011455      0.00257847                
+                  9      -519.007542060828   -0.0000005931      0.00068050      0.00003220      0.00120364                
+                 10      -519.007542133996   -0.0000000732      0.00028291      0.00001363      0.00045337                
+                 11      -519.007542141502   -0.0000000075      0.00006416      0.00000333      0.00011155                
+                 12      -519.007542141861   -0.0000000004      0.00002293      0.00000122      0.00002627                
+                 13      -519.007542141934   -0.0000000001      0.00000606      0.00000050      0.00001168                
+                 14      -519.007542141944   -0.0000000000      0.00000346      0.00000022      0.00000470                
+                 15      -519.007542141948   -0.0000000000      0.00000187      0.00000014      0.00000241                
+                 16      -519.007542141949   -0.0000000000      0.00000127      0.00000013      0.00000161                
+                 17      -519.007542141949    0.0000000000      0.00000064      0.00000007      0.00000097                
                                                                                                                           
-* Info * Checkpoint written to file: vlx_20260312_2b772103_scf.h5                                                         
+* Info * Checkpoint written to file: esca-xps_scf.h5                                                                      
                                                                                                                           
-               *** SCF converged in 19 iterations. Time: 4.70 sec.                                                        
+* Info * SCF results written to file: esca-xps.h5                                                                         
+                                                                                                                          
+               *** SCF converged in 17 iterations. Time: 10.15 sec.                                                       
                                                                                                                           
                Spin-Unrestricted Kohn-Sham:                                                                               
                ----------------------------                                                                               
-               Total Energy                       :     -518.4929871383 a.u.                                              
-               Electronic Energy                  :     -928.4030761042 a.u.                                              
+               Total Energy                       :     -519.0075421419 a.u.                                              
+               Electronic Energy                  :     -928.9176311078 a.u.                                              
                Nuclear Repulsion Energy           :      409.9100889659 a.u.                                              
                ------------------------------------                                                                       
-               Gradient Norm                      :        0.0000006577 a.u.                                              
+               Gradient Norm                      :        0.0000006391 a.u.                                              
                                                                                                                           
                                                                                                                           
                Ground State Information                                                                                   
@@ -419,5 +569,125 @@
                Charge of Molecule            :  1.0                                                                       
                Multiplicity (2S+1)           :  2                                                                         
                Magnetic Quantum Number (M_S) :  0.5                                                                       
-               Expectation value of S**2     :  0.7577                                                                    
+               Expectation value of S**2     :  0.7571                                                                    
                                                                                                                           
+* Info *   Orbital 7 (Atom 1): Ionization Energy = 293.37 eV                                                              
+                                                                                                                          
+                                                                                                                          
+* Info * Processing element: O                                                                                            
+* Info * ------------------------------------------------------------                                                     
+* Info * Found 1 core orbital(s) for O:                                                                                   
+* Info *   MO 3 -> Atom 4 (O) with 98.1% contribution                                                                     
+                                                                                                                          
+* Info * Computing FCH for O orbital 3 (Atom 4, contribution: 98.1%)...                                                   
+                                                                                                                          
+                                            Self Consistent Field Driver Setup                                            
+                                           ====================================                                           
+                                                                                                                          
+                   Wave Function Model             : Spin-Unrestricted Kohn-Sham                                          
+                   Initial Guess Model             : User Supplied Orbitals                                               
+                   Convergence Accelerator         : Direct Inversion of Iterative Subspace                               
+                   Max. Number of Iterations       : 50                                                                   
+                   Max. Number of Error Vectors    : 10                                                                   
+                   Convergence Threshold           : 1.0e-06                                                              
+                   ERI Screening Threshold         : 1.0e-12                                                              
+                   Linear Dependence Threshold     : 1.0e-06                                                              
+                   Exchange-Correlation Functional : B3LYP                                                                
+                   Molecular Grid Level            : 4                                                                    
+                                                                                                                          
+* Info * Using the B3LYP functional.                                                                                      
+                                                                                                                          
+         P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
+                                                                                                                          
+* Info * Using the Libxc library (v7.0.0).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * Starting from user supplied orbitals                                                                             
+                                                                                                                          
+                                                                                                                          
+               Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
+               --------------------------------------------------------------------------------------------               
+                  1      -509.180635660044    0.0000000000      2.99766940      0.23290122      0.00000000                
+                  2      -508.933577364332    0.2470582957      2.84381399      0.20852990      1.67534016                
+                  3      -509.852498222240   -0.9189208579      0.63981247      0.03017279      1.08703831                
+                  4      -509.893606141645   -0.0411079194      0.34235939      0.01299393      0.32831620                
+                  5      -509.906581373344   -0.0129752317      0.06659721      0.00334454      0.10894114                
+                  6      -509.906916345137   -0.0003349718      0.02687815      0.00141514      0.02372476                
+                  7      -509.906983985007   -0.0000676399      0.00442809      0.00030080      0.00804310                
+                  8      -509.906986290312   -0.0000023053      0.00151067      0.00011899      0.00207606                
+                  9      -509.906986634294   -0.0000003440      0.00090203      0.00004899      0.00090985                
+                 10      -509.906986736751   -0.0000001025      0.00035110      0.00001978      0.00042416                
+                 11      -509.906986750438   -0.0000000137      0.00010516      0.00000636      0.00014725                
+                 12      -509.906986752097   -0.0000000017      0.00004496      0.00000172      0.00005433                
+                 13      -509.906986752392   -0.0000000003      0.00000827      0.00000044      0.00002015                
+                 14      -509.906986752407   -0.0000000000      0.00000368      0.00000022      0.00000576                
+                 15      -509.906986752410   -0.0000000000      0.00000136      0.00000008      0.00000321                
+                 16      -509.906986752411   -0.0000000000      0.00000088      0.00000004      0.00000113                
+                                                                                                                          
+* Info * Checkpoint written to file: esca-xps_scf.h5                                                                      
+                                                                                                                          
+* Info * SCF results written to file: esca-xps.h5                                                                         
+                                                                                                                          
+               *** SCF converged in 16 iterations. Time: 9.63 sec.                                                        
+                                                                                                                          
+               Spin-Unrestricted Kohn-Sham:                                                                               
+               ----------------------------                                                                               
+               Total Energy                       :     -509.9069867524 a.u.                                              
+               Electronic Energy                  :     -919.8170757183 a.u.                                              
+               Nuclear Repulsion Energy           :      409.9100889659 a.u.                                              
+               ------------------------------------                                                                       
+               Gradient Norm                      :        0.0000008761 a.u.                                              
+                                                                                                                          
+                                                                                                                          
+               Ground State Information                                                                                   
+               ------------------------                                                                                   
+               Charge of Molecule            :  1.0                                                                       
+               Multiplicity (2S+1)           :  2                                                                         
+               Magnetic Quantum Number (M_S) :  0.5                                                                       
+               Expectation value of S**2     :  0.7569                                                                    
+                                                                                                                          
+* Info *   Orbital 3 (Atom 4): Ionization Energy = 541.01 eV                                                              
+                                                                                                                          
+                                                                                                                          
+               *** XPS Calculation Completed.                                                                             
+                                                                                                                          
+* Info * Writing to files...                                                                                              
+                                                                                                                          
+                                                                                                                          
+                                               XPS Core Ionization Energies                                               
+                     ================================================================================                     
+                                                                                                                          
+* Info * Element: C                                                                                                       
+* Info * --------------------------------------------------------------------------------                                 
+* Info * Atom     MO Index     IE (eV)         Localization                                                               
+* Info * --------------------------------------------------------------------------------                                 
+* Info * 1        7                  293.37           98.1%                                                               
+* Info * 2        6                  293.75           98.2%                                                               
+* Info * 3        5                  296.56           98.0%                                                               
+* Info * 5        4                  300.37           97.9%                                                               
+                                                                                                                          
+* Info * Element: O                                                                                                       
+* Info * --------------------------------------------------------------------------------                                 
+* Info * Atom     MO Index     IE (eV)         Localization                                                               
+* Info * --------------------------------------------------------------------------------                                 
+* Info * 4        3                  541.01           98.1%                                                               
+                                                                                                                          
+                     ================================================================================                     
+                                                                                                                          
+!========================================================================================================================!
+!                               VeloxChem execution completed at Wed Jun  3 12:02:38 2026.                               !
+!========================================================================================================================!
+!                                           Total execution time is 59.07 sec.                                           !
+!========================================================================================================================!
+!                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
+!                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !
+!                     VeloxChem: A Python-driven Density-functional Theory Program for Spectroscopy                      !
+!                                Simulations in High-performance Computing Environments.                                 !
+!                                       WIREs Comput Mol Sci 2020, 10 (5), e1457.                                        !
+!========================================================================================================================!
+

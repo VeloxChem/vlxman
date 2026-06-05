@@ -1,9 +1,23 @@
-import veloxchem as vlx
-import copy
-import numpy as np
+@jobs
+task: response
+@end
 
-molecule = vlx.Molecule.read_xyz_string("""13
-ESCA b3lyp/def2-svp optimized geometry
+@method settings
+xcfun: cam-b3lyp
+basis: def2-svp
+@end
+
+@response
+property: absorption
+core_excitation: yes
+num_core_orbitals: 8
+nstates: 20
+@end
+
+@molecule
+charge: 0
+multiplicity: 1
+xyz:  
 C              1.326024532622         0.471089167011        -1.154937296389
 C              0.484399509715         0.908494386259         0.037569541020
 C              0.270494167717        -0.188493907246         1.053914467110
@@ -16,19 +30,5 @@ H              1.453639490166         1.302028888463        -1.864264306255
 H              0.853135331881        -0.368249103011        -1.686230702784
 H              2.322713498820         0.134038471332        -0.833394707486
 H              0.936346512410         1.764030447212         0.571699332428
-H             -0.514670521097         1.267150587304        -0.270103071648""")
-
-basis = vlx.MolecularBasis.read(molecule, "def2-svp")
-
-# Ground state SCF
-scf_drv = vlx.ScfRestrictedDriver()
-scf_drv.filename ='esca-xps'
-scf_drv.xcfun = "pbe"
-scf_drv.ri_coulomb = True
-scf_results = scf_drv.compute(molecule, basis)
-
-
-xps_drv = vlx.XPSDriver()
-xps_drv.filename = 'esca-xps'
-
-xps_results_c = xps_drv.compute(molecule, basis, scf_drv, element=['C','O'])
+H             -0.514670521097         1.267150587304        -0.270103071648
+@end

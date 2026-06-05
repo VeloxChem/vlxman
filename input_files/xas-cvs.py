@@ -1,5 +1,4 @@
 import veloxchem as vlx
-import copy
 import numpy as np
 
 molecule = vlx.Molecule.read_xyz_string("""13
@@ -20,15 +19,16 @@ H             -0.514670521097         1.267150587304        -0.270103071648""")
 
 basis = vlx.MolecularBasis.read(molecule, "def2-svp")
 
-# Ground state SCF
 scf_drv = vlx.ScfRestrictedDriver()
-scf_drv.filename ='esca-xps'
-scf_drv.xcfun = "pbe"
-scf_drv.ri_coulomb = True
+scf_drv.xcfun = "cam-b3lyp-100"
 scf_results = scf_drv.compute(molecule, basis)
 
+rsp_drv = vlx.LinearResponseEigenSolver()
+rsp_drv.core_excitation = True
 
-xps_drv = vlx.XPSDriver()
-xps_drv.filename = 'esca-xps'
+# To get the C K-edge,
+# everythining up to and including the C 1s orbitals
+rsp_drv.num_core_orbitals = 8
+rsp_drv.nstates = 20
 
-xps_results_c = xps_drv.compute(molecule, basis, scf_drv, element=['C','O'])
+rsp_results = rsp_drv.compute(molecule, basis, scf_results)
