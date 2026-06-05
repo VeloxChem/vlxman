@@ -6,7 +6,7 @@ ensemble = ens_parser.structures(
     trajectory_file = "alpha-helix-acetone-water.xtc",
     topology_file = "alpha-helix-acetone-water.tpr",
     qm_region = 'resname LIG',
-    num_snapshots = 2,
+    num_snapshots = 3,
     pe_cutoff = 3.0,
     npe_cutoff = 5.0,
 )
@@ -25,19 +25,19 @@ scf_options = {
    "scf_type": "restricted",
    "conv_thresh": 1.0e-6,
    "max_iter": 150,
-   "xcfun": "CAM-B3LYP",
+   "xcfun": "cam-b3lyp",
    "grid_level": 4,
 }
 
 property_options = {
     "property": "absorption",
-    "nstates": 3,
+    "nstates": 5,
     "nto": True,
 }
 
 results = ens_drv.compute(
    ensemble,
-   basis_set = "6-31G",
+   basis_set = "aug-pcseg-1",
    scf_options = scf_options,
    property_options = property_options,
 )
@@ -46,5 +46,5 @@ ens_drv.plot_uv_vis_spectra(
     results,
     show_individual = True,
     show_sticks = True,
-    xlim_nm = (120,200)
+    xlim_nm = (150, 275)
 )
