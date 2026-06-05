@@ -3,7 +3,8 @@ task: scf
 @end
 
 @method settings
-basis: aug-cc-pvdz
+xcfun: cam-b3lyp
+basis: aug-pcseg-1
 potfile: pe_frame_000000.pot
 @end
 
