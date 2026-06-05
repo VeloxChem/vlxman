@@ -1,9 +1,9 @@
-name: vlxman 
+name: vlxman
 channels:
   - conda-forge
   - veloxchem
 dependencies:
-  - python>=3.10
+  - python>=3.12
   - jupyter-book>=2.1
   - jupyterlab
   - jupyterlab-spellchecker
@@ -15,6 +15,7 @@ dependencies:
   - ipympl
   - ipywidgets
   - openmm
+  - mdanalysis
   - py3dmol
   - pymbar
   - rdkit
