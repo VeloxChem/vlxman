@@ -20,42 +20,22 @@ VIAMD natively reads HDF5 (*.h5) files produced by VeloxChem, which contain deta
 ```
 
 ## Installing VIAMD
-You can find detailed information on how to [install](https://github.com/scanberg/viamd/wiki/0.-Building) VIAMD and read VeloxChem outfile file on the [VIAMD GitHub](https://github.com/scanberg/viamd/wiki/7.-VIAMD-for-VeloxChem).
 
-* Step 1: Get up to date with VIAMD
+### Windows
+For Windows, we recommend using the latest binary available on the [release page](https://github.com/scanberg/viamd/releases/).
 
-Pull the latest version:
+### macOS
+For macOS, we recommend using the latest binary available on the [release page](https://github.com/scanberg/viamd/releases/).
 
-```git pull --recurse-submodules```
+**NOTE:** To be able to run this, you will have to do some magic in a terminal to be able to run the app bundle since we do not have code signing.
 
-* Step 2: Install dependencies 
-Apart from the other dependencies, VIAMD needs the libhdf5-serial-dev library for handling the VeloxChem's hdf5 files.
+```xattr -dr com.apple.quarantine viamd.app```
 
-For Ubuntu:
-```sudo apt-get install libhdf5-serial-dev```
 
-For Mac:
-```brew install hdf5```
 
-* Step 3: Configure using CMAKE
-```
-cd viamd
-mkdir build
-cd build
-cmake -DVIAMD_ENABLE_VELOXCHEM=ON -DMD_ENABLE_VLX=ON ..
-```
-At this stage, the path to the h5 libraries should be defined.
+## Building for Ubuntu and macOS
+To [build](https://github.com/scanberg/viamd/wiki/0.-Building) VIAMD on your machine, you can follow the procedure described in detail in the wiki for [Linux](https://github.com/scanberg/viamd/wiki/0.-Building#linux) and [MacOS](https://github.com/scanberg/viamd/wiki/0.-Building#mac).
 
-* Step 4: Build
-```
-cmake --build .
-```
-
-* Step 5: Run
-```
-cd bin
-./viamd
-```
 
 ## Visualizing VeloxChem output
 As output, VeloxChem is producing a file.out and a file.h5. Only the h5 file is used for visualization in VIAMD. For the following examples we are going to use output files provided on the [file examples page](#sec:input-file-examples).
