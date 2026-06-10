@@ -1,0 +1,17 @@
+@jobs
+task: scf
+@end
+
+@method settings
+basis: aug-cc-pvdz
+potfile: solvent.pot
+@end
+
+@molecule
+charge: 0
+multiplicity: 1
+xyz:
+O        0.0000000000      0.0000000000      0.0000000000                 
+H        0.6891400000      0.8324710000      0.0000000000                 
+H        0.7224340000     -0.8726890000      0.0000000000
+@end
