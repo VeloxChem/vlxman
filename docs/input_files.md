@@ -135,19 +135,19 @@
     </tr>
     <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
-        <a href="#sec:penpe">PE/NPE</a>
+        <a href="#sec:pe">PE</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../input_files/alpha-helix-acetone-water-pe.py" download>alpha-helix-acetone-water-pe.py</a>
+        <a href="../input_files/water_pe.py" download>water_pe.py</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../input_files/alpha-helix-acetone-water-pe.inp" download>alpha-helix-acetone-water-pe.inp</a>
+        <a href="../input_files/water_pe.inp" download>water_pe.inp</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../output_files/alpha-helix-acetone-water-pe.out" download>alpha-helix-acetone-water-pe.out</a>
+        <a href="../output_files/water_pe.out" download>water_pe.out</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../output_files/alpha-helix-acetone-water-pe.h5" download>alpha-helix-acetone-water-pe.h5</a>
+        <a href="../output_files/water_pe.h5" download>water_pe.h5</a>
       </td>
     </tr>
     <tr style="background-color: #f5f5f5;">

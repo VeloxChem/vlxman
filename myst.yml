@@ -30,6 +30,7 @@ project:
         - file: docs/basis_sets.ipynb
         - file: docs/hamiltonian.ipynb
         - file: docs/embedding.ipynb
+        - file: docs/ensembles.ipynb
     - title: Properties
       children:
         - file: docs/pes.ipynb
