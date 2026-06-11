@@ -138,16 +138,16 @@
         <a href="#sec:pe">PE</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../input_files/water-pe.py" download>water-pe.py</a>
+        <a href="../input_files/water_pe.py" download>water_pe.py</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../input_files/water-pe.inp" download>water-pe.inp</a>
+        <a href="../input_files/water_pe.inp" download>water_pe.inp</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../output_files/water-pe.out" download>water-pe.out</a>
+        <a href="../output_files/water_pe.out" download>water_pe.out</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../output_files/water-pe.h5" download>water-pe.h5</a>
+        <a href="../output_files/water_pe.h5" download>water_pe.h5</a>
       </td>
     </tr>
     <tr style="background-color: #f5f5f5;">
