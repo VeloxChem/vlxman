@@ -135,19 +135,20 @@
     </tr>
     <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
-        <a href="#sec:pe">PE</a>
+        <a href="#sec:pe">PE/NPE</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../input_files/water_pe.py" download>water_pe.py</a>
+        <a href="../input_files/hs276_pe.py" download>hs276_pe.py</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../input_files/water_pe.inp" download>water_pe.inp</a>
+        <a href="../input_files/hs276_pe.inp" download>hs276_pe.inp</a>
+        <a href="../input_files/solvent_pe.pot" download>solvent_pe.pot</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../output_files/water_pe.out" download>water_pe.out</a>
+        <a href="../output_files/hs276_pe.out" download>hs276_pe.out</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../output_files/water_pe.h5" download>water_pe.h5</a>
+        <a href="../output_files/hs276_pe.h5" download>hs276_pe.h5</a>
       </td>
     </tr>
     <tr style="background-color: #f5f5f5;">
