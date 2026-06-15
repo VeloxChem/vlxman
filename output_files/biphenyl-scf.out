@@ -5,7 +5,7 @@
 !                                                                                                                        !
 !                                        Copyright 2018-2025 VeloxChem developers                                        !
 !========================================================================================================================!
-!                                VeloxChem execution started at Wed May  7 16:01:14 2025.                                !
+!                                VeloxChem execution started at Mon Jun 15 09:43:43 2026.                                !
 !========================================================================================================================!
                                                                                                                           
 * Info * Using 32 OpenMP threads per MPI process.                                                                         
@@ -54,7 +54,7 @@
                           Number of alpha electrons   : 41                                                                
                           Number of beta  electrons   : 41                                                                
                                                                                                                           
-* Info * Reading basis set from file: /home/linares/miniconda3/envs/vlx-github/lib/python3.12/site-packages/veloxchem/basis/DEF2-SVP
+* Info * Reading basis set from file: /home/linares/miniconda3/envs/vlxsrc/lib/python3.13/site-packages/veloxchem/basis/DEF2-SVP
                                                                                                                           
                                               Molecular Basis (Atomic Basis)                                              
                                              ================================                                             
@@ -90,10 +90,10 @@
                                                                                                                           
 * Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
                                                                                                                           
-* Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
+* Info * Orthogonalization matrix computed in 0.01 sec.                                                                   
                                                                                                                           
 * Info * Starting Reduced Basis SCF calculation...                                                                        
-* Info * ...done. SCF energy in reduced basis set: -459.719138240496 a.u. Time: 1.29 sec.                                 
+* Info * ...done. SCF energy in reduced basis set: -459.719138787068 a.u. Time: 0.81 sec.                                 
                                                                                                                           
 * Info * Overlap matrix computed in 0.00 sec.                                                                             
                                                                                                                           
@@ -106,22 +106,23 @@
                                                                                                                           
                Iter. | Hartree-Fock Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
                --------------------------------------------------------------------------------------------               
-                  1      -459.907099446983    0.0000000000      0.20430890      0.01370395      0.00000000                
-                  2      -459.911351755694   -0.0042523087      0.03929134      0.00271526      0.07249565                
-                  3      -459.911536152619   -0.0001843969      0.00932696      0.00070551      0.02014772                
-                  4      -459.911549660768   -0.0000135081      0.00204956      0.00013292      0.00672243                
-                  5      -459.911550160736   -0.0000005000      0.00124225      0.00007772      0.00172160                
-                  6      -459.911550379751   -0.0000002190      0.00008012      0.00000374      0.00070692                
-                  7      -459.911550381006   -0.0000000013      0.00003186      0.00000152      0.00007565                
-                  8      -459.911550381165   -0.0000000002      0.00000978      0.00000047      0.00001811                
-                  9      -459.911550381186   -0.0000000000      0.00000278      0.00000022      0.00000736                
-                 10      -459.911550381191   -0.0000000000      0.00000091      0.00000008      0.00000409                
+                  1      -459.907099371179    0.0000000000      0.20430806      0.01370343      0.00000000                
+                  2      -459.911353642345   -0.0042542712      0.03905353      0.00271625      0.07199426                
+                  3      -459.911538589398   -0.0001849471      0.00803917      0.00066576      0.01888432                
+                  4      -459.911549656348   -0.0000110670      0.00202362      0.00012961      0.00649847                
+                  5      -459.911550249396   -0.0000005930      0.00090192      0.00005086      0.00152525                
+                  6      -459.911550379602   -0.0000001302      0.00007994      0.00000384      0.00070503                
+                  7      -459.911550381000   -0.0000000014      0.00002941      0.00000143      0.00008315                
+                  8      -459.911550381158   -0.0000000002      0.00000944      0.00000042      0.00001852                
+                  9      -459.911550381183   -0.0000000000      0.00000339      0.00000027      0.00000799                
+                 10      -459.911550381191   -0.0000000000      0.00000125      0.00000012      0.00000454                
+                 11      -459.911550381192   -0.0000000000      0.00000036      0.00000003      0.00000204                
                                                                                                                           
 * Info * Checkpoint written to file: biphenyl-scf_scf.h5                                                                  
                                                                                                                           
 * Info * SCF results written to file: biphenyl-scf.h5                                                                     
                                                                                                                           
-               *** SCF converged in 10 iterations. Time: 7.03 sec.                                                        
+               *** SCF converged in 11 iterations. Time: 5.35 sec.                                                        
                                                                                                                           
                Spin-Restricted Hartree-Fock:                                                                              
                -----------------------------                                                                              
@@ -129,7 +130,7 @@
                Electronic Energy                  :    -1062.0695766734 a.u.                                              
                Nuclear Repulsion Energy           :      602.1580262922 a.u.                                              
                ------------------------------------                                                                       
-               Gradient Norm                      :        0.0000009063 a.u.                                              
+               Gradient Norm                      :        0.0000003603 a.u.                                              
                                                                                                                           
                                                                                                                           
                Ground State Information                                                                                   
@@ -248,9 +249,9 @@
                                  Total :         0.000116 a.u.         0.000295 Debye                                     
                                                                                                                           
 !========================================================================================================================!
-!                               VeloxChem execution completed at Wed May  7 16:01:22 2025.                               !
+!                               VeloxChem execution completed at Mon Jun 15 09:43:49 2026.                               !
 !========================================================================================================================!
-!                                           Total execution time is 8.35 sec.                                            !
+!                                           Total execution time is 6.19 sec.                                            !
 !========================================================================================================================!
 !                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
 !                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !
@@ -258,3 +259,4 @@
 !                                Simulations in High-performance Computing Environments.                                 !
 !                                       WIREs Comput Mol Sci 2020, 10 (5), e1457.                                        !
 !========================================================================================================================!
+

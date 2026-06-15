@@ -5,7 +5,7 @@
 !                                                                                                                        !
 !                                        Copyright 2018-2025 VeloxChem developers                                        !
 !========================================================================================================================!
-!                                VeloxChem execution started at Mon Mar  9 15:18:40 2026.                                !
+!                                VeloxChem execution started at Mon Jun 15 09:52:45 2026.                                !
 !========================================================================================================================!
                                                                                                                           
 * Info * Using 32 OpenMP threads per MPI process.                                                                         
@@ -44,7 +44,7 @@
                           Number of alpha electrons   : 13                                                                
                           Number of beta  electrons   : 13                                                                
                                                                                                                           
-* Info * Reading basis set from file: /home/linares/miniconda3/envs/vlx-github/lib/python3.12/site-packages/veloxchem/basis/DEF2-SVP
+* Info * Reading basis set from file: /home/linares/miniconda3/envs/vlxsrc/lib/python3.13/site-packages/veloxchem/basis/DEF2-SVP
                                                                                                                           
                                               Molecular Basis (Atomic Basis)                                              
                                              ================================                                             
@@ -85,7 +85,7 @@
                                                                                                                           
          P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
                                                                                                                           
-* Info * Using the Libxc library (v6.2.2).                                                                                
+* Info * Using the Libxc library (v7.0.0).                                                                                
                                                                                                                           
          S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
                                                                                                                           
@@ -110,7 +110,7 @@
 * Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
                                                                                                                           
 * Info * Starting Reduced Basis SCF calculation...                                                                        
-* Info * ...done. SCF energy in reduced basis set: -153.891357422151 a.u. Time: 0.24 sec.                                 
+* Info * ...done. SCF energy in reduced basis set: -153.891357394972 a.u. Time: 0.20 sec.                                 
                                                                                                                           
 * Info * Overlap matrix computed in 0.00 sec.                                                                             
                                                                                                                           
@@ -118,35 +118,35 @@
                                                                                                                           
 * Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
                                                                                                                           
-* Info * Orthogonalization matrix computed in 0.01 sec.                                                                   
+* Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
                                                                                                                           
                                                                                                                           
                Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
                --------------------------------------------------------------------------------------------               
-                  1      -154.922589051484    0.0000000000      0.23348596      0.01485114      0.00000000                
-                  2      -154.924578195847   -0.0019891444      0.18520116      0.01497739      0.13903415                
-                  3      -154.928823143211   -0.0042449474      0.02791435      0.00182882      0.06449504                
-                  4      -154.928909334844   -0.0000861916      0.00605935      0.00044882      0.00873670                
-                  5      -154.928912211523   -0.0000028767      0.00227628      0.00017149      0.00218129                
-                  6      -154.928912671795   -0.0000004603      0.00016195      0.00000890      0.00062232                
-                  7      -154.928912674157   -0.0000000024      0.00007441      0.00000486      0.00006306                
-                  8      -154.928912674820   -0.0000000007      0.00000646      0.00000042      0.00002265                
-                  9      -154.928912674849   -0.0000000000      0.00000073      0.00000005      0.00000302                
+                  1      -154.922590121157    0.0000000000      0.23346862      0.01484749      0.00000000                
+                  2      -154.925299505674   -0.0027093845      0.16906012      0.01372863      0.13310820                
+                  3      -154.928835392390   -0.0035358867      0.02612772      0.00165728      0.05848562                
+                  4      -154.928909518898   -0.0000741265      0.00590624      0.00044456      0.00809307                
+                  5      -154.928912415246   -0.0000028963      0.00169139      0.00012533      0.00200545                
+                  6      -154.928912672049   -0.0000002568      0.00015403      0.00000867      0.00046793                
+                  7      -154.928912674292   -0.0000000022      0.00006656      0.00000457      0.00005898                
+                  8      -154.928912674820   -0.0000000005      0.00000574      0.00000036      0.00002032                
+                  9      -154.928912674841   -0.0000000000      0.00000067      0.00000005      0.00000287                
                                                                                                                           
 * Info * Checkpoint written to file: eth-cpcm_scf.h5                                                                      
                                                                                                                           
 * Info * SCF results written to file: eth-cpcm.h5                                                                         
                                                                                                                           
-               *** SCF converged in 9 iterations. Time: 1.19 sec.                                                         
+               *** SCF converged in 9 iterations. Time: 0.83 sec.                                                         
                                                                                                                           
                Spin-Restricted Kohn-Sham:                                                                                 
                --------------------------                                                                                 
                Total Energy                       :     -154.9289126748 a.u.                                              
-               Electronic Energy                  :     -236.8950018584 a.u.                                              
-               Electrostatic Solvation Energy     :       -0.0071145929 a.u.                                              
+               Electronic Energy                  :     -236.8950018585 a.u.                                              
+               Electrostatic Solvation Energy     :       -0.0071145928 a.u.                                              
                Nuclear Repulsion Energy           :       81.9732037765 a.u.                                              
                ------------------------------------                                                                       
-               Gradient Norm                      :        0.0000007346 a.u.                                              
+               Gradient Norm                      :        0.0000006658 a.u.                                              
                                                                                                                           
                                                                                                                           
                Ground State Information                                                                                   
@@ -239,15 +239,15 @@
                                                 Ground State Dipole Moment                                                
                                                ----------------------------                                               
                                                                                                                           
-                                   X   :        -0.343475 a.u.        -0.873025 Debye                                     
+                                   X   :        -0.343475 a.u.        -0.873026 Debye                                     
                                    Y   :         0.038066 a.u.         0.096753 Debye                                     
                                    Z   :         0.663831 a.u.         1.687289 Debye                                     
                                  Total :         0.748395 a.u.         1.902230 Debye                                     
                                                                                                                           
 !========================================================================================================================!
-!                               VeloxChem execution completed at Mon Mar  9 15:18:41 2026.                               !
+!                               VeloxChem execution completed at Mon Jun 15 09:52:46 2026.                               !
 !========================================================================================================================!
-!                                           Total execution time is 1.53 sec.                                            !
+!                                           Total execution time is 1.14 sec.                                            !
 !========================================================================================================================!
 !                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
 !                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !
@@ -255,3 +255,4 @@
 !                                Simulations in High-performance Computing Environments.                                 !
 !                                       WIREs Comput Mol Sci 2020, 10 (5), e1457.                                        !
 !========================================================================================================================!
+

@@ -5,7 +5,7 @@
 !                                                                                                                        !
 !                                        Copyright 2018-2025 VeloxChem developers                                        !
 !========================================================================================================================!
-!                                VeloxChem execution started at Wed Mar 11 11:25:19 2026.                                !
+!                                VeloxChem execution started at Mon Jun 15 12:17:39 2026.                                !
 !========================================================================================================================!
                                                                                                                           
 * Info * Using 32 OpenMP threads per MPI process.                                                                         
@@ -42,7 +42,7 @@
                           Number of alpha electrons   : 5                                                                 
                           Number of beta  electrons   : 5                                                                 
                                                                                                                           
-* Info * Reading basis set from file: /home/linares/miniconda3/envs/vlx-github/lib/python3.12/site-packages/veloxchem/basis/AUG-CC-PVDZ
+* Info * Reading basis set from file: /home/linares/miniconda3/envs/vlxsrc/lib/python3.13/site-packages/veloxchem/basis/AUG-CC-PVDZ
                                                                                                                           
                                               Molecular Basis (Atomic Basis)                                              
                                              ================================                                             
@@ -81,7 +81,7 @@
 * Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
                                                                                                                           
 * Info * Starting Reduced Basis SCF calculation...                                                                        
-* Info * ...done. SCF energy in reduced basis set: -40.177695142950 a.u. Time: 0.03 sec.                                  
+* Info * ...done. SCF energy in reduced basis set: -40.177695142950 a.u. Time: 0.02 sec.                                  
                                                                                                                           
 * Info * Overlap matrix computed in 0.00 sec.                                                                             
                                                                                                                           
@@ -106,7 +106,7 @@
                                                                                                                           
 * Info * SCF results written to file: meth-nonres.h5                                                                      
                                                                                                                           
-               *** SCF converged in 7 iterations. Time: 0.12 sec.                                                         
+               *** SCF converged in 7 iterations. Time: 0.08 sec.                                                         
                                                                                                                           
                Spin-Restricted Hartree-Fock:                                                                              
                -----------------------------                                                                              
@@ -218,7 +218,7 @@
 * Info * 9 ungerade trial vectors in reduced space                                                                        
                                                                                                                           
 * Info * 171.94 kB of memory used for subspace procedure on the master node                                               
-* Info * 99.25 GB of memory available for the solver on the master node                                                   
+* Info * 112.58 GB of memory available for the solver on the master node                                                  
                                                                                                                           
                *** Iteration:   1 * Residuals (Max,Min): 3.23e-01 and 2.66e-01                                            
                                                                                                                           
@@ -247,7 +247,7 @@
 * Info * 18 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
 * Info * 249.70 kB of memory used for subspace procedure on the master node                                               
-* Info * 99.22 GB of memory available for the solver on the master node                                                   
+* Info * 112.58 GB of memory available for the solver on the master node                                                  
                                                                                                                           
                *** Iteration:   2 * Residuals (Max,Min): 3.75e-02 and 3.50e-02                                            
                                                                                                                           
@@ -276,7 +276,7 @@
 * Info * 27 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
 * Info * 327.46 kB of memory used for subspace procedure on the master node                                               
-* Info * 99.21 GB of memory available for the solver on the master node                                                   
+* Info * 112.56 GB of memory available for the solver on the master node                                                  
                                                                                                                           
                *** Iteration:   3 * Residuals (Max,Min): 4.99e-03 and 3.01e-03                                            
                                                                                                                           
@@ -305,7 +305,7 @@
 * Info * 39 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
 * Info * 413.86 kB of memory used for subspace procedure on the master node                                               
-* Info * 99.21 GB of memory available for the solver on the master node                                                   
+* Info * 112.56 GB of memory available for the solver on the master node                                                  
                                                                                                                           
                *** Iteration:   4 * Residuals (Max,Min): 7.24e-04 and 2.85e-04                                            
                                                                                                                           
@@ -334,7 +334,7 @@
 * Info * 45 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
 * Info * 478.95 kB of memory used for subspace procedure on the master node                                               
-* Info * 99.20 GB of memory available for the solver on the master node                                                   
+* Info * 112.55 GB of memory available for the solver on the master node                                                  
                                                                                                                           
                *** Iteration:   5 * Residuals (Max,Min): 1.12e-04 and 1.98e-05                                            
                                                                                                                           
@@ -363,7 +363,7 @@
 * Info * 48 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
 * Info * 504.58 kB of memory used for subspace procedure on the master node                                               
-* Info * 99.19 GB of memory available for the solver on the master node                                                   
+* Info * 112.55 GB of memory available for the solver on the master node                                                  
                                                                                                                           
                *** Iteration:   6 * Residuals (Max,Min): 7.00e-05 and 1.31e-05                                            
                                                                                                                           
@@ -373,9 +373,9 @@
                                                                                                                           
 * Info * Checkpoint written to file: meth-nonres_rsp.h5                                                                   
                                                                                                                           
-* Info * Time spent in writing checkpoint file: 0.00 sec                                                                  
+* Info * Time spent in writing checkpoint file: 0.01 sec                                                                  
                                                                                                                           
-               *** Linear response converged in 6 iterations. Time: 0.72 sec                                              
+               *** Linear response converged in 6 iterations. Time: 0.40 sec                                              
                                                                                                                           
                                                                                                                           
 * Info * Response solution vectors written to file: meth-nonres.h5                                                        
@@ -423,9 +423,9 @@
                Z        -0.00041368    -0.00016242    20.13495234                                                         
                                                                                                                           
 !========================================================================================================================!
-!                               VeloxChem execution completed at Wed Mar 11 11:25:20 2026.                               !
+!                               VeloxChem execution completed at Mon Jun 15 12:17:40 2026.                               !
 !========================================================================================================================!
-!                                           Total execution time is 0.91 sec.                                            !
+!                                           Total execution time is 0.59 sec.                                            !
 !========================================================================================================================!
 !                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
 !                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !
@@ -433,3 +433,4 @@
 !                                Simulations in High-performance Computing Environments.                                 !
 !                                       WIREs Comput Mol Sci 2020, 10 (5), e1457.                                        !
 !========================================================================================================================!
+

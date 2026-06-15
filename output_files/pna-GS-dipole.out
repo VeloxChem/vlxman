@@ -5,7 +5,7 @@
 !                                                                                                                        !
 !                                        Copyright 2018-2025 VeloxChem developers                                        !
 !========================================================================================================================!
-!                                VeloxChem execution started at Tue Jun  2 12:07:01 2026.                                !
+!                                VeloxChem execution started at Mon Jun 15 12:16:37 2026.                                !
 !========================================================================================================================!
                                                                                                                           
 * Info * Using 32 OpenMP threads per MPI process.                                                                         
@@ -82,14 +82,14 @@
                                                                                                                           
 * Info * Overlap matrix computed in 0.00 sec.                                                                             
                                                                                                                           
-* Info * Kinetic energy matrix computed in 0.01 sec.                                                                      
+* Info * Kinetic energy matrix computed in 0.00 sec.                                                                      
                                                                                                                           
 * Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
                                                                                                                           
 * Info * Orthogonalization matrix computed in 0.01 sec.                                                                   
                                                                                                                           
 * Info * Starting Reduced Basis SCF calculation...                                                                        
-* Info * ...done. SCF energy in reduced basis set: -488.592567247947 a.u. Time: 0.50 sec.                                 
+* Info * ...done. SCF energy in reduced basis set: -488.592567247947 a.u. Time: 0.43 sec.                                 
                                                                                                                           
 * Info * Overlap matrix computed in 0.00 sec.                                                                             
                                                                                                                           
@@ -97,7 +97,7 @@
                                                                                                                           
 * Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
                                                                                                                           
-* Info * Orthogonalization matrix computed in 0.01 sec.                                                                   
+* Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
                                                                                                                           
                                                                                                                           
                Iter. | Hartree-Fock Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
@@ -106,22 +106,22 @@
                   2      -488.818101765038   -0.0055623668      0.13061048      0.01246708      0.13802843                
                   3      -488.819521473437   -0.0014197084      0.03157301      0.00204613      0.03802162                
                   4      -488.819634003321   -0.0001125299      0.00846369      0.00047315      0.01194059                
-                  5      -488.819644938849   -0.0000109355      0.00260317      0.00021588      0.00499699                
-                  6      -488.819646419610   -0.0000014808      0.00102077      0.00007139      0.00186071                
+                  5      -488.819644938850   -0.0000109355      0.00260317      0.00021588      0.00499699                
+                  6      -488.819646419611   -0.0000014808      0.00102077      0.00007139      0.00186071                
                   7      -488.819646711219   -0.0000002916      0.00043418      0.00005357      0.00069835                
                   8      -488.819646809729   -0.0000000985      0.00015531      0.00001606      0.00048838                
                   9      -488.819646826401   -0.0000000167      0.00006757      0.00000706      0.00020085                
                  10      -488.819646828993   -0.0000000026      0.00002386      0.00000189      0.00008058                
-                 11      -488.819646829334   -0.0000000003      0.00000863      0.00000058      0.00003040                
+                 11      -488.819646829335   -0.0000000003      0.00000863      0.00000058      0.00003040                
                  12      -488.819646829368   -0.0000000000      0.00000368      0.00000025      0.00000971                
-                 13      -488.819646829373   -0.0000000000      0.00000132      0.00000010      0.00000302                
+                 13      -488.819646829372   -0.0000000000      0.00000132      0.00000010      0.00000302                
                  14      -488.819646829374   -0.0000000000      0.00000035      0.00000002      0.00000156                
                                                                                                                           
 * Info * Checkpoint written to file: pna-GS-dipole_scf.h5                                                                 
                                                                                                                           
 * Info * SCF results written to file: pna-GS-dipole.h5                                                                    
                                                                                                                           
-               *** SCF converged in 14 iterations. Time: 4.66 sec.                                                        
+               *** SCF converged in 14 iterations. Time: 3.64 sec.                                                        
                                                                                                                           
                Spin-Restricted Hartree-Fock:                                                                              
                -----------------------------                                                                              
@@ -233,9 +233,9 @@
                                  Total :         3.100914 a.u.         7.881737 Debye                                     
                                                                                                                           
 !========================================================================================================================!
-!                               VeloxChem execution completed at Tue Jun  2 12:07:06 2026.                               !
+!                               VeloxChem execution completed at Mon Jun 15 12:16:41 2026.                               !
 !========================================================================================================================!
-!                                           Total execution time is 5.19 sec.                                            !
+!                                           Total execution time is 4.10 sec.                                            !
 !========================================================================================================================!
 !                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
 !                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !

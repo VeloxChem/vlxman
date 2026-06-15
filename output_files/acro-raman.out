@@ -5,7 +5,7 @@
 !                                                                                                                        !
 !                                        Copyright 2018-2025 VeloxChem developers                                        !
 !========================================================================================================================!
-!                                VeloxChem execution started at Mon Apr 13 19:54:44 2026.                                !
+!                                VeloxChem execution started at Mon Jun 15 12:22:54 2026.                                !
 !========================================================================================================================!
                                                                                                                           
 * Info * Using 32 OpenMP threads per MPI process.                                                                         
@@ -45,7 +45,7 @@
                           Number of alpha electrons   : 15                                                                
                           Number of beta  electrons   : 15                                                                
                                                                                                                           
-* Info * Reading basis set from file: /home/xinli/gitlab/VeloxChem.codex/vlxenv-cx/lib/python3.13/site-packages/veloxchem/basis/DEF2-SVP
+* Info * Reading basis set from file: /home/linares/miniconda3/envs/vlxsrc/lib/python3.13/site-packages/veloxchem/basis/DEF2-SVP
                                                                                                                           
                                               Molecular Basis (Atomic Basis)                                              
                                              ================================                                             
@@ -90,7 +90,7 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
-* Info * Molecular grid with 113597 points generated in 0.04 sec.                                                         
+* Info * Molecular grid with 113597 points generated in 0.06 sec.                                                         
                                                                                                                           
 * Info * Overlap matrix computed in 0.00 sec.                                                                             
                                                                                                                           
@@ -101,7 +101,7 @@
 * Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
                                                                                                                           
 * Info * Starting Reduced Basis SCF calculation...                                                                        
-* Info * ...done. SCF energy in reduced basis set: -190.519433463218 a.u. Time: 0.07 sec.                                 
+* Info * ...done. SCF energy in reduced basis set: -190.519433463218 a.u. Time: 0.10 sec.                                 
                                                                                                                           
 * Info * Overlap matrix computed in 0.00 sec.                                                                             
                                                                                                                           
@@ -130,7 +130,7 @@
                                                                                                                           
 * Info * SCF results written to file: acro-raman.h5                                                                       
                                                                                                                           
-               *** SCF converged in 11 iterations. Time: 0.91 sec.                                                        
+               *** SCF converged in 11 iterations. Time: 0.79 sec.                                                        
                                                                                                                           
                Spin-Restricted Kohn-Sham:                                                                                 
                --------------------------                                                                                 
@@ -269,9 +269,9 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
-* Info * Molecular grid with 113597 points generated in 0.04 sec.                                                         
+* Info * Molecular grid with 113597 points generated in 0.05 sec.                                                         
                                                                                                                           
-* Info * CPHF/CPKS integral derivatives computed in 1.47 sec.                                                             
+* Info * CPHF/CPKS integral derivatives computed in 1.61 sec.                                                             
                                                                                                                           
 * Info * CPHF/CPKS right-hand side computed in 1.61 sec.                                                                  
                                                                                                                           
@@ -290,7 +290,7 @@
 * Info * 21 trial vectors in reduced space                                                                                
                                                                                                                           
 * Info * 491.82 kB of memory used for subspace procedure on the master node                                               
-* Info * 27.07 GB of memory available for the solver on the master node                                                   
+* Info * 112.11 GB of memory available for the solver on the master node                                                  
                                                                                                                           
                *** Iteration:   1 * Residuals (Max,Min): 6.67e-01 and 5.78e-02                                            
                                                                                                                           
@@ -299,7 +299,7 @@
 * Info * 42 trial vectors in reduced space                                                                                
                                                                                                                           
 * Info * 799.26 kB of memory used for subspace procedure on the master node                                               
-* Info * 27.08 GB of memory available for the solver on the master node                                                   
+* Info * 112.16 GB of memory available for the solver on the master node                                                  
                                                                                                                           
                *** Iteration:   2 * Residuals (Max,Min): 5.09e-02 and 7.19e-03                                            
                                                                                                                           
@@ -308,7 +308,7 @@
 * Info * 63 trial vectors in reduced space                                                                                
                                                                                                                           
 * Info * 1.11 MB of memory used for subspace procedure on the master node                                                 
-* Info * 27.11 GB of memory available for the solver on the master node                                                   
+* Info * 112.18 GB of memory available for the solver on the master node                                                  
                                                                                                                           
                *** Iteration:   3 * Residuals (Max,Min): 4.70e-03 and 4.69e-04                                            
                                                                                                                           
@@ -317,7 +317,7 @@
 * Info * 80 trial vectors in reduced space                                                                                
                                                                                                                           
 * Info * 1.42 MB of memory used for subspace procedure on the master node                                                 
-* Info * 27.12 GB of memory available for the solver on the master node                                                   
+* Info * 112.21 GB of memory available for the solver on the master node                                                  
                                                                                                                           
                *** Iteration:   4 * Residuals (Max,Min): 3.42e-04 and 3.57e-05                                            
                                                                                                                           
@@ -326,7 +326,7 @@
 * Info * 96 trial vectors in reduced space                                                                                
                                                                                                                           
 * Info * 1.77 MB of memory used for subspace procedure on the master node                                                 
-* Info * 27.14 GB of memory available for the solver on the master node                                                   
+* Info * 112.23 GB of memory available for the solver on the master node                                                  
                                                                                                                           
                *** Iteration:   5 * Residuals (Max,Min): 9.31e-05 and 7.00e-06                                            
                                                                                                                           
@@ -334,14 +334,14 @@
                                                                                                                           
 * Info * Time spent in writing checkpoint file: 0.00 sec                                                                  
                                                                                                                           
-               *** Coupled-Perturbed Kohn-Sham converged in 5 iterations. Time: 8.73 sec                                  
+               *** Coupled-Perturbed Kohn-Sham converged in 5 iterations. Time: 9.31 sec                                  
                                                                                                                           
                                                                                                                           
 * Info * First order derivative contributions to the Hessian computed in 0.00 sec.                                        
                                                                                                                           
-* Info * Second order derivative contributions to the Hessian computed in 13.34 sec.                                      
+* Info * Second order derivative contributions to the Hessian computed in 11.85 sec.                                      
                                                                                                                           
-                                   *** Time spent in Hessian calculation: 22.09 sec ***                                   
+                                   *** Time spent in Hessian calculation: 21.18 sec ***                                   
                                                                                                                           
                                                                                                                           
                                                                                                                           
@@ -406,7 +406,7 @@
                                                                                                                           
 * Info * Time spent in writing checkpoint file: 0.01 sec                                                                  
                                                                                                                           
-               *** Linear response converged in 7 iterations. Time: 1.37 sec                                              
+               *** Linear response converged in 7 iterations. Time: 1.38 sec                                              
                                                                                                                           
                                                                                                                           
                                                                                                                           
@@ -430,13 +430,13 @@
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
 * Info * Building RHS for w = 0.000                                                                                       
-* Info * 4.66 kB of memory used for subspace procedure on the master node                                                 
-* Info * 26.26 GB of memory available for the solver on the master node                                                   
+* Info * 3.44 kB of memory used for subspace procedure on the master node                                                 
+* Info * 111.43 GB of memory available for the solver on the master node                                                  
                                                                                                                           
-* Info * 1.57 MB of memory used for subspace procedure on the master node                                                 
-* Info * 26.26 GB of memory available for the solver on the master node                                                   
+* Info * 1.15 MB of memory used for subspace procedure on the master node                                                 
+* Info * 111.43 GB of memory available for the solver on the master node                                                  
                                                                                                                           
-* Info * ** Time spent on constructing the orbrsp RHS for 1 frequencies: 1.62 sec **                                      
+* Info * CPHF/CPKS right-hand side for 1 frequencies computed in 1.07 sec.                                                
                                                                                                                           
                                                                                                                           
                                          Coupled-Perturbed Kohn-Sham Solver Setup                                         
@@ -472,7 +472,7 @@
                                                                                                                           
 * Info * Time spent in writing checkpoint file: 0.00 sec                                                                  
                                                                                                                           
-               *** Coupled-Perturbed Kohn-Sham converged in 5 iterations. Time: 3.51 sec                                  
+               *** Coupled-Perturbed Kohn-Sham converged in 5 iterations. Time: 3.18 sec                                  
                                                                                                                           
                                                                                                                           
 * Info * Using the B3LYP functional.                                                                                      
@@ -489,19 +489,19 @@
                                                                                                                           
 * Info * Building omega for w = 0.000                                                                                     
 * Info * 277.56 kB of memory used for subspace procedure on the master node                                               
-* Info * 26.28 GB of memory available for the solver on the master node                                                   
+* Info * 111.45 GB of memory available for the solver on the master node                                                  
                                                                                                                           
                                                                                                                           
-                      ** Time spent on constructing omega multipliers for 1 frequencies: 0.57 sec **                      
+* Info * CPHF multipliers for 1 frequencies computed in 0.37 sec.                                                         
                                                                                                                           
 * Info * Building gradient for frequency = 0.000                                                                          
                                                                                                                           
-* Info * 396.00 bytes of memory used for subspace procedure on the master node                                            
-* Info * 26.42 GB of memory available for the solver on the master node                                                   
+* Info * 396.00 bytes of memory used on the master node                                                                   
+* Info * 111.53 GB of memory available on the master node                                                                 
                                                                                                                           
-* Info * ** Time spent on constructing the analytical gradient for 1 frequencies: 20.58 sec **                            
+* Info * ** Time spent on constructing the analytical gradient for 1 frequencies: 15.20 sec **                            
                                                                                                                           
-                             *** Time spent in polarizability gradient driver: 24.70 sec ***                              
+                             *** Time spent in polarizability gradient driver: 18.81 sec ***                              
                                                                                                                           
                                                    Free Energy Analysis                                                   
                                                   ======================                                                  
@@ -572,14 +572,14 @@
                                    Raman activity:  static            11.6587  A**4/amu                                   
                                    Normal mode:                                                                           
                                                               X           Y           Z                                   
-                                   1       C             0.0471      0.0374     -0.0045                                   
-                                   2       C            -0.0199     -0.1754      0.0165                                   
-                                   3       C             0.0388      0.2147     -0.0205                                   
-                                   4       O            -0.0121     -0.0334      0.0033                                   
-                                   5       H             0.1155      0.2552     -0.0260                                   
-                                   6       H             0.2115     -0.1169      0.0057                                   
-                                   7       H            -0.2002     -0.0595      0.0101                                   
-                                   8       H            -0.7202     -0.4607      0.0590                                   
+                                   1       C            -0.0471     -0.0374      0.0045                                   
+                                   2       C             0.0199      0.1754     -0.0165                                   
+                                   3       C            -0.0388     -0.2147      0.0205                                   
+                                   4       O             0.0121      0.0334     -0.0033                                   
+                                   5       H            -0.1155     -0.2552      0.0260                                   
+                                   6       H            -0.2115      0.1169     -0.0057                                   
+                                   7       H             0.2002      0.0595     -0.0101                                   
+                                   8       H             0.7202      0.4607     -0.0590                                   
                                                                                                                           
                                                                                                                           
                                    Vibrational Mode      14                                                               
@@ -625,9 +625,9 @@
 * Info * Vibrational analysis results written to file: acro-raman.h5                                                      
                                                                                                                           
 !========================================================================================================================!
-!                               VeloxChem execution completed at Mon Apr 13 19:55:33 2026.                               !
+!                               VeloxChem execution completed at Mon Jun 15 12:23:37 2026.                               !
 !========================================================================================================================!
-!                                           Total execution time is 49.19 sec.                                           !
+!                                           Total execution time is 42.36 sec.                                           !
 !========================================================================================================================!
 !                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
 !                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !
@@ -635,3 +635,4 @@
 !                                Simulations in High-performance Computing Environments.                                 !
 !                                       WIREs Comput Mol Sci 2020, 10 (5), e1457.                                        !
 !========================================================================================================================!
+

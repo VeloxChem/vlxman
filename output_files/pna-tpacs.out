@@ -5,12 +5,12 @@
 !                                                                                                                        !
 !                                        Copyright 2018-2025 VeloxChem developers                                        !
 !========================================================================================================================!
-!                                VeloxChem execution started at Mon Jun 15 12:31:05 2026.                                !
+!                                VeloxChem execution started at Mon Jun 15 12:46:18 2026.                                !
 !========================================================================================================================!
                                                                                                                           
 * Info * Using 32 OpenMP threads per MPI process.                                                                         
                                                                                                                           
-* Info * Reading input file pna-tpa.inp...                                                                                
+* Info * Reading input file pna-tpacs.inp...                                                                              
                                                                                                                           
 * Info * @jobs                                                                                                            
 * Info * task: response                                                                                                   
@@ -22,8 +22,8 @@
 * Info * @end                                                                                                             
                                                                                                                           
 * Info * @response                                                                                                        
-* Info * property: tpa transition                                                                                         
-* Info * nstates: 5                                                                                                       
+* Info * property: tpa                                                                                                    
+* Info * frequencies: 0.05-0.11 (0.0025)                                                                                  
 * Info * @end                                                                                                             
                                                                                                                           
                                               Molecular Geometry (Angstroms)                                              
@@ -100,7 +100,7 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
-* Info * Molecular grid with 363522 points generated in 0.23 sec.                                                         
+* Info * Molecular grid with 363522 points generated in 0.24 sec.                                                         
                                                                                                                           
 * Info * Overlap matrix computed in 0.00 sec.                                                                             
                                                                                                                           
@@ -111,7 +111,7 @@
 * Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
                                                                                                                           
 * Info * Starting Reduced Basis SCF calculation...                                                                        
-* Info * ...done. SCF energy in reduced basis set: -488.604886505449 a.u. Time: 0.51 sec.                                 
+* Info * ...done. SCF energy in reduced basis set: -488.604886505449 a.u. Time: 0.53 sec.                                 
                                                                                                                           
 * Info * Overlap matrix computed in 0.00 sec.                                                                             
                                                                                                                           
@@ -119,32 +119,32 @@
                                                                                                                           
 * Info * Nuclear potential matrix computed in 0.00 sec.                                                                   
                                                                                                                           
-* Info * Orthogonalization matrix computed in 0.01 sec.                                                                   
+* Info * Orthogonalization matrix computed in 0.02 sec.                                                                   
                                                                                                                           
                                                                                                                           
                Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
                --------------------------------------------------------------------------------------------               
                   1      -491.148109985323    0.0000000000      0.49610527      0.02591156      0.00000000                
-                  2      -491.146696942220    0.0014130431      0.54207283      0.02322075      0.76685733                
-                  3      -491.173651785901   -0.0269548437      0.12489493      0.00588541      0.46650127                
+                  2      -491.146696942219    0.0014130431      0.54207283      0.02322075      0.76685733                
+                  3      -491.173651785901   -0.0269548437      0.12489493      0.00588541      0.46650128                
                   4      -491.175017715921   -0.0013659300      0.02059079      0.00069360      0.11595498                
                   5      -491.175057420682   -0.0000397048      0.01144410      0.00050686      0.03190522                
                   6      -491.175073813051   -0.0000163924      0.00443620      0.00021672      0.01614779                
                   7      -491.175076539720   -0.0000027267      0.00087565      0.00003275      0.00531642                
-                  8      -491.175076630237   -0.0000000905      0.00032130      0.00001846      0.00115196                
+                  8      -491.175076630238   -0.0000000905      0.00032130      0.00001846      0.00115197                
                   9      -491.175076645818   -0.0000000156      0.00007722      0.00000344      0.00054326                
                  10      -491.175076646675   -0.0000000009      0.00004920      0.00000195      0.00012162                
                  11      -491.175076646966   -0.0000000003      0.00001677      0.00000069      0.00006521                
-                 12      -491.175076646989   -0.0000000000      0.00001093      0.00000049      0.00001778                
+                 12      -491.175076646988   -0.0000000000      0.00001093      0.00000049      0.00001778                
                  13      -491.175076647002   -0.0000000000      0.00000248      0.00000011      0.00000986                
                  14      -491.175076647003   -0.0000000000      0.00000100      0.00000004      0.00000560                
-                 15      -491.175076647002    0.0000000000      0.00000018      0.00000001      0.00000125                
+                 15      -491.175076647003    0.0000000000      0.00000018      0.00000001      0.00000125                
                                                                                                                           
-* Info * Checkpoint written to file: pna-tpa_scf.h5                                                                       
+* Info * Checkpoint written to file: pna-tpacs_scf.h5                                                                     
                                                                                                                           
-* Info * SCF results written to file: pna-tpa.h5                                                                          
+* Info * SCF results written to file: pna-tpacs.h5                                                                        
                                                                                                                           
-               *** SCF converged in 15 iterations. Time: 29.61 sec.                                                       
+               *** SCF converged in 15 iterations. Time: 30.50 sec.                                                       
                                                                                                                           
                Spin-Restricted Kohn-Sham:                                                                                 
                --------------------------                                                                                 
@@ -280,89 +280,21 @@
                                  Total :         3.000484 a.u.         7.626469 Debye                                     
                                                                                                                           
                                                                                                                           
-                                             Quadratic Response Driver Setup                                              
-                                            =================================                                             
+                                            Two-Photon Absorbtion Driver Setup                                            
+                                           ====================================                                           
                                                                                                                           
-                                    ERI Screening Threshold         : 1.0e-12                                             
-                                    Convergance Threshold           : 1.0e-04                                             
-                                    Max. Number of Iterations       : 150                                                 
-                                    Max. Number of Iterations       : 150                                                 
-                                                                                                                          
-                                                                                                                          
-                                            Linear Response EigenSolver Setup                                             
-                                           ===================================                                            
-                                                                                                                          
-                               Number of States                : 5                                                        
-                               Max. Number of Iterations       : 150                                                      
-                               Convergence Threshold           : 1.0e-04                                                  
                                ERI Screening Threshold         : 1.0e-12                                                  
+                               Convergance Threshold           : 1.0e-04                                                  
+                               Max. Number of Iterations       : 150                                                      
+                               Damping Parameter               : 4.556335e-03                                             
                                Exchange-Correlation Functional : MN15                                                     
                                Molecular Grid Level            : 5                                                        
-                                                                                                                          
-* Info * Using the MN15 functional.                                                                                       
-                                                                                                                          
-         H. S. Yu, X. He, S. L. Li, and D. G. Truhlar.,  Chem. Sci. 7, 5032-5051 (2016)
-                                                                                                                          
-* Info * Using the Libxc library (v7.0.0).                                                                                
-                                                                                                                          
-         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
-                                                                                                                          
-* Info * Using the following algorithm for XC numerical integration.                                                      
-                                                                                                                          
-         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
-                                                                                                                          
-* Info * 15 gerade trial vectors in reduced space                                                                         
-* Info * 15 ungerade trial vectors in reduced space                                                                       
-                                                                                                                          
-               *** Iteration:   1 * Residuals (Max,Min): 3.23e-01 and 1.42e-01                                            
-                                                                                                                          
-* Info * 20 gerade trial vectors in reduced space                                                                         
-* Info * 20 ungerade trial vectors in reduced space                                                                       
-                                                                                                                          
-               *** Iteration:   2 * Residuals (Max,Min): 8.75e-02 and 2.89e-02                                            
-                                                                                                                          
-* Info * 25 gerade trial vectors in reduced space                                                                         
-* Info * 25 ungerade trial vectors in reduced space                                                                       
-                                                                                                                          
-               *** Iteration:   3 * Residuals (Max,Min): 3.58e-02 and 6.24e-03                                            
-                                                                                                                          
-* Info * 30 gerade trial vectors in reduced space                                                                         
-* Info * 30 ungerade trial vectors in reduced space                                                                       
-                                                                                                                          
-               *** Iteration:   4 * Residuals (Max,Min): 1.29e-02 and 1.23e-03                                            
-                                                                                                                          
-* Info * 35 gerade trial vectors in reduced space                                                                         
-* Info * 35 ungerade trial vectors in reduced space                                                                       
-                                                                                                                          
-               *** Iteration:   5 * Residuals (Max,Min): 4.16e-03 and 3.08e-04                                            
-                                                                                                                          
-* Info * 40 gerade trial vectors in reduced space                                                                         
-* Info * 40 ungerade trial vectors in reduced space                                                                       
-                                                                                                                          
-               *** Iteration:   6 * Residuals (Max,Min): 1.13e-03 and 7.73e-05                                            
-                                                                                                                          
-* Info * 44 gerade trial vectors in reduced space                                                                         
-* Info * 44 ungerade trial vectors in reduced space                                                                       
-                                                                                                                          
-               *** Iteration:   7 * Residuals (Max,Min): 3.10e-04 and 3.87e-05                                            
-                                                                                                                          
-* Info * 46 gerade trial vectors in reduced space                                                                         
-* Info * 46 ungerade trial vectors in reduced space                                                                       
-                                                                                                                          
-               *** Iteration:   8 * Residuals (Max,Min): 8.23e-05 and 2.67e-05                                            
-                                                                                                                          
-* Info * Checkpoint written to file: pna-tpa_rsp_tpatrans_rpa.h5                                                          
-                                                                                                                          
-* Info * Time spent in writing checkpoint file: 0.04 sec                                                                  
-                                                                                                                          
-               *** Linear response converged in 8 iterations. Time: 85.32 sec                                             
-                                                                                                                          
                                                                                                                           
                                                                                                                           
                                               Complex Response Solver Setup                                               
                                              ===============================                                              
                                                                                                                           
-                               Number of Frequencies           : 1                                                        
+                               Number of Frequencies           : 25                                                       
                                Max. Number of Iterations       : 150                                                      
                                Convergence Threshold           : 1.0e-04                                                  
                                ERI Screening Threshold         : 1.0e-12                                                  
@@ -381,93 +313,176 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
-* Info * 9 gerade trial vectors in reduced space                                                                          
-* Info * 11 ungerade trial vectors in reduced space                                                                       
+* Info * 11 gerade trial vectors in reduced space                                                                         
+* Info * 13 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-               *** Iteration:   1 * Residuals (Max,Min): 8.64e-01 and 4.77e-01                                            
+               *** Iteration:   1 * Residuals (Max,Min): 8.53e-01 and 4.71e-01                                            
                                                                                                                           
-* Info * 18 gerade trial vectors in reduced space                                                                         
-* Info * 22 ungerade trial vectors in reduced space                                                                       
+* Info * 22 gerade trial vectors in reduced space                                                                         
+* Info * 26 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-               *** Iteration:   2 * Residuals (Max,Min): 1.45e-01 and 9.59e-02                                            
+               *** Iteration:   2 * Residuals (Max,Min): 1.40e-01 and 9.54e-02                                            
                                                                                                                           
-* Info * 28 gerade trial vectors in reduced space                                                                         
-* Info * 34 ungerade trial vectors in reduced space                                                                       
+* Info * 35 gerade trial vectors in reduced space                                                                         
+* Info * 40 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-               *** Iteration:   3 * Residuals (Max,Min): 4.72e-02 and 1.48e-02                                            
+               *** Iteration:   3 * Residuals (Max,Min): 4.47e-02 and 1.40e-02                                            
                                                                                                                           
-* Info * 38 gerade trial vectors in reduced space                                                                         
-* Info * 46 ungerade trial vectors in reduced space                                                                       
+* Info * 49 gerade trial vectors in reduced space                                                                         
+* Info * 54 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-               *** Iteration:   4 * Residuals (Max,Min): 1.05e-02 and 1.66e-03                                            
+               *** Iteration:   4 * Residuals (Max,Min): 7.84e-03 and 1.65e-03                                            
                                                                                                                           
-* Info * 48 gerade trial vectors in reduced space                                                                         
-* Info * 58 ungerade trial vectors in reduced space                                                                       
+* Info * 62 gerade trial vectors in reduced space                                                                         
+* Info * 69 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-               *** Iteration:   5 * Residuals (Max,Min): 2.04e-03 and 3.00e-04                                            
+               *** Iteration:   5 * Residuals (Max,Min): 1.42e-03 and 3.06e-04                                            
                                                                                                                           
-* Info * 59 gerade trial vectors in reduced space                                                                         
-* Info * 70 ungerade trial vectors in reduced space                                                                       
+* Info * 77 gerade trial vectors in reduced space                                                                         
+* Info * 84 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-               *** Iteration:   6 * Residuals (Max,Min): 2.95e-04 and 4.49e-05                                            
+               *** Iteration:   6 * Residuals (Max,Min): 2.12e-04 and 5.32e-05                                            
                                                                                                                           
-* Info * 66 gerade trial vectors in reduced space                                                                         
-* Info * 77 ungerade trial vectors in reduced space                                                                       
+* Info * 82 gerade trial vectors in reduced space                                                                         
+* Info * 89 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-               *** Iteration:   7 * Residuals (Max,Min): 6.09e-05 and 1.48e-05                                            
+               *** Iteration:   7 * Residuals (Max,Min): 8.38e-05 and 3.83e-05                                            
                                                                                                                           
-* Info * Checkpoint written to file: pna-tpa_rsp_tpatrans_cpp.h5                                                          
+* Info * Checkpoint written to file: pna-tpacs_rsp_tpa_1.h5                                                               
                                                                                                                           
-* Info * Time spent in writing checkpoint file: 0.06 sec                                                                  
+* Info * Time spent in writing checkpoint file: 0.07 sec                                                                  
                                                                                                                           
-               *** Complex response converged in 7 iterations. Time: 137.30 sec                                           
+               *** Complex response converged in 7 iterations. Time: 158.38 sec                                           
                                                                                                                           
                                                                                                                           
                                                  Fock Matrix Computation                                                  
                                                 =========================                                                 
                                                                                                                           
-* Info * Processing 20 Fock builds...                                                                                     
+* Info * Processing 150 Fock builds...                                                                                    
                                                                                                                           
-* Info * Time spent in Fock matrices: 43.76 sec                                                                           
+* Info * Time spent in Fock matrices: 315.32 sec                                                                          
                                                                                                                           
-* Info * Checkpoint written to file: pna-tpa_rsp_tpatrans_fock.h5                                                         
+* Info * Checkpoint written to file: pna-tpacs_rsp_tpa_fock_1_red.h5                                                      
                                                                                                                           
-* Info * Time spent in writing checkpoint file: 0.01 sec                                                                  
-                                                                                                                          
-                                                                                                                          
-                             *** Time spent in quadratic response calculation: 267.14 sec ***                             
+* Info * Time spent in writing checkpoint file: 0.05 sec                                                                  
                                                                                                                           
                                                                                                                           
-                                             Summary of Two-photon Absorption                                             
+                                              Complex Response Solver Setup                                               
+                                             ===============================                                              
+                                                                                                                          
+                               Number of Frequencies           : 25                                                       
+                               Max. Number of Iterations       : 150                                                      
+                               Convergence Threshold           : 1.0e-04                                                  
+                               ERI Screening Threshold         : 1.0e-12                                                  
+                               Exchange-Correlation Functional : MN15                                                     
+                               Molecular Grid Level            : 5                                                        
+                                                                                                                          
+* Info * Using the MN15 functional.                                                                                       
+                                                                                                                          
+         H. S. Yu, X. He, S. L. Li, and D. G. Truhlar.,  Chem. Sci. 7, 5032-5051 (2016)
+                                                                                                                          
+* Info * Using the Libxc library (v7.0.0).                                                                                
+                                                                                                                          
+         S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+                                                                                                                          
+* Info * Using the following algorithm for XC numerical integration.                                                      
+                                                                                                                          
+         J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
+                                                                                                                          
+* Info * 84 gerade trial vectors in reduced space                                                                         
+* Info * 83 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+               *** Iteration:   1 * Residuals (Max,Min): 1.86e-01 and 9.28e-02                                            
+                                                                                                                          
+* Info * 154 gerade trial vectors in reduced space                                                                        
+* Info * 159 ungerade trial vectors in reduced space                                                                      
+                                                                                                                          
+               *** Iteration:   2 * Residuals (Max,Min): 3.51e-02 and 7.56e-03                                            
+                                                                                                                          
+* Info * 224 gerade trial vectors in reduced space                                                                        
+* Info * 229 ungerade trial vectors in reduced space                                                                      
+                                                                                                                          
+               *** Iteration:   3 * Residuals (Max,Min): 5.93e-03 and 8.18e-04                                            
+                                                                                                                          
+* Info * 295 gerade trial vectors in reduced space                                                                        
+* Info * 297 ungerade trial vectors in reduced space                                                                      
+                                                                                                                          
+               *** Iteration:   4 * Residuals (Max,Min): 7.42e-04 and 7.92e-05                                            
+                                                                                                                          
+* Info * 362 gerade trial vectors in reduced space                                                                        
+* Info * 364 ungerade trial vectors in reduced space                                                                      
+                                                                                                                          
+               *** Iteration:   5 * Residuals (Max,Min): 1.10e-04 and 6.25e-06                                            
+                                                                                                                          
+* Info * 364 gerade trial vectors in reduced space                                                                        
+* Info * 366 ungerade trial vectors in reduced space                                                                      
+                                                                                                                          
+               *** Iteration:   6 * Residuals (Max,Min): 9.97e-05 and 6.25e-06                                            
+                                                                                                                          
+* Info * Checkpoint written to file: pna-tpacs_rsp_tpa_2_red.h5                                                           
+                                                                                                                          
+* Info * Time spent in writing checkpoint file: 0.25 sec                                                                  
+                                                                                                                          
+               *** Complex response converged in 6 iterations. Time: 688.86 sec                                           
+                                                                                                                          
+                                                                                                                          
+                                                 Fock Matrix Computation                                                  
+                                                =========================                                                 
+                                                                                                                          
+* Info * Processing 150 Fock builds...                                                                                    
+                                                                                                                          
+* Info * Time spent in Fock matrices: 449.36 sec                                                                          
+                                                                                                                          
+* Info * Checkpoint written to file: pna-tpacs_rsp_tpa_fock_2_red.h5                                                      
+                                                                                                                          
+* Info * Time spent in writing checkpoint file: 0.08 sec                                                                  
+                                                                                                                          
+                                                                                                                          
+                                             TPA Summary (Reduced Expression)                                             
                                             ==================================                                            
                                                                                                                           
+                      Photon Energy           Re(gamma)           Im(gamma)       TPA cross-section                       
+                    ----------------------------------------------------------------------------------                    
+                         1.36057 eV      40105.59862651       4031.41478381           0.04018903 GM                       
+                         1.42860 eV      44921.25769310       4977.73245154           0.05470918 GM                       
+                         1.49663 eV      50901.13834000       6273.78758106           0.07567723 GM                       
+                         1.56465 eV      58489.81185059       8119.25170971           0.10704385 GM                       
+                         1.63268 eV      68388.55163198      10877.98071501           0.15615677 GM                       
+                         1.70071 eV      81774.72410092      15271.91491083           0.23788308 GM                       
+                         1.76874 eV     100737.05676612      22911.23491175           0.38599816 GM                       
+                         1.83677 eV     129230.58012375      37922.25371643           0.68898809 GM                       
+                         1.90480 eV     174680.64083015      73279.74338786           1.43182535 GM                       
+                         1.97283 eV     239736.88323309     180872.07776646           3.79103303 GM                       
+                         2.04085 eV     114670.56793575     475729.10009224          10.67068434 GM                       
+                         2.10888 eV    -247394.90647386     291287.97967669           6.97647426 GM                       
+                         2.17691 eV    -201340.57681004     105598.17604070           2.69492336 GM                       
+                         2.24494 eV    -144287.01673404      50397.03172609           1.36780089 GM                       
+                         2.31297 eV    -107979.18461875      29837.92744699           0.85963984 GM                       
+                         2.38100 eV     -83413.71448985      20191.58290591           0.61644807 GM                       
+                         2.44902 eV     -64972.12712299      15307.35016692           0.49441890 GM                       
+                         2.51705 eV     -49955.19075905      12828.35385507           0.43768778 GM                       
+                         2.58508 eV     -36659.70691184      11775.95377356           0.42379256 GM                       
+                         2.65311 eV     -23918.74746214      11735.83772283           0.44487024 GM                       
+                         2.72114 eV     -10711.29583466      12643.95632069           0.50418859 GM                       
+                         2.78917 eV       3946.20714066      14726.73652299           0.61697032 GM                       
+                         2.85720 eV      21120.31038737      18699.43217253           0.82208561 GM                       
+                         2.92522 eV      41886.45377761      24986.73690229           1.15142724 GM                       
+                         2.99325 eV      70920.17171586      36847.56052023           1.77788694 GM                       
                                                                                                                           
-                                                  TPA Transition Summary                                                  
-               --------------------------------------------------------------------------------------------               
-                 State    Photon Energy      TPA Str. (Linear)    TPA Str. (Circular)      OPA Osc. Str.                  
-               --------------------------------------------------------------------------------------------               
-                     1      1.619585 eV           0.011725               0.017484             0.0000                      
-                     2      1.994320 eV           0.039339               0.059006             0.0003                      
-                     3      2.055920 eV        2299.289226            1677.016745             0.3968                      
-                     4      2.312411 eV           1.514402               2.271587             0.0000                      
-                     5      2.610681 eV           0.091195               0.136690             0.0329                      
+                              *** Note: The reduced expression is an approximation to the                                 
+                                  second-order nonlinear hyperpolarizability (gamma) and is                               
+                                  intended for use in one-photon off-resonance regions.                                   
+                                                                                                                          
+                            Reference: K. Ahmadzadeh, M. Scott, M. Brand, O. Vahtras, X. Li,                              
+                            Z. Rinkevicius, and P. Norman, J. Chem. Phys. 154, 024111 (2021)                              
                                                                                                                           
                                                                                                                           
-                                       Components of TPA Transition Moments (a.u.)                                        
-               --------------------------------------------------------------------------------------------               
-                 State    Photon Energy      Sxx        Syy        Szz        Sxy        Sxz        Syz                   
-               --------------------------------------------------------------------------------------------               
-                     1      1.619585 eV    -0.0270     0.0020     0.0001     0.0015    -0.0001     0.2084                 
-                     2      1.994320 eV    -0.0043    -0.0002     0.0002    -0.0048    -0.3840    -0.0000                 
-                     3      2.055920 eV   109.0838    -5.4159    -0.5588    -0.0000    -0.0097    -0.0008                 
-                     4      2.312411 eV     0.0078     0.0017     0.0002    -2.3831    -0.0008    -0.0009                 
-                     5      2.610681 eV    -0.0252     0.0001     0.0002     0.5844    -0.0008     0.0002                 
-                                                                                                                          
+                                    *** Time spent in TPA calculation: 1621.44 sec ***                                    
                                                                                                                           
 !========================================================================================================================!
-!                               VeloxChem execution completed at Mon Jun 15 12:36:03 2026.                               !
+!                               VeloxChem execution completed at Mon Jun 15 13:13:51 2026.                               !
 !========================================================================================================================!
-!                                          Total execution time is 297.52 sec.                                           !
+!                                          Total execution time is 1652.84 sec.                                          !
 !========================================================================================================================!
 !                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
 !                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !

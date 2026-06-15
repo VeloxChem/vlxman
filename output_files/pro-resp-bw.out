@@ -5,12 +5,12 @@
 !                                                                                                                        !
 !                                        Copyright 2018-2025 VeloxChem developers                                        !
 !========================================================================================================================!
-!                                VeloxChem execution started at Wed Mar 11 16:52:00 2026.                                !
+!                                VeloxChem execution started at Mon Jun 15 12:28:54 2026.                                !
 !========================================================================================================================!
                                                                                                                           
 * Info * Using 32 OpenMP threads per MPI process.                                                                         
                                                                                                                           
-* Info * Reading input file prop-resp-bw.inp...                                                                           
+* Info * Reading input file pro-resp-bw.inp...                                                                            
                                                                                                                           
 * Info * @jobs                                                                                                            
 * Info * task: resp charges                                                                                               
@@ -224,9 +224,9 @@
                                        J. Am. Chem. Soc. 1992, 114, 9075-9079.                                            
                                                                                                                           
 !========================================================================================================================!
-!                               VeloxChem execution completed at Wed Mar 11 16:52:03 2026.                               !
+!                               VeloxChem execution completed at Mon Jun 15 12:28:56 2026.                               !
 !========================================================================================================================!
-!                                           Total execution time is 3.48 sec.                                            !
+!                                           Total execution time is 2.03 sec.                                            !
 !========================================================================================================================!
 !                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
 !                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !
@@ -234,3 +234,4 @@
 !                                Simulations in High-performance Computing Environments.                                 !
 !                                       WIREs Comput Mol Sci 2020, 10 (5), e1457.                                        !
 !========================================================================================================================!
+

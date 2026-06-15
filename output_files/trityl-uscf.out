@@ -5,12 +5,12 @@
 !                                                                                                                        !
 !                                        Copyright 2018-2025 VeloxChem developers                                        !
 !========================================================================================================================!
-!                                VeloxChem execution started at Fri May  9 11:42:52 2025.                                !
+!                                VeloxChem execution started at Mon Jun 15 09:48:55 2026.                                !
 !========================================================================================================================!
                                                                                                                           
 * Info * Using 32 OpenMP threads per MPI process.                                                                         
                                                                                                                           
-* Info * Reading input file tritylradical-uscf.inp...                                                                     
+* Info * Reading input file trityl-uscf.inp...                                                                            
                                                                                                                           
 * Info * @jobs                                                                                                            
 * Info * task: uscf                                                                                                       
@@ -67,7 +67,7 @@
                           Number of alpha electrons   : 65                                                                
                           Number of beta  electrons   : 64                                                                
                                                                                                                           
-* Info * Reading basis set from file: /home/linares/miniconda3/envs/vlx-github/lib/python3.12/site-packages/veloxchem/basis/CC-PVDZ
+* Info * Reading basis set from file: /home/linares/miniconda3/envs/vlxsrc/lib/python3.13/site-packages/veloxchem/basis/CC-PVDZ
                                                                                                                           
                                               Molecular Basis (Atomic Basis)                                              
                                              ================================                                             
@@ -104,7 +104,7 @@
          J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
          J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
                                                                                                                           
-* Info * Using the Libxc library (v6.2.2).                                                                                
+* Info * Using the Libxc library (v7.0.0).                                                                                
                                                                                                                           
          S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
                                                                                                                           
@@ -112,7 +112,18 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
-* Info * Molecular grid with 475583 points generated in 0.39 sec.                                                         
+* Info * Molecular grid with 475583 points generated in 0.36 sec.                                                         
+                                                                                                                          
+* Info * Overlap matrix computed in 0.00 sec.                                                                             
+                                                                                                                          
+* Info * Kinetic energy matrix computed in 0.00 sec.                                                                      
+                                                                                                                          
+* Info * Nuclear potential matrix computed in 0.02 sec.                                                                   
+                                                                                                                          
+* Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
+                                                                                                                          
+* Info * Starting Reduced Basis SCF calculation...                                                                        
+* Info * ...done. SCF energy in reduced basis set: -727.979681997258 a.u. Time: 25.64 sec.                                
                                                                                                                           
 * Info * Overlap matrix computed in 0.00 sec.                                                                             
                                                                                                                           
@@ -122,43 +133,32 @@
                                                                                                                           
 * Info * Orthogonalization matrix computed in 0.01 sec.                                                                   
                                                                                                                           
-* Info * Starting Reduced Basis SCF calculation...                                                                        
-* Info * ...done. SCF energy in reduced basis set: -727.979757088341 a.u. Time: 23.49 sec.                                
-                                                                                                                          
-* Info * Overlap matrix computed in 0.00 sec.                                                                             
-                                                                                                                          
-* Info * Kinetic energy matrix computed in 0.00 sec.                                                                      
-                                                                                                                          
-* Info * Nuclear potential matrix computed in 0.02 sec.                                                                   
-                                                                                                                          
-* Info * Orthogonalization matrix computed in 0.08 sec.                                                                   
-                                                                                                                          
                                                                                                                           
                Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
                --------------------------------------------------------------------------------------------               
-                  1      -732.162583830730    0.0000000000      0.32769272      0.01161796      0.00000000                
-                  2      -732.163445328607   -0.0008614979      0.33123531      0.01141962      0.29446165                
-                  3      -732.178272337306   -0.0148270087      0.03789207      0.00168266      0.13919468                
-                  4      -732.178367842806   -0.0000955055      0.02819722      0.00158819      0.02338201                
-                  5      -732.178474414580   -0.0001065718      0.01032111      0.00056520      0.01396725                
-                  6      -732.178492938070   -0.0000185235      0.00338691      0.00020328      0.00747746                
-                  7      -732.178497059922   -0.0000041219      0.00288370      0.00014123      0.00363481                
-                  8      -732.178498901637   -0.0000018417      0.00130287      0.00007038      0.00181001                
-                  9      -732.178499876414   -0.0000009748      0.00089905      0.00004316      0.00185575                
-                 10      -732.178500108527   -0.0000002321      0.00066786      0.00002729      0.00106712                
-                 11      -732.178500179477   -0.0000000710      0.00008500      0.00000313      0.00035612                
-                 12      -732.178500181645   -0.0000000022      0.00003736      0.00000147      0.00009547                
-                 13      -732.178500181870   -0.0000000002      0.00002363      0.00000086      0.00003251                
-                 14      -732.178500181939   -0.0000000001      0.00001203      0.00000039      0.00001255                
-                 15      -732.178500181964   -0.0000000000      0.00000237      0.00000007      0.00000865                
-                 16      -732.178500181965   -0.0000000000      0.00000129      0.00000004      0.00000186                
-                 17      -732.178500181968   -0.0000000000      0.00000057      0.00000003      0.00000061                
+                  1      -732.162643577256    0.0000000000      0.32745282      0.01161976      0.00000000                
+                  2      -732.165899180622   -0.0032556034      0.30311508      0.01051741      0.28123652                
+                  3      -732.178256498309   -0.0123573177      0.03993821      0.00184129      0.12753809                
+                  4      -732.178420637091   -0.0001641388      0.02107723      0.00122196      0.02121977                
+                  5      -732.178482830037   -0.0000621929      0.00786595      0.00041188      0.01054888                
+                  6      -732.178494738204   -0.0000119082      0.00240613      0.00013236      0.00579595                
+                  7      -732.178497535276   -0.0000027971      0.00182036      0.00008953      0.00232771                
+                  8      -732.178498870690   -0.0000013354      0.00114895      0.00006052      0.00157180                
+                  9      -732.178499734501   -0.0000008638      0.00056590      0.00003563      0.00132630                
+                 10      -732.178500049346   -0.0000003148      0.00041619      0.00002423      0.00093352                
+                 11      -732.178500174576   -0.0000001252      0.00009591      0.00000494      0.00074919                
+                 12      -732.178500181596   -0.0000000070      0.00003330      0.00000118      0.00019297                
+                 13      -732.178500181876   -0.0000000003      0.00001991      0.00000074      0.00003146                
+                 14      -732.178500181944   -0.0000000001      0.00000892      0.00000031      0.00001114                
+                 15      -732.178500181965   -0.0000000000      0.00000215      0.00000009      0.00000837                
+                 16      -732.178500181965   -0.0000000000      0.00000192      0.00000010      0.00000194                
+                 17      -732.178500181967   -0.0000000000      0.00000084      0.00000004      0.00000104                
                                                                                                                           
-* Info * Checkpoint written to file: tritylradical-uscf_scf.h5                                                            
+* Info * Checkpoint written to file: trityl-uscf_scf.h5                                                                   
                                                                                                                           
-* Info * SCF results written to file: tritylradical-uscf.h5                                                               
+* Info * SCF results written to file: trityl-uscf.h5                                                                      
                                                                                                                           
-               *** SCF converged in 17 iterations. Time: 177.03 sec.                                                      
+               *** SCF converged in 17 iterations. Time: 179.06 sec.                                                      
                                                                                                                           
                Spin-Unrestricted Kohn-Sham:                                                                               
                ----------------------------                                                                               
@@ -166,7 +166,7 @@
                Electronic Energy                  :    -1986.0796383933 a.u.                                              
                Nuclear Repulsion Energy           :     1253.9011382113 a.u.                                              
                ------------------------------------                                                                       
-               Gradient Norm                      :        0.0000005667 a.u.                                              
+               Gradient Norm                      :        0.0000008439 a.u.                                              
                                                                                                                           
                                                                                                                           
                Ground State Information                                                                                   
@@ -344,15 +344,15 @@
                                                 Ground State Dipole Moment                                                
                                                ----------------------------                                               
                                                                                                                           
-                                   X   :         0.046404 a.u.         0.117947 Debye                                     
-                                   Y   :         0.125780 a.u.         0.319700 Debye                                     
+                                   X   :         0.046404 a.u.         0.117948 Debye                                     
+                                   Y   :         0.125780 a.u.         0.319701 Debye                                     
                                    Z   :        -0.026229 a.u.        -0.066668 Debye                                     
-                                 Total :         0.136608 a.u.         0.347224 Debye                                     
+                                 Total :         0.136609 a.u.         0.347225 Debye                                     
                                                                                                                           
 !========================================================================================================================!
-!                               VeloxChem execution completed at Fri May  9 11:46:13 2025.                               !
+!                               VeloxChem execution completed at Mon Jun 15 09:52:20 2026.                               !
 !========================================================================================================================!
-!                                          Total execution time is 200.94 sec.                                           !
+!                                          Total execution time is 205.10 sec.                                           !
 !========================================================================================================================!
 !                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
 !                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !
@@ -360,3 +360,4 @@
 !                                Simulations in High-performance Computing Environments.                                 !
 !                                       WIREs Comput Mol Sci 2020, 10 (5), e1457.                                        !
 !========================================================================================================================!
+
