@@ -17,6 +17,7 @@ scf_results = scf_drv.compute(molecule, basis)
 
 qrf_drv = vlx.QuadraticResponseDriver()
 qrf_drv.filename="h2o2-qrf"
+qrf_drv.print_level = 2
 
 qrf_drv.a_operator = "electric dipole"
 qrf_drv.b_operator = "magnetic dipole"

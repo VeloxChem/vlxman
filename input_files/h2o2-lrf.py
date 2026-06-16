@@ -17,6 +17,7 @@ scf_results = scf_drv.compute(molecule, basis)
 
 crs = vlx.ComplexResponse()
 crs.filename="h2o2-lrf"
+crs.print_level = 2
 
 # available operators
 # crs.b_operator = "electric dipole"

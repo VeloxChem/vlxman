@@ -17,7 +17,7 @@
                                                                                                                           
          P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
                                                                                                                           
-* Info * Using the Libxc library (v6.2.2).                                                                                
+* Info * Using the Libxc library (v7.0.0).                                                                                
                                                                                                                           
          S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
                                                                                                                           
@@ -26,31 +26,33 @@
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
 * Info * Starting Reduced Basis SCF calculation...                                                                        
-* Info * ...done. SCF energy in reduced basis set: -150.576224260897 a.u. Time: 0.03 sec.                                 
+* Info * ...done. SCF energy in reduced basis set: -150.576224271426 a.u. Time: 0.03 sec.                                 
                                                                                                                           
                                                                                                                           
                Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
                --------------------------------------------------------------------------------------------               
-                  1      -151.430268831063    0.0000000000      0.26870926      0.02049088      0.00000000                
-                  2      -151.435600400912   -0.0053315698      0.10508170      0.00778425      0.10799056                
-                  3      -151.436293576590   -0.0006931757      0.05664858      0.00334393      0.04237147                
-                  4      -151.436604710510   -0.0003111339      0.00234973      0.00016518      0.01609140                
-                  5      -151.436605225444   -0.0000005149      0.00030993      0.00002041      0.00081618                
-                  6      -151.436605234634   -0.0000000092      0.00002726      0.00000229      0.00014360                
-                  7      -151.436605234737   -0.0000000001      0.00000814      0.00000048      0.00001944                
-                  8      -151.436605234743   -0.0000000000      0.00000166      0.00000011      0.00000276                
-                  9      -151.436605234743   -0.0000000000      0.00000201      0.00000015      0.00000089                
-                 10      -151.436605234743   -0.0000000000      0.00000005      0.00000000      0.00000046                
+                  1      -151.430268058325    0.0000000000      0.26871037      0.02049092      0.00000000                
+                  2      -151.435599682847   -0.0053316245      0.10508121      0.00778422      0.10799011                
+                  3      -151.436292848512   -0.0006931657      0.05664861      0.00334393      0.04237101                
+                  4      -151.436603982554   -0.0003111340      0.00234972      0.00016518      0.01609142                
+                  5      -151.436604497515   -0.0000005150      0.00030993      0.00002041      0.00081618                
+                  6      -151.436604506705   -0.0000000092      0.00002725      0.00000229      0.00014360                
+                  7      -151.436604506808   -0.0000000001      0.00000803      0.00000048      0.00001944                
+                  8      -151.436604506814   -0.0000000000      0.00000080      0.00000005      0.00000270                
                                                                                                                           
-               *** SCF converged in 10 iterations. Time: 0.30 sec.                                                        
+* Info * Checkpoint written to file: h2o2-lrf_scf.h5                                                                      
+                                                                                                                          
+* Info * SCF results written to file: h2o2-lrf.h5                                                                         
+                                                                                                                          
+               *** SCF converged in 8 iterations. Time: 0.29 sec.                                                         
                                                                                                                           
                Spin-Restricted Kohn-Sham:                                                                                 
                --------------------------                                                                                 
-               Total Energy                       :     -151.4366052347 a.u.                                              
-               Electronic Energy                  :     -190.5210516195 a.u.                                              
-               Nuclear Repulsion Energy           :       39.0844463848 a.u.                                              
+               Total Energy                       :     -151.4366045068 a.u.                                              
+               Electronic Energy                  :     -190.5210531676 a.u.                                              
+               Nuclear Repulsion Energy           :       39.0844486607 a.u.                                              
                ------------------------------------                                                                       
-               Gradient Norm                      :        0.0000000455 a.u.                                              
+               Gradient Norm                      :        0.0000008049 a.u.                                              
                                                                                                                           
                                                                                                                           
                Ground State Information                                                                                   
@@ -74,7 +76,7 @@
                                                                                                                           
          P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
                                                                                                                           
-* Info * Using the Libxc library (v6.2.2).                                                                                
+* Info * Using the Libxc library (v7.0.0).                                                                                
                                                                                                                           
          S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
                                                                                                                           
@@ -82,31 +84,109 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
+* Info * Molecular grid with 58610 points generated in 0.02 sec.                                                          
+                                                                                                                          
+* Info * Processing 6 Fock builds...                                                                                      
+                                                                                                                          
 * Info * 6 gerade trial vectors in reduced space                                                                          
 * Info * 6 ungerade trial vectors in reduced space                                                                        
                                                                                                                           
-               *** Iteration:   1 * Residuals (Max,Min): 1.33e-01 and 1.18e-01                                            
+* Info * 153.80 kB of memory used for subspace procedure on the master node                                               
+* Info * 109.06 GB of memory available for the solver on the master node                                                  
+                                                                                                                          
+               *** Iteration:   1 * Residuals (Max,Min): 1.21e-01 and 6.63e-02                                            
+                                                                                                                          
+               Operator:  magnetic dipole (['x', 'y', 'z'])                                                               
+                                                                                                                          
+               <<x;x>>_0.0656 :      0.49977984      0.00135259j   Residual Norm: 0.06626198                              
+               <<y;y>>_0.0656 :      8.34163302      0.02117141j   Residual Norm: 0.11350864                              
+               <<z;z>>_0.0656 :      8.45703627      0.01965949j   Residual Norm: 0.12142821                              
+                                                                                                                          
+* Info * Processing 6 Fock builds...                                                                                      
                                                                                                                           
 * Info * 12 gerade trial vectors in reduced space                                                                         
 * Info * 12 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-               *** Iteration:   2 * Residuals (Max,Min): 1.11e-02 and 9.13e-03                                            
+* Info * 245.38 kB of memory used for subspace procedure on the master node                                               
+* Info * 109.07 GB of memory available for the solver on the master node                                                  
+                                                                                                                          
+               *** Iteration:   2 * Residuals (Max,Min): 1.55e-02 and 5.20e-03                                            
+                                                                                                                          
+               Operator:  magnetic dipole (['x', 'y', 'z'])                                                               
+                                                                                                                          
+               <<x;x>>_0.0656 :      0.50070840      0.00137483j   Residual Norm: 0.00520203                              
+               <<y;y>>_0.0656 :      8.35656286      0.02187485j   Residual Norm: 0.01484465                              
+               <<z;z>>_0.0656 :      8.47425634      0.02075117j   Residual Norm: 0.01547535                              
+                                                                                                                          
+* Info * Processing 6 Fock builds...                                                                                      
                                                                                                                           
 * Info * 18 gerade trial vectors in reduced space                                                                         
-* Info * 16 ungerade trial vectors in reduced space                                                                       
+* Info * 17 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-               *** Iteration:   3 * Residuals (Max,Min): 1.66e-03 and 1.11e-03                                            
+* Info * 329.33 kB of memory used for subspace procedure on the master node                                               
+* Info * 109.06 GB of memory available for the solver on the master node                                                  
                                                                                                                           
-* Info * 23 gerade trial vectors in reduced space                                                                         
+               *** Iteration:   3 * Residuals (Max,Min): 2.00e-03 and 4.07e-04                                            
+                                                                                                                          
+               Operator:  magnetic dipole (['x', 'y', 'z'])                                                               
+                                                                                                                          
+               <<x;x>>_0.0656 :      0.50071274      0.00137533j   Residual Norm: 0.00040675                              
+               <<y;y>>_0.0656 :      8.35707811      0.02194857j   Residual Norm: 0.00200065                              
+               <<z;z>>_0.0656 :      8.47476433      0.02082267j   Residual Norm: 0.00188577                              
+                                                                                                                          
+* Info * Processing 6 Fock builds...                                                                                      
+                                                                                                                          
+* Info * 24 gerade trial vectors in reduced space                                                                         
 * Info * 21 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-               *** Iteration:   4 * Residuals (Max,Min): 2.31e-04 and 1.21e-04                                            
+* Info * 405.81 kB of memory used for subspace procedure on the master node                                               
+* Info * 109.07 GB of memory available for the solver on the master node                                                  
                                                                                                                           
-* Info * 27 gerade trial vectors in reduced space                                                                         
-* Info * 25 ungerade trial vectors in reduced space                                                                       
+               *** Iteration:   4 * Residuals (Max,Min): 4.02e-04 and 2.99e-05                                            
                                                                                                                           
-               *** Iteration:   5 * Residuals (Max,Min): 2.69e-05 and 9.28e-06                                            
+               Operator:  magnetic dipole (['x', 'y', 'z'])                                                               
                                                                                                                           
-               *** Complex response converged in 5 iterations. Time: 0.76 sec                                             
+               <<x;x>>_0.0656 :      0.50071276      0.00137533j   Residual Norm: 0.00002990                              
+               <<y;y>>_0.0656 :      8.35708907      0.02195036j   Residual Norm: 0.00027452                              
+               <<z;z>>_0.0656 :      8.47477208      0.02082387j   Residual Norm: 0.00040209                              
+                                                                                                                          
+* Info * Processing 3 Fock builds...                                                                                      
+                                                                                                                          
+* Info * 26 gerade trial vectors in reduced space                                                                         
+* Info * 24 ungerade trial vectors in reduced space                                                                       
+                                                                                                                          
+* Info * 443.81 kB of memory used for subspace procedure on the master node                                               
+* Info * 109.06 GB of memory available for the solver on the master node                                                  
+                                                                                                                          
+               *** Iteration:   5 * Residuals (Max,Min): 7.04e-05 and 2.99e-05                                            
+                                                                                                                          
+               Operator:  magnetic dipole (['x', 'y', 'z'])                                                               
+                                                                                                                          
+               <<y;y>>_0.0656 :      8.35708925      0.02195040j   Residual Norm: 0.00003770                              
+               <<z;z>>_0.0656 :      8.47477247      0.02082394j   Residual Norm: 0.00007038                              
+                                                                                                                          
+* Info * Checkpoint written to file: h2o2-lrf_rsp.h5                                                                      
+                                                                                                                          
+* Info * Time spent in writing checkpoint file: 0.01 sec                                                                  
+                                                                                                                          
+               *** Complex response converged in 5 iterations. Time: 0.64 sec                                             
                                                                                                                           
                                                                                                                           
+* Info * Response solution vectors written to file: h2o2-lrf.h5                                                           
+                                                                                                                          
+               Response Functions at Given Frequencies                                                                    
+               =======================================                                                                    
+                                                                                                                          
+               Dipole  MagDip   Frequency            Real        Imaginary                                                
+               -----------------------------------------------------------                                                
+               <<  x  ;  x  >>     0.0656     -0.00058806      0.00530788j                                                
+               <<  x  ;  y  >>     0.0656     -0.02057672      0.25755632j                                                
+               <<  x  ;  z  >>     0.0656     -0.00000000      0.00000000j                                                
+               <<  y  ;  x  >>     0.0656     -0.00420393      0.05564376j                                                
+               <<  y  ;  y  >>     0.0656      0.01123289     -0.14604292j                                                
+               <<  y  ;  z  >>     0.0656      0.00000000     -0.00000000j                                                
+               <<  z  ;  x  >>     0.0656     -0.00000000      0.00000000j                                                
+               <<  z  ;  y  >>     0.0656     -0.00000000      0.00000000j                                                
+               <<  z  ;  z  >>     0.0656     -0.00993600      0.13044974j                                                
+                                                                                                                          
+

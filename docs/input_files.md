@@ -380,7 +380,7 @@
     </tr>
     <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
-        <a href="#sec:TDDFT-ecd">TDDFT</a>
+        <a href="#sec:TDDFT-ecd">ECD (TDDFT)</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../input_files/alanine-ecd.py" download>alanine-ecd.py</a>
@@ -397,7 +397,7 @@
     </tr>     
     <tr style="background-color: #fff;">
       <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
-        <a href="#sec:cpp-ecd">CPP</a>
+        <a href="#sec:cpp-ecd">ECD (CPP)</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../input_files/alanine-cpp.py" download>alanine-cpp.py</a>
@@ -410,6 +410,22 @@
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../output_files/alanine-cpp.h5" download>alanine-cpp.h5</a>
+      </td>
+    </tr>
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:cpp-ord">ORD (CPP)</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/methoxirane-ord.py" download>methoxirane-ord.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/methoxirane-ord.out" download>methoxirane-ord-cpp.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/methoxirane-ord.h5" download>methoxirane-ord-cpp.h5</a>
       </td>
     </tr>
     <tr style="background-color: #f5f5f5;">
@@ -443,7 +459,7 @@
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../input_files/acro-raman.inp" download>acro-raman.inp</a>
-      </td>
+      </td>git add 
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../output_files/acro-raman.out" download>acro-raman.out</a>
       </td>

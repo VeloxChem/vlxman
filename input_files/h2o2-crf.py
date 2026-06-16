@@ -17,6 +17,7 @@ scf_results = scf_drv.compute(molecule, basis)
 
 crf_drv = vlx.CubicResponseDriver()
 crf_drv.filename="h2o2-crf"
+crf_drv.print_level = 2
 
 crf_drv.a_operator = "electric dipole"
 crf_drv.b_operator = "magnetic dipole"

@@ -17,7 +17,7 @@
                                                                                                                           
          P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
                                                                                                                           
-* Info * Using the Libxc library (v6.2.2).                                                                                
+* Info * Using the Libxc library (v7.0.0).                                                                                
                                                                                                                           
          S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
                                                                                                                           
@@ -26,31 +26,33 @@
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
 * Info * Starting Reduced Basis SCF calculation...                                                                        
-* Info * ...done. SCF energy in reduced basis set: -150.576224260897 a.u. Time: 0.03 sec.                                 
+* Info * ...done. SCF energy in reduced basis set: -150.576224271426 a.u. Time: 0.03 sec.                                 
                                                                                                                           
                                                                                                                           
                Iter. |    Kohn-Sham Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
                --------------------------------------------------------------------------------------------               
-                  1      -151.430268831063    0.0000000000      0.26870926      0.02049088      0.00000000                
-                  2      -151.435600400912   -0.0053315698      0.10508170      0.00778425      0.10799056                
-                  3      -151.436293576590   -0.0006931757      0.05664858      0.00334393      0.04237147                
-                  4      -151.436604710510   -0.0003111339      0.00234973      0.00016518      0.01609140                
-                  5      -151.436605225444   -0.0000005149      0.00030993      0.00002041      0.00081618                
-                  6      -151.436605234634   -0.0000000092      0.00002726      0.00000229      0.00014360                
-                  7      -151.436605234737   -0.0000000001      0.00000814      0.00000048      0.00001944                
-                  8      -151.436605234743   -0.0000000000      0.00000166      0.00000011      0.00000276                
-                  9      -151.436605234743    0.0000000000      0.00000201      0.00000015      0.00000089                
-                 10      -151.436605234743   -0.0000000000      0.00000005      0.00000000      0.00000046                
+                  1      -151.430268058325    0.0000000000      0.26871037      0.02049092      0.00000000                
+                  2      -151.435599682847   -0.0053316245      0.10508121      0.00778422      0.10799011                
+                  3      -151.436292848512   -0.0006931657      0.05664861      0.00334393      0.04237101                
+                  4      -151.436603982554   -0.0003111340      0.00234972      0.00016518      0.01609142                
+                  5      -151.436604497515   -0.0000005150      0.00030993      0.00002041      0.00081618                
+                  6      -151.436604506705   -0.0000000092      0.00002725      0.00000229      0.00014360                
+                  7      -151.436604506808   -0.0000000001      0.00000803      0.00000048      0.00001944                
+                  8      -151.436604506815   -0.0000000000      0.00000080      0.00000005      0.00000270                
                                                                                                                           
-               *** SCF converged in 10 iterations. Time: 0.28 sec.                                                        
+* Info * Checkpoint written to file: h2o2-qrf_scf.h5                                                                      
+                                                                                                                          
+* Info * SCF results written to file: h2o2-qrf.h5                                                                         
+                                                                                                                          
+               *** SCF converged in 8 iterations. Time: 0.24 sec.                                                         
                                                                                                                           
                Spin-Restricted Kohn-Sham:                                                                                 
                --------------------------                                                                                 
-               Total Energy                       :     -151.4366052347 a.u.                                              
-               Electronic Energy                  :     -190.5210516195 a.u.                                              
-               Nuclear Repulsion Energy           :       39.0844463848 a.u.                                              
+               Total Energy                       :     -151.4366045068 a.u.                                              
+               Electronic Energy                  :     -190.5210531676 a.u.                                              
+               Nuclear Repulsion Energy           :       39.0844486607 a.u.                                              
                ------------------------------------                                                                       
-               Gradient Norm                      :        0.0000000455 a.u.                                              
+               Gradient Norm                      :        0.0000008049 a.u.                                              
                                                                                                                           
                                                                                                                           
                Ground State Information                                                                                   
@@ -85,7 +87,7 @@
                                                                                                                           
          P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
                                                                                                                           
-* Info * Using the Libxc library (v6.2.2).                                                                                
+* Info * Using the Libxc library (v7.0.0).                                                                                
                                                                                                                           
          S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
                                                                                                                           
@@ -93,37 +95,41 @@
                                                                                                                           
          J. Kussmann, H. Laqua and C. Ochsenfeld, J. Chem. Theory Comput. 2021, 17, 1512-1521
                                                                                                                           
-* Info * 11 gerade trial vectors in reduced space                                                                         
-* Info * 11 ungerade trial vectors in reduced space                                                                       
+* Info * 10 gerade trial vectors in reduced space                                                                         
+* Info * 10 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-               *** Iteration:   1 * Residuals (Max,Min): 5.82e-01 and 9.76e-02                                            
+               *** Iteration:   1 * Residuals (Max,Min): 6.01e-01 and 6.46e-02                                            
                                                                                                                           
-* Info * 22 gerade trial vectors in reduced space                                                                         
-* Info * 22 ungerade trial vectors in reduced space                                                                       
+* Info * 21 gerade trial vectors in reduced space                                                                         
+* Info * 21 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-               *** Iteration:   2 * Residuals (Max,Min): 6.78e-02 and 6.58e-03                                            
+               *** Iteration:   2 * Residuals (Max,Min): 8.86e-02 and 5.71e-03                                            
                                                                                                                           
-* Info * 33 gerade trial vectors in reduced space                                                                         
-* Info * 32 ungerade trial vectors in reduced space                                                                       
+* Info * 31 gerade trial vectors in reduced space                                                                         
+* Info * 31 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-               *** Iteration:   3 * Residuals (Max,Min): 8.97e-03 and 5.06e-04                                            
+               *** Iteration:   3 * Residuals (Max,Min): 1.24e-02 and 3.78e-04                                            
                                                                                                                           
-* Info * 42 gerade trial vectors in reduced space                                                                         
-* Info * 43 ungerade trial vectors in reduced space                                                                       
+* Info * 41 gerade trial vectors in reduced space                                                                         
+* Info * 40 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-               *** Iteration:   4 * Residuals (Max,Min): 1.30e-03 and 2.54e-05                                            
+               *** Iteration:   4 * Residuals (Max,Min): 1.27e-03 and 1.85e-05                                            
                                                                                                                           
-* Info * 49 gerade trial vectors in reduced space                                                                         
-* Info * 50 ungerade trial vectors in reduced space                                                                       
+* Info * 48 gerade trial vectors in reduced space                                                                         
+* Info * 47 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-               *** Iteration:   5 * Residuals (Max,Min): 1.74e-04 and 6.04e-06                                            
+               *** Iteration:   5 * Residuals (Max,Min): 1.81e-04 and 1.38e-05                                            
                                                                                                                           
-* Info * 51 gerade trial vectors in reduced space                                                                         
-* Info * 52 ungerade trial vectors in reduced space                                                                       
+* Info * 50 gerade trial vectors in reduced space                                                                         
+* Info * 49 ungerade trial vectors in reduced space                                                                       
                                                                                                                           
-               *** Iteration:   6 * Residuals (Max,Min): 5.93e-05 and 6.04e-06                                            
+               *** Iteration:   6 * Residuals (Max,Min): 5.86e-05 and 1.38e-05                                            
                                                                                                                           
-               *** Complex response converged in 6 iterations. Time: 1.45 sec                                             
+* Info * Checkpoint written to file: h2o2-qrf_rsp_qrf.h5                                                                  
+                                                                                                                          
+* Info * Time spent in writing checkpoint file: 0.02 sec                                                                  
+                                                                                                                          
+               *** Complex response converged in 6 iterations. Time: 1.01 sec                                             
                                                                                                                           
                                                                                                                           
                                                  Fock Matrix Computation                                                  
@@ -131,7 +137,11 @@
                                                                                                                           
 * Info * Processing 4 Fock builds...                                                                                      
                                                                                                                           
-* Info * Time spent in Fock matrices: 0.16 sec                                                                            
+* Info * Time spent in Fock matrices: 0.10 sec                                                                            
+                                                                                                                          
+* Info * Checkpoint written to file: h2o2-qrf_rsp_qrf_fock.h5                                                             
+                                                                                                                          
+* Info * Time spent in writing checkpoint file: 0.00 sec                                                                  
                                                                                                                           
                                                                                                                           
                                 Quadratic response function: << z;x,x >>  (0.0656,0.0656)                                 
@@ -139,7 +149,7 @@
                                                                                                                           
                                                              Real             Imaginary                                   
                                    ----------------------------------------------------                                   
-                                   QRF                 0.05815462          -0.75116216j                                   
+                                   QRF                -0.07610621           0.89411270j                                   
                                                                                                                           
                                                                                                                           
                                 Quadratic response function: << z;x,x >>  (0.1312,0.1312)                                 
@@ -147,7 +157,8 @@
                                                                                                                           
                                                              Real             Imaginary                                   
                                    ----------------------------------------------------                                   
-                                   QRF                10.51698754          10.72038683j                                   
+                                   QRF                -3.88748957         -18.88312397j                                   
                                                                                                                           
-                              *** Time spent in quadratic response calculation: 1.70 sec ***                              
+                              *** Time spent in quadratic response calculation: 1.16 sec ***                              
                                                                                                                           
+
