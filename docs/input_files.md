@@ -367,9 +367,10 @@
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;"> 
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-      <a href="../output_files/eth-res.out" download>eth-res.out</a>   
+       <a href="../output_files/eth-res.out" download>eth-res.out</a>   
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+       <a href="../output_files/eth-res.h5" download>eth-res.h5</a>
        </td>
     </tr> 
     <tr style="background-color: #f5f5f5;">
