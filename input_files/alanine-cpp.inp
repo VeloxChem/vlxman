@@ -8,7 +8,7 @@ basis: def2-svp
 @end
 
 @response
-property: absorption (cpp)
+property: ecd (cpp)
 ! frequency region (and resolution)
 frequencies: 0.20-0.35 (0.0025)
 damping: 0.0045563  ! this is the default value

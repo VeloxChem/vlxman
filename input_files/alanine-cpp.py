@@ -30,7 +30,7 @@ scf_results = scf_drv.compute(molecule, basis)
 cpp_drv = vlx.ComplexResponse()
 cpp_drv.frequencies = np.arange(0.2, 0.35, 0.0025)
 cpp_drv.damping = 0.0045563
-cpp_drv.cpp_flag = "ecd"
+cpp_drv.property = "ecd"
 cpp_drv.filename = 'alanine-cpp'
 
 cpp_results = cpp_drv.compute(molecule, basis, scf_results)

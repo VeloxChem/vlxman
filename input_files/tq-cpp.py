@@ -40,7 +40,7 @@ scf_results = scf_drv.compute(molecule, basis)
 cpp_drv = vlx.ComplexResponse()
 cpp_drv.frequencies = np.arange(0.1, 0.25, 0.0025)
 cpp_drv.damping = 0.0045563
-cpp_drv.cpp_flag = "absorption"
+cpp_drv.property = "absorption"
 cpp_drv.filename = 'tq-cpp'
 
 cpp_results = cpp_drv.compute(molecule, basis, scf_results)

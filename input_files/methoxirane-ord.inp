@@ -8,9 +8,8 @@ basis: def2-svp
 @end
 
 @response
-property: ord        
-nstates: 10
-nto: yes
+property: ord (cpp)  
+frequencies: 0.20-0.35 (0.0025)    
 @end
 
 @molecule
