@@ -5,7 +5,7 @@
 !                                                                                                                        !
 !                                        Copyright 2018-2025 VeloxChem developers                                        !
 !========================================================================================================================!
-!                                VeloxChem execution started at Wed Jun 17 10:13:11 2026.                                !
+!                                VeloxChem execution started at Thu Jun 18 11:15:56 2026.                                !
 !========================================================================================================================!
                                                                                                                           
 * Info * Using 32 OpenMP threads per MPI process.                                                                         
@@ -112,7 +112,7 @@
 * Info * Orthogonalization matrix computed in 0.00 sec.                                                                   
                                                                                                                           
 * Info * Starting Reduced Basis SCF calculation...                                                                        
-* Info * ...done. SCF energy in reduced basis set: -526.938455740283 a.u. Time: 0.30 sec.                                 
+* Info * ...done. SCF energy in reduced basis set: -526.938455740284 a.u. Time: 0.31 sec.                                 
                                                                                                                           
 * Info * Overlap matrix computed in 0.00 sec.                                                                             
                                                                                                                           
@@ -142,7 +142,7 @@
                                                                                                                           
 * Info * SCF results written to file: esca-rixs.h5                                                                        
                                                                                                                           
-               *** SCF converged in 12 iterations. Time: 5.33 sec.                                                        
+               *** SCF converged in 12 iterations. Time: 6.55 sec.                                                        
                                                                                                                           
                Spin-Restricted Kohn-Sham:                                                                                 
                --------------------------                                                                                 
@@ -324,7 +324,7 @@
                                                                                                                           
 * Info * Time spent in writing checkpoint file: 0.02 sec                                                                  
                                                                                                                           
-               *** Linear response converged in 9 iterations. Time: 78.49 sec                                             
+               *** Linear response converged in 9 iterations. Time: 82.92 sec                                             
                                                                                                                           
                                                                                                                           
 * Info * Response solution vectors written to file: esca-rixs.h5                                                          
@@ -611,9 +611,9 @@
                                                                                                                           
 * Info * Checkpoint written to file: esca-rixs_rsp_rixs_cvs.h5                                                            
                                                                                                                           
-* Info * Time spent in writing checkpoint file: 0.01 sec                                                                  
+* Info * Time spent in writing checkpoint file: 0.02 sec                                                                  
                                                                                                                           
-               *** Linear response converged in 7 iterations. Time: 36.58 sec                                             
+               *** Linear response converged in 7 iterations. Time: 37.48 sec                                             
                                                                                                                           
                                                                                                                           
 * Info * Response solution vectors written to file: esca-rixs.h5                                                          
@@ -755,11 +755,9 @@
                                Valence orbitals                 : [HOMO-23 ... HOMO]                                      
                                Virtual orbitals                 : [LUMO ... LUMO+104]                                     
                                                                                                                           
-* Info * Implementation details & benchmark:                                                                              
-         Reference: J. Phys. Chem. A 2025, 129, 8783-8797, DOI: 10.1021/acs.jpca.5c04528
-                                                                                                                          
 * Info * Running RIXS calculation in the two-shot approach                                                                
-         J. Phys. Chem. A 2025, 129, 8783-8797, DOI: 10.1021/acs.jpca.5c04528
+                                                                                                                          
+         J. Phys. Chem. A, 2025, 129, 8783-8797, DOI: 10.1021/acs.jpca.5c04528
                                                                                                                           
 * Info * Computed RIXS cross-sections for 20 final states at photon energy: 276.00 eV.                                    
                                                                                                                           
@@ -818,9 +816,9 @@
 * Info * RIXS results written to file: esca-rixs.h5                                                                       
                                                                                                                           
 !========================================================================================================================!
-!                               VeloxChem execution completed at Wed Jun 17 10:15:12 2026.                               !
+!                               VeloxChem execution completed at Thu Jun 18 11:18:04 2026.                               !
 !========================================================================================================================!
-!                                          Total execution time is 121.10 sec.                                           !
+!                                          Total execution time is 127.64 sec.                                           !
 !========================================================================================================================!
 !                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
 !                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !
