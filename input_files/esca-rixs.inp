@@ -9,11 +9,10 @@ basis: def2-svp
 
 @response
 property: rixs
-photon_energy: 10.1428
+photon_energy: 10.106 - 10.290 (0.004)
 nstates: 20
 num_core_orbitals: 8
 num_core_states: 10
-restricted_subspace: False
 @end
 
 @molecule

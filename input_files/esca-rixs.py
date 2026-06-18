@@ -30,7 +30,6 @@ rixs_drv = vlx.RixsDriver()
 rixs_drv.nstates = 20   # number of final valence-excited states
 rixs_drv.num_core_orbitals = 8   # number of core orbitals
 rixs_drv.num_core_states = 10  # number of intermediate core-excited states
-rixs_drv.restricted_subspace = False 
 
 rixs_drv.photon_energy = 276 / vlx.hartree_in_ev()  # value of the incoming photon energy in a.u.
 
