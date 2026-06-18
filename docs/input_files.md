@@ -138,17 +138,17 @@
         <a href="#sec:pe">PE/NPE</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../input_files/hs276_pe.py" download>hs276_pe.py</a>
+        <a href="../input_files/hs276-pe.py" download>hs276-pe.py</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../input_files/hs276_pe.inp" download>hs276_pe.inp</a>
-        <a href="../input_files/solvent_pe.pot" download>solvent_pe.pot</a>
+        <a href="../input_files/hs276-pe.inp" download>hs276-pe.inp</a>
+        <a href="../input_files/hs276-pe.pot" download>hs276-pe.pot</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../output_files/hs276_pe.out" download>hs276_pe.out</a>
+        <a href="../output_files/hs276-pe.out" download>hs276-pe.out</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
-        <a href="../output_files/hs276_pe.h5" download>hs276_pe.h5</a>
+        <a href="../output_files/hs276-pe.h5" download>hs276-pe.h5</a>
       </td>
     </tr>
     <tr style="background-color: #f5f5f5;">
@@ -327,6 +327,7 @@
         <a href="../input_files/pna-ES-dipole.py" download>pna-ES-dipole.py</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/pna-ES-dipole.inp" download>pna-ES-dipole.inp</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../output_files/pna-ES-dipole.out" download>pna-ES-dipole.out</a>
@@ -420,6 +421,7 @@
         <a href="../input_files/methoxirane-ord.py" download>methoxirane-ord.py</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/methoxirane-ord.inp" download>methoxirane-ord.inp</a>
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../output_files/methoxirane-ord.out" download>methoxirane-ord-cpp.out</a>
