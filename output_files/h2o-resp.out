@@ -5,7 +5,7 @@
 !                                                                                                                        !
 !                                        Copyright 2018-2025 VeloxChem developers                                        !
 !========================================================================================================================!
-!                                VeloxChem execution started at Mon Jun 15 12:28:47 2026.                                !
+!                                VeloxChem execution started at Wed Jun 17 10:54:27 2026.                                !
 !========================================================================================================================!
                                                                                                                           
 * Info * Using 32 OpenMP threads per MPI process.                                                                         
@@ -68,7 +68,7 @@
                    Linear Dependence Threshold     : 1.0e-06                                                              
                                                                                                                           
 * Info * Starting Reduced Basis SCF calculation...                                                                        
-* Info * ...done. SCF energy in reduced basis set: -75.982640018201 a.u. Time: 0.01 sec.                                  
+* Info * ...done. SCF energy in reduced basis set: -75.982640018201 a.u. Time: 0.03 sec.                                  
                                                                                                                           
                                                                                                                           
                Iter. | Hartree-Fock Energy | Energy Change | Gradient Norm | Max. Gradient | Density Change               
@@ -77,7 +77,7 @@
                   2       -76.008421151224   -0.0004111029      0.01307000      0.00210605      0.01685973                
                   3       -76.008442909603   -0.0000217584      0.00360140      0.00085291      0.00391239                
                   4       -76.008444647900   -0.0000017383      0.00154210      0.00036250      0.00123070                
-                  5       -76.008444944509   -0.0000002966      0.00015743      0.00003665      0.00046523                
+                  5       -76.008444944508   -0.0000002966      0.00015743      0.00003665      0.00046523                
                   6       -76.008444950888   -0.0000000064      0.00002243      0.00000455      0.00008361                
                   7       -76.008444951004   -0.0000000001      0.00000182      0.00000037      0.00001158                
                   8       -76.008444951005   -0.0000000000      0.00000041      0.00000009      0.00000117                
@@ -86,7 +86,7 @@
                                                                                                                           
 * Info * SCF results written to file: h2o-resp.h5                                                                         
                                                                                                                           
-               *** SCF converged in 8 iterations. Time: 0.04 sec.                                                         
+               *** SCF converged in 8 iterations. Time: 0.05 sec.                                                         
                                                                                                                           
                Spin-Restricted Hartree-Fock:                                                                              
                -----------------------------                                                                              
@@ -141,9 +141,9 @@
                                        J. Phys. Chem. 1993, 97, 10269-10280.                                              
                                                                                                                           
 !========================================================================================================================!
-!                               VeloxChem execution completed at Mon Jun 15 12:28:47 2026.                               !
+!                               VeloxChem execution completed at Wed Jun 17 10:54:27 2026.                               !
 !========================================================================================================================!
-!                                           Total execution time is 0.11 sec.                                            !
+!                                           Total execution time is 0.13 sec.                                            !
 !========================================================================================================================!
 !                     Rinkevicius, Z.; Li, X.; Vahtras, O.; Ahmadzadeh, K.; Brand, M.; Ringholm, M.;                     !
 !                              List, N. H.; Scheurer, M.; Scott, M.; Dreuw, A.; Norman, P.                               !
