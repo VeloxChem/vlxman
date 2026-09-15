@@ -461,7 +461,7 @@
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../input_files/acro-raman.inp" download>acro-raman.inp</a>
-      </td>git add 
+      </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../output_files/acro-raman.out" download>acro-raman.out</a>
       </td>
