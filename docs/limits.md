@@ -1,30 +1,22 @@
 # Pushing the limits
 
-VeloxChem has the stated goal to be *science-enabling*. Behind this term there are a multitude of software requirements that we find important and strive against, including:
+VeloxChem has the stated goal to be *science-enabling* and should provide:
+
+- a fast return of results
 
 - coverage of dense 3D system of sizes up to and beyond 500 atoms in the quantum region
 
 - accurate description of electronically excited states that show a more diffuse character than the ground state
 
-- stable and reliable convergence of iterative equation solvers also with use of diffuse basis functions
+- stable and reliable convergence of iterative equation solvers
 
-- time-efficient prototyping of novel scientific approaches
-
-- transparent exposure of data structures to enable in-depth analyses for standard users
-
-- flexible ways to interact with other components of the simulation (such as molecular dynamics, parameterizing the embedding, and data visualization)
-
-- a fast return of results so as to remain in synchronicity with experimental project partners
-
-For the most parts, VeloxChem implements few schemes to improve the formal scaling of the calculation but rather focus to implement the general and stable algorithms efficiently for HPC cluster computing. 
-
-Basically, the only underlying approximation made is the adoption of Cauchy–Schwarz screening in the evaluation of electron-repulsion integrals, but also this is done with rigor using a small screening threshold per default.
+- automatized workflows for complex simulations involving e.g. embedding and dynamics
 
 ## Performance and scaling
 
-### Laptop/Desktop
+### Personal computers (laptop/desktop)
 
-### Resolution of identity
+#### Resolution of identity
 
 Timings are in seconds, measured on 1 LUMI-CPU node with 128 cores (8 MPI x 16 OMP). Systems are water clusters of different sizes. The time spent in one Fock-J build is measured with and without RI. Speedup can be 10x, 20x, 40x or 100x depending on basis set and system size
 
@@ -33,9 +25,11 @@ Timings are in seconds, measured on 1 LUMI-CPU node with 128 cores (8 MPI x 16 O
 :align: center
 :::
 
-### HPC-CPU
+### High-performance computing 
 
-**Polarizabilities and C6 dispersion coefficients**
+#### HPC-CPU
+
+*Polarizabilities and C6 dispersion coefficients*
 
 With a highly efficient implementation of the linear complex polarization propagator in VeloxChem, Hartree–Fock and Kohn–Sham density-functional theory calculations were performed of the frequency-dependent polarizabilities for fullerenes consisting of up to 540 carbon atoms. Results for the static polarizabilities and C6 coefficients show scalings of $N^{1.2}$ and $N^{2.2}$, respectively,  thereby deviating significantly from the previously reported values obtained with use of semi-classical/empirical methods. See {cite}`Brand2021` for further details.
 
@@ -45,13 +39,26 @@ With a highly efficient implementation of the linear complex polarization propag
 :align: center
 :::
 
-### HPC-GPU
+#### HPC-GPU
 
-**GPU-Accelerated Fock Matrix Construction**
+*GPU-accelerated Fock matrix construction*
 
-Two separate scaling aspects of the GPU implementation of the ERI-part of the Fock matrix construction can be shown: (a) a system size scaling illustrated by the wall times (in seconds) on a single GPU node obtained for spherical water clusters of varying sizes (the inset shows the largest cluster). (b) a strong scaling with respect to the number of GPUs (each with two GCDs), illustrated here by a G-quadruplex including all nucleotides where the phosphate group has been neutralized by adding a hydrogen. See {cite}`veloxchem-gpu` for further details.
+VeloxChem diagonalizes the Fock matrix in SCF iterations. Up to a point of some 30,000+ basis functions, this diagonalization step does not represent a bottleneck in the calculation and the Fock matrix construction shows sub-quadratic scaling with respect to system size. See {cite}`veloxchem-gpu` for further details.
 
-:::{image} ../images/hpc-gpu-scaling.jpeg
-:width: 800px
+:::{figure} ../images/hpc-gpu-scaling.jpeg
+:width: 600px
 :align: center
+
+Timings are obtained with use a single AMD MI-250X node with 4 GPUs.
+:::
+
+*Multi-node acceleration*
+
+VeloxChem implements MPI for multi-node acceleration. It is recommended to run 1 MPI-rank per node and as many OpenMP threads as there are GPU devices on the node. 
+
+:::{figure} ../images/veloxchem-gpu-strong-scaling.png
+:height: 400px
+:align: center
+
+Strong scaling report using a range of 1--27 nodes of type AMD MI-250X with 4 GPUs. The system is a complete DNA sequence with 20 base pairs and includes a solvation shell of waters in the QM region to properly solvate the phosphate backbone, and timings refer to the construction of an auxiliary Fock matrix in a linear response calculation.
 :::
