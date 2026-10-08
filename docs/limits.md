@@ -29,9 +29,9 @@ Timings are in seconds, measured on 1 LUMI-CPU node with 128 cores (8 MPI x 16 O
 
 #### HPC-CPU
 
-*Polarizabilities and C6 dispersion coefficients*
+*MPI/OpenMP parallel Fock matrix construction*
 
-With a highly efficient implementation of the linear complex polarization propagator in VeloxChem, Hartree–Fock and Kohn–Sham density-functional theory calculations were performed of the frequency-dependent polarizabilities for fullerenes consisting of up to 540 carbon atoms. Results for the static polarizabilities and C6 coefficients show scalings of $N^{1.2}$ and $N^{2.2}$, respectively,  thereby deviating significantly from the previously reported values obtained with use of semi-classical/empirical methods. See {cite}`Brand2021` for further details.
+With a highly efficient MPI/OpenMP implementation of linear response functions (here specifically complex polarization propagator theory), calculations have been performed of the frequency-dependent polarizabilities for fullerenes consisting of up to 540 carbon atoms. These calculations were performed on AMD EPYC Zen2 64-core CPUs. See {cite}`Brand2021` for further details.
 
 
 :::{image} ../images/alpha_fullerene.png
