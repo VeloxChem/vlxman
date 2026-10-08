@@ -151,6 +151,23 @@
         <a href="../output_files/hs276-pe.h5" download>hs276-pe.h5</a>
       </td>
     </tr>
+    <tr style="background-color: #fff;">
+      <td style="padding: 8px; padding-left: 24px; border: 1px solid #ddd;">
+        <a href="#sec:gostshyp">GOSTSHYP</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/furan-gostshyp.py" download>furan-gostshyp.py</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../input_files/furan-gostshyp.inp" download>furan-gostshyp.inp</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/furan-gostshyp.out" download>furan-gostshyp.out</a>
+      </td>
+      <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
+        <a href="../output_files/furan-gostshyp.h5" download>furan-gostshyp.h5</a>
+      </td>
+    </tr>
     <tr style="background-color: #f5f5f5;">
       <td colspan="5" style="padding: 10px; font-weight: bold; border: 1px solid #ddd; text-align: center;">
         <a href="#sec:pes" style="text-decoration: none; color: inherit;">Potential energy surfaces</a>
@@ -461,7 +478,7 @@
       </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../input_files/acro-raman.inp" download>acro-raman.inp</a>
-      </td>git add 
+      </td>
       <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">
         <a href="../output_files/acro-raman.out" download>acro-raman.out</a>
       </td>
