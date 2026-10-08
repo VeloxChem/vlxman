@@ -60,5 +60,5 @@ VeloxChem implements MPI for multi-node acceleration. It is recommended to run 1
 :height: 400px
 :align: center
 
-Strong scaling report using a range of 1--27 nodes of type AMD MI-250X with 4 GPUs. The system is a complete DNA sequence with 20 base pairs and includes a solvation shell of waters in the QM region to properly solvate the phosphate backbone, and timings refer to the construction of an auxiliary Fock matrix in a linear response calculation.
+Strong scaling report using a range of 1–27 nodes of type AMD MI-250X with 4 GPUs. The system is a complete DNA sequence with 20 base pairs and includes a solvation shell of waters in the QM region to properly solvate the phosphate backbone, and timings refer to the construction of an auxiliary Fock matrix in a linear response calculation.
 :::
