@@ -108,7 +108,7 @@ To avoid clashes between dependencies, we recommend to always use a [virtual env
 
   This will create and activate a conda environment named `vlxenv`. In this environment all the build dependencies will be installed from the conda-forge channel, including the C++ compiler, MPI, [NumPy](https://numpy.org), [MPI4Py](https://mpi4py.readthedocs.io/en/stable/), etc.
 
-  Note that the MPICH library will be installed by the `vlx_env.yml` file. If you prefer another MPI library such as Open MPI, you can edit the .yml file and replace mpich by openmpi. Read more about the .yml file in [this page](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually).
+  Note that the Open MPI library will be installed by the `vlx_env.yml` file. If you prefer another MPI library such as MPICH, you can edit the .yml file and replace openmpi by mpich. Read more about the .yml file in [this page](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually).
 
 - Set scikit-build and cmake options:
 
