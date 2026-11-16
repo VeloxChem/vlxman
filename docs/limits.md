@@ -16,7 +16,20 @@ VeloxChem has the stated goal to be *science-enabling* and should provide:
 
 ### Personal computers (laptop/desktop)
 
-#### Resolution of identity
+On a set of single point calculations, wall time and peak memory usage have been measured with and without invoking the resolution of identity for J- and K-type integrals (RI-JK). The reported systems are safranal, a compound characterizing the aroma of saffron, and a series of crocins, giving rise to the yellow-orange colour of the spice. The method employed is DFT/B3LYP, and the calculations were run on a MacBook Pro (Apple M5, 10 cores, 32GB RAM). Using RI-JK, a SCF calculation on crocin-1/def2-TZVP (1289 basis functions) runs in less than five minutes with VeloxChem. 
+
+:::{image} ../images/laptop-performance.png
+:width: 800px
+:align: center
+:::
+
+Note that the memory limit is hit by crocin-2/def2-SVPD (1314 basis functions). Though not shown directly in the right panel, memory is being swapped causing an inflated wall time.
+
+### High-performance computing 
+
+#### HPC-CPU
+
+*Resolution of identity*
 
 Timings are in seconds, measured on 1 LUMI-CPU node with 128 cores (8 MPI x 16 OMP). Systems are water clusters of different sizes. The time spent in one Fock-J build is measured with and without RI. Speedup can be 10x, 20x, 40x or 100x depending on basis set and system size
 
@@ -24,10 +37,6 @@ Timings are in seconds, measured on 1 LUMI-CPU node with 128 cores (8 MPI x 16 O
 :width: 800px
 :align: center
 :::
-
-### High-performance computing 
-
-#### HPC-CPU
 
 *MPI/OpenMP parallel Fock matrix construction*
 
